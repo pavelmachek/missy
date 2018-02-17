@@ -1,0 +1,964 @@
+[    1.983001] tsl2563 2-0029: model 7, rev. 0
+[    1.990356] adp1653 2-0030: GPIO lookup for consumer enable
+[    1.990356] adp1653 2-0030: using device tree for GPIO lookup
+[    1.990447] of_get_named_gpiod_flags: parsed 'enable-gpios' property of node '/ocp@68000000/i2c@48072000/led-controller@30[0]' - status (0)
+[    1.990478] gpio gpiochip2: Persistence not supported for GPIO 24
+[    1.991119] of_get_named_gpiod_flags: parsed 'enable-gpio' property of node '/ocp@68000000/i2c@48072000/lp5523@32[0]' - status (0)
+[    2.090240] lp5523x 2-0032: lp5523 Programmable led chip found
+[    2.096160] Led 0 name lp5523:kb1
+[    2.100128] Led 1 name lp5523:kb2
+[    2.104064] Led 2 name lp5523:kb3
+[    2.107971] Led 3 name lp5523:kb4
+[    2.111938] Led 4 name lp5523:b
+[    2.115661] Led 5 name lp5523:g
+[    2.119415] Led 6 name lp5523:r
+[    2.123199] Led 7 name lp5523:kb5
+[    2.127136] Led 8 name lp5523:kb6
+[    2.132019] (NULL device *): hwmon: 'bq27200-0' is not a valid name attribute, please fix
+[    2.140533] bq27xxx-battery 2-0055: support enabled
+[    2.147338] bq27xxx-battery 2-0055: battery is not calibrated! ignoring capacity values
+[    2.158325] of_get_named_gpiod_flags: parsed 'power-gpio' property of node '/ocp@68000000/i2c@48072000/tpa6130a2@60[0]' - status (0)
+[    2.170349] Detecting chip: 2
+[    2.185607] bq2415x-charger 2-006b: automode supported, waiting for events
+[    2.192749] bq2415x: Timer reset
+[    2.196014] bq2415x: command Timer reset
+[    2.201080] bq2415x-charger 2-006b: driver registered
+[    2.206329] omap_i2c 48072000.i2c: bus 2 rev3.3 at 100 kHz
+[    2.235961] lis3lv02d: 8 bits sensor found
+[    2.310424] input: ST LIS3LV02DL Accelerometer as /devices/platform/lis3lv02d/input/input4
+[    2.323669] et8ek8 3-003e: GPIO lookup for consumer reset
+[    2.323699] et8ek8 3-003e: using device tree for GPIO lookup
+[    2.323730] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]'
+[    2.323791] of_get_named_gpiod_flags: parsed 'reset-gpio' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]' - status (0)
+[    2.323822] gpio gpiochip3: Persistence not supported for GPIO 6
+[    2.324157] et8ek8 3-003e: could not get clock
+[    2.329559] omap_i2c 48060000.i2c: bus 3 rev3.3 at 400 kHz
+[    2.335815] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    2.335815] nokia-modem n900-modem: using device tree for GPIO lookup
+[    2.335906] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[0]' - status (0)
+[    2.335937] gpio gpiochip2: Persistence not supported for GPIO 6
+[    2.336120] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    2.336151] nokia-modem n900-modem: using device tree for GPIO lookup
+[    2.336242] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[1]' - status (0)
+[    2.336273] gpio gpiochip2: Persistence not supported for GPIO 9
+[    2.336425] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    2.336425] nokia-modem n900-modem: using device tree for GPIO lookup
+[    2.336547] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[2]' - status (0)
+[    2.336578] gpio gpiochip2: Persistence not supported for GPIO 10
+[    2.336730] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    2.336730] nokia-modem n900-modem: using device tree for GPIO lookup
+[    2.336883] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[3]' - status (0)
+[    2.336914] gpio gpiochip2: Persistence not supported for GPIO 11
+[    2.337066] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    2.337066] nokia-modem n900-modem: using device tree for GPIO lookup
+[    2.337249] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[4]' - status (0)
+[    2.337280] gpio gpiochip4: Persistence not supported for GPIO 29
+[    2.338958] nokia-modem n900-modem: Registered Nokia HSI modem
+[    2.345520] of_get_named_gpiod_flags: parsed 'ti,power-gpio' property of node '/ocp@68000000/spi@480ba000/wl1251@0[0]' - status (0)
+[    2.346221] ieee80211 phy1: Selected rate control algorithm 'minstrel_ht'
+[    2.347229] wl1251: loaded
+[    2.350952] wl1251: initialized
+[    2.354797] musb-hdrc musb-hdrc.0.auto: HS USB OTG: revision 0x33, sysconfig 0x08, sysstatus 0x1, intrfsel 0x1, simenable  0x0
+[    2.355194]  musb-hdrc.0.auto: registering UDC driver [g_ether]
+[    2.355285] using random self ethernet address
+[    2.359802] using random host ethernet address
+[    2.364410] g_ether gadget: adding config #1 'CDC Ethernet (ECM)'/980eb35c
+[    2.364440] g_ether gadget: adding 'cdc_ethernet'/ebd88dc8 to config 'CDC Ethernet (ECM)'/980eb35c
+[    2.365142] usb0: HOST MAC 36:b3:5f:dc:34:6e
+[    2.369537] usb0: MAC a6:05:f7:55:d4:71
+[    2.373504] g_ether gadget: CDC Ethernet: dual speed IN/ep1in OUT/ep1out NOTIFY/ep2in
+[    2.373535] g_ether gadget: cfg 1/980eb35c speeds: high full
+[    2.373535] g_ether gadget:   interface 0 = cdc_ethernet/ebd88dc8
+[    2.373535] g_ether gadget:   interface 1 = cdc_ethernet/ebd88dc8
+[    2.373565] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+[    2.380279] g_ether gadget: g_ether ready
+[    2.384948] tsc2005 spi0.0: GPIO lookup for consumer reset
+[    2.384979] tsc2005 spi0.0: using device tree for GPIO lookup
+[    2.385040] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/ocp@68000000/spi@48098000/tsc2005@0[0]' - status (0)
+[    2.385101] gpio gpiochip3: Persistence not supported for GPIO 8
+[    2.386322] musb-hdrc musb-hdrc.0.auto: VBUS Connect
+[    2.386779] input: TSC2005 touchscreen as /devices/platform/68000000.ocp/48098000.spi/spi_master/spi0/spi0.0/input/input5
+[    2.399780] omap3isp 480bc000.isp: parsing endpoint /ocp@68000000/isp@480bc000/ports/port@1/endpoint, interface 1
+[    2.399810] omap3isp 480bc000.isp: CSI-1/CCP-2 configuration
+[    2.399810] omap3isp 480bc000.isp: clock lane polarity 0, pos 1
+[    2.399841] omap3isp 480bc000.isp: data lane polarity 0, pos 0
+[    2.399902] omap3isp 480bc000.isp: 480bc000.isp supply vdd-csiphy1 not found, using dummy regulator
+[    2.409301] omap3isp 480bc000.isp: 480bc000.isp supply vdd-csiphy2 not found, using dummy regulator
+[    2.418853] omap3isp 480bc000.isp: Revision 2.0 found
+[    2.424804] omap-iommu 480bd400.mmu: 480bd400.mmu: version 1.1
+[    2.431335] omap3isp 480bc000.isp: hist: using DMA channel dma0chan6
+[    2.431396] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP CCP2 was not initialized!
+[    2.440551] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP CSI2a was not initialized!
+[    2.449584] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP CCDC was not initialized!
+[    2.458526] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP preview was not initialized!
+[    2.467895] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP resizer was not initialized!
+[    2.477294] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP AEWB was not initialized!
+[    2.485961] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP AF was not initialized!
+[    2.494415] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP histogram was not initialized!
+[    2.504974] (NULL device *): hwmon: 'rx51-battery' is not a valid name attribute, please fix
+[    2.514709] omap_hsmmc 4809c000.mmc: GPIO lookup for consumer cd
+[    2.514739] omap_hsmmc 4809c000.mmc: using device tree for GPIO lookup
+[    2.514770] of_get_named_gpiod_flags: can't parse 'cd-gpios' property of node '/ocp@68000000/mmc@4809c000[0]'
+[    2.514770] of_get_named_gpiod_flags: can't parse 'cd-gpio' property of node '/ocp@68000000/mmc@4809c000[0]'
+[    2.514801] omap_hsmmc 4809c000.mmc: using lookup tables for GPIO lookup
+[    2.514801] omap_hsmmc 4809c000.mmc: lookup for GPIO cd failed
+[    2.514831] omap_hsmmc 4809c000.mmc: GPIO lookup for consumer wp
+[    2.514831] omap_hsmmc 4809c000.mmc: using device tree for GPIO lookup
+[    2.514862] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp@68000000/mmc@4809c000[0]'
+[    2.514862] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp@68000000/mmc@4809c000[0]'
+[    2.514892] omap_hsmmc 4809c000.mmc: using lookup tables for GPIO lookup
+[    2.514892] omap_hsmmc 4809c000.mmc: lookup for GPIO wp failed
+[    2.547302] omap_hsmmc 480b4000.mmc: GPIO lookup for consumer wp
+[    2.547332] omap_hsmmc 480b4000.mmc: using device tree for GPIO lookup
+[    2.547332] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp@68000000/mmc@480b4000[0]'
+[    2.547363] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp@68000000/mmc@480b4000[0]'
+[    2.547363] omap_hsmmc 480b4000.mmc: using lookup tables for GPIO lookup
+[    2.547393] omap_hsmmc 480b4000.mmc: lookup for GPIO wp failed
+[    2.577087] omapdrm omapdrm.0: DMM not available, disable DMM support
+[    2.584259] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    2.591003] [drm] No driver support for vblank timestamp query.
+[    2.697204] mmc0: host does not support reading read-only switch, assuming write-enable
+[    2.702636] mmc0: new high speed SDHC card at address e624
+[    2.704559] mmcblk0: mmc0:e624 SU16G 14.8 GiB 
+[    2.724945] Console: switching to colour frame buffer device 100x30
+[    2.725616]  mmcblk0: p1 p2 p3 p4
+[    2.799011] omapdrm omapdrm.0: fb0: omapdrm frame buffer device
+[    2.812316] [drm] Initialized omapdrm 1.0.0 20110917 for omapdrm.0 on minor 0
+[    2.829284] mmc1: switch to bus width 8 failed
+[    2.840301] mmc1: switch to bus width 4 failed
+[    2.850402] mmc1: new high speed MMC card at address 0001
+[    2.863372] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[    2.875305] g_ether gadget: init ecm
+[    2.875305] g_ether gadget: notify connect false
+[    2.875732] mmcblk1: mmc1:0001 MMC32G 29.8 GiB 
+[    2.885650] g_ether gadget: activate ecm
+[    2.885681] usb0: qlen 10
+[    2.885711] g_ether gadget: ecm_close
+[    2.885894] g_ether gadget: packet filter 0c
+[    2.885925] g_ether gadget: ecm req21.43 v000c i0000 l0
+[    2.887420] mmcblk1boot0: mmc1:0001 MMC32G partition 1 512 KiB
+[    2.900238] mmcblk1boot1: mmc1:0001 MMC32G partition 2 512 KiB
+[    2.913909]  mmcblk1: p1 p2 p3 p4
+[    2.925994] et8ek8 3-003e: GPIO lookup for consumer reset
+[    2.925994] et8ek8 3-003e: using device tree for GPIO lookup
+[    2.926025] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]'
+[    2.926116] of_get_named_gpiod_flags: parsed 'reset-gpio' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]' - status (0)
+[    2.926147] gpio gpiochip3: Persistence not supported for GPIO 6
+[    2.926666] omap3isp 480bc000.isp: Entity type for entity et8ek8 3-003e was not initialized!
+[    2.944122] omap3isp 480bc000.isp: isp_xclk_set_rate: cam_xclka set to 9600000 Hz (div 18)
+[    2.971008] twl4030_bci 48070000.i2c:twl@48:bci: battery temperature out of range
+[    2.997619] et8ek8 3-003e: meta_reglist version V14 03-June-2008
+[    3.090759] omap3isp 480bc000.isp: Entity type for entity ad5820 focus was not initialized!
+[    3.108428] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio_keys/camera_lens_cover[0]' - status (0)
+[    3.108459] gpio gpiochip3: Persistence not supported for GPIO 14
+[    3.108795] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio_keys/lock_button[0]' - status (0)
+[    3.108825] gpio gpiochip3: Persistence not supported for GPIO 17
+[    3.109008] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio_keys/keypad_slide[0]' - status (0)
+[    3.109039] gpio gpiochip2: Persistence not supported for GPIO 7
+[    3.109252] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio_keys/proximity_sensor[0]' - status (0)
+[    3.109252] gpio gpiochip2: Persistence not supported for GPIO 25
+[    3.109680] input: gpio_keys as /devices/platform/gpio_keys/input/input6
+[    3.124114] twl_rtc 48070000.i2c:twl@48:rtc: setting system clock to 2018-02-17 09:59:20 UTC (1518861560)
+[    3.144226] sr_init: No PMIC hook to init smartreflex
+[    3.155059] smartreflex smartreflex.0: omap_sr_probe: SmartReflex driver initialized
+[    3.168792] smartreflex smartreflex.1: omap_sr_probe: SmartReflex driver initialized
+[    3.182922] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    3.205017] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    3.217834] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    3.231933] cfg80211: failed to load regulatory.db
+[    3.242248] VCSI: disabling
+[    3.252838] ALSA device list:
+[    3.260925]   No soundcards found.
+[    3.273071] EXT4-fs (mmcblk0p1): couldn't mount as ext3 due to feature incompatibilities
+[    3.301055] EXT4-fs (mmcblk0p1): mounted filesystem with ordered data mode. Opts: (null)
+[    3.314849] VFS: Mounted root (ext4 filesystem) readonly on device 179:1.
+[    3.328796] devtmpfs: mounted
+[    3.340332] Freeing unused kernel memory: 1024K
+[    4.886627] udevd[189]: starting version 175
+[    8.291961] ad5820 3-000c: write failed, error -121
+[   12.640136] bq2415x: command Timer reset
+[   13.806854] EXT4-fs (mmcblk0p1): re-mounted. Opts: (null)
+[   18.916992] random: crng init done
+[   19.698211] EXT4-fs (mmcblk0p4): mounted filesystem with ordered data mode. Opts: errors=remount-ro
+[   22.212249] usb0: eth_open
+[   22.212280] usb0: eth_start
+[   22.212371] g_ether gadget: ecm_open
+[   22.880096] bq2415x: command Timer reset
+[   31.587738] omapdrm omapdrm.0: no framedone handler?
+[   33.120178] bq2415x: command Timer reset
+[   43.360015] bq2415x: command Timer reset
+[   53.600219] bq2415x: command Timer reset
+[   63.840118] bq2415x: command Timer reset
+[   74.080078] bq2415x: command Timer reset
+[   75.140289] wl1251: 151 tx blocks at 0x3b788, 35 rx blocks at 0x3a780
+[   75.170196] wl1251: firmware booted (Rev 4.0.4.3.7)
+[   84.320129] bq2415x: command Timer reset
+[   94.560150] bq2415x: command Timer reset
+[   95.682586] ssi-protocol ssi-protocol: WAKELINES TEST OK
+[  104.800079] bq2415x: command Timer reset
+[  114.529785] RGB set request: 0 0 0
+[  114.529815] RGB brightness 0 0 0
+[  115.040069] bq2415x: command Timer reset
+[  117.471069] wl1251: down
+[  123.290161] wl1251: 151 tx blocks at 0x3b788, 35 rx blocks at 0x3a780
+[  123.320526] wl1251: firmware booted (Rev 4.0.4.3.7)
+[  125.280303] bq2415x: command Timer reset
+[  135.520202] bq2415x: command Timer reset
+[  145.760162] bq2415x: command Timer reset
+[  156.000091] bq2415x: command Timer reset
+[  166.240081] bq2415x: command Timer reset
+[  167.338684] omapdrm omapdrm.0: no framedone handler?
+[  176.480194] bq2415x: command Timer reset
+[  186.720275] bq2415x: command Timer reset
+[  196.960266] bq2415x: command Timer reset
+[  207.200286] bq2415x: command Timer reset
+[  217.440887] bq2415x: command Timer reset
+[  227.680297] bq2415x: command Timer reset
+[  237.920257] bq2415x: command Timer reset
+[  248.160491] bq2415x: command Timer reset
+[  258.400146] bq2415x: command Timer reset
+[  268.640289] bq2415x: command Timer reset
+[  271.024963] g_ether gadget: packet filter 0e
+[  271.024963] g_ether gadget: ecm req21.43 v000e i0000 l0
+[  271.028350] g_ether gadget: notify connect true
+[  271.060394] g_ether gadget: notify speed 425984000
+[  271.066680] g_ether gadget: packet filter 0e
+[  271.066711] g_ether gadget: ecm req21.43 v000e i0000 l0
+[  278.880218] bq2415x: command Timer reset
+[  289.120208] bq2415x: command Timer reset
+[  299.360321] bq2415x: command Timer reset
+[  309.601104] bq2415x: command Timer reset
+[  319.844360] bq2415x: command Timer reset
+[  327.954071] gprs0: attached
+[  330.080139] bq2415x: command Timer reset
+[  340.320129] bq2415x: command Timer reset
+[  350.560302] bq2415x: command Timer reset
+[  360.800170] bq2415x: command Timer reset
+[  371.046417] bq2415x: command Timer reset
+[  381.280151] bq2415x: command Timer reset
+[  388.101654] omapdrm omapdrm.0: no framedone handler?
+[  391.520080] bq2415x: command Timer reset
+[  401.760253] bq2415x: command Timer reset
+[  412.000091] bq2415x: command Timer reset
+[  422.240234] bq2415x: command Timer reset
+[  432.480285] bq2415x: command Timer reset
+[  442.720123] bq2415x: command Timer reset
+[  452.960144] bq2415x: command Timer reset
+[  463.200103] bq2415x: command Timer reset
+[  473.440124] bq2415x: command Timer reset
+[  483.680114] bq2415x: command Timer reset
+[  484.574310] omapdrm omapdrm.0: no framedone handler?
+[  493.920135] bq2415x: command Timer reset
+[  500.068145] omapdrm omapdrm.0: no framedone handler?
+[  504.160064] bq2415x: command Timer reset
+[  514.400207] bq2415x: command Timer reset
+[  524.640197] bq2415x: command Timer reset
+[  534.880249] bq2415x: command Timer reset
+[  545.120300] bq2415x: command Timer reset
+[  555.360992] bq2415x: command Timer reset
+[  565.600067] bq2415x: command Timer reset
+[  575.840240] bq2415x: command Timer reset
+[  586.080291] bq2415x: command Timer reset
+[  596.320281] bq2415x: command Timer reset
+[  606.560272] bq2415x: command Timer reset
+[  616.800231] bq2415x: command Timer reset
+[  627.041015] bq2415x: command Timer reset
+[  637.280151] bq2415x: command Timer reset
+[  647.520324] bq2415x: command Timer reset
+[  657.760253] bq2415x: command Timer reset
+[  668.000274] bq2415x: command Timer reset
+[  678.240295] bq2415x: command Timer reset
+[  688.480285] bq2415x: command Timer reset
+[  698.720062] bq2415x: command Timer reset
+[  708.960266] bq2415x: command Timer reset
+[  719.200256] bq2415x: command Timer reset
+[  729.440277] bq2415x: command Timer reset
+[  739.680267] bq2415x: command Timer reset
+[  749.920166] bq2415x: command Timer reset
+[  760.160156] bq2415x: command Timer reset
+[  770.401031] bq2415x: command Timer reset
+[  780.640289] bq2415x: command Timer reset
+[  790.880187] bq2415x: command Timer reset
+[  801.120300] bq2415x: command Timer reset
+[  811.360961] bq2415x: command Timer reset
+[  821.600250] bq2415x: command Timer reset
+[  831.840209] bq2415x: command Timer reset
+[  842.080291] bq2415x: command Timer reset
+[  852.320892] bq2415x: command Timer reset
+[  862.560150] bq2415x: command Timer reset
+[  872.800170] bq2415x: command Timer reset
+[  883.040191] bq2415x: command Timer reset
+[  893.280212] bq2415x: command Timer reset
+[  903.520141] bq2415x: command Timer reset
+[  913.760131] bq2415x: command Timer reset
+[  924.000122] bq2415x: command Timer reset
+[  934.242736] bq2415x: command Timer reset
+[  938.210693] omapdrm omapdrm.0: no framedone handler?
+[  944.480010] bq2415x: command Timer reset
+[  954.720214] bq2415x: command Timer reset
+[  964.960296] bq2415x: command Timer reset
+[  975.200103] bq2415x: command Timer reset
+[  985.440124] bq2415x: command Timer reset
+[  995.680084] bq2415x: command Timer reset
+[ 1005.920257] bq2415x: command Timer reset
+[ 1016.161224] bq2415x: command Timer reset
+[ 1026.400543] bq2415x: command Timer reset
+[ 1036.640289] bq2415x: command Timer reset
+[ 1046.880279] bq2415x: command Timer reset
+[ 1057.120208] bq2415x: command Timer reset
+[ 1067.361633] bq2415x: command Timer reset
+[ 1077.600250] bq2415x: command Timer reset
+[ 1087.840118] bq2415x: command Timer reset
+[ 1098.080291] bq2415x: command Timer reset
+[ 1108.320892] bq2415x: command Timer reset
+[ 1118.560180] bq2415x: command Timer reset
+[ 1128.800079] bq2415x: command Timer reset
+[ 1139.040100] bq2415x: command Timer reset
+[ 1149.280151] bq2415x: command Timer reset
+[ 1159.520050] bq2415x: command Timer reset
+[ 1169.760559] bq2415x: command Timer reset
+[ 1180.000122] bq2415x: command Timer reset
+[ 1190.240142] bq2415x: command Timer reset
+[ 1200.480133] bq2415x: command Timer reset
+[ 1210.720153] bq2415x: command Timer reset
+[ 1220.960113] bq2415x: command Timer reset
+[ 1224.630279] omapdrm omapdrm.0: no framedone handler?
+[ 1231.200103] bq2415x: command Timer reset
+[ 1241.440246] bq2415x: command Timer reset
+[ 1251.680236] bq2415x: command Timer reset
+[ 1261.920288] bq2415x: command Timer reset
+[ 1272.160858] bq2415x: command Timer reset
+[ 1282.400268] bq2415x: command Timer reset
+[ 1292.640106] bq2415x: command Timer reset
+[ 1302.880279] bq2415x: command Timer reset
+[ 1313.120300] bq2415x: command Timer reset
+[ 1323.360443] bq2415x: command Timer reset
+[ 1333.600280] bq2415x: command Timer reset
+[ 1343.840240] bq2415x: command Timer reset
+[ 1354.080108] bq2415x: command Timer reset
+[ 1364.320068] bq2415x: command Timer reset
+[ 1374.559997] bq2415x: command Timer reset
+[ 1384.800079] bq2415x: command Timer reset
+[ 1395.040039] bq2415x: command Timer reset
+[ 1405.280181] bq2415x: command Timer reset
+[ 1415.519989] bq2415x: command Timer reset
+[ 1424.025421] omapdrm omapdrm.0: no framedone handler?
+[ 1425.760009] bq2415x: command Timer reset
+[ 1436.000030] bq2415x: command Timer reset
+[ 1446.239990] bq2415x: command Timer reset
+[ 1456.480102] bq2415x: command Timer reset
+[ 1466.720123] bq2415x: command Timer reset
+[ 1476.960144] bq2415x: command Timer reset
+[ 1487.200134] bq2415x: command Timer reset
+[ 1497.440246] bq2415x: command Timer reset
+[ 1505.307861] gprs0: detached
+[ 1507.680145] bq2415x: command Timer reset
+[ 1507.764251] omapdrm omapdrm.0: no framedone handler?
+[ 1516.039245] omapdrm omapdrm.0: no framedone handler?
+[ 1517.920135] bq2415x: command Timer reset
+[ 1525.186676] gprs0: attached
+[ 1528.160156] bq2415x: command Timer reset
+[ 1538.400146] bq2415x: command Timer reset
+[ 1548.640319] bq2415x: command Timer reset
+[ 1558.880065] bq2415x: command Timer reset
+[ 1569.120239] bq2415x: command Timer reset
+[ 1579.360260] bq2415x: command Timer reset
+[ 1579.541870] ------------[ cut here ]------------
+[ 1579.541931] WARNING: CPU: 0 PID: 54 at drivers/hsi/controllers/omap_ssi_port.c:649 ssi_stop_tx+0xac/0xc0
+[ 1579.541931] Modules linked in:
+[ 1579.541961] CPU: 0 PID: 54 Comm: irq/83-SSI PORT Tainted: G        W        4.16.0-rc1-58656-gbd3d269-dirty #504
+[ 1579.541961] Hardware name: Nokia RX-51 board
+[ 1579.541992] [<c010d774>] (unwind_backtrace) from [<c010b598>] (show_stack+0x10/0x14)
+[ 1579.542053] [<c010b598>] (show_stack) from [<c012807c>] (__warn+0xe8/0x110)
+[ 1579.542053] [<c012807c>] (__warn) from [<c01280e0>] (warn_slowpath_null+0x3c/0x48)
+[ 1579.542083] [<c01280e0>] (warn_slowpath_null) from [<c04d6ab0>] (ssi_stop_tx+0xac/0xc0)
+[ 1579.542114] [<c04d6ab0>] (ssi_stop_tx) from [<c04d95f0>] (ssip_swbreak_complete+0xe4/0x134)
+[ 1579.542144] [<c04d95f0>] (ssip_swbreak_complete) from [<c04d5b00>] (ssi_pio_complete+0x120/0x254)
+[ 1579.542175] [<c04d5b00>] (ssi_pio_complete) from [<c04d5cdc>] (ssi_pio_thread+0xa8/0x450)
+[ 1579.542205] [<c04d5cdc>] (ssi_pio_thread) from [<c015eb78>] (irq_thread_fn+0x1c/0x34)
+[ 1579.542236] [<c015eb78>] (irq_thread_fn) from [<c015e900>] (irq_thread+0x108/0x1b0)
+[ 1579.542236] [<c015e900>] (irq_thread) from [<c0141508>] (kthread+0x108/0x144)
+[ 1579.542266] [<c0141508>] (kthread) from [<c01010e8>] (ret_from_fork+0x14/0x2c)
+[ 1579.542266] Exception stack(0xce4ddfb0 to 0xce4ddff8)
+[ 1579.542297] dfa0:                                     00000000 00000000 00000000 00000000
+[ 1579.542297] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[ 1579.542327] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[ 1579.542327] ---[ end trace 8944bafa6491256a ]---
+[ 1579.542358] BUG: scheduling while atomic: irq/83-SSI PORT/54/0x00000200
+[ 1579.542358] Modules linked in:
+[ 1579.542388] CPU: 0 PID: 54 Comm: irq/83-SSI PORT Tainted: G        W        4.16.0-rc1-58656-gbd3d269-dirty #504
+[ 1579.542388] Hardware name: Nokia RX-51 board
+[ 1579.542419] [<c010d774>] (unwind_backtrace) from [<c010b598>] (show_stack+0x10/0x14)
+[ 1579.542449] [<c010b598>] (show_stack) from [<c0148dec>] (__schedule_bug+0x5c/0x7c)
+[ 1579.542480] [<c0148dec>] (__schedule_bug) from [<c07df7c8>] (__schedule+0x588/0x6b8)
+[ 1579.542480] [<c07df7c8>] (__schedule) from [<c07dfa14>] (schedule+0x38/0x9c)
+[ 1579.542510] [<c07dfa14>] (schedule) from [<c015e890>] (irq_thread+0x98/0x1b0)
+[ 1579.542541] [<c015e890>] (irq_thread) from [<c0141508>] (kthread+0x108/0x144)
+[ 1579.542541] [<c0141508>] (kthread) from [<c01010e8>] (ret_from_fork+0x14/0x2c)
+[ 1579.542572] Exception stack(0xce4ddfb0 to 0xce4ddff8)
+[ 1579.542572] dfa0:                                     00000000 00000000 00000000 00000000
+[ 1579.542602] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[ 1579.542602] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[ 1579.627075] BUG: spinlock cpu recursion on CPU#0, swapper/0
+[ 1579.632720]  lock: 0xce493628, .magic: dead4ead, .owner: irq/83-SSI PORT/54, .owner_cpu: 0
+[ 1579.641052] CPU: 0 PID: 0 Comm: swapper Tainted: G        W        4.16.0-rc1-58656-gbd3d269-dirty #504
+[ 1579.650482] Hardware name: Nokia RX-51 board
+[ 1579.654815] [<c010d774>] (unwind_backtrace) from [<c010b598>] (show_stack+0x10/0x14)
+[ 1579.662719] [<c010b598>] (show_stack) from [<c01569b8>] (do_raw_spin_lock+0x7c/0xa0)
+[ 1579.670532] [<c01569b8>] (do_raw_spin_lock) from [<c04d6d10>] (ssi_start_tx+0x18/0x60)
+[ 1579.678497] [<c04d6d10>] (ssi_start_tx) from [<c04d8cc4>] (ssip_pn_xmit+0x1c0/0x214)
+[ 1579.686309] [<c04d8cc4>] (ssip_pn_xmit) from [<c0632eb8>] (dev_hard_start_xmit+0x80/0x118)
+[ 1579.694641] [<c0632eb8>] (dev_hard_start_xmit) from [<c0659244>] (sch_direct_xmit+0x118/0x2b0)
+[ 1579.703308] [<c0659244>] (sch_direct_xmit) from [<c06594fc>] (__qdisc_run+0x120/0x4e8)
+[ 1579.711273] [<c06594fc>] (__qdisc_run) from [<c06346b0>] (__dev_queue_xmit+0x18c/0x710)
+[ 1579.719329] [<c06346b0>] (__dev_queue_xmit) from [<c0758204>] (pn_send+0x148/0x1f4)
+[ 1579.727050] [<c0758204>] (pn_send) from [<c0758c00>] (pn_skb_send+0x13c/0x1a4)
+[ 1579.734313] [<c0758c00>] (pn_skb_send) from [<c07597ac>] (pipe_skb_send+0xb0/0xf4)
+[ 1579.741943] [<c07597ac>] (pipe_skb_send) from [<c075b388>] (gprs_xmit+0x70/0xfc)
+[ 1579.749389] [<c075b388>] (gprs_xmit) from [<c0632eb8>] (dev_hard_start_xmit+0x80/0x118)
+[ 1579.757446] [<c0632eb8>] (dev_hard_start_xmit) from [<c0659244>] (sch_direct_xmit+0x118/0x2b0)
+[ 1579.766113] [<c0659244>] (sch_direct_xmit) from [<c06594fc>] (__qdisc_run+0x120/0x4e8)
+[ 1579.774078] [<c06594fc>] (__qdisc_run) from [<c06346b0>] (__dev_queue_xmit+0x18c/0x710)
+[ 1579.782165] [<c06346b0>] (__dev_queue_xmit) from [<c067db44>] (ip_finish_output2+0x1d4/0x378)
+[ 1579.790740] [<c067db44>] (ip_finish_output2) from [<c067ea7c>] (ip_output+0xf0/0x100)
+[ 1579.798614] [<c067ea7c>] (ip_output) from [<c067aecc>] (ip_forward_finish+0x90/0xa4)
+[ 1579.806427] [<c067aecc>] (ip_forward_finish) from [<c067b300>] (ip_forward+0x420/0x494)
+[ 1579.814483] [<c067b300>] (ip_forward) from [<c06791b0>] (ip_rcv_finish+0x24c/0x3a8)
+[ 1579.822174] [<c06791b0>] (ip_rcv_finish) from [<c0679a6c>] (ip_rcv+0x2f0/0x490)
+[ 1579.829528] [<c0679a6c>] (ip_rcv) from [<c062e0a8>] (__netif_receive_skb_core+0x55c/0x8c0)
+[ 1579.837860] [<c062e0a8>] (__netif_receive_skb_core) from [<c0631104>] (process_backlog+0x6c/0xe0)
+[ 1579.846801] [<c0631104>] (process_backlog) from [<c0633cc0>] (net_rx_action+0x104/0x2b8)
+[ 1579.854949] [<c0633cc0>] (net_rx_action) from [<c0102208>] (__do_softirq+0xc8/0x228)
+[ 1579.862731] [<c0102208>] (__do_softirq) from [<c012b214>] (irq_exit+0xb4/0xd0)
+[ 1579.870025] [<c012b214>] (irq_exit) from [<c015d540>] (__handle_domain_irq+0x54/0xa4)
+[ 1579.877899] [<c015d540>] (__handle_domain_irq) from [<c0101a2c>] (__irq_svc+0x6c/0x90)
+[ 1579.885864] Exception stack(0xc0c01f18 to 0xc0c01f60)
+[ 1579.890930] 1f00:                                                       c9191403 0000016f
+[ 1579.899169] 1f20: c9191403 c0c19e00 c9191403 0000016f c916bff7 0000016f c0c3f278 00000001
+[ 1579.907409] 1f40: 00000000 c0c0bccc 00000011 c0c01f68 c0599788 c0599790 80000013 ffffffff
+[ 1579.915649] [<c0101a2c>] (__irq_svc) from [<c0599790>] (cpuidle_enter_state+0x10c/0x254)
+[ 1579.923797] [<c0599790>] (cpuidle_enter_state) from [<c0150928>] (do_idle+0x130/0x190)
+[ 1579.931762] [<c0150928>] (do_idle) from [<c0150be0>] (cpu_startup_entry+0xc/0x10)
+[ 1579.939300] [<c0150be0>] (cpu_startup_entry) from [<c0b00bf4>] (start_kernel+0x314/0x374)
+[ 1585.289337] omapdrm omapdrm.0: no framedone handler?
+[ 1589.600006] bq2415x: command Timer reset
+[ 1599.840118] bq2415x: command Timer reset
+[ 1610.080932] bq2415x: command Timer reset
+[ 1620.320281] bq2415x: command Timer reset
+[ 1630.561065] bq2415x: command Timer reset
+[ 1640.800292] bq2415x: command Timer reset
+[ 1651.041198] bq2415x: command Timer reset
+[ 1661.280273] bq2415x: command Timer reset
+[ 1671.520294] bq2415x: command Timer reset
+[ 1681.760284] bq2415x: command Timer reset
+[ 1692.000274] bq2415x: command Timer reset
+[ 1702.240905] bq2415x: command Timer reset
+[ 1712.480285] bq2415x: command Timer reset
+[ 1722.720275] bq2415x: command Timer reset
+[ 1732.960235] bq2415x: command Timer reset
+[ 1740.391967] ------------[ cut here ]------------
+[ 1740.399688] WARNING: CPU: 0 PID: 54 at drivers/hsi/controllers/omap_ssi_port.c:649 ssi_stop_tx+0xac/0xc0
+[ 1740.415374] Modules linked in:
+[ 1740.421569] CPU: 0 PID: 54 Comm: irq/83-SSI PORT Tainted: G        W        4.16.0-rc1-58656-gbd3d269-dirty #504
+[ 1740.438415] Hardware name: Nokia RX-51 board
+[ 1740.446136] [<c010d774>] (unwind_backtrace) from [<c010b598>] (show_stack+0x10/0x14)
+[ 1740.457580] [<c010b598>] (show_stack) from [<c012807c>] (__warn+0xe8/0x110)
+[ 1740.468322] [<c012807c>] (__warn) from [<c01280e0>] (warn_slowpath_null+0x3c/0x48)
+[ 1740.479736] [<c01280e0>] (warn_slowpath_null) from [<c04d6ab0>] (ssi_stop_tx+0xac/0xc0)
+[ 1740.491699] [<c04d6ab0>] (ssi_stop_tx) from [<c04d95f0>] (ssip_swbreak_complete+0xe4/0x134)
+[ 1740.504150] [<c04d95f0>] (ssip_swbreak_complete) from [<c04d5b00>] (ssi_pio_complete+0x120/0x254)
+[ 1740.517272] [<c04d5b00>] (ssi_pio_complete) from [<c04d5cdc>] (ssi_pio_thread+0xa8/0x450)
+[ 1740.529785] [<c04d5cdc>] (ssi_pio_thread) from [<c015eb78>] (irq_thread_fn+0x1c/0x34)
+[ 1740.541961] [<c015eb78>] (irq_thread_fn) from [<c015e900>] (irq_thread+0x108/0x1b0)
+[ 1740.554077] [<c015e900>] (irq_thread) from [<c0141508>] (kthread+0x108/0x144)
+[ 1740.565795] [<c0141508>] (kthread) from [<c01010e8>] (ret_from_fork+0x14/0x2c)
+[ 1740.577758] Exception stack(0xce4ddfb0 to 0xce4ddff8)
+[ 1740.587677] dfa0:                                     00000000 00000000 00000000 00000000
+[ 1740.601074] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[ 1740.614562] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[ 1740.626464] ---[ end trace 8944bafa6491256b ]---
+[ 1740.636505] BUG: scheduling while atomic: irq/83-SSI PORT/54/0x00000200
+[ 1740.648803] Modules linked in:
+[ 1740.657562] CPU: 0 PID: 54 Comm: irq/83-SSI PORT Tainted: G        W        4.16.0-rc1-58656-gbd3d269-dirty #504
+[ 1740.679870] Hardware name: Nokia RX-51 board
+[ 1740.690429] [<c010d774>] (unwind_backtrace) from [<c010b598>] (show_stack+0x10/0x14)
+[ 1740.704895] [<c010b598>] (show_stack) from [<c0148dec>] (__schedule_bug+0x5c/0x7c)
+[ 1740.719207] [<c0148dec>] (__schedule_bug) from [<c07df7c8>] (__schedule+0x588/0x6b8)
+[ 1740.733642] [<c07df7c8>] (__schedule) from [<c07dfa14>] (schedule+0x38/0x9c)
+[ 1740.747222] [<c07dfa14>] (schedule) from [<c015e890>] (irq_thread+0x98/0x1b0)
+[ 1740.760955] [<c015e890>] (irq_thread) from [<c0141508>] (kthread+0x108/0x144)
+[ 1740.774658] [<c0141508>] (kthread) from [<c01010e8>] (ret_from_fork+0x14/0x2c)
+[ 1740.788360] Exception stack(0xce4ddfb0 to 0xce4ddff8)
+[ 1740.799896] dfa0:                                     00000000 00000000 00000000 00000000
+[ 1740.814666] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[ 1740.829376] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[ 1743.200286] bq2415x: command Timer reset
+[ 1753.440246] bq2415x: command Timer reset
+[ 1763.680297] bq2415x: command Timer reset
+[ 1773.920288] bq2415x: command Timer reset
+[ 1784.160308] bq2415x: command Timer reset
+[ 1794.400909] bq2415x: command Timer reset
+[ 1804.640136] bq2415x: command Timer reset
+[ 1814.880249] bq2415x: command Timer reset
+[ 1825.120605] bq2415x: command Timer reset
+[ 1835.360290] bq2415x: command Timer reset
+[ 1845.600708] bq2415x: command Timer reset
+[ 1855.840118] bq2415x: command Timer reset
+[ 1866.080291] bq2415x: command Timer reset
+[ 1876.320220] bq2415x: command Timer reset
+[ 1886.560302] bq2415x: command Timer reset
+[ 1896.800323] bq2415x: command Timer reset
+[ 1907.041625] bq2415x: command Timer reset
+[ 1917.280883] bq2415x: command Timer reset
+[ 1927.520294] bq2415x: command Timer reset
+[ 1937.760284] bq2415x: command Timer reset
+[ 1948.000274] bq2415x: command Timer reset
+[ 1958.240264] bq2415x: command Timer reset
+[ 1968.480834] bq2415x: command Timer reset
+[ 1978.720184] bq2415x: command Timer reset
+[ 1988.960266] bq2415x: command Timer reset
+[ 1999.200256] bq2415x: command Timer reset
+[ 2009.440277] bq2415x: command Timer reset
+[ 2019.680297] bq2415x: command Timer reset
+[ 2029.920104] bq2415x: command Timer reset
+[ 2040.161041] bq2415x: command Timer reset
+[ 2050.400299] bq2415x: command Timer reset
+[ 2060.640289] bq2415x: command Timer reset
+[ 2070.880249] bq2415x: command Timer reset
+[ 2081.120269] bq2415x: command Timer reset
+[ 2091.362243] bq2415x: command Timer reset
+[ 2101.600280] bq2415x: command Timer reset
+[ 2111.840240] bq2415x: command Timer reset
+[ 2122.080291] bq2415x: command Timer reset
+[ 2132.320251] bq2415x: command Timer reset
+[ 2142.560913] bq2415x: command Timer reset
+[ 2152.800109] bq2415x: command Timer reset
+[ 2163.040283] bq2415x: command Timer reset
+[ 2173.280273] bq2415x: command Timer reset
+[ 2183.520294] bq2415x: command Timer reset
+[ 2193.760284] bq2415x: command Timer reset
+[ 2204.000152] bq2415x: command Timer reset
+[ 2214.240173] bq2415x: command Timer reset
+[ 2224.480102] bq2415x: command Timer reset
+[ 2234.720153] bq2415x: command Timer reset
+[ 2244.960083] bq2415x: command Timer reset
+[ 2255.200103] bq2415x: command Timer reset
+[ 2265.440124] bq2415x: command Timer reset
+[ 2275.680175] bq2415x: command Timer reset
+[ 2285.920135] bq2415x: command Timer reset
+[ 2287.915344] omapdrm omapdrm.0: no framedone handler?
+[ 2296.160095] bq2415x: command Timer reset
+[ 2306.400299] bq2415x: command Timer reset
+[ 2316.640197] bq2415x: command Timer reset
+[ 2326.880279] bq2415x: command Timer reset
+[ 2337.120086] bq2415x: command Timer reset
+[ 2347.360260] bq2415x: command Timer reset
+[ 2357.600250] bq2415x: command Timer reset
+[ 2367.840301] bq2415x: command Timer reset
+[ 2378.080291] bq2415x: command Timer reset
+[ 2388.320251] bq2415x: command Timer reset
+[ 2398.560150] bq2415x: command Timer reset
+[ 2408.800292] bq2415x: command Timer reset
+[ 2419.040283] bq2415x: command Timer reset
+[ 2429.280273] bq2415x: command Timer reset
+[ 2439.520324] bq2415x: command Timer reset
+[ 2449.760253] bq2415x: command Timer reset
+[ 2460.000305] bq2415x: command Timer reset
+[ 2470.240295] bq2415x: command Timer reset
+[ 2480.480255] bq2415x: command Timer reset
+[ 2490.720275] bq2415x: command Timer reset
+[ 2500.960235] bq2415x: command Timer reset
+[ 2511.200164] bq2415x: command Timer reset
+[ 2521.440277] bq2415x: command Timer reset
+[ 2531.680206] bq2415x: command Timer reset
+[ 2541.920288] bq2415x: command Timer reset
+[ 2552.161437] bq2415x: command Timer reset
+[ 2562.400268] bq2415x: command Timer reset
+[ 2572.640106] bq2415x: command Timer reset
+[ 2582.890106] bq2415x: command Timer reset
+[ 2593.120147] bq2415x: command Timer reset
+[ 2603.360504] bq2415x: command Timer reset
+[ 2613.600189] bq2415x: command Timer reset
+[ 2615.625854] ------------[ cut here ]------------
+[ 2615.632080] WARNING: CPU: 0 PID: 54 at drivers/hsi/controllers/omap_ssi_port.c:649 ssi_stop_tx+0xac/0xc0
+[ 2615.645019] Modules linked in:
+[ 2615.649932] CPU: 0 PID: 54 Comm: irq/83-SSI PORT Tainted: G        W        4.16.0-rc1-58656-gbd3d269-dirty #504
+[ 2615.664642] Hardware name: Nokia RX-51 board
+[ 2615.671417] [<c010d774>] (unwind_backtrace) from [<c010b598>] (show_stack+0x10/0x14)
+[ 2615.682067] [<c010b598>] (show_stack) from [<c012807c>] (__warn+0xe8/0x110)
+[ 2615.692047] [<c012807c>] (__warn) from [<c01280e0>] (warn_slowpath_null+0x3c/0x48)
+[ 2615.702850] [<c01280e0>] (warn_slowpath_null) from [<c04d6ab0>] (ssi_stop_tx+0xac/0xc0)
+[ 2615.714294] [<c04d6ab0>] (ssi_stop_tx) from [<c04d95f0>] (ssip_swbreak_complete+0xe4/0x134)
+[ 2615.726318] [<c04d95f0>] (ssip_swbreak_complete) from [<c04d5b00>] (ssi_pio_complete+0x120/0x254)
+[ 2615.739074] [<c04d5b00>] (ssi_pio_complete) from [<c04d5cdc>] (ssi_pio_thread+0xa8/0x450)
+[ 2615.751342] [<c04d5cdc>] (ssi_pio_thread) from [<c015eb78>] (irq_thread_fn+0x1c/0x34)
+[ 2615.763427] [<c015eb78>] (irq_thread_fn) from [<c015e900>] (irq_thread+0x108/0x1b0)
+[ 2615.775512] [<c015e900>] (irq_thread) from [<c0141508>] (kthread+0x108/0x144)
+[ 2615.787231] [<c0141508>] (kthread) from [<c01010e8>] (ret_from_fork+0x14/0x2c)
+[ 2615.799224] Exception stack(0xce4ddfb0 to 0xce4ddff8)
+[ 2615.809112] dfa0:                                     00000000 00000000 00000000 00000000
+[ 2615.822479] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[ 2615.835968] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[ 2615.847900] ---[ end trace 8944bafa6491256c ]---
+[ 2615.857910] BUG: scheduling while atomic: irq/83-SSI PORT/54/0x00000200
+[ 2615.870178] Modules linked in:
+[ 2615.878875] CPU: 0 PID: 54 Comm: irq/83-SSI PORT Tainted: G        W        4.16.0-rc1-58656-gbd3d269-dirty #504
+[ 2615.901214] Hardware name: Nokia RX-51 board
+[ 2615.911804] [<c010d774>] (unwind_backtrace) from [<c010b598>] (show_stack+0x10/0x14)
+[ 2615.926208] [<c010b598>] (show_stack) from [<c0148dec>] (__schedule_bug+0x5c/0x7c)
+[ 2615.940490] [<c0148dec>] (__schedule_bug) from [<c07df7c8>] (__schedule+0x588/0x6b8)
+[ 2615.954895] [<c07df7c8>] (__schedule) from [<c07dfa14>] (schedule+0x38/0x9c)
+[ 2615.968475] [<c07dfa14>] (schedule) from [<c015e890>] (irq_thread+0x98/0x1b0)
+[ 2615.982177] [<c015e890>] (irq_thread) from [<c0141508>] (kthread+0x108/0x144)
+[ 2615.995849] [<c0141508>] (kthread) from [<c01010e8>] (ret_from_fork+0x14/0x2c)
+[ 2616.009490] Exception stack(0xce4ddfb0 to 0xce4ddff8)
+[ 2616.021026] dfa0:                                     00000000 00000000 00000000 00000000
+[ 2616.035797] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[ 2616.050476] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[ 2623.840301] bq2415x: command Timer reset
+[ 2634.080291] bq2415x: command Timer reset
+[ 2644.320068] bq2415x: command Timer reset
+[ 2654.560211] bq2415x: command Timer reset
+[ 2664.800262] bq2415x: command Timer reset
+[ 2675.040130] bq2415x: command Timer reset
+[ 2685.280303] bq2415x: command Timer reset
+[ 2695.520263] bq2415x: command Timer reset
+[ 2705.760162] bq2415x: command Timer reset
+[ 2716.000152] bq2415x: command Timer reset
+[ 2726.240295] bq2415x: command Timer reset
+[ 2736.480255] bq2415x: command Timer reset
+[ 2746.720184] bq2415x: command Timer reset
+[ 2756.960296] bq2415x: command Timer reset
+[ 2767.203033] bq2415x: command Timer reset
+[ 2777.440246] bq2415x: command Timer reset
+[ 2787.681549] bq2415x: command Timer reset
+[ 2797.920318] bq2415x: command Timer reset
+[ 2808.160278] bq2415x: command Timer reset
+[ 2818.400268] bq2415x: command Timer reset
+[ 2828.640136] bq2415x: command Timer reset
+[ 2838.880279] bq2415x: command Timer reset
+[ 2849.120208] bq2415x: command Timer reset
+[ 2859.360260] bq2415x: command Timer reset
+[ 2869.600219] bq2415x: command Timer reset
+[ 2879.840301] bq2415x: command Timer reset
+[ 2890.080200] bq2415x: command Timer reset
+[ 2900.320190] bq2415x: command Timer reset
+[ 2910.560272] bq2415x: command Timer reset
+[ 2920.800292] bq2415x: command Timer reset
+[ 2931.040283] bq2415x: command Timer reset
+[ 2941.280273] bq2415x: command Timer reset
+[ 2951.520141] bq2415x: command Timer reset
+[ 2961.760192] bq2415x: command Timer reset
+[ 2972.000305] bq2415x: command Timer reset
+[ 2982.240264] bq2415x: command Timer reset
+[ 2992.480255] bq2415x: command Timer reset
+[ 3002.720245] bq2415x: command Timer reset
+[ 3012.960296] bq2415x: command Timer reset
+[ 3023.200286] bq2415x: command Timer reset
+[ 3033.440246] bq2415x: command Timer reset
+[ 3043.680267] bq2415x: command Timer reset
+[ 3053.920288] bq2415x: command Timer reset
+[ 3064.160247] bq2415x: command Timer reset
+[ 3074.400299] bq2415x: command Timer reset
+[ 3084.640289] bq2415x: command Timer reset
+[ 3094.880279] bq2415x: command Timer reset
+[ 3105.120330] bq2415x: command Timer reset
+[ 3115.360260] bq2415x: command Timer reset
+[ 3125.601013] bq2415x: command Timer reset
+[ 3135.840301] bq2415x: command Timer reset
+[ 3146.080749] bq2415x: command Timer reset
+[ 3156.320831] bq2415x: command Timer reset
+[ 3166.560272] bq2415x: command Timer reset
+[ 3176.800201] bq2415x: command Timer reset
+[ 3187.041046] bq2415x: command Timer reset
+[ 3197.280181] bq2415x: command Timer reset
+[ 3207.520294] bq2415x: command Timer reset
+[ 3214.479675] ------------[ cut here ]------------
+[ 3214.485870] WARNING: CPU: 0 PID: 54 at drivers/hsi/controllers/omap_ssi_port.c:649 ssi_stop_tx+0xac/0xc0
+[ 3214.498870] Modules linked in:
+[ 3214.503845] CPU: 0 PID: 54 Comm: irq/83-SSI PORT Tainted: G        W        4.16.0-rc1-58656-gbd3d269-dirty #504
+[ 3214.518554] Hardware name: Nokia RX-51 board
+[ 3214.525360] [<c010d774>] (unwind_backtrace) from [<c010b598>] (show_stack+0x10/0x14)
+[ 3214.536010] [<c010b598>] (show_stack) from [<c012807c>] (__warn+0xe8/0x110)
+[ 3214.546020] [<c012807c>] (__warn) from [<c01280e0>] (warn_slowpath_null+0x3c/0x48)
+[ 3214.556854] [<c01280e0>] (warn_slowpath_null) from [<c04d6ab0>] (ssi_stop_tx+0xac/0xc0)
+[ 3214.568298] [<c04d6ab0>] (ssi_stop_tx) from [<c04d95f0>] (ssip_swbreak_complete+0xe4/0x134)
+[ 3214.580322] [<c04d95f0>] (ssip_swbreak_complete) from [<c04d5b00>] (ssi_pio_complete+0x120/0x254)
+[ 3214.593139] [<c04d5b00>] (ssi_pio_complete) from [<c04d5cdc>] (ssi_pio_thread+0xa8/0x450)
+[ 3214.605407] [<c04d5cdc>] (ssi_pio_thread) from [<c015eb78>] (irq_thread_fn+0x1c/0x34)
+[ 3214.617523] [<c015eb78>] (irq_thread_fn) from [<c015e900>] (irq_thread+0x108/0x1b0)
+[ 3214.629638] [<c015e900>] (irq_thread) from [<c0141508>] (kthread+0x108/0x144)
+[ 3214.641387] [<c0141508>] (kthread) from [<c01010e8>] (ret_from_fork+0x14/0x2c)
+[ 3214.653381] Exception stack(0xce4ddfb0 to 0xce4ddff8)
+[ 3214.663299] dfa0:                                     00000000 00000000 00000000 00000000
+[ 3214.676727] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[ 3214.690216] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[ 3214.702178] ---[ end trace 8944bafa6491256d ]---
+[ 3214.712219] BUG: scheduling while atomic: irq/83-SSI PORT/54/0x00000200
+[ 3214.724517] Modules linked in:
+[ 3214.733245] CPU: 0 PID: 54 Comm: irq/83-SSI PORT Tainted: G        W        4.16.0-rc1-58656-gbd3d269-dirty #504
+[ 3214.755584] Hardware name: Nokia RX-51 board
+[ 3214.766174] [<c010d774>] (unwind_backtrace) from [<c010b598>] (show_stack+0x10/0x14)
+[ 3214.780609] [<c010b598>] (show_stack) from [<c0148dec>] (__schedule_bug+0x5c/0x7c)
+[ 3214.794921] [<c0148dec>] (__schedule_bug) from [<c07df7c8>] (__schedule+0x588/0x6b8)
+[ 3214.809356] [<c07df7c8>] (__schedule) from [<c07dfa14>] (schedule+0x38/0x9c)
+[ 3214.822906] [<c07dfa14>] (schedule) from [<c015e890>] (irq_thread+0x98/0x1b0)
+[ 3214.836639] [<c015e890>] (irq_thread) from [<c0141508>] (kthread+0x108/0x144)
+[ 3214.850311] [<c0141508>] (kthread) from [<c01010e8>] (ret_from_fork+0x14/0x2c)
+[ 3214.863983] Exception stack(0xce4ddfb0 to 0xce4ddff8)
+[ 3214.875518] dfa0:                                     00000000 00000000 00000000 00000000
+[ 3214.890289] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[ 3214.904968] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[ 3217.760253] bq2415x: command Timer reset
+[ 3228.000305] bq2415x: command Timer reset
+[ 3238.240234] bq2415x: command Timer reset
+[ 3248.480133] bq2415x: command Timer reset
+[ 3258.720275] bq2415x: command Timer reset
+[ 3268.960235] bq2415x: command Timer reset
+[ 3279.200286] bq2415x: command Timer reset
+[ 3289.441009] bq2415x: command Timer reset
+[ 3299.680297] bq2415x: command Timer reset
+[ 3309.920257] bq2415x: command Timer reset
+[ 3320.160522] bq2415x: command Timer reset
+[ 3330.400177] bq2415x: command Timer reset
+[ 3340.640289] bq2415x: command Timer reset
+[ 3350.880279] bq2415x: command Timer reset
+[ 3361.120361] bq2415x: command Timer reset
+[ 3371.360290] bq2415x: command Timer reset
+[ 3381.600311] bq2415x: command Timer reset
+[ 3391.840515] bq2415x: command Timer reset
+[ 3402.080902] bq2415x: command Timer reset
+[ 3412.320220] bq2415x: command Timer reset
+[ 3422.560302] bq2415x: command Timer reset
+[ 3432.800262] bq2415x: command Timer reset
+[ 3443.040283] bq2415x: command Timer reset
+[ 3453.280273] bq2415x: command Timer reset
+[ 3463.520294] bq2415x: command Timer reset
+[ 3473.760284] bq2415x: command Timer reset
+[ 3484.000274] bq2415x: command Timer reset
+[ 3494.240142] bq2415x: command Timer reset
+[ 3504.480255] bq2415x: command Timer reset
+[ 3514.720123] bq2415x: command Timer reset
+[ 3524.960266] bq2415x: command Timer reset
+[ 3535.200256] bq2415x: command Timer reset
+[ 3545.440216] bq2415x: command Timer reset
+[ 3555.680297] bq2415x: command Timer reset
+[ 3565.920288] bq2415x: command Timer reset
+[ 3576.161346] bq2415x: command Timer reset
+[ 3586.400238] bq2415x: command Timer reset
+[ 3596.640258] bq2415x: command Timer reset
+[ 3606.880279] bq2415x: command Timer reset
+[ 3617.120239] bq2415x: command Timer reset
+[ 3627.360198] bq2415x: command Timer reset
+[ 3637.600799] bq2415x: command Timer reset
+[ 3647.840270] bq2415x: command Timer reset
+[ 3658.080291] bq2415x: command Timer reset
+[ 3668.321014] bq2415x: command Timer reset
+[ 3678.561706] bq2415x: command Timer reset
+[ 3688.800262] bq2415x: command Timer reset
+[ 3699.040130] bq2415x: command Timer reset
+[ 3709.280242] bq2415x: command Timer reset
+[ 3719.520294] bq2415x: command Timer reset
+[ 3721.014434] ------------[ cut here ]------------
+[ 3721.020629] WARNING: CPU: 0 PID: 54 at drivers/hsi/controllers/omap_ssi_port.c:649 ssi_stop_tx+0xac/0xc0
+[ 3721.033599] Modules linked in:
+[ 3721.038543] CPU: 0 PID: 54 Comm: irq/83-SSI PORT Tainted: G        W        4.16.0-rc1-58656-gbd3d269-dirty #504
+[ 3721.053283] Hardware name: Nokia RX-51 board
+[ 3721.060119] [<c010d774>] (unwind_backtrace) from [<c010b598>] (show_stack+0x10/0x14)
+[ 3721.070739] [<c010b598>] (show_stack) from [<c012807c>] (__warn+0xe8/0x110)
+[ 3721.080749] [<c012807c>] (__warn) from [<c01280e0>] (warn_slowpath_null+0x3c/0x48)
+[ 3721.091552] [<c01280e0>] (warn_slowpath_null) from [<c04d6ab0>] (ssi_stop_tx+0xac/0xc0)
+[ 3721.103027] [<c04d6ab0>] (ssi_stop_tx) from [<c04d95f0>] (ssip_swbreak_complete+0xe4/0x134)
+[ 3721.115081] [<c04d95f0>] (ssip_swbreak_complete) from [<c04d5b00>] (ssi_pio_complete+0x120/0x254)
+[ 3721.127868] [<c04d5b00>] (ssi_pio_complete) from [<c04d5cdc>] (ssi_pio_thread+0xa8/0x450)
+[ 3721.140167] [<c04d5cdc>] (ssi_pio_thread) from [<c015eb78>] (irq_thread_fn+0x1c/0x34)
+[ 3721.152252] [<c015eb78>] (irq_thread_fn) from [<c015e900>] (irq_thread+0x108/0x1b0)
+[ 3721.164367] [<c015e900>] (irq_thread) from [<c0141508>] (kthread+0x108/0x144)
+[ 3721.176086] [<c0141508>] (kthread) from [<c01010e8>] (ret_from_fork+0x14/0x2c)
+[ 3721.188079] Exception stack(0xce4ddfb0 to 0xce4ddff8)
+[ 3721.197967] dfa0:                                     00000000 00000000 00000000 00000000
+[ 3721.211364] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[ 3721.224853] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[ 3721.236816] ---[ end trace 8944bafa6491256e ]---
+[ 3721.246826] BUG: scheduling while atomic: irq/83-SSI PORT/54/0x00000200
+[ 3721.259124] Modules linked in:
+[ 3721.267852] CPU: 0 PID: 54 Comm: irq/83-SSI PORT Tainted: G        W        4.16.0-rc1-58656-gbd3d269-dirty #504
+[ 3721.290161] Hardware name: Nokia RX-51 board
+[ 3721.300720] [<c010d774>] (unwind_backtrace) from [<c010b598>] (show_stack+0x10/0x14)
+[ 3721.315124] [<c010b598>] (show_stack) from [<c0148dec>] (__schedule_bug+0x5c/0x7c)
+[ 3721.329437] [<c0148dec>] (__schedule_bug) from [<c07df7c8>] (__schedule+0x588/0x6b8)
+[ 3721.343872] [<c07df7c8>] (__schedule) from [<c07dfa14>] (schedule+0x38/0x9c)
+[ 3721.357421] [<c07dfa14>] (schedule) from [<c015e890>] (irq_thread+0x98/0x1b0)
+[ 3721.371154] [<c015e890>] (irq_thread) from [<c0141508>] (kthread+0x108/0x144)
+[ 3721.384826] [<c0141508>] (kthread) from [<c01010e8>] (ret_from_fork+0x14/0x2c)
+[ 3721.398498] Exception stack(0xce4ddfb0 to 0xce4ddff8)
+[ 3721.410034] dfa0:                                     00000000 00000000 00000000 00000000
+[ 3721.424804] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[ 3721.439514] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[ 3729.760192] bq2415x: command Timer reset
+[ 3740.000152] bq2415x: command Timer reset
+[ 3750.240081] bq2415x: command Timer reset
+[ 3760.480163] bq2415x: command Timer reset
+[ 3770.720275] bq2415x: command Timer reset
+[ 3780.960266] bq2415x: command Timer reset
+[ 3791.200256] bq2415x: command Timer reset
+[ 3801.440277] bq2415x: command Timer reset
+[ 3811.680297] bq2415x: command Timer reset
+[ 3821.920196] bq2415x: command Timer reset
+[ 3832.160247] bq2415x: command Timer reset
+[ 3842.400299] bq2415x: command Timer reset
+[ 3852.640289] bq2415x: command Timer reset
+[ 3862.880065] bq2415x: command Timer reset
+[ 3873.120300] bq2415x: command Timer reset
+[ 3883.360137] bq2415x: command Timer reset
+[ 3893.600280] bq2415x: command Timer reset
+[ 3903.840301] bq2415x: command Timer reset
+[ 3914.080291] bq2415x: command Timer reset
+[ 3924.320220] bq2415x: command Timer reset
+[ 3934.560302] bq2415x: command Timer reset
+[ 3944.800140] bq2415x: command Timer reset
+[ 3955.040252] bq2415x: command Timer reset
+[ 3965.280212] bq2415x: command Timer reset
+[ 3975.520111] bq2415x: command Timer reset
+[ 3985.760223] bq2415x: command Timer reset
+[ 3996.000274] bq2415x: command Timer reset
+[ 4006.240295] bq2415x: command Timer reset
+[ 4016.480895] bq2415x: command Timer reset
+[ 4026.720275] bq2415x: command Timer reset
+[ 4036.960266] bq2415x: command Timer reset
+[ 4047.200958] bq2415x: command Timer reset
+[ 4057.440277] bq2415x: command Timer reset
+[ 4067.680297] bq2415x: command Timer reset
+[ 4077.920257] bq2415x: command Timer reset
+[ 4088.160247] bq2415x: command Timer reset
+[ 4094.108764] ------------[ cut here ]------------
+[ 4094.114959] WARNING: CPU: 0 PID: 54 at drivers/hsi/controllers/omap_ssi_port.c:649 ssi_stop_tx+0xac/0xc0
+[ 4094.127929] Modules linked in:
+[ 4094.132904] CPU: 0 PID: 54 Comm: irq/83-SSI PORT Tainted: G        W        4.16.0-rc1-58656-gbd3d269-dirty #504
+[ 4094.147644] Hardware name: Nokia RX-51 board
+[ 4094.154449] [<c010d774>] (unwind_backtrace) from [<c010b598>] (show_stack+0x10/0x14)
+[ 4094.165069] [<c010b598>] (show_stack) from [<c012807c>] (__warn+0xe8/0x110)
+[ 4094.175079] [<c012807c>] (__warn) from [<c01280e0>] (warn_slowpath_null+0x3c/0x48)
+[ 4094.185882] [<c01280e0>] (warn_slowpath_null) from [<c04d6ab0>] (ssi_stop_tx+0xac/0xc0)
+[ 4094.197296] [<c04d6ab0>] (ssi_stop_tx) from [<c04d95f0>] (ssip_swbreak_complete+0xe4/0x134)
+[ 4094.209320] [<c04d95f0>] (ssip_swbreak_complete) from [<c04d5b00>] (ssi_pio_complete+0x120/0x254)
+[ 4094.222106] [<c04d5b00>] (ssi_pio_complete) from [<c04d5cdc>] (ssi_pio_thread+0xa8/0x450)
+[ 4094.234374] [<c04d5cdc>] (ssi_pio_thread) from [<c015eb78>] (irq_thread_fn+0x1c/0x34)
+[ 4094.246429] [<c015eb78>] (irq_thread_fn) from [<c015e900>] (irq_thread+0x108/0x1b0)
+[ 4094.258514] [<c015e900>] (irq_thread) from [<c0141508>] (kthread+0x108/0x144)
+[ 4094.270202] [<c0141508>] (kthread) from [<c01010e8>] (ret_from_fork+0x14/0x2c)
+[ 4094.282165] Exception stack(0xce4ddfb0 to 0xce4ddff8)
+[ 4094.292053] dfa0:                                     00000000 00000000 00000000 00000000
+[ 4094.305419] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[ 4094.318878] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[ 4094.330932] ---[ end trace 8944bafa6491256f ]---
+[ 4094.340942] BUG: scheduling while atomic: irq/83-SSI PORT/54/0x00000200
+[ 4094.353210] Modules linked in:
+[ 4094.361968] CPU: 0 PID: 54 Comm: irq/83-SSI PORT Tainted: G        W        4.16.0-rc1-58656-gbd3d269-dirty #504
+[ 4094.384246] Hardware name: Nokia RX-51 board
+[ 4094.394805] [<c010d774>] (unwind_backtrace) from [<c010b598>] (show_stack+0x10/0x14)
+[ 4094.409240] [<c010b598>] (show_stack) from [<c0148dec>] (__schedule_bug+0x5c/0x7c)
+[ 4094.423553] [<c0148dec>] (__schedule_bug) from [<c07df7c8>] (__schedule+0x588/0x6b8)
+[ 4094.437957] [<c07df7c8>] (__schedule) from [<c07dfa14>] (schedule+0x38/0x9c)
+[ 4094.451538] [<c07dfa14>] (schedule) from [<c015e890>] (irq_thread+0x98/0x1b0)
+[ 4094.465240] [<c015e890>] (irq_thread) from [<c0141508>] (kthread+0x108/0x144)
+[ 4094.478942] [<c0141508>] (kthread) from [<c01010e8>] (ret_from_fork+0x14/0x2c)
+[ 4094.492614] Exception stack(0xce4ddfb0 to 0xce4ddff8)
+[ 4094.504150] dfa0:                                     00000000 00000000 00000000 00000000
+[ 4094.518920] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[ 4094.533630] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[ 4098.400268] bq2415x: command Timer reset
+[ 4108.640258] bq2415x: command Timer reset
+[ 4110.149414] ------------[ cut here ]------------
+[ 4110.160369] WARNING: CPU: 0 PID: 54 at drivers/hsi/controllers/omap_ssi_port.c:649 ssi_stop_tx+0xac/0xc0
+[ 4110.181884] Modules linked in:
+[ 4110.190856] CPU: 0 PID: 54 Comm: irq/83-SSI PORT Tainted: G        W        4.16.0-rc1-58656-gbd3d269-dirty #504
+[ 4110.213165] Hardware name: Nokia RX-51 board
+[ 4110.223449] [<c010d774>] (unwind_backtrace) from [<c010b598>] (show_stack+0x10/0x14)
+[ 4110.237365] [<c010b598>] (show_stack) from [<c012807c>] (__warn+0xe8/0x110)
+[ 4110.250549] [<c012807c>] (__warn) from [<c01280e0>] (warn_slowpath_null+0x3c/0x48)
+[ 4110.264495] [<c01280e0>] (warn_slowpath_null) from [<c04d6ab0>] (ssi_stop_tx+0xac/0xc0)
+[ 4110.278869] [<c04d6ab0>] (ssi_stop_tx) from [<c04d95f0>] (ssip_swbreak_complete+0xe4/0x134)
+[ 4110.293640] [<c04d95f0>] (ssip_swbreak_complete) from [<c04d5b00>] (ssi_pio_complete+0x120/0x254)
+[ 4110.309020] [<c04d5b00>] (ssi_pio_complete) from [<c04d5cdc>] (ssi_pio_thread+0xa8/0x450)
+[ 4110.323638] [<c04d5cdc>] (ssi_pio_thread) from [<c015eb78>] (irq_thread_fn+0x1c/0x34)
+[ 4110.337860] [<c015eb78>] (irq_thread_fn) from [<c015e900>] (irq_thread+0x108/0x1b0)
+[ 4110.351959] [<c015e900>] (irq_thread) from [<c0141508>] (kthread+0x108/0x144)
+[ 4110.365478] [<c0141508>] (kthread) from [<c01010e8>] (ret_from_fork+0x14/0x2c)
+[ 4110.379058] Exception stack(0xce4ddfb0 to 0xce4ddff8)
+[ 4110.390380] dfa0:                                     00000000 00000000 00000000 00000000
+[ 4110.404998] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[ 4110.419586] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[ 4110.432495] ---[ end trace 8944bafa64912570 ]---
+[ 4110.443298] BUG: scheduling while atomic: irq/83-SSI PORT/54/0x00000200
+[ 4110.456176] Modules linked in:
+[ 4110.465270] CPU: 0 PID: 54 Comm: irq/83-SSI PORT Tainted: G        W        4.16.0-rc1-58656-gbd3d269-dirty #504
+[ 4110.488006] Hardware name: Nokia RX-51 board
+[ 4110.498596] [<c010d774>] (unwind_backtrace) from [<c010b598>] (show_stack+0x10/0x14)
+[ 4110.513031] [<c010b598>] (show_stack) from [<c0148dec>] (__schedule_bug+0x5c/0x7c)
+[ 4110.527343] [<c0148dec>] (__schedule_bug) from [<c07df7c8>] (__schedule+0x588/0x6b8)
+[ 4110.541778] [<c07df7c8>] (__schedule) from [<c07dfa14>] (schedule+0x38/0x9c)
+[ 4110.555358] [<c07dfa14>] (schedule) from [<c015e890>] (irq_thread+0x98/0x1b0)
+[ 4110.569091] [<c015e890>] (irq_thread) from [<c0141508>] (kthread+0x108/0x144)
+[ 4110.582794] [<c0141508>] (kthread) from [<c01010e8>] (ret_from_fork+0x14/0x2c)
+[ 4110.596466] Exception stack(0xce4ddfb0 to 0xce4ddff8)
+[ 4110.608001] dfa0:                                     00000000 00000000 00000000 00000000
+[ 4110.622802] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[ 4110.637481] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[ 4111.488830] ------------[ cut here ]------------
+[ 4111.500122] WARNING: CPU: 0 PID: 54 at drivers/hsi/controllers/omap_ssi_port.c:649 ssi_stop_tx+0xac/0xc0
+[ 4111.522216] Modules linked in:
+[ 4111.531494] CPU: 0 PID: 54 Comm: irq/83-SSI PORT Tainted: G        W        4.16.0-rc1-58656-gbd3d269-dirty #504
+[ 4111.554199] Hardware name: Nokia RX-51 board
+[ 4111.564758] [<c010d774>] (unwind_backtrace) from [<c010b598>] (show_stack+0x10/0x14)
+[ 4111.578979] [<c010b598>] (show_stack) from [<c012807c>] (__warn+0xe8/0x110)
+[ 4111.592376] [<c012807c>] (__warn) from [<c01280e0>] (warn_slowpath_null+0x3c/0x48)
+[ 4111.606384] [<c01280e0>] (warn_slowpath_null) from [<c04d6ab0>] (ssi_stop_tx+0xac/0xc0)
+[ 4111.620880] [<c04d6ab0>] (ssi_stop_tx) from [<c04d95f0>] (ssip_swbreak_complete+0xe4/0x134)
+[ 4111.635925] [<c04d95f0>] (ssip_swbreak_complete) from [<c04d5b00>] (ssi_pio_complete+0x120/0x254)
+[ 4111.651519] [<c04d5b00>] (ssi_pio_complete) from [<c04d5cdc>] (ssi_pio_thread+0xa8/0x450)
+[ 4111.666473] [<c04d5cdc>] (ssi_pio_thread) from [<c015eb78>] (irq_thread_fn+0x1c/0x34)
+[ 4111.680999] [<c015eb78>] (irq_thread_fn) from [<c015e900>] (irq_thread+0x108/0x1b0)
+[ 4111.695343] [<c015e900>] (irq_thread) from [<c0141508>] (kthread+0x108/0x144)
+[ 4111.709075] [<c0141508>] (kthread) from [<c01010e8>] (ret_from_fork+0x14/0x2c)
+[ 4111.722930] Exception stack(0xce4ddfb0 to 0xce4ddff8)
+[ 4111.734527] dfa0:                                     00000000 00000000 00000000 00000000
+[ 4111.749389] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[ 4111.764221] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[ 4111.777282] ---[ end trace 8944bafa64912571 ]---
+[ 4111.788330] BUG: scheduling while atomic: irq/83-SSI PORT/54/0x00000200
+[ 4111.801452] Modules linked in:
+[ 4111.810882] CPU: 0 PID: 54 Comm: irq/83-SSI PORT Tainted: G        W        4.16.0-rc1-58656-gbd3d269-dirty #504
+[ 4111.833923] Hardware name: Nokia RX-51 board
+[ 4111.844635] [<c010d774>] (unwind_backtrace) from [<c010b598>] (show_stack+0x10/0x14)
+[ 4111.859161] [<c010b598>] (show_stack) from [<c0148dec>] (__schedule_bug+0x5c/0x7c)
+[ 4111.873504] [<c0148dec>] (__schedule_bug) from [<c07df7c8>] (__schedule+0x588/0x6b8)
+[ 4111.887939] [<c07df7c8>] (__schedule) from [<c07dfa14>] (schedule+0x38/0x9c)
+[ 4111.901550] [<c07dfa14>] (schedule) from [<c015e890>] (irq_thread+0x98/0x1b0)
+[ 4111.915283] [<c015e890>] (irq_thread) from [<c0141508>] (kthread+0x108/0x144)
+[ 4111.928985] [<c0141508>] (kthread) from [<c01010e8>] (ret_from_fork+0x14/0x2c)
+[ 4111.942687] Exception stack(0xce4ddfb0 to 0xce4ddff8)
+[ 4111.954223] dfa0:                                     00000000 00000000 00000000 00000000
+[ 4111.969024] dfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[ 4111.983734] dfe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[ 4118.880279] bq2415x: command Timer reset
+[ 4129.120269] bq2415x: command Timer reset
+[ 4139.360260] bq2415x: command Timer reset
+[ 4149.600372] bq2415x: command Timer reset
+[ 4159.840148] bq2415x: command Timer reset
+[ 4170.081024] bq2415x: command Timer reset
+[ 4180.320251] bq2415x: command Timer reset
+[ 4190.560333] bq2415x: command Timer reset
+[ 4200.800170] bq2415x: command Timer reset
+[ 4211.040130] bq2415x: command Timer reset
+[ 4221.281433] bq2415x: command Timer reset
+[ 4231.520324] bq2415x: command Timer reset
+[ 4241.760284] bq2415x: command Timer reset
+[ 4252.000091] bq2415x: command Timer reset
+[ 4262.240112] bq2415x: command Timer reset
+[ 4272.480224] bq2415x: command Timer reset
+[ 4282.720092] bq2415x: command Timer reset
+[ 4292.960723] bq2415x: command Timer reset
+[ 4303.200195] bq2415x: command Timer reset
+[ 4313.440185] bq2415x: command Timer reset
+[ 4323.680236] bq2415x: command Timer reset
