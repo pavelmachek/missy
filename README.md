@@ -10,5 +10,6 @@ That can be important information: when bringing up piece of
 known-good config, debug problems with bootloader, and then proceed to
 newer kernel versions.
 
-Oh and why Missy? 
-ttp://www.dailymail.co.uk/news/article-2389714/Happy-birthday-old-bird-Worlds-oldest-peng
+Oh and why Missy?
+
+http://www.dailymail.co.uk/news/article-2389714/Happy-birthday-old-bird-Worlds-oldest-penguin-turns-36-thats-108-human-terms.html
