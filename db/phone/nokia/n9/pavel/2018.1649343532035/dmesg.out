@@ -1,0 +1,616 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.16.0-rc3-59397-g51f8d6f-dirty (pavel@duo) (gcc version 4.7.2 (GCC)) #540 Fri Mar 2 12:31:49 CET 2018
+[    0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: Nokia N9
+[    0.000000] Memory policy: Data cache writeback
+[    0.000000] cma: Reserved 16 MiB at 0xbe800000
+[    0.000000] On node 0 totalpages: 261632
+[    0.000000]   Normal zone: 1728 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 196608 pages, LIFO batch:31
+[    0.000000]   HighMem zone: 65024 pages, LIFO batch:15
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] OMAP3630/DM3730 ES1.2 (l2cache iva sgx neon isp 192mhz_clk)
+[    0.000000] random: fast init done
+[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 259904
+[    0.000000] Kernel command line:   init=/sbin/preinit root=/dev/mmcblk0p2 rootwait rootflags=errors=remount-ro rootfstype=ext4 rw mtdoops.mtddev=log mtdoops.record_size=65536 console=tty0 mtdparts=omap2-onenand:1024k(bootloader),2816k@1024k(config),16384k@3840k(kernel),2048k@20224k(log),469248k@22272k(var),32768k@491520k(moslo) bootreason=usb bootmode=normal nolo=2.3.6 product_name=RM-696 dbi-type=V5JW dbi-vendor=1 dbi-size=73 dbi-uid=011042534C0010005008 imei=357923040983076 g_nokia.iSerialNumber=357923040983076 serialnumber=CCM942851 omap_sec.kci=958 gpio=cmt_apeslpx:93:sysfs:output,cmt_en:23:sysfs:init_active:output,cmt_rst_rq:88:sysfs:init_active:output,sleep_ind:92:sysfs:output omapdss.def_disp_enabled=1 vhash=285e93eebfdded180a3ffdf0a42c0d09b0d8ce8a product_model=N9 hwid=1507 root=/dev/nfs nfsroot=192.168.1.6:/srv/nfs/n900 g_ether.host_addr=00:00:00:00:23:42 ip=192.168.1.8::192.168.1.6:255.255.255.192::usb0: no-omap-wd no-ext-wd init=/b rw
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Memory: 1007796K/1046528K available (7168K kernel code, 450K rwdata, 1960K rodata, 1024K init, 302K bss, 22348K reserved, 16384K cma-reserved, 243712K highmem)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xf0800000 - 0xff800000   ( 240 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xf0000000   ( 768 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]       .text : 0x(ptrval) - 0x(ptrval)   (8160 kB)
+[    0.000000]       .init : 0x(ptrval) - 0x(ptrval)   (1024 kB)
+[    0.000000]       .data : 0x(ptrval) - 0x(ptrval)   ( 450 kB)
+[    0.000000]        .bss : 0x(ptrval) - 0x(ptrval)   ( 303 kB)
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] IRQ: Found an INTC at 0x(ptrval) (revision 4.0) with 96 interrupts
+[    0.000000] Clocking rate (Crystal/Core/MPU): 38.4/390/600 MHz
+[    0.000000] OMAP clockevent source: timer1 at 32768 Hz
+[    0.000000] clocksource: 32k_counter: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 58327039986419 ns
+[    0.000000] sched_clock: 32 bits at 32kHz, resolution 30517ns, wraps every 65535999984741ns
+[    0.000030] OMAP clocksource: 32k_counter at 32768 Hz
+[    0.001007] Console: colour dummy device 80x30
+[    0.001617] console [tty0] enabled
+[    0.001739] Calibrating delay loop... 597.60 BogoMIPS (lpj=2988032)
+[    0.117736] pid_max: default: 32768 minimum: 301
+[    0.117950] Security Framework initialized
+[    0.118072] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.118103] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.119049] CPU: Testing write buffer coherency: ok
+[    0.119903] Setting up static identity map for 0x80100000 - 0x80100078
+[    0.120880] devtmpfs: initialized
+[    0.141784] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+[    0.142120] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.142181] futex hash table entries: 256 (order: 0, 7168 bytes)
+[    0.143524] pinctrl core: initialized pinctrl subsystem
+[    0.144744] NET: Registered protocol family 16
+[    0.148590] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.166870] omap_hwmod: mcbsp2_sidetone using broken dt data from mcbsp
+[    0.167449] omap_hwmod: mcbsp3_sidetone using broken dt data from mcbsp
+[    0.198852] audit: initializing netlink subsys (disabled)
+[    0.200897] Reprogramming SDRC clock to 390400000 Hz
+[    0.206207] audit: type=2000 audit(0.200:1): state=initialized audit_enabled=0 res=1
+[    0.206451] OMAP GPIO hardware version 2.5
+[    0.222076] omap-gpmc 6e000000.gpmc: GPMC revision 5.0
+[    0.222137] gpmc_mem_init: disabling cs 0 mapped at 0x0-0x1000000
+[    0.228973] No ATAGs?
+[    0.229003] hw-breakpoint: debug architecture 0x4 unsupported.
+[    0.230224] omap4_sram_init:Unable to allocate sram needed to handle errata I688
+[    0.230255] omap4_sram_init:Unable to get sram pool needed to handle errata I688
+[    0.230773] Reserving DMA channels 0 and 1 for HS ROM code
+[    0.230804] OMAP DMA hardware revision 5.0
+[    0.249755] omap-dma-engine 48056000.dma-controller: OMAP DMA engine driver (LinkedList1/2/3 supported)
+[    0.256011] omap-iommu 480bd400.mmu: 480bd400.mmu registered
+[    0.256530] iommu: Adding device 480bc000.isp to group 0
+[    0.258789] usbcore: registered new interface driver usbfs
+[    0.258880] usbcore: registered new interface driver hub
+[    0.258941] usbcore: registered new device driver usb
+[    0.260192] omap_i2c 48070000.i2c: bus 0 rev4.4 at 2900 kHz
+[    0.261901] omap_i2c 48072000.i2c: bus 1 rev4.4 at 400 kHz
+[    0.262939] omap_i2c 48060000.i2c: bus 2 rev4.4 at 400 kHz
+[    0.263275] media: Linux media interface: v0.10
+[    0.263366] Linux video capture interface: v2.00
+[    0.264007] omap-mailbox 48094000.mailbox: omap mailbox rev 0x40
+[    0.264465] Advanced Linux Sound Architecture Driver Initialized.
+[    0.265045] Bluetooth: Core ver 2.22
+[    0.265136] NET: Registered protocol family 31
+[    0.265167] Bluetooth: HCI device and connection manager initialized
+[    0.265197] Bluetooth: HCI socket layer initialized
+[    0.265228] Bluetooth: L2CAP socket layer initialized
+[    0.265258] Bluetooth: SCO socket layer initialized
+[    0.266510] clocksource: Switched to clocksource 32k_counter
+[    0.277862] NET: Registered protocol family 2
+[    0.278778] tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 12288 bytes)
+[    0.278869] TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.279022] TCP bind hash table entries: 8192 (order: 5, 163840 bytes)
+[    0.279327] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.279479] UDP hash table entries: 512 (order: 2, 24576 bytes)
+[    0.279541] UDP-Lite hash table entries: 512 (order: 2, 24576 bytes)
+[    0.279785] NET: Registered protocol family 1
+[    0.280517] RPC: Registered named UNIX socket transport module.
+[    0.280548] RPC: Registered udp transport module.
+[    0.280578] RPC: Registered tcp transport module.
+[    0.280609] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.286468] Initialise system trusted keyrings
+[    0.287017] workingset: timestamp_bits=14 max_order=18 bucket_order=4
+[    0.288055] NFS: Registering the id_resolver key type
+[    0.288146] Key type id_resolver registered
+[    0.288177] Key type id_legacy registered
+[    0.291961] jitterentropy: Initialization failed with host not compliant with requirements: 2
+[    0.292297] Key type asymmetric registered
+[    0.292327] Asymmetric key parser 'x509' registered
+[    0.292419] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 248)
+[    0.292480] io scheduler noop registered
+[    0.292480] io scheduler deadline registered
+[    0.292572] io scheduler cfq registered (default)
+[    0.292602] io scheduler mq-deadline registered
+[    0.296569] pinctrl-single 48002030.pinmux: 284 pins, size 568
+[    0.297210] pinctrl-single 48002a00.pinmux: 46 pins, size 92
+[    0.297912] pinctrl-single 480025a0.pinmux: 46 pins, size 92
+[    0.301239] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.303802] 4806a000.serial: ttyS0 at MMIO 0x4806a000 (irq = 88, base_baud = 3000000) is a 8250
+[    0.304931] 4806c000.serial: ttyS1 at MMIO 0x4806c000 (irq = 89, base_baud = 3000000) is a 8250
+[    0.305175] serial serial0: tty port ttyS1 registered
+[    0.305755] 49020000.serial: ttyS2 at MMIO 0x49020000 (irq = 90, base_baud = 3000000) is a 8250
+[    0.307037] 49042000.serial: ttyS3 at MMIO 0x49042000 (irq = 96, base_baud = 3000000) is a 8250
+[    0.310424] omapdss_dss 48050000.dss: master bind failed: -517
+[    0.315155] apds990x 1-0039: Failed to get supply 'Vdd': -517
+[    0.315216] apds990x 1-0039: Cannot get regulators
+[    0.315795] lis3lv02d_i2c 2-001d: Failed to get supply 'Vdd': -517
+[    0.317199] Skipping twl internal clock init and using bootloader value (unknown osc rate)
+[    0.359527] twl 0-0048: PIH (irq 23) chaining IRQs 146..154
+[    0.359649] twl 0-0048: power (irq 151) chaining IRQs 154..161
+[    0.385040] vmmc2: Bringing 2800000uV into 3000000-3000000uV
+[    0.392944] twl4030_gpio twl4030-gpio: gpio (irq 146) chaining IRQs 162..179
+[    0.467803] twl4030_usb 48070000.i2c:twl@48:twl4030-usb: Initialized TWL4030 USB module
+[    0.478698] omap_ssi 48058000.ssi-controller: ssi controller 0 initialized (1 ports)!
+[    0.480407] omap_ssi_port 4805a000.ssi-port: ssi port 0 successfully initialized
+[    0.482360] SSI protocol aka McSAAB added
+[    0.482421] CMT speech driver added
+[    0.482574] HSI/SSI char device loaded
+[    0.482940] libphy: Fixed MDIO Bus: probed
+[    0.483947] musb-hdrc musb-hdrc.0.auto: HS USB OTG: revision 0x40, sysconfig 0x08, sysstatus 0x1, intrfsel 0x1, simenable  0x0
+[    0.485656]  musb-hdrc.0.auto: registering UDC driver [g_ether]
+[    0.485748] using random self ethernet address
+[    0.485778] using random host ethernet address
+[    0.485809] using host ethernet address: 00:00:00:00:23:42
+[    0.486389] usb0: HOST MAC 00:00:00:00:23:42
+[    0.486480] usb0: MAC ca:ba:26:b7:b8:52
+[    0.486541] using random self ethernet address
+[    0.486572] using random host ethernet address
+[    0.486694] g_ether gadget: adding config #2 'RNDIS'/bf098cc8
+[    0.486724] rndis_register: configNr = 0
+[    0.486724] g_ether gadget: adding 'rndis'/76745cca to config 'RNDIS'/bf098cc8
+[    0.486785] rndis_set_param_medium: 0 0
+[    0.486785] g_ether gadget: RNDIS: dual speed IN/ep1in OUT/ep1out NOTIFY/ep2in
+[    0.486785] g_ether gadget: cfg 2/bf098cc8 speeds: high full
+[    0.486816] g_ether gadget:   interface 0 = rndis/76745cca
+[    0.486816] g_ether gadget:   interface 1 = rndis/76745cca
+[    0.486816] g_ether gadget: adding config #1 'CDC Ethernet (ECM)'/7d4e6329
+[    0.486846] g_ether gadget: adding 'cdc_ethernet'/fff9e603 to config 'CDC Ethernet (ECM)'/7d4e6329
+[    0.486846] g_ether gadget: CDC Ethernet: dual speed IN/ep1in OUT/ep1out NOTIFY/ep2in
+[    0.486877] g_ether gadget: cfg 1/7d4e6329 speeds: high full
+[    0.486877] g_ether gadget:   interface 0 = cdc_ethernet/fff9e603
+[    0.486877] g_ether gadget:   interface 1 = cdc_ethernet/fff9e603
+[    0.486907] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+[    0.486938] g_ether gadget: g_ether ready
+[    0.486999] musb-hdrc musb-hdrc.0.auto: VBUS Connect
+[    0.487091] mousedev: PS/2 mouse device common for all mice
+[    0.487792] input: TWL4030 Keypad as /devices/platform/68000000.ocp/48070000.i2c/i2c-0/0-0048/48070000.i2c:twl@48:keypad/input/input0
+[    0.792938] twl_rtc 48070000.i2c:twl@48:rtc: Enabling TWL-RTC
+[    0.797515] twl_rtc 48070000.i2c:twl@48:rtc: rtc core: registered 48070000.i2c:twl@48:rtc as rtc0
+[    0.798675] i2c /dev entries driver
+[    0.799926] smiapp 1-0010: lanes 2
+[    0.799957] smiapp 1-0010: nvm 1024, clk 9600000, mode 2
+[    0.799957] smiapp 1-0010: freq 0: 199200000
+[    0.799987] smiapp 1-0010: freq 1: 210000000
+[    0.799987] smiapp 1-0010: freq 2: 499200000
+[    0.800262] smiapp 1-0010: could not get clock (-517)
+[    0.801544] omap3isp 480bc000.isp: Revision 15.0 found
+[    0.801971] omap-iommu 480bd400.mmu: 480bd400.mmu: version 1.1
+[    0.802337] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP CCP2 was not initialized!
+[    0.802825] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP CSI2a was not initialized!
+[    0.803100] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP CCDC was not initialized!
+[    0.803344] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP preview was not initialized!
+[    0.803771] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP resizer was not initialized!
+[    0.804168] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP AEWB was not initialized!
+[    0.804229] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP AF was not initialized!
+[    0.804290] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP histogram was not initialized!
+[    0.805053] Driver for 1-wire Dallas network protocol.
+[    0.816711] omap_hdq 480b2000.1w: OMAP HDQ Hardware Rev 0.5. Driver in Interrupt mode
+[    0.827178] atmel_mxt_ts 1-004b: Warning: Info CRC error - device=0x000000 file=0xFF341C
+[    0.827423] atmel_mxt_ts 1-004b: Config CRC error, calculated=DEEC81, file=5EE81A
+[    0.877227] atmel_mxt_ts 1-004b: Resetting device
+[    1.006530] atmel_mxt_ts 1-004b: Config successfully updated
+[    1.011138] atmel_mxt_ts 1-004b: Touchscreen size X479Y853
+[    1.011413] input: Atmel maXTouch Touchscreen as /devices/platform/68000000.ocp/48072000.i2c/i2c-1/1-004b/input/input1
+[    1.011871] atmel_mxt_ts 1-004b: Family: 128 Variant: 1 Firmware V1.6.AB Objects: 17
+[    1.022277] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[    1.022338] g_ether gadget: init ecm
+[    1.022338] g_ether gadget: notify connect false
+[    1.023345] g_ether gadget: activate ecm
+[    1.023376] usb0: qlen 10
+[    1.023406] g_ether gadget: ecm_close
+[    1.023620] g_ether gadget: packet filter 0c
+[    1.023620] g_ether gadget: ecm req21.43 v000c i0000 l0
+[    1.028198] (NULL device *): hwmon: 'bq27521-0' is not a valid name attribute, please fix
+[    1.028381] bq27xxx-battery 1-0055: support enabled
+[    1.028503] w1_master_driver w1_bus_master1: Attaching one wire slave 01.000000000000 crc 3d
+[    1.028564] w1_master_driver w1_bus_master1: Family 1 for 01.000000000000.3d is not registered.
+[    1.029815] verified chip rev. 14
+[    1.037048] Detecting chip: 6
+[    1.040100] bq2415x-charger 1-006b: automode supported, waiting for events
+[    1.040222] bq2415x: Timer reset
+[    1.040252] bq2415x: command Timer reset
+[    1.040527] bq2415x-charger 1-006b: driver registered
+[    1.041320] ti-soc-thermal 48002524.bandgap: This OMAP thermal sensor is unreliable. You've been warned
+[    1.041381] ti-soc-thermal 48002524.bandgap: Non-trimmed BGAP, Temp not accurate
+[    1.042510] omap_wdt: OMAP Watchdog Timer Rev 0x31: initial timeout 60 sec
+[    1.043548] Bluetooth: HCI UART driver ver 2.3
+[    1.046691] Getting online
+[    1.046752] Getting online
+[    1.046813] Getting online
+[    1.046874] Getting online
+[    1.071350] as3645a 1-0030: Chip vendor: NSC, National Semiconductor (3) Version: 12
+[    1.100128] lp5521 1-0032: unexpected data in register (expected 0xaf got 0x32)
+[    1.120544] lp5521 1-0032: internal clock used
+[    1.121826] lp5521 1-0032: lp5521 programmable led chip found
+[    1.121887] Led 0 name (null)
+[    1.122497] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.122711] usbcore: registered new interface driver usbhid
+[    1.122711] usbhid: USB HID core driver
+[    1.124572] twl4030_madc 48070000.i2c:twl@48:madc: 48070000.i2c:twl@48:madc supply vusb3v1 not found, using dummy regulator
+[    1.126129] ak8975 2-000f: mounting matrix not found: using identity...
+[    1.126190] ak8975 2-000f: 2-000f supply vdd not found, using dummy regulator
+[    1.126312] ak8975 2-000f: 2-000f supply vid not found, using dummy regulator
+[    1.136108] g_ether gadget: packet filter 0e
+[    1.136108] g_ether gadget: ecm req21.43 v000e i0000 l0
+[    1.154296] g_ether gadget: notify connect false
+[    1.161804] tlv320dac33-codec 1-0019: 1-0019 supply avdd not found, using dummy regulator
+[    1.161956] tlv320dac33-codec 1-0019: 1-0019 supply dvdd not found, using dummy regulator
+[    1.162078] tlv320dac33-codec 1-0019: 1-0019 supply iovdd not found, using dummy regulator
+[    1.186309] g_ether gadget: notify speed 425984000
+[    1.220794] n9-audio n9-audio: twl4030-hifi <-> 49024000.mcbsp mapping ok
+[    1.223815] input: dfl61-twl4030 Jack as /devices/platform/n9-audio/sound/card0/input2
+[    1.226318] n9-audio n9-audio: tlv320dac33-hifi <-> 49022000.mcbsp mapping ok
+[    1.227722] n9-audio n9-audio: ASoC: CODEC DAI wl1273-fm not registered
+[    1.227783] n9-audio n9-audio: failed to register wl1273 card
+[    1.232360] oprofile: hardware counters not available
+[    1.232421] oprofile: using timer interrupt.
+[    1.233703] Initializing XFRM netlink socket
+[    1.233764] NET: Registered protocol family 17
+[    1.233825] NET: Registered protocol family 15
+[    1.234069] Bluetooth: RFCOMM TTY layer initialized
+[    1.234100] Bluetooth: RFCOMM socket layer initialized
+[    1.234161] Bluetooth: RFCOMM ver 1.11
+[    1.234191] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    1.234222] Bluetooth: BNEP filters: protocol multicast
+[    1.234252] Bluetooth: BNEP socket layer initialized
+[    1.234283] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    1.234313] Bluetooth: HIDP socket layer initialized
+[    1.234405] NET: Registered protocol family 35
+[    1.234558] Key type dns_resolver registered
+[    1.235534] omap2_set_init_voltage: unable to find boot up OPP for vdd_mpu_iva
+[    1.235565] omap2_set_init_voltage: unable to set vdd_mpu_iva
+[    1.235595] omap2_set_init_voltage: unable to find boot up OPP for vdd_core
+[    1.235626] omap2_set_init_voltage: unable to set vdd_core
+[    1.240447] ThumbEE CPU extension supported.
+[    1.240509] Registering SWP/SWPB emulation handler
+[    1.240539] SmartReflex Class3 initialized
+[    1.241455] Loading compiled-in X.509 certificates
+[    1.257965] DSS: OMAP DSS rev 2.0
+[    1.258300] omapdss_dss 48050000.dss: bound 48050400.dispc (ops dispc_component_ops)
+[    1.270935] omapdss_dss 48050000.dss: bound 4804fc00.encoder (ops dsi_component_ops)
+[    1.323242] lis3lv02d: 8 bits sensor found
+[    1.387145] input: ST LIS3LV02DL Accelerometer as /devices/platform/lis3lv02d/input/input3
+[    1.393096] nokia-modem n9-modem: Registered Nokia HSI modem
+[    1.393432] smiapp 1-0010: lanes 2
+[    1.393432] smiapp 1-0010: nvm 1024, clk 9600000, mode 2
+[    1.393463] smiapp 1-0010: freq 0: 199200000
+[    1.393463] smiapp 1-0010: freq 1: 210000000
+[    1.393463] smiapp 1-0010: freq 2: 499200000
+[    1.408630] smiapp 1-0010: module 0x10-0x4242
+[    1.408660] smiapp 1-0010: module revision 0x02-0x04 date 01-07-13
+[    1.408660] smiapp 1-0010: sensor 0x0b-0x0125
+[    1.408660] smiapp 1-0010: sensor revision 0x04 firmware version 0x02
+[    1.408660] smiapp 1-0010: smia version 10 smiapp version 08
+[    1.408691] smiapp 1-0010: no quirks for this module; let's hope it's fully compliant
+[    1.408752] smiapp 1-0010: the sensor is called smiapp, ident 10424202
+[    1.409210] smiapp 1-0010: 0x00020080 "analogue_gain_capability" = 0, 0x0
+[    1.409637] smiapp 1-0010: 0x00020084 "analogue_gain_code_min" = 0, 0x0
+[    1.410095] smiapp 1-0010: 0x00020086 "analogue_gain_code_max" = 224, 0xe0
+[    1.410522] smiapp 1-0010: 0x00010802 "ths_zero_min" = 0, 0x0
+[    1.410949] smiapp 1-0010: 0x00010804 "tclk_trail_min" = 0, 0x0
+[    1.411376] smiapp 1-0010: 0x00021000 "integration_time_capability" = 0, 0x0
+[    1.411834] smiapp 1-0010: 0x00021004 "coarse_integration_time_min" = 0, 0x0
+[    1.412261] smiapp 1-0010: 0x00021006 "coarse_integration_time_max_margin" = 4, 0x4
+[    1.412719] smiapp 1-0010: 0x00021008 "fine_integration_time_min" = 0, 0x0
+[    1.413146] smiapp 1-0010: 0x0002100a "fine_integration_time_max_margin" = 0, 0x0
+[    1.413604] smiapp 1-0010: 0x00021080 "digital_gain_capability" = 1, 0x1
+[    1.414031] smiapp 1-0010: 0x00021084 "digital_gain_min" = 256, 0x100
+[    1.414459] smiapp 1-0010: 0x00021086 "digital_gain_max" = 4095, 0xfff
+[    1.415069] smiapp 1-0010: 0x01041100 "min_ext_clk_freq_hz" = 6000000, 0x5b8d80
+[    1.415649] smiapp 1-0010: 0x01041104 "max_ext_clk_freq_hz" = 27000000, 0x19bfcc0
+[    1.416107] smiapp 1-0010: 0x00021108 "min_pre_pll_clk_div" = 1, 0x1
+[    1.416717] smiapp 1-0010: 0x0002110a "max_pre_pll_clk_div" = 4, 0x4
+[    1.417236] smiapp 1-0010: 0x0104110c "min_pll_ip_freq_hz" = 6000000, 0x5b8d80
+[    1.417816] smiapp 1-0010: 0x01041110 "max_pll_ip_freq_hz" = 27000000, 0x19bfcc0
+[    1.418304] smiapp 1-0010: 0x00021114 "min_pll_multiplier" = 16, 0x10
+[    1.418762] smiapp 1-0010: 0x00021116 "max_pll_multiplier" = 366, 0x16e
+[    1.419342] smiapp 1-0010: 0x01041118 "min_pll_op_freq_hz" = 768000000, 0x2dc6c000
+[    1.419952] smiapp 1-0010: 0x0104111c "max_pll_op_freq_hz" = 2000000000, 0x77359400
+[    1.420440] smiapp 1-0010: 0x00021120 "min_vt_sys_clk_div" = 1, 0x1
+[    1.420898] smiapp 1-0010: 0x00021122 "max_vt_sys_clk_div" = 2, 0x2
+[    1.421478] smiapp 1-0010: 0x01041124 "min_vt_sys_clk_freq_hz" = 384000000, 0x16e36000
+[    1.422088] smiapp 1-0010: 0x01041128 "max_vt_sys_clk_freq_hz" = 2000000000, 0x77359400
+[    1.422698] smiapp 1-0010: 0x0104112c "min_vt_pix_clk_freq_hz" = 38400001, 0x249f001
+[    1.423187] smiapp 1-0010: 0x01041130 "max_vt_pix_clk_freq_hz" = 299200012, 0x11d56e0c
+[    1.423675] smiapp 1-0010: 0x00021134 "min_vt_pix_clk_div" = 4, 0x4
+[    1.424133] smiapp 1-0010: 0x00021136 "max_vt_pix_clk_div" = 10, 0xa
+[    1.424591] smiapp 1-0010: 0x00021140 "min_frame_length_lines" = 174, 0xae
+[    1.425079] smiapp 1-0010: 0x00021142 "max_frame_length_lines" = 65535, 0xffff
+[    1.425537] smiapp 1-0010: 0x00021144 "min_line_length_pck" = 3812, 0xee4
+[    1.425994] smiapp 1-0010: 0x00021146 "max_line_length_pck" = 32752, 0x7ff0
+[    1.426452] smiapp 1-0010: 0x00021148 "min_line_blanking_pck" = 240, 0xf0
+[    1.426879] smiapp 1-0010: 0x0002114a "min_frame_blanking_lines" = 26, 0x1a
+[    1.427307] smiapp 1-0010: 0x0001114c "min_line_length_pck_step_size" = 2, 0x2
+[    1.427764] smiapp 1-0010: 0x00021160 "min_op_sys_clk_div" = 1, 0x1
+[    1.428192] smiapp 1-0010: 0x00021162 "max_op_sys_clk_div" = 2, 0x2
+[    1.428771] smiapp 1-0010: 0x01041164 "min_op_sys_clk_freq_hz" = 384000000, 0x16e36000
+[    1.429382] smiapp 1-0010: 0x01041168 "max_op_sys_clk_freq_hz" = 2000000000, 0x77359400
+[    1.429931] smiapp 1-0010: 0x0002116c "min_op_pix_clk_div" = 6, 0x6
+[    1.430450] smiapp 1-0010: 0x0002116e "max_op_pix_clk_div" = 10, 0xa
+[    1.431060] smiapp 1-0010: 0x01041170 "min_op_pix_clk_freq_hz" = 38400001, 0x249f001
+[    1.431671] smiapp 1-0010: 0x01041174 "max_op_pix_clk_freq_hz" = 299200012, 0x11d56e0c
+[    1.432159] smiapp 1-0010: 0x00021180 "x_addr_min" = 0, 0x0
+[    1.432586] smiapp 1-0010: 0x00021182 "y_addr_min" = 0, 0x0
+[    1.433044] smiapp 1-0010: 0x00021184 "x_addr_max" = 3571, 0xdf3
+[    1.433532] smiapp 1-0010: 0x00021186 "y_addr_max" = 2463, 0x99f
+[    1.433990] smiapp 1-0010: 0x00021188 "min_x_output_size" = 256, 0x100
+[    1.434448] smiapp 1-0010: 0x0002118a "min_y_output_size" = 144, 0x90
+[    1.434906] smiapp 1-0010: 0x0002118c "max_x_output_size" = 3572, 0xdf4
+[    1.435333] smiapp 1-0010: 0x0002118e "max_y_output_size" = 2464, 0x9a0
+[    1.435791] smiapp 1-0010: 0x000211c0 "min_even_inc" = 1, 0x1
+[    1.436279] smiapp 1-0010: 0x000211c2 "max_even_inc" = 1, 0x1
+[    1.436737] smiapp 1-0010: 0x000211c4 "min_odd_inc" = 1, 0x1
+[    1.437164] smiapp 1-0010: 0x000211c6 "max_odd_inc" = 3, 0x3
+[    1.437591] smiapp 1-0010: 0x00021200 "scaling_capability" = 2, 0x2
+[    1.438018] smiapp 1-0010: 0x00021204 "scaler_m_min" = 16, 0x10
+[    1.438446] smiapp 1-0010: 0x00021206 "scaler_m_max" = 266, 0x10a
+[    1.438873] smiapp 1-0010: 0x00021208 "scaler_n_min" = 16, 0x10
+[    1.439300] smiapp 1-0010: 0x0002120a "scaler_n_max" = 16, 0x10
+[    1.439727] smiapp 1-0010: 0x0002120c "spatial_sampling_capability" = 3, 0x3
+[    1.440155] smiapp 1-0010: 0x0001120e "digital_crop_capability" = 1, 0x1
+[    1.440582] smiapp 1-0010: 0x00021300 "compression_capability" = 1, 0x1
+[    1.440979] smiapp 1-0010: 0x00011502 "fifo_support_capability" = 2, 0x2
+[    1.441406] smiapp 1-0010: 0x00011600 "dphy_ctrl_capability" = 30, 0x1e
+[    1.441802] smiapp 1-0010: 0x00011601 "csi_lane_mode_capability" = 2, 0x2
+[    1.442230] smiapp 1-0010: 0x00011602 "csi_signalling_mode_capability" = 6, 0x6
+[    1.442626] smiapp 1-0010: 0x00011603 "fast_standby_capability" = 1, 0x1
+[    1.443054] smiapp 1-0010: 0x00011604 "cci_address_control_capability" = 1, 0x1
+[    1.443634] smiapp 1-0010: 0x00041608 "max_per_lane_bitrate_1_lane_mode_mbps" = 0, 0x0
+[    1.444213] smiapp 1-0010: 0x0004160c "max_per_lane_bitrate_2_lane_mode_mbps" = 65536000, 0x3e80000
+[    1.444793] smiapp 1-0010: 0x00041610 "max_per_lane_bitrate_3_lane_mode_mbps" = 0, 0x0
+[    1.445373] smiapp 1-0010: 0x00041614 "max_per_lane_bitrate_4_lane_mode_mbps" = 0, 0x0
+[    1.445800] smiapp 1-0010: 0x00011618 "temp_sensor_capability" = 0, 0x0
+[    1.446228] smiapp 1-0010: 0x00021700 "min_frame_length_lines_bin" = 166, 0xa6
+[    1.446716] smiapp 1-0010: 0x00021702 "max_frame_length_lines_bin" = 65535, 0xffff
+[    1.447448] smiapp 1-0010: 0x00021704 "min_line_length_pck_bin" = 3812, 0xee4
+[    1.447875] smiapp 1-0010: 0x00021706 "max_line_length_pck_bin" = 32752, 0x7ff0
+[    1.448333] smiapp 1-0010: 0x00021708 "min_line_blanking_pck_bin" = 240, 0xf0
+[    1.448760] smiapp 1-0010: 0x0002170a "fine_integration_time_min_bin" = 0, 0x0
+[    1.449218] smiapp 1-0010: 0x0002170c "fine_integration_time_max_margin_bin" = 0, 0x0
+[    1.449645] smiapp 1-0010: 0x00011710 "binning_capability" = 1, 0x1
+[    1.450073] smiapp 1-0010: 0x00011711 "binning_weighting_capability" = 5, 0x5
+[    1.450469] smiapp 1-0010: 0x00011800 "data_transfer_if_capability" = 9, 0x9
+[    1.450897] smiapp 1-0010: 0x00011900 "shading_correction_capability" = 0, 0x0
+[    1.451324] smiapp 1-0010: 0x00011901 "green_imbalance_capability" = 1, 0x1
+[    1.451751] smiapp 1-0010: 0x00011902 "black_level_capability" = 1, 0x1
+[    1.452178] smiapp 1-0010: 0x00011903 "module_specific_correction_capability" = 0, 0x0
+[    1.452606] smiapp 1-0010: 0x00021904 "defect_correction_capability" = 97, 0x61
+[    1.453063] smiapp 1-0010: 0x00021906 "defect_correction_capability_2" = 0, 0x0
+[    1.453491] smiapp 1-0010: 0x00011980 "edof_capability" = 0, 0x0
+[    1.453918] smiapp 1-0010: 0x00011987 "colour_feedback_capability" = 0, 0x0
+[    1.454315] smiapp 1-0010: 0x000119c0 "estimation_mode_capability" = 0, 0x0
+[    1.454742] smiapp 1-0010: 0x000119c1 "estimation_zone_capability" = 0, 0x0
+[    1.455200] smiapp 1-0010: 0x00021a00 "capability_trdy_min" = 4, 0x4
+[    1.455627] smiapp 1-0010: 0x00011a02 "flash_mode_capability" = 3, 0x3
+[    1.456054] smiapp 1-0010: 0x00011b04 "actuator_capability" = 4, 0x4
+[    1.456634] smiapp 1-0010: 0x00011c00 "bracketing_lut_capability_1" = 3, 0x3
+[    1.457122] smiapp 1-0010: 0x00011c01 "bracketing_lut_capability_2" = 0, 0x0
+[    1.457611] smiapp 1-0010: 0x00020088 "analogue_gain_code_step" = 1, 0x1
+[    1.458404] smiapp 1-0010: format_model_type 2 byte
+[    1.458892] smiapp 1-0010: 0x00020042 visible pixels: 3280 columns (pixelcode 5)
+[    1.459350] smiapp 1-0010: 0x00020044 embedded pixels: 4 rows (pixelcode 1)
+[    1.459838] smiapp 1-0010: 0x00020046 visible pixels: 2464 rows (pixelcode 5)
+[    1.459838] smiapp 1-0010: embedded data from lines 0 to 4
+[    1.459838] smiapp 1-0010: image data starts at line 4
+[    1.460662] smiapp 1-0010: binning 2x2
+[    1.461029] smiapp 1-0010: binning 4x4
+[    1.461090] smiapp 1-0010: profile 2
+[    1.461547] smiapp 1-0010: data_format_model_type 1
+[    1.462005] smiapp 1-0010: pixel order 1 (RGGB)
+[    1.462463] smiapp 1-0010: 0: bpp 8, compressed 8
+[    1.462493] smiapp 1-0010: jolly good! 20
+[    1.462951] smiapp 1-0010: 1: bpp 10, compressed 6
+[    1.463409] smiapp 1-0010: 2: bpp 10, compressed 8
+[    1.463439] smiapp 1-0010: jolly good! 16
+[    1.463897] smiapp 1-0010: 3: bpp 10, compressed 10
+[    1.463928] smiapp 1-0010: jolly good! 12
+[    1.464385] smiapp 1-0010: 4: bpp 0, compressed 0
+[    1.464843] smiapp 1-0010: 5: bpp 0, compressed 0
+[    1.465301] smiapp 1-0010: 6: bpp 0, compressed 0
+[    1.465759] smiapp 1-0010: 7: bpp 0, compressed 0
+[    1.465789] smiapp 1-0010: link freq 199200000 Hz, bpp 10 ok
+[    1.465820] smiapp 1-0010: link freq 210000000 Hz, bpp 10 ok
+[    1.465820] smiapp 1-0010: link freq 499200000 Hz, bpp 10 ok
+[    1.465850] smiapp 1-0010: link freq 199200000 Hz, bpp 8 ok
+[    1.465850] smiapp 1-0010: link freq 210000000 Hz, bpp 8 ok
+[    1.465881] smiapp 1-0010: link freq 499200000 Hz, bpp 8 ok
+[    1.465881] smiapp 1-0010: link freq 199200000 Hz, bpp 8 ok
+[    1.465881] smiapp 1-0010: link freq 210000000 Hz, bpp 8 ok
+[    1.465911] smiapp 1-0010: link freq 499200000 Hz, bpp 8 ok
+[    1.465911] smiapp 1-0010: flip 0
+[    1.465911] smiapp 1-0010: new pixel order RGGB
+[    1.466735] smiapp 1-0010: 0x00021700 "min_frame_length_lines_bin" = 166, 0xa6
+[    1.467163] smiapp 1-0010: 0x00021702 "max_frame_length_lines_bin" = 65535, 0xffff
+[    1.467620] smiapp 1-0010: 0x00021704 "min_line_length_pck_bin" = 3812, 0xee4
+[    1.468048] smiapp 1-0010: 0x00021706 "max_line_length_pck_bin" = 32752, 0x7ff0
+[    1.468505] smiapp 1-0010: 0x00021708 "min_line_blanking_pck_bin" = 240, 0xf0
+[    1.468933] smiapp 1-0010: 0x0002170a "fine_integration_time_min_bin" = 0, 0x0
+[    1.469390] smiapp 1-0010: 0x0002170c "fine_integration_time_max_margin_bin" = 0, 0x0
+[    1.470153] smiapp 1-0010: vblank		26
+[    1.470153] smiapp 1-0010: hblank		240
+[    1.470153] smiapp 1-0010: real timeperframe	100/839
+[    1.470458] omap3isp 480bc000.isp: Entity type for entity smiapp scaler 1-0010 was not initialized!
+[    1.470520] omap3isp 480bc000.isp: Entity type for entity smiapp binner 1-0010 was not initialized!
+[    1.531829] n9-audio n9-audio: twl4030-hifi <-> 49024000.mcbsp mapping ok
+[    1.534698] input: dfl61-twl4030 Jack as /devices/platform/n9-audio/sound/card0/input4
+[    1.538116] n9-audio n9-audio: tlv320dac33-hifi <-> 49022000.mcbsp mapping ok
+[    1.539276] n9-audio n9-audio: ASoC: CODEC DAI wl1273-fm not registered
+[    1.539306] n9-audio n9-audio: failed to register wl1273 card
+[    1.543914] omapdrm omapdrm.0: DMM not available, disable DMM support
+[    1.544342] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    1.544372] [drm] No driver support for vblank timestamp query.
+[    1.566497] mmc0: new high speed MMC card at address 0001
+[    1.567657] mmcblk0: mmc0:0001 HYNIX  14.8 GiB 
+[    1.568389] mmcblk0boot0: mmc0:0001 HYNIX  partition 1 4.00 MiB
+[    1.569152] mmcblk0boot1: mmc0:0001 HYNIX  partition 2 4.00 MiB
+[    1.569396] mmcblk0rpmb: mmc0:0001 HYNIX  partition 3 4.00 MiB, chardev (246:0)
+[    1.572082]  mmcblk0: p1 p2 p3 p4
+[    2.686950] panel-dsi-cm 4804fc00.encoder:display: panel revision fe.91.96
+[    2.722045] Console: switching to colour frame buffer device 60x54
+[    2.744262] omapdrm omapdrm.0: fb0: omapdrm frame buffer device
+[    2.745330] [drm] Initialized omapdrm 1.0.0 20110917 for omapdrm.0 on minor 0
+[    2.805969] n9-audio n9-audio: twl4030-hifi <-> 49024000.mcbsp mapping ok
+[    2.809112] input: dfl61-twl4030 Jack as /devices/platform/n9-audio/sound/card0/input5
+[    2.826782] n9-audio n9-audio: tlv320dac33-hifi <-> 49022000.mcbsp mapping ok
+[    2.842315] n9-audio n9-audio: ASoC: CODEC DAI wl1273-fm not registered
+[    2.856628] n9-audio n9-audio: failed to register wl1273 card
+[    2.879882] twl_rtc 48070000.i2c:twl@48:rtc: setting system clock to 2018-03-02 13:27:08 UTC (1519997228)
+[    2.894439] sr_init: No PMIC hook to init smartreflex
+[    2.902069] smartreflex smartreflex.0: omap_sr_probe: SmartReflex driver initialized
+[    2.916839] smartreflex smartreflex.1: omap_sr_probe: SmartReflex driver initialized
+[    2.932312] usb0: eth_open
+[    2.932342] usb0: eth_start
+[    2.932403] g_ether gadget: ecm_open
+[    2.932403] g_ether gadget: notify connect true
+[    2.946563] g_ether gadget: notify speed 425984000
+[    2.956878] IP-Config: Complete:
+[    2.964111]      device=usb0, hwaddr=ca:ba:26:b7:b8:52, ipaddr=192.168.1.8, mask=255.255.255.192, gw=192.168.1.6
+[    2.978454]      host=192.168.1.8, domain=, nis-domain=(none)
+[    2.992645]      bootserver=255.255.255.255, rootserver=192.168.1.6, rootpath=
+[    3.007232] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    3.028564] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    3.043609] VBAT: disabling
+[    3.050903] VWLAN: disabling
+[    3.058074] pbias_mmc_omap2430: disabling
+[    3.065948] n9-audio n9-audio: twl4030-hifi <-> 49024000.mcbsp mapping ok
+[    3.083099] input: dfl61-twl4030 Jack as /devices/platform/n9-audio/sound/card0/input6
+[    3.098754] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    3.113372] cfg80211: failed to load regulatory.db
+[    3.122009] vmmc1: disabling
+[    3.130218] n9-audio n9-audio: tlv320dac33-hifi <-> 49022000.mcbsp mapping ok
+[    3.146148] ALSA device list:
+[    3.153442]   #0: dfl61-twl4030
+[    3.162475] n9-audio n9-audio: wl1273-fm <-> 49026000.mcbsp mapping ok
+[    4.211364] g_ether gadget: packet filter 0e
+[    4.211364] g_ether gadget: ecm req21.43 v000e i0000 l0
+[    5.115264] VFS: Mounted root (nfs filesystem) on device 0:16.
+[    5.170898] devtmpfs: mounted
+[    5.179962] Freeing unused kernel memory: 1024K
+[    6.411560] watchdog: watchdog0: watchdog did not stop!
+[    6.421508] watchdog: watchdog1: watchdog did not stop!
+[   10.163635] random: crng init done
+[   10.512908] udevd[196]: starting version 175
+[   11.308319] Getting online
+[   11.308441] Getting online
+[   11.366729] bq2415x: command Timer reset
+[   12.276672] Getting online
+[   12.277526] Getting online
+[   12.285858] Getting online
+[   12.300415] Getting online
+[   12.352905] Getting online
+[   12.400024] Getting online
+[   16.666015] watchdog: watchdog0: watchdog did not stop!
+[   16.725341] watchdog: watchdog1: watchdog did not stop!
+[   21.606811] bq2415x: command Timer reset
+[   26.787292] watchdog: watchdog0: watchdog did not stop!
+[   26.795623] watchdog: watchdog1: watchdog did not stop!
+[   31.846740] bq2415x: command Timer reset
+[   36.819274] watchdog: watchdog0: watchdog did not stop!
+[   36.835632] watchdog: watchdog1: watchdog did not stop!
+[   41.977416] Getting online
+[   42.086761] bq2415x: command Timer reset
+[   46.913421] watchdog: watchdog0: watchdog did not stop!
+[   46.984436] watchdog: watchdog1: watchdog did not stop!
+[   52.326873] bq2415x: command Timer reset
+[   57.180847] watchdog: watchdog0: watchdog did not stop!
+[   57.230895] watchdog: watchdog1: watchdog did not stop!
+[   62.566711] bq2415x: command Timer reset
+[   67.280395] watchdog: watchdog0: watchdog did not stop!
+[   67.281036] watchdog: watchdog1: watchdog did not stop!
+[   72.806915] bq2415x: command Timer reset
+[   77.295043] watchdog: watchdog0: watchdog did not stop!
+[   77.295715] watchdog: watchdog1: watchdog did not stop!
+[   83.046874] bq2415x: command Timer reset
+[   87.307983] watchdog: watchdog0: watchdog did not stop!
+[   87.308685] watchdog: watchdog1: watchdog did not stop!
+[   93.286895] bq2415x: command Timer reset
+[   97.321441] watchdog: watchdog0: watchdog did not stop!
+[   97.322143] watchdog: watchdog1: watchdog did not stop!
+[  103.526916] bq2415x: command Timer reset
+[  107.336151] watchdog: watchdog0: watchdog did not stop!
+[  107.337402] watchdog: watchdog1: watchdog did not stop!
+[  113.766937] bq2415x: command Timer reset
+[  117.349517] watchdog: watchdog0: watchdog did not stop!
+[  117.350189] watchdog: watchdog1: watchdog did not stop!
+[  124.006927] bq2415x: command Timer reset
+[  127.362365] watchdog: watchdog0: watchdog did not stop!
+[  127.363067] watchdog: watchdog1: watchdog did not stop!
+[  134.246887] bq2415x: command Timer reset
+[  137.376892] watchdog: watchdog0: watchdog did not stop!
+[  137.377593] watchdog: watchdog1: watchdog did not stop!
+[  144.486907] bq2415x: command Timer reset
+[  147.390869] watchdog: watchdog0: watchdog did not stop!
+[  147.391571] watchdog: watchdog1: watchdog did not stop!
+[  154.726898] bq2415x: command Timer reset
+[  157.403137] watchdog: watchdog0: watchdog did not stop!
+[  157.403808] watchdog: watchdog1: watchdog did not stop!
+[  164.966918] bq2415x: command Timer reset
+[  167.417297] watchdog: watchdog0: watchdog did not stop!
+[  167.417968] watchdog: watchdog1: watchdog did not stop!
+[  175.206939] bq2415x: command Timer reset
+[  177.432250] watchdog: watchdog0: watchdog did not stop!
+[  177.432922] watchdog: watchdog1: watchdog did not stop!
+[  185.446960] bq2415x: command Timer reset
+[  187.444885] watchdog: watchdog0: watchdog did not stop!
+[  187.445556] watchdog: watchdog1: watchdog did not stop!
+[  195.686920] bq2415x: command Timer reset
+[  197.459838] watchdog: watchdog0: watchdog did not stop!
+[  197.460510] watchdog: watchdog1: watchdog did not stop!
+[  205.926910] bq2415x: command Timer reset
+[  207.472686] watchdog: watchdog0: watchdog did not stop!
+[  207.473358] watchdog: watchdog1: watchdog did not stop!
+[  216.166870] bq2415x: command Timer reset
+[  217.485748] watchdog: watchdog0: watchdog did not stop!
+[  217.486450] watchdog: watchdog1: watchdog did not stop!
+[  226.406860] bq2415x: command Timer reset
+[  227.500152] watchdog: watchdog0: watchdog did not stop!
+[  227.500823] watchdog: watchdog1: watchdog did not stop!
+[  236.646850] bq2415x: command Timer reset
+[  237.514038] watchdog: watchdog0: watchdog did not stop!
+[  237.514831] watchdog: watchdog1: watchdog did not stop!
+[  246.886871] bq2415x: command Timer reset
+[  247.526489] watchdog: watchdog0: watchdog did not stop!
+[  247.527252] watchdog: watchdog1: watchdog did not stop!
+[  257.126953] bq2415x: command Timer reset
+[  257.540710] watchdog: watchdog0: watchdog did not stop!
+[  257.541412] watchdog: watchdog1: watchdog did not stop!
+[  267.366912] bq2415x: command Timer reset
+[  267.554016] watchdog: watchdog0: watchdog did not stop!
+[  267.554809] watchdog: watchdog1: watchdog did not stop!
+[  277.566284] watchdog: watchdog0: watchdog did not stop!
+[  277.567565] watchdog: watchdog1: watchdog did not stop!
+[  277.606994] bq2415x: command Timer reset
+[  287.581451] watchdog: watchdog0: watchdog did not stop!
+[  287.582122] watchdog: watchdog1: watchdog did not stop!
+[  287.846954] bq2415x: command Timer reset
+[  297.601501] watchdog: watchdog0: watchdog did not stop!
+[  297.605163] watchdog: watchdog1: watchdog did not stop!
+[  298.087219] bq2415x: command Timer reset
+[  300.773895] tlv320dac33-codec 1-0019: internal oscillator calibration failed
+[  300.955322] tlv320dac33-codec 1-0019: internal oscillator calibration failed
+[  301.167938] tlv320dac33-codec 1-0019: internal oscillator calibration failed
+[  301.342803] tlv320dac33-codec 1-0019: internal oscillator calibration failed
+[  307.621948] watchdog: watchdog0: watchdog did not stop!
+[  307.622833] watchdog: watchdog1: watchdog did not stop!
+[  308.326843] bq2415x: command Timer reset
+[  317.645599] watchdog: watchdog0: watchdog did not stop!
+[  317.648254] watchdog: watchdog1: watchdog did not stop!
+[  318.566955] bq2415x: command Timer reset
+[  327.661773] watchdog: watchdog0: watchdog did not stop!
+[  327.664184] watchdog: watchdog1: watchdog did not stop!
+[  328.807006] bq2415x: command Timer reset
+[  337.684204] watchdog: watchdog0: watchdog did not stop!
+[  337.686340] watchdog: watchdog1: watchdog did not stop!
+[  339.046966] bq2415x: command Timer reset
+[  347.708068] watchdog: watchdog0: watchdog did not stop!
+[  347.710205] watchdog: watchdog1: watchdog did not stop!
+[  349.286926] bq2415x: command Timer reset
+[  357.725952] watchdog: watchdog0: watchdog did not stop!
+[  357.728057] watchdog: watchdog1: watchdog did not stop!
+[  359.526916] bq2415x: command Timer reset
+[  367.741577] watchdog: watchdog0: watchdog did not stop!
+[  367.743591] watchdog: watchdog1: watchdog did not stop!
+[  369.766937] bq2415x: command Timer reset
+[  377.758758] watchdog: watchdog0: watchdog did not stop!
+[  377.760894] watchdog: watchdog1: watchdog did not stop!
