@@ -1,0 +1,628 @@
+[   33.020141] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.026611] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.050231] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.056793] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.070129] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.076599] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.090118] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.096679] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.110778] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.117248] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.131225] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.137725] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.160308] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.166870] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.200164] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.206665] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.230163] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.236663] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.260314] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.266845] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.290069] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.296569] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.330902] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.337463] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.360443] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.367065] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.384979] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.391723] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.420379] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.427032] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.450195] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.456817] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.480712] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.487548] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.520690] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.527435] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.550201] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.556732] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.580139] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.586700] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.600128] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.606628] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.640136] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.646606] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.670318] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.676849] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.700378] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.706939] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.730590] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.737304] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.760528] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.767150] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.781219] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.787841] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.810211] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.816711] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.840240] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.846801] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.860504] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.866973] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.880126] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.886688] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.900665] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.907135] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.920745] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.927246] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.950134] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.956665] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   33.970214] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   33.976684] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.000091] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.006561] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.031707] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.038421] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.064025] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.070678] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.090270] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.096862] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.120452] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.127136] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.141052] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.147613] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.160125] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.166748] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.180145] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.186828] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.202514] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.209106] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.230499] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.237182] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.260772] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.267456] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.300445] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.307281] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.321594] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.328186] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.340148] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.346740] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.360961] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.367523] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.390350] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.397216] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.420379] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.427215] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.440765] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.447326] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.470367] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.476959] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.490203] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.496734] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.520202] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.526733] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.550476] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.557067] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.586303] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.592956] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.620269] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.626800] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.651214] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.657836] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.670440] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.676971] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.690795] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.697357] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.710784] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.717376] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.730590] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.737091] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.760833] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.767425] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.790313] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.796874] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.820373] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.826934] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.860778] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.867523] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.890533] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.897094] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.920623] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.927307] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.950225] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.956756] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   34.980346] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   34.986968] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.010925] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.017486] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.040435] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.047027] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.060241] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.066925] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.090362] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.096893] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.120239] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.126922] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.150390] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.157043] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.170532] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.177276] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.191101] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.197723] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.212524] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.219421] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.240203] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.246704] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.270294] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.276794] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.310119] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.316650] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.340332] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.346862] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.371002] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.377624] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.400512] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.407135] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.430389] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.437011] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.461029] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.467559] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.495758] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.503173] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.530487] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.542602] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.640136] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.646697] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.670654] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.677215] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.700866] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.707458] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.730621] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.737304] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.750915] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.757507] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.770385] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.776916] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.796417] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.803131] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.820526] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.827239] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.850372] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.857025] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.890411] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.897064] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.920196] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.926727] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.950134] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.956756] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   35.970947] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   35.977508] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.000183] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.006774] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.030944] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.037536] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.064147] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.070861] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.091033] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.097595] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.120147] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.126770] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.140838] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.147338] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.173309] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.180847] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.200897] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.211334] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.320922] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.327514] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.352172] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.358947] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.380340] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.380340] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.410217] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.415527] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.441009] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.446380] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.470916] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.476196] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.503875] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.510437] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.530914] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.538360] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.570404] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.575805] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.590179] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.595458] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.620971] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.626342] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.650817] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.656097] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.680786] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.686096] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.717926] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.723388] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.740112] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.745422] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.770172] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.775573] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.790863] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.796142] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.822052] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.827484] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.840881] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.846160] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.870269] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.875671] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.900238] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.905517] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.930938] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.936401] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.950164] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.955474] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   36.981109] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   36.986480] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.000122] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.005462] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.030944] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.036376] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.050842] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.056121] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.080108] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.085510] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.100860] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.106140] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.148071] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.153564] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.198638] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.204071] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.220275] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.225585] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.250427] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.255706] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.280364] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.285675] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.310363] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.315734] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.350433] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.355743] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.380493] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.385864] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.410919] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.416229] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.440277] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.445648] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.470123] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.475402] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.500976] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.506286] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.530822] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.536102] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.560211] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.565582] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.580749] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.586029] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.610137] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.615539] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.630126] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.635406] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.660064] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.665466] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.680847] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.686126] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.710113] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.715393] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.740112] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.745513] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.760162] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.765441] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.791015] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.796295] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.820739] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.826019] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.850341] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.855712] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.880889] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.886199] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.910797] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.916229] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.930755] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.936065] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.960113] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.965515] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   37.980895] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   37.986145] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.010101] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.015502] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.030761] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.036071] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.060821] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.066162] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.091094] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.096374] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.120147] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.125457] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.150787] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.156127] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.180755] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.186065] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.210662] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.216033] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.230926] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.236175] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.261230] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.266601] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.280853] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.286132] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.311248] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.316619] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.340759] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.346038] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.370361] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.375762] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.400726] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.406036] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.430908] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.436187] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.460754] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.466033] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.490173] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.495574] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.532714] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.537994] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.560974] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.566284] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.590209] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.595642] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.611389] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.616668] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.672424] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.677886] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.705505] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.711029] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.741973] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.747314] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.785888] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.791442] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.810241] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.815582] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.850952] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.856414] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.881622] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.886962] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.911041] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.916442] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.931213] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.936523] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.961090] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.966522] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   38.983856] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   38.989227] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.014373] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.019805] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.046966] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.052459] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.070190] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.075500] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.125396] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.130889] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.179290] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.184600] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.210723] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.216033] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.240142] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.245483] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.270172] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.275451] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.300903] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.306182] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.330108] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.335479] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.370147] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.375427] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.410217] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.415496] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.440124] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.445465] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.470550] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.475860] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.500274] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.505645] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.520080] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.525360] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.561126] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.566406] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.590362] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.595733] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.630126] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.635406] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.660766] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.666076] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.690155] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.695495] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.710784] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.716094] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.741241] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.746673] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.770416] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.775726] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.800598] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.805938] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.830322] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.835754] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.850189] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.855499] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.880371] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.885650] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.910522] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.915924] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.940216] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.945526] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   39.980285] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   39.985656] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   40.000305] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   40.005645] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   40.030456] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   40.035766] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   40.060424] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   40.065795] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   40.080932] musb-hdrc musb-hdrc.1.auto: VBUS Disconnect
+[   40.086242] musb-hdrc musb-hdrc.1.auto: VBUS b_idle, devctl 80 
+[   43.214263] defender (1734): /proc/1733/oom_adj is deprecated, please use /proc/1733/oom_score_adj instead.
+[   43.230743] musb-hdrc musb-hdrc.1.auto: VBUS Connect
+[   43.230926] sysrq: SysRq : HELP : loglevel(0-9) reboot(b) crash(c) show-all-locks(d) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) force-fb(V) show-blocked-tasks(w) dump-ftrace-buffer(z) 
+
+[   43.267700] ======================================================
+[   43.267700] WARNING: possible circular locking dependency detected
+[   43.267700] 4.16.0-rc5-59924-g0370808-dirty #575 Not tainted
+[   43.267700] ------------------------------------------------------
+[   43.267700] bash/1737 is trying to acquire lock:
+[   43.267700]  (console_owner){-...}, at: [<648709a2>] console_unlock+0x1b0/0x6fc
+
+[   43.267730] but task is already holding lock:
+[   43.267730]  (&port_lock_key){-.-.}, at: [<6b2e7b69>] serial8250_handle_irq+0x20/0xe0
+
+[   43.267730] which lock already depends on the new lock.
+
+
+[   43.267730] the existing dependency chain (in reverse order) is:
+
+[   43.267730] -> #1 (&port_lock_key){-.-.}:
+[   43.267730]        serial8250_console_write+0x104/0x214
+[   43.267761]        console_unlock+0x324/0x6fc
+[   43.267761]        vprintk_emit+0x19c/0x3f8
+[   43.267761]        vprintk_default+0x24/0x2c
+[   43.267761]        printk+0x20/0x30
+[   43.267761]        register_console+0x2f0/0x424
+[   43.267761]        uart_add_one_port+0x47c/0x4e0
+[   43.267761]        serial8250_register_8250_port+0x270/0x398
+[   43.267761]        omap8250_probe+0x2a8/0x498
+[   43.267761]        platform_drv_probe+0x50/0xb0
+[   43.267761]        driver_probe_device+0x27c/0x314
+[   43.267761]        __driver_attach+0xb4/0xb8
+[   43.267761]        bus_for_each_dev+0x58/0x7c
+[   43.267761]        bus_add_driver+0xe0/0x1f0
+[   43.267761]        driver_register+0x78/0xf4
+[   43.267791]        do_one_initcall+0x3c/0x170
+[   43.267791]        kernel_init_freeable+0x1f4/0x2c8
+[   43.267791]        kernel_init+0x8/0x10c
+[   43.267791]        ret_from_fork+0x14/0x20
+[   43.267791]          (null)
+
+[   43.267791] -> #0 (console_owner){-...}:
+[   43.267791]        console_unlock+0x254/0x6fc
+[   43.267791]        vprintk_emit+0x19c/0x3f8
+[   43.267791]        vprintk_default+0x24/0x2c
+[   43.267791]        printk+0x20/0x30
+[   43.267791]        __handle_sysrq+0x190/0x24c
+[   43.267791]        serial8250_rx_chars+0xd0/0x21c
+[   43.267822]        serial8250_handle_irq+0xd8/0xe0
+[   43.267822]        omap8250_irq+0x120/0x1a8
+[   43.267822]        __handle_irq_event_percpu+0x98/0x3f0
+[   43.267822]        handle_irq_event_percpu+0x1c/0x58
+[   43.267822]        handle_irq_event+0x38/0x5c
+[   43.267822]        handle_fasteoi_irq+0xac/0x140
+[   43.267822]        generic_handle_irq+0x18/0x28
+[   43.267822]        __handle_domain_irq+0x68/0xdc
+[   43.267822]        gic_handle_irq+0x4c/0xa0
+[   43.267822]        __irq_svc+0x70/0x98
+[   43.267822]        rcu_is_watching+0x0/0x38
+[   43.267822]        rcu_is_watching+0x0/0x38
+[   43.267822]        rcu_read_lock_held+0x44/0x84
+[   43.267822]        filemap_map_pages+0x180/0x544
+[   43.267852]        handle_mm_fault+0x9d4/0xd5c
+[   43.267852]        do_page_fault+0x218/0x3a0
+[   43.267852]        do_PrefetchAbort+0x34/0x98
+[   43.267852]        ret_from_exception+0x0/0x2c
+[   43.267852]        0xb6f10060
+
+[   43.267852] other info that might help us debug this:
+
+[   43.267852]  Possible unsafe locking scenario:
+
+[   43.267852]        CPU0                    CPU1
+[   43.267852]        ----                    ----
+[   43.267852]   lock(&port_lock_key);
+[   43.267852]                                lock(console_owner);
+[   43.267883]                                lock(&port_lock_key);
+[   43.267883]   lock(console_owner);
+
+[   43.267883]  *** DEADLOCK ***
+
+[   43.267883] 6 locks held by bash/1737:
+[   43.267883]  #0:  (&mm->mmap_sem){++++}, at: [<7e3379c6>] do_page_fault+0xd4/0x3a0
+[   43.267883]  #1:  (rcu_read_lock){....}, at: [<05722354>] filemap_map_pages+0x0/0x544
+[   43.267883]  #2:  (&(&mm->page_table_lock)->rlock){+.+.}, at: [<15a0ec34>] alloc_set_pte+0x2a4/0x32c
+[   43.267913]  #3:  (&port_lock_key){-.-.}, at: [<6b2e7b69>] serial8250_handle_irq+0x20/0xe0
+[   43.267913]  #4:  (rcu_read_lock){....}, at: [<fd9b6c7b>] __handle_sysrq+0x0/0x24c
+[   43.267913]  #5:  (console_lock){+.+.}, at: [<ec482b68>] vprintk_emit+0x190/0x3f8
+
+[   43.267913] stack backtrace:
+[   43.267944] CPU: 0 PID: 1737 Comm: bash Not tainted 4.16.0-rc5-59924-g0370808-dirty #575
+[   43.267944] Hardware name: Generic OMAP4 (Flattened Device Tree)
+[   43.267944] [<c011108c>] (unwind_backtrace) from [<c010cf7c>] (show_stack+0x10/0x14)
+[   43.267944] [<c010cf7c>] (show_stack) from [<c089badc>] (dump_stack+0xa8/0xe0)
+[   43.267944] [<c089badc>] (dump_stack) from [<c01971d8>] (print_circular_bug+0x284/0x2dc)
+[   43.267944] [<c01971d8>] (print_circular_bug) from [<c01953e8>] (__lock_acquire+0x1840/0x1908)
+[   43.267944] [<c01953e8>] (__lock_acquire) from [<c0195db0>] (lock_acquire+0xc4/0x238)
+[   43.267944] [<c0195db0>] (lock_acquire) from [<c01a0d0c>] (console_unlock+0x254/0x6fc)
+[   43.267944] [<c01a0d0c>] (console_unlock) from [<c01a1b1c>] (vprintk_emit+0x19c/0x3f8)
+[   43.267944] [<c01a1b1c>] (vprintk_emit) from [<c01a1d9c>] (vprintk_default+0x24/0x2c)
+[   43.267944] [<c01a1d9c>] (vprintk_default) from [<c01a23e8>] (printk+0x20/0x30)
+[   43.267974] [<c01a23e8>] (printk) from [<c04c21ac>] (__handle_sysrq+0x190/0x24c)
+[   43.267974] [<c04c21ac>] (__handle_sysrq) from [<c04d6f24>] (serial8250_rx_chars+0xd0/0x21c)
+[   43.267974] [<c04d6f24>] (serial8250_rx_chars) from [<c04d7dd4>] (serial8250_handle_irq+0xd8/0xe0)
+[   43.267974] [<c04d7dd4>] (serial8250_handle_irq) from [<c04dc9e8>] (omap8250_irq+0x120/0x1a8)
+[   43.267974] [<c04dc9e8>] (omap8250_irq) from [<c01a37dc>] (__handle_irq_event_percpu+0x98/0x3f0)
+[   43.267974] [<c01a37dc>] (__handle_irq_event_percpu) from [<c01a3b50>] (handle_irq_event_percpu+0x1c/0x58)
+[   43.267974] [<c01a3b50>] (handle_irq_event_percpu) from [<c01a3bc4>] (handle_irq_event+0x38/0x5c)
+[   43.267974] [<c01a3bc4>] (handle_irq_event) from [<c01a7374>] (handle_fasteoi_irq+0xac/0x140)
+[   43.267974] [<c01a7374>] (handle_fasteoi_irq) from [<c01a2fa8>] (generic_handle_irq+0x18/0x28)
+[   43.267974] [<c01a2fa8>] (generic_handle_irq) from [<c01a30c0>] (__handle_domain_irq+0x68/0xdc)
+[   43.268005] [<c01a30c0>] (__handle_domain_irq) from [<c0453dbc>] (gic_handle_irq+0x4c/0xa0)
+[   43.268005] [<c0453dbc>] (gic_handle_irq) from [<c01019f0>] (__irq_svc+0x70/0x98)
+[   43.268005] Exception stack(0xece71d90 to 0xece71dd8)
+[   43.268005] 1d80:                                     00000001 ee694518 ece71de0 00000000
+[   43.268005] 1da0: effe7bf4 ee694514 effe7bf4 c0eb4530 00000001 ece71e70 00000000 00000099
+[   43.268005] 1dc0: 00000000 ece71de0 c01af40c c01b1634 600b0113 ffffffff
+[   43.268005] [<c01019f0>] (__irq_svc) from [<c01b1634>] (rcu_is_watching+0x0/0x38)
+[   43.268005] [<c01b1634>] (rcu_is_watching) from [<c01af40c>] (rcu_read_lock_held+0x44/0x84)
+[   43.268005] [<c01af40c>] (rcu_read_lock_held) from [<c02400f4>] (filemap_map_pages+0x180/0x544)
+[   43.268005] [<c02400f4>] (filemap_map_pages) from [<c0281a5c>] (handle_mm_fault+0x9d4/0xd5c)
+[   43.268005] [<c0281a5c>] (handle_mm_fault) from [<c08b7a98>] (do_page_fault+0x218/0x3a0)
+[   43.268035] [<c08b7a98>] (do_page_fault) from [<c0115cd8>] (do_PrefetchAbort+0x34/0x98)
+[   43.268035] [<c0115cd8>] (do_PrefetchAbort) from [<c0102094>] (ret_from_exception+0x0/0x2c)
+[   43.268035] Exception stack(0xece71fb0 to 0xece71ff8)
+[   43.268035] 1fa0:                                     000000ff 00000113 000fd008 000d0c00
+[   43.268035] 1fc0: 000d0000 000006c9 000d0000 bec8106c bec810ec 000d7a24 000a984c 000d9768
+[   43.268035] 1fe0: 000d0350 bec81050 0002cb3b b6f10060 800b0030 ffffffff
+[   43.971588] musb-hdrc musb-hdrc.1.auto: VBUS Connect
+[   43.993103] musb-hdrc musb-hdrc.1.auto: VBUS Connect
+[   44.063049] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   44.069488] g_ether gadget: init ecm
+[   44.073089] g_ether gadget: notify connect false
+[   44.079040] g_ether gadget: activate ecm
+[   44.083038] usb0: qlen 10
+[   44.085662] g_ether gadget: ecm_close
+[   44.089813] g_ether gadget: packet filter 0c
+[   44.094116] g_ether gadget: ecm req21.43 v000c i0000 l0
+[  204.329101] omapdss_hdmi 58006000.encoder: ASoC: can't open interface 58006000.encoder: -1
+[  218.895538] usb0: eth_open
+[  218.898284] usb0: eth_start
+[  218.901214] g_ether gadget: ecm_open
+[  224.688812] g_ether gadget: packet filter 0e
+[  224.693115] g_ether gadget: ecm req21.43 v000e i0000 l0
+[  224.702178] g_ether gadget: packet filter 0e
+[  224.706481] g_ether gadget: ecm req21.43 v000e i0000 l0
+[  224.712493] g_ether gadget: notify connect true
+[  224.744415] g_ether gadget: notify speed 425984000
+[  224.856048] g_ether gadget: packet filter 0e
+[  224.860351] g_ether gadget: ecm req21.43 v000e i0000 l0

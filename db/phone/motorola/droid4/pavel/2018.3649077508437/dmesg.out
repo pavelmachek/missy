@@ -1,0 +1,614 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.17.0-rc5-74797-gba8eaf3-dirty (pavel@half) (gcc version 4.7.2 (GCC)) #664 SMP Mon May 14 15:44:55 CEST 2018
+[    0.000000] CPU: ARMv7 Processor [411fc093] revision 3 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: Motorola Droid 4 XT894
+[    0.000000] earlycon: omap8250 at MMIO 0x48020000 (options '')
+[    0.000000] bootconsole [omap8250] enabled
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] cma: Reserved 16 MiB at 0xbe800000
+[    0.000000] OMAP4: Map 0xbfb00000 to (ptrval) for dram barrier
+[    0.000000] On node 0 totalpages: 260864
+[    0.000000]   Normal zone: 1728 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 196608 pages, LIFO batch:31
+[    0.000000]   HighMem zone: 64256 pages, LIFO batch:15
+[    0.000000] OMAP4430 ES2.3
+[    0.000000] percpu: Embedded 16 pages/cpu @(ptrval) s36864 r8192 d20480 u65536
+[    0.000000] pcpu-alloc: s36864 r8192 d20480 u65536 alloc=16*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 259136
+[    0.000000] Kernel command line: root=/dev/mmcblk0p2 drm.debug=8 rootwait=10 rootdelay=10 console=tty0 console=ttyS2,115200 fbcon=rotate:1 debug earlyprintk earlycon
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Memory: 994096K/1043456K available (9216K kernel code, 757K rwdata, 3040K rodata, 1024K init, 7465K bss, 32976K reserved, 16384K cma-reserved, 240640K highmem)
+[    0.000000] Virtual kernel memory layout:
+                   vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+                   fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+                   vmalloc : 0xf0800000 - 0xff800000   ( 240 MB)
+                   lowmem  : 0xc0000000 - 0xf0000000   ( 768 MB)
+                   pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+                   modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+                     .text : 0x(ptrval) - 0x(ptrval)   (10208 kB)
+                     .init : 0x(ptrval) - 0x(ptrval)   (1024 kB)
+                     .data : 0x(ptrval) - 0x(ptrval)   ( 758 kB)
+                      .bss : 0x(ptrval) - 0x(ptrval)   (7466 kB)
+[    0.000000] Running RCU self tests
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	RCU event tracing is enabled.
+[    0.000000] 	RCU lockdep checking is enabled.
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] L2C: platform modifies aux control register: 0x5e470000 -> 0x7e470000
+[    0.000000] L2C: DT/platform modifies aux control register: 0x5e470000 -> 0x7e470000
+[    0.000000] L2C-310 erratum 727915 enabled
+[    0.000000] L2C-310 enabling early BRESP for Cortex-A9
+[    0.000000] L2C-310 ID prefetch enabled, offset 8 lines
+[    0.000000] L2C-310 cache controller enabled, 16 ways, 1024 kB
+[    0.000000] L2C-310: CACHE_ID 0x410000c4, AUX_CTRL 0x7e470000
+[    0.000000] OMAP clockevent source: timer1 at 32768 Hz
+[    0.000000] clocksource: 32k_counter: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 58327039986419 ns
+[    0.000000] sched_clock: 32 bits at 32kHz, resolution 30517ns, wraps every 65535999984741ns
+[    0.008575] OMAP clocksource: 32k_counter at 32768 Hz
+[    0.015075] Console: colour dummy device 80x30
+[    0.021636] console [tty0] enabled
+[    0.025177] Lock dependency validator: Copyright (c) 2006 Red Hat, Inc., Ingo Molnar
+[    0.033203] ... MAX_LOCKDEP_SUBCLASSES:  8
+[    0.037445] ... MAX_LOCK_DEPTH:          48
+[    0.041809] ... MAX_LOCKDEP_KEYS:        8191
+[    0.046295] ... CLASSHASH_SIZE:          4096
+[    0.050842] ... MAX_LOCKDEP_ENTRIES:     32768
+[    0.055419] ... MAX_LOCKDEP_CHAINS:      65536
+[    0.060028] ... CHAINHASH_SIZE:          32768
+[    0.064636]  memory used by lock dependency info: 4655 kB
+[    0.070220]  per task-struct memory footprint: 1536 bytes
+[    0.075836] Calibrating delay loop... 2393.70 BogoMIPS (lpj=11968512)
+[    0.136169] pid_max: default: 32768 minimum: 301
+[    0.141296] Security Framework initialized
+[    0.145629] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.152496] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.162292] CPU: Testing write buffer coherency: ok
+[    0.168457] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.174407] smp: CPU1 parked within kernel, needs reset (0x80011ba8 0x80067478)
+[    0.183319] Setting up static identity map for 0x80100000 - 0x80100078
+[    0.190551] Hierarchical SRCU implementation.
+[    0.196472] smp: Bringing up secondary CPUs ...
+[    0.259490] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.260131] smp: Brought up 1 node, 2 CPUs
+[    0.270385] SMP: Total of 2 processors activated (4787.40 BogoMIPS).
+[    0.276977] CPU: All CPU(s) started in SVC mode.
+[    0.284210] devtmpfs: initialized
+[    0.317871] Built 1 zonelists, mobility grouping on.  Total pages: 252620
+[    0.325195] random: get_random_u32 called from bucket_table_alloc+0x7c/0x1b4 with crng_init=0
+[    0.334869] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+[    0.344665] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.354949] futex hash table entries: 512 (order: 3, 32768 bytes)
+[    0.361968] pinctrl core: initialized pinctrl subsystem
+[    0.370697] NET: Registered protocol family 16
+[    0.379425] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.390563] omap_hwmod: l3_main_3 using broken dt data from ocp
+[    0.400299] omap_hwmod: l3_main_2 using broken dt data from ocp
+[    0.505615] l4_per_cm:clk:0120:0: failed to disable
+[    0.514739] cpuidle: using governor menu
+[    0.533874] gpio gpiochip0: (gpio-0-31): added GPIO chardev (254:0)
+[    0.540740] gpiochip_setup_dev: registered GPIOs 0 to 31 on device: gpiochip0 (gpio-0-31)
+[    0.549285] OMAP GPIO hardware version 0.1
+[    0.554809] gpio gpiochip1: (gpio-32-63): added GPIO chardev (254:1)
+[    0.561553] gpiochip_setup_dev: registered GPIOs 32 to 63 on device: gpiochip1 (gpio-32-63)
+[    0.571319] gpio gpiochip2: (gpio-64-95): added GPIO chardev (254:2)
+[    0.578033] gpiochip_setup_dev: registered GPIOs 64 to 95 on device: gpiochip2 (gpio-64-95)
+[    0.587768] gpio gpiochip3: (gpio-96-127): added GPIO chardev (254:3)
+[    0.594604] gpiochip_setup_dev: registered GPIOs 96 to 127 on device: gpiochip3 (gpio-96-127)
+[    0.604492] gpio gpiochip4: (gpio-128-159): added GPIO chardev (254:4)
+[    0.611450] gpiochip_setup_dev: registered GPIOs 128 to 159 on device: gpiochip4 (gpio-128-159)
+[    0.621551] gpio gpiochip5: (gpio-160-191): added GPIO chardev (254:5)
+[    0.628448] gpiochip_setup_dev: registered GPIOs 160 to 191 on device: gpiochip5 (gpio-160-191)
+[    0.638549] omap-gpmc 50000000.gpmc: GPMC revision 6.0
+[    0.644012] gpmc_mem_init: disabling cs 0 mapped at 0x0-0x1000000
+[    0.650421] gpiochip_find_base: found new base at 508
+[    0.655975] gpio gpiochip6: (omap-gpmc): added GPIO chardev (254:6)
+[    0.662628] gpiochip_setup_dev: registered GPIOs 508 to 511 on device: gpiochip6 (omap-gpmc)
+[    0.700714] No ATAGs?
+[    0.700897] hw-breakpoint: Failed to enable monitor mode on CPU 0.
+[    0.711730] OMAP DMA hardware revision 0.0
+[    0.752502] omap-dma-engine 4a056000.dma-controller: OMAP DMA engine driver (LinkedList1/2/3 supported)
+[    0.763854] of_get_named_gpiod_flags: parsed 'gpio' property of node '/regulator-hdmi[0]' - status (0)
+[    0.774322] of_get_named_gpiod_flags: parsed 'gpio' property of node '/regulator-lcd[0]' - status (0)
+[    0.784515] of_get_named_gpiod_flags: parsed 'gpio' property of node '/regulator-wl12xx[0]' - status (0)
+[    0.797607] omap-iommu 4a066000.mmu: 4a066000.mmu registered
+[    0.803924] omap-iommu 55082000.mmu: 55082000.mmu registered
+[    0.811889] usbcore: registered new interface driver usbfs
+[    0.817718] usbcore: registered new interface driver hub
+[    0.823364] usbcore: registered new device driver usb
+[    0.829010] usb_phy_generic usb-phy@2: GPIO lookup for consumer reset
+[    0.835723] usb_phy_generic usb-phy@2: using device tree for GPIO lookup
+[    0.842712] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/usb-phy@2[0]'
+[    0.851867] of_get_named_gpiod_flags: can't parse 'reset-gpio' property of node '/usb-phy@2[0]'
+[    0.860900] usb_phy_generic usb-phy@2: using lookup tables for GPIO lookup
+[    0.868133] usb_phy_generic usb-phy@2: No GPIO consumer reset found
+[    0.874694] usb_phy_generic usb-phy@2: GPIO lookup for consumer vbus-detect
+[    0.881927] usb_phy_generic usb-phy@2: using device tree for GPIO lookup
+[    0.888885] of_get_named_gpiod_flags: can't parse 'vbus-detect-gpios' property of node '/usb-phy@2[0]'
+[    0.898590] of_get_named_gpiod_flags: can't parse 'vbus-detect-gpio' property of node '/usb-phy@2[0]'
+[    0.908172] usb_phy_generic usb-phy@2: using lookup tables for GPIO lookup
+[    0.915313] usb_phy_generic usb-phy@2: No GPIO consumer vbus-detect found
+[    0.922546] usb_phy_generic usb-phy@2: usb-phy@2 supply vcc not found, using dummy regulator
+[    0.934173] omap_i2c 48070000.i2c: bus 0 rev0.10 at 100 kHz
+[    0.941314] omap_i2c 48072000.i2c: bus 1 rev0.10 at 100 kHz
+[    0.948364] omap_i2c 48060000.i2c: bus 2 rev0.10 at 100 kHz
+[    0.955352] omap_i2c 48350000.i2c: bus 3 rev0.10 at 100 kHz
+[    0.961547] media: Linux media interface: v0.10
+[    0.966308] Linux video capture interface: v2.00
+[    0.971832] Advanced Linux Sound Architecture Driver Initialized.
+[    0.979736] Bluetooth: Core ver 2.22
+[    0.983520] NET: Registered protocol family 31
+[    0.988128] Bluetooth: HCI device and connection manager initialized
+[    0.994812] Bluetooth: HCI socket layer initialized
+[    0.999938] Bluetooth: L2CAP socket layer initialized
+[    1.005310] Bluetooth: SCO socket layer initialized
+[    1.011627] clocksource: Switched to clocksource 32k_counter
+[    1.178588] NET: Registered protocol family 2
+[    1.184692] tcp_listen_portaddr_hash hash table entries: 512 (order: 2, 20480 bytes)
+[    1.192901] TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+[    1.200317] TCP bind hash table entries: 8192 (order: 6, 294912 bytes)
+[    1.208587] TCP: Hash tables configured (established 8192 bind 8192)
+[    1.215698] UDP hash table entries: 512 (order: 3, 40960 bytes)
+[    1.222106] UDP-Lite hash table entries: 512 (order: 3, 40960 bytes)
+[    1.229248] NET: Registered protocol family 1
+[    1.239471] hw perfevents: no irqs for PMU, sampling events not supported
+[    1.246917] hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 counters available
+[    1.258850] Initialise system trusted keyrings
+[    1.264129] workingset: timestamp_bits=14 max_order=18 bucket_order=4
+[    1.280609] jitterentropy: Initialization failed with host not compliant with requirements: 2
+[    1.290344] Key type asymmetric registered
+[    1.294769] Asymmetric key parser 'x509' registered
+[    1.299987] bounce: pool size: 64 pages
+[    1.304138] io scheduler noop registered
+[    1.308258] io scheduler cfq registered (default)
+[    1.321044] phy-mapphone-mdm6600 usb-phy@1: could not find pctldev for node /ocp/l4@4a000000/scm@100000/pinmux@40/pinmux_usb_mdm6600_pins, deferring probe
+[    1.338653] pinctrl-single 4a100040.pinmux: 203 pins, size 406
+[    1.345336] pinctrl-single 4a31e040.pinmux: 28 pins, size 56
+[    1.361358] Serial: 8250/16550 driver, 6 ports, IRQ sharing enabled
+[    1.377471] 4806a000.serial: ttyS0 at MMIO 0x4806a000 (irq = 32, base_baud = 3000000) is a 8250
+[    1.388458] 4806c000.serial: ttyS1 at MMIO 0x4806c000 (irq = 33, base_baud = 3000000) is a 8250
+[    1.398956] 48020000.serial: ttyS2 at MMIO 0x48020000 (irq = 34, base_baud = 3000000) is a 8250
+[    1.408355] console [ttyS2] enabled
+[    1.415557] bootconsole [omap8250] disabled
+[    1.425964] 4806e000.serial: ttyS3 at MMIO 0x4806e000 (irq = 35, base_baud = 3000000) is a 8250
+[    1.435119] serial serial0: tty port ttyS3 registered
+[    1.443267] omapdss_dss 58000000.dss: 58000000.dss supply vdda_video not found, using dummy regulator
+[    1.452972] DSS: OMAP DSS rev 4.0
+[    1.460205] omapdss_dss 58000000.dss: bound 58001000.dispc (ops dispc_component_ops)
+[    1.469665] omapdss_dss 58000000.dss: bound 58004000.encoder (ops dsi_component_ops)
+[    1.479827] omapdss_dss 58000000.dss: bound 58006000.encoder (ops hdmi4_component_ops)
+[    1.490570] of_get_named_gpiod_flags: parsed 'hpd-gpios' property of node '/connector[0]' - status (0)
+[    1.502593] panel-dsi-cm 58004000.encoder:display: GPIO lookup for consumer reset
+[    1.510192] panel-dsi-cm 58004000.encoder:display: using device tree for GPIO lookup
+[    1.518127] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/ocp/dss@58000000/encoder@58004000/display[0]' - status (0)
+[    1.530578] gpio gpiochip3: Persistence not supported for GPIO 5
+[    1.536712] panel-dsi-cm 58004000.encoder:display: GPIO lookup for consumer te
+[    1.544067] panel-dsi-cm 58004000.encoder:display: using device tree for GPIO lookup
+[    1.551940] of_get_named_gpiod_flags: can't parse 'te-gpios' property of node '/ocp/dss@58000000/encoder@58004000/display[0]'
+[    1.563446] of_get_named_gpiod_flags: can't parse 'te-gpio' property of node '/ocp/dss@58000000/encoder@58004000/display[0]'
+[    1.574829] panel-dsi-cm 58004000.encoder:display: using lookup tables for GPIO lookup
+[    1.582885] panel-dsi-cm 58004000.encoder:display: No GPIO consumer te found
+[    1.590698] Error: Driver 'tfp410' is already registered, aborting...
+[    1.615753] brd: module loaded
+[    1.635131] loop: module loaded
+[    1.640808] of_get_named_gpiod_flags: parsed 'enable-gpios' property of node '/ocp/i2c@48070000/lm3532@38[0]' - status (0)
+[    1.694183] cpcap-core spi0.0: CPCAP vendor: ST rev: 2.10 (1a)
+[    1.711059] SW5: Bringing 0uV into 5050000-5050000uV
+[    1.789764] VRF2: Bringing 0uV into 2775000-2775000uV
+[    2.082885] cpcap-usb-phy cpcap-usb-phy.0: GPIO lookup for consumer mode
+[    2.089691] cpcap-usb-phy cpcap-usb-phy.0: using device tree for GPIO lookup
+[    2.097045] of_get_named_gpiod_flags: parsed 'mode-gpios' property of node '/ocp/spi@48098000/pmic@0/phy[0]' - status (0)
+[    2.108215] gpio gpiochip1: Persistence not supported for GPIO 28
+[    2.114440] cpcap-usb-phy cpcap-usb-phy.0: GPIO lookup for consumer mode
+[    2.121215] cpcap-usb-phy cpcap-usb-phy.0: using device tree for GPIO lookup
+[    2.128448] of_get_named_gpiod_flags: parsed 'mode-gpios' property of node '/ocp/spi@48098000/pmic@0/phy[1]' - status (0)
+[    2.139587] gpio gpiochip0: Persistence not supported for GPIO 0
+[    2.145751] cpcap-usb-phy cpcap-usb-phy.0: could not initialize VBUS or ID IIO: -517
+[    2.161163] usbcore: registered new interface driver qmi_wwan
+[    2.169860] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    2.176513] ehci-omap: OMAP-EHCI Host Controller driver
+[    2.182525] ehci-omap 4a064c00.ehci: EHCI Host Controller
+[    2.189056] ehci-omap 4a064c00.ehci: new USB bus registered, assigned bus number 1
+[    2.197357] ehci-omap 4a064c00.ehci: irq 147, io mem 0x4a064c00
+[    2.231658] ehci-omap 4a064c00.ehci: USB 2.0 started, EHCI 1.00
+[    2.238800] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 4.17
+[    2.247314] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    2.254669] usb usb1: Product: EHCI Host Controller
+[    2.259613] usb usb1: Manufacturer: Linux 4.17.0-rc5-74797-gba8eaf3-dirty ehci_hcd
+[    2.267333] usb usb1: SerialNumber: 4a064c00.ehci
+[    2.274261] hub 1-0:1.0: USB hub found
+[    2.278289] hub 1-0:1.0: 3 ports detected
+[    2.284759] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    2.291046] ohci-platform: OHCI generic platform driver
+[    2.297332] usbcore: registered new interface driver cdc_wdm
+[    2.303253] usbcore: registered new interface driver qcserial
+[    2.309295] usbserial: USB Serial support registered for Qualcomm USB modem
+[    2.317901] musb-hdrc musb-hdrc.1.auto: HS USB OTG: revision 0x50, sysconfig 0x100d, sysstatus 0x1, intrfsel 0x0, simenable  0x0
+[    2.333618] using random self ethernet address
+[    2.338226] using random host ethernet address
+[    2.343078] mousedev: PS/2 mouse device common for all mice
+[    2.343963] usb0: HOST MAC 12:23:10:e8:60:17
+[    2.353393] usb0: MAC 86:0f:aa:98:53:a4
+[    2.357360] using random self ethernet address
+[    2.361907] using random host ethernet address
+[    2.366760] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+[    2.372467] input: 4a31c000.keypad as /devices/platform/44000000.ocp/4a31c000.keypad/input/input0
+[    2.373535] g_ether gadget: g_ether ready
+[    2.384826] atmel_mxt_ts 1-004a: GPIO lookup for consumer reset
+[    2.392608] atmel_mxt_ts 1-004a: using device tree for GPIO lookup
+[    2.398925] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/ocp/i2c@48072000/touchscreen@4a[0]' - status (0)
+[    2.410491] gpio gpiochip5: Persistence not supported for GPIO 13
+[    2.694671] atmel_mxt_ts 1-004a: Family: 129 Variant: 1 Firmware V0.4.31 Objects: 18
+[    2.721557] atmel_mxt_ts 1-004a: Direct firmware load for maxtouch.cfg failed with error -2
+[    2.722473] input: cpcap-pwrbutton as /devices/platform/44000000.ocp/48098000.spi/spi_master/spi0/spi0.0/cpcap-pwrbutton.0/input/input1
+[    2.745269] cpcap-rtc cpcap-rtc.0: rtc core: registered cpcap_rtc as rtc0
+[    2.780548] random: fast init done
+[    2.891754] atmel_mxt_ts 1-004a: Touchscreen size X1023Y1023
+[    2.893035] i2c /dev entries driver
+[    2.897979] input: Atmel maXTouch Touchscreen as /devices/platform/44000000.ocp/48072000.i2c/i2c-1/1-004a/input/input2
+[    2.914123] Driver for 1-wire Dallas network protocol.
+[    2.931671] omap_hdq 480b2000.1w: OMAP HDQ Hardware Rev 0.6. Driver in Interrupt mode
+[    2.941528] w1_master_driver w1_bus_master1: Attaching one wire slave 01.000000000000 crc 3d
+[    2.942199] poweroff-gpio gpio-poweroff: GPIO lookup for consumer (null)
+[    2.957000] poweroff-gpio gpio-poweroff: using device tree for GPIO lookup
+[    2.964050] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio-poweroff[0]' - status (0)
+[    2.973510] gpio gpiochip1: Persistence not supported for GPIO 18
+[    2.982513] w1_master_driver w1_bus_master1: Family 1 for 01.000000000000.3d is not registered.
+[    2.983551] cpcap_battery cpcap_battery.0: could not initialize VBUS or ID IIO: -517
+[    3.004577] w1_master_driver w1_bus_master1: Attaching one wire slave 01.000000000000 crc 3d
+[    3.014678] (NULL device *): hwmon: 'bq27000-battery' is not a valid name attribute, please fix
+[    3.024047] w1_slave_driver 01-000000000000: support enabled
+[    3.029785] power_supply bq27000-battery: power_supply_get_battery_info currently only supports devicetree
+[    3.252593] cpcap-charger cpcap-charger.0: could not initialize VBUS or ID IIO: -517
+[    3.262451] Bluetooth: HCI UART driver ver 2.3
+[    3.266967] Bluetooth: HCI UART protocol H4 registered
+[    3.272369] Bluetooth: HCI UART protocol LL registered
+[    3.272766] hci-ti serial0-0: GPIO lookup for consumer enable
+[    3.279296] omap_hsmmc 4809c000.mmc: GPIO lookup for consumer cd
+[    3.283538] hci-ti serial0-0: using device tree for GPIO lookup
+[    3.289611] omap_hsmmc 4809c000.mmc: using device tree for GPIO lookup
+[    3.295684] of_get_named_gpiod_flags: parsed 'enable-gpios' property of node '/ocp/serial@4806e000/bluetooth[0]' - status (0)
+[    3.302276] of_get_named_gpiod_flags: parsed 'cd-gpios' property of node '/ocp/mmc@4809c000[0]' - status (0)
+[    3.313751] gpio gpiochip5: Persistence not supported for GPIO 14
+[    3.323699] gpio gpiochip5: Persistence not supported for GPIO 16
+[    3.336090] omap_hsmmc 4809c000.mmc: Got CD GPIO
+[    3.340789] omap_hsmmc 4809c000.mmc: GPIO lookup for consumer wp
+[    3.346923] omap_hsmmc 4809c000.mmc: using device tree for GPIO lookup
+[    3.353576] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp/mmc@4809c000[0]'
+[    3.362884] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp/mmc@4809c000[0]'
+[    3.372070] omap_hsmmc 4809c000.mmc: using lookup tables for GPIO lookup
+[    3.378875] omap_hsmmc 4809c000.mmc: No GPIO consumer wp found
+[    3.413818] omap_hsmmc 480b4000.mmc: GPIO lookup for consumer wp
+[    3.419952] omap_hsmmc 480b4000.mmc: using device tree for GPIO lookup
+[    3.426666] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp/mmc@480b4000[0]'
+[    3.435943] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp/mmc@480b4000[0]'
+[    3.445129] omap_hsmmc 480b4000.mmc: using lookup tables for GPIO lookup
+[    3.451965] omap_hsmmc 480b4000.mmc: No GPIO consumer wp found
+[    3.471343] hci-ti serial0-0: Direct firmware load for ti-connectivity/TIInit_10.6.15.bts failed with error -2
+[    3.481781] Bluetooth: hci0: request_firmware failed(errno -2) for ti-connectivity/TIInit_10.6.15.bts
+[    3.487091] omap_hsmmc 480ad000.mmc: GPIO lookup for consumer wp
+[    3.491149] Bluetooth: hci0: download firmware failed, retrying...
+[    3.497283] omap_hsmmc 480ad000.mmc: using device tree for GPIO lookup
+[    3.510192] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp/mmc@480ad000[0]'
+[    3.519500] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp/mmc@480ad000[0]'
+[    3.528686] omap_hsmmc 480ad000.mmc: using lookup tables for GPIO lookup
+[    3.535522] omap_hsmmc 480ad000.mmc: No GPIO consumer wp found
+[    3.594543] mmc1: new high speed MMC card at address 0001
+[    3.602264] mmcblk1: mmc1:0001 016G92 14.7 GiB 
+[    3.607666] mmcblk1boot0: mmc1:0001 016G92 partition 1 4.00 MiB
+[    3.614410] mmcblk1boot1: mmc1:0001 016G92 partition 2 4.00 MiB
+[    3.621490] mmcblk1rpmb: mmc1:0001 016G92 partition 3 512 KiB, chardev (246:0)
+[    3.635192]  mmcblk1: p1 p2 p3 p4 < p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25 p26 >
+[    3.650207] hci-ti serial0-0: Direct firmware load for ti-connectivity/TIInit_10.6.15.bts failed with error -2
+[    3.654479] mmcblk1: p25 size 16803584 extends beyond EOD, truncated
+[    3.660430] Bluetooth: hci0: request_firmware failed(errno -2) for ti-connectivity/TIInit_10.6.15.bts
+[    3.667175] mmcblk1: p26 start 31104768 is beyond EOD, 
+[    3.676208] Bluetooth: hci0: download firmware failed, retrying...
+[    3.676635] omap_hsmmc 480d1000.mmc: GPIO lookup for consumer cd
+[    3.681518] truncated
+[    3.687835] omap_hsmmc 480d1000.mmc: using device tree for GPIO lookup
+[    3.702941] of_get_named_gpiod_flags: can't parse 'cd-gpios' property of node '/ocp/mmc@480d1000[0]'
+[    3.712280] of_get_named_gpiod_flags: can't parse 'cd-gpio' property of node '/ocp/mmc@480d1000[0]'
+[    3.721466] omap_hsmmc 480d1000.mmc: using lookup tables for GPIO lookup
+[    3.728302] omap_hsmmc 480d1000.mmc: No GPIO consumer cd found
+[    3.734252] omap_hsmmc 480d1000.mmc: GPIO lookup for consumer wp
+[    3.740356] omap_hsmmc 480d1000.mmc: using device tree for GPIO lookup
+[    3.747009] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp/mmc@480d1000[0]'
+[    3.756317] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp/mmc@480d1000[0]'
+[    3.765655] omap_hsmmc 480d1000.mmc: using lookup tables for GPIO lookup
+[    3.772491] omap_hsmmc 480d1000.mmc: No GPIO consumer wp found
+[    3.783264] hci-ti serial0-0: Direct firmware load for ti-connectivity/TIInit_10.6.15.bts failed with error -2
+[    3.785095] omap_hsmmc 480ad000.mmc: card claims to support voltages below defined range
+[    3.793487] Bluetooth: hci0: request_firmware failed(errno -2) for ti-connectivity/TIInit_10.6.15.bts
+[    3.811065] Bluetooth: hci0: download firmware failed, retrying...
+[    3.817260] mmc2: new high speed SDIO card at address 0001
+[    3.821990] omap_hsmmc 480d5000.mmc: GPIO lookup for consumer cd
+[    3.828979] omap_hsmmc 480d5000.mmc: using device tree for GPIO lookup
+[    3.835693] of_get_named_gpiod_flags: can't parse 'cd-gpios' property of node '/ocp/mmc@480d5000[0]'
+[    3.836700] wl12xx_driver wl12xx.2.auto: Direct firmware load for ti-connectivity/wl128x-nvs.bin failed with error -2
+[    3.845031] of_get_named_gpiod_flags: can't parse 'cd-gpio' property of node '/ocp/mmc@480d5000[0]'
+[    3.864990] omap_hsmmc 480d5000.mmc: using lookup tables for GPIO lookup
+[    3.871826] omap_hsmmc 480d5000.mmc: No GPIO consumer cd found
+[    3.877716] omap_hsmmc 480d5000.mmc: GPIO lookup for consumer wp
+[    3.883850] omap_hsmmc 480d5000.mmc: using device tree for GPIO lookup
+[    3.890472] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp/mmc@480d5000[0]'
+[    3.899780] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp/mmc@480d5000[0]'
+[    3.908966] omap_hsmmc 480d5000.mmc: using lookup tables for GPIO lookup
+[    3.915802] omap_hsmmc 480d5000.mmc: No GPIO consumer wp found
+[    3.922698] mmc0: host does not support reading read-only switch, assuming write-enable
+[    3.936523] mmc0: new high speed SDHC card at address aaaa
+[    3.943298] mmcblk0: mmc0:aaaa SS08G 7.40 GiB 
+[    3.953979] ledtrig-cpu: registered to indicate activity on CPUs
+[    3.963684] usbcore: registered new interface driver usbhid
+[    3.969390] usbhid: USB HID core driver
+[    3.975006] emif_probe: error getting device data
+[    3.980163] emif_probe: error getting device data
+[    3.985382] hci-ti serial0-0: Direct firmware load for ti-connectivity/TIInit_10.6.15.bts failed with error -2
+[    3.987518] st-accel-i2c 3-0018: 3-0018 supply vddio not found, using dummy regulator
+[    3.995666] Bluetooth: hci0: request_firmware failed(errno -2) for ti-connectivity/TIInit_10.6.15.bts
+[    4.012908] Bluetooth: hci0: download firmware failed, retrying...
+[    4.019592]  mmcblk0: p1 p2
+[    4.037261] iio iio:device0: unsupported IRQ trigger specified (3), enforce rising edge
+[    4.047058] iio iio:device0: registered accelerometer lis3dh
+[    4.132019] cpcap_adc cpcap_adc.0: CPCAP ADC device probed
+[    4.138977] isl29028 1-0044: No cache defaults, reading back from HW
+[    4.149780] of_get_named_gpiod_flags: can't parse 'gpios' property of node '/ocp/i2c@48350000/magnetometer@c[0]'
+[    4.160186] ak8975 3-000c: mounting matrix not found: using identity...
+[    4.167297] ak8975 3-000c: 3-000c supply vid not found, using dummy regulator
+[    4.181121] usbcore: registered new interface driver snd-usb-audio
+[    4.190307] asoc-audio-graph-card soundcard: GPIO lookup for consumer pa
+[    4.197174] asoc-audio-graph-card soundcard: using device tree for GPIO lookup
+[    4.204528] of_get_named_gpiod_flags: can't parse 'pa-gpios' property of node '/soundcard[0]'
+[    4.213195] of_get_named_gpiod_flags: can't parse 'pa-gpio' property of node '/soundcard[0]'
+[    4.221801] asoc-audio-graph-card soundcard: using lookup tables for GPIO lookup
+[    4.229278] asoc-audio-graph-card soundcard: No GPIO consumer pa found
+[    4.240295] omapdss_hdmi 58006000.encoder: ASoC: Failed to create component debugfs directory
+[    4.250091] omap-hdmi-audio omap-hdmi-audio.0.auto: snd-soc-dummy-dai <-> 58006000.encoder mapping ok
+[    4.267913] wlcore: loaded
+[    4.273315] oprofile: using arm/armv7-ca9
+[    4.278045] NET: Registered protocol family 17
+[    4.282989] Bluetooth: RFCOMM TTY layer initialized
+[    4.287933] Bluetooth: RFCOMM socket layer initialized
+[    4.293243] Bluetooth: RFCOMM ver 1.11
+[    4.297302] twl: not initialized
+[    4.300598] twl6030_uv_to_vsel:OUT OF RANGE! non mapped vsel for 1375000 Vs max 1316660
+[    4.308746] twl6030_uv_to_vsel:OUT OF RANGE! non mapped vsel for 1375000 Vs max 1316660
+[    4.316925] twl6030_uv_to_vsel:OUT OF RANGE! non mapped vsel for 1375000 Vs max 1316660
+[    4.325073] twl6030_uv_to_vsel:OUT OF RANGE! non mapped vsel for 1375000 Vs max 1316660
+[    4.333221] twl6030_uv_to_vsel:OUT OF RANGE! non mapped vsel for 1375000 Vs max 1316660
+[    4.341339] twl6030_uv_to_vsel:OUT OF RANGE! non mapped vsel for 1375000 Vs max 1316660
+[    4.349487] twl6030_uv_to_vsel:OUT OF RANGE! non mapped vsel for 1410000 Vs max 1316660
+[    4.357788] omap2_set_init_voltage: unable to find boot up OPP for vdd_mpu
+[    4.364776] omap2_set_init_voltage: unable to set vdd_mpu
+[    4.370269] omap2_set_init_voltage: unable to find boot up OPP for vdd_core
+[    4.377349] omap2_set_init_voltage: unable to set vdd_core
+[    4.382965] omap2_set_init_voltage: unable to find boot up OPP for vdd_iva
+[    4.389923] omap2_set_init_voltage: unable to set vdd_iva
+[    4.395477] Power Management for TI OMAP4+ devices.
+[    4.400421] OMAP4 PM: u-boot >= v2012.07 is required for full PM support
+[    4.407592] ThumbEE CPU extension supported.
+[    4.407592] Registering SWP/SWPB emulation handler
+[    4.407592] SmartReflex Class3 initialized
+[    4.422760] Loading compiled-in X.509 certificates
+[    4.483215] dmm 4e000000.dmm: initialized all PAT entries
+[    4.489624] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer enable
+[    4.497894] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    4.505279] of_get_named_gpiod_flags: parsed 'enable-gpios' property of node '/usb-phy@1[0]' - status (0)
+[    4.514984] gpio gpiochip2: Persistence not supported for GPIO 31
+[    4.521209] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer power
+[    4.528228] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    4.535461] of_get_named_gpiod_flags: parsed 'power-gpios' property of node '/usb-phy@1[0]' - status (0)
+[    4.545166] gpio gpiochip1: Persistence not supported for GPIO 22
+[    4.545166] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer reset
+[    4.558349] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    4.565673] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/usb-phy@1[0]' - status (0)
+[    4.575286] gpio gpiochip1: Persistence not supported for GPIO 17
+[    4.581512] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer motorola,mode
+[    4.589233] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    4.596557] of_get_named_gpiod_flags: parsed 'motorola,mode-gpios' property of node '/usb-phy@1[0]' - status (0)
+[    4.606964] gpio gpiochip4: Persistence not supported for GPIO 20
+[    4.613311] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer motorola,mode
+[    4.621002] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    4.628265] of_get_named_gpiod_flags: parsed 'motorola,mode-gpios' property of node '/usb-phy@1[1]' - status (0)
+[    4.638610] gpio gpiochip4: Persistence not supported for GPIO 21
+[    4.638610] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer motorola,status
+[    4.652709] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    4.659942] of_get_named_gpiod_flags: parsed 'motorola,status-gpios' property of node '/usb-phy@1[0]' - status (0)
+[    4.670532] gpio gpiochip1: Persistence not supported for GPIO 20
+[    4.670532] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer motorola,status
+[    4.684600] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    4.691894] of_get_named_gpiod_flags: parsed 'motorola,status-gpios' property of node '/usb-phy@1[1]' - status (0)
+[    4.702423] gpio gpiochip1: Persistence not supported for GPIO 21
+[    4.702423] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer motorola,status
+[    4.716522] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    4.723785] of_get_named_gpiod_flags: parsed 'motorola,status-gpios' property of node '/usb-phy@1[2]' - status (0)
+[    4.734313] gpio gpiochip1: Persistence not supported for GPIO 23
+[    4.740509] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer motorola,cmd
+[    4.748168] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    4.755432] of_get_named_gpiod_flags: parsed 'motorola,cmd-gpios' property of node '/usb-phy@1[0]' - status (0)
+[    4.765747] gpio gpiochip3: Persistence not supported for GPIO 7
+[    4.765747] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer motorola,cmd
+[    4.779449] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    4.786712] of_get_named_gpiod_flags: parsed 'motorola,cmd-gpios' property of node '/usb-phy@1[1]' - status (0)
+[    4.796997] gpio gpiochip3: Persistence not supported for GPIO 8
+[    4.803161] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer motorola,cmd
+[    4.803161] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    4.817993] of_get_named_gpiod_flags: parsed 'motorola,cmd-gpios' property of node '/usb-phy@1[2]' - status (0)
+[    4.828277] gpio gpiochip4: Persistence not supported for GPIO 14
+[    9.122009] phy-mapphone-mdm6600 usb-phy@1: Waiting for power up request to complete..
+[    9.362426] panel-dsi-cm 58004000.encoder:display: GPIO lookup for consumer reset
+[    9.370666] panel-dsi-cm 58004000.encoder:display: using device tree for GPIO lookup
+[    9.378631] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/ocp/dss@58000000/encoder@58004000/display[0]' - status (0)
+[    9.391082] gpio gpiochip3: Persistence not supported for GPIO 5
+[    9.397216] panel-dsi-cm 58004000.encoder:display: GPIO lookup for consumer te
+[    9.404571] panel-dsi-cm 58004000.encoder:display: using device tree for GPIO lookup
+[    9.412445] of_get_named_gpiod_flags: can't parse 'te-gpios' property of node '/ocp/dss@58000000/encoder@58004000/display[0]'
+[    9.423980] of_get_named_gpiod_flags: can't parse 'te-gpio' property of node '/ocp/dss@58000000/encoder@58004000/display[0]'
+[    9.435821] panel-dsi-cm 58004000.encoder:display: using lookup tables for GPIO lookup
+[    9.443939] panel-dsi-cm 58004000.encoder:display: No GPIO consumer te found
+[    9.443939] lcd: supplied by SW5
+[    9.462677] cpcap-usb-phy cpcap-usb-phy.0: GPIO lookup for consumer mode
+[    9.462677] cpcap-usb-phy cpcap-usb-phy.0: using device tree for GPIO lookup
+[    9.477172] of_get_named_gpiod_flags: parsed 'mode-gpios' property of node '/ocp/spi@48098000/pmic@0/phy[0]' - status (0)
+[    9.488342] gpio gpiochip1: Persistence not supported for GPIO 28
+[    9.494567] cpcap-usb-phy cpcap-usb-phy.0: GPIO lookup for consumer mode
+[    9.501403] cpcap-usb-phy cpcap-usb-phy.0: using device tree for GPIO lookup
+[    9.508605] of_get_named_gpiod_flags: parsed 'mode-gpios' property of node '/ocp/spi@48098000/pmic@0/phy[1]' - status (0)
+[    9.519775] gpio gpiochip0: Persistence not supported for GPIO 0
+[    9.532043] ohci-platform 4a064800.ohci: Generic Platform OHCI controller
+[    9.539978] ohci-platform 4a064800.ohci: new USB bus registered, assigned bus number 2
+[    9.549224] ohci-platform 4a064800.ohci: irq 146, io mem 0x4a064800
+[    9.562927] cpcap-usb-phy cpcap-usb-phy.0: connected to USB host
+[    9.653106] usb usb2: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 4.17
+[    9.661560] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    9.668945] usb usb2: Product: Generic Platform OHCI controller
+[    9.674987] usb usb2: Manufacturer: Linux 4.17.0-rc5-74797-gba8eaf3-dirty ohci_hcd
+[    9.682678] usb usb2: SerialNumber: 4a064800.ohci
+[    9.689056] hub 2-0:1.0: USB hub found
+[    9.693267] hub 2-0:1.0: 3 ports detected
+[    9.702331] power_supply battery: Not all required supplies found, defer probe
+[    9.709686] cpcap_battery cpcap_battery.0: failed to register power supply
+[    9.725006] cpcap-charger cpcap-charger.0: GPIO lookup for consumer mode
+[    9.731842] cpcap-charger cpcap-charger.0: using device tree for GPIO lookup
+[    9.739013] of_get_named_gpiod_flags: parsed 'mode-gpios' property of node '/ocp/spi@48098000/pmic@0/charger[0]' - status (0)
+[    9.750518] gpio gpiochip2: Persistence not supported for GPIO 29
+[    9.756744] cpcap-charger cpcap-charger.0: GPIO lookup for consumer mode
+[    9.763580] cpcap-charger cpcap-charger.0: using device tree for GPIO lookup
+[    9.770751] of_get_named_gpiod_flags: parsed 'mode-gpios' property of node '/ocp/spi@48098000/pmic@0/charger[1]' - status (0)
+[    9.782226] gpio gpiochip2: Persistence not supported for GPIO 23
+[    9.788909] asoc-audio-graph-card soundcard: GPIO lookup for consumer pa
+[    9.796142] asoc-audio-graph-card soundcard: using device tree for GPIO lookup
+[    9.803527] of_get_named_gpiod_flags: can't parse 'pa-gpios' property of node '/soundcard[0]'
+[    9.812225] of_get_named_gpiod_flags: can't parse 'pa-gpio' property of node '/soundcard[0]'
+[    9.820770] asoc-audio-graph-card soundcard: using lookup tables for GPIO lookup
+[    9.828308] asoc-audio-graph-card soundcard: No GPIO consumer pa found
+[    9.849151] Charging, 4350000 uV, 532000 uA
+[    9.855072] omap-mcbsp 40124000.mcbsp: ASoC: Failed to create component debugfs directory
+[    9.863616] omap-mcbsp 40126000.mcbsp: ASoC: Failed to create component debugfs directory
+[    9.873535] asoc-audio-graph-card soundcard: cpcap-hifi <-> 40124000.mcbsp mapping ok
+[    9.882995] asoc-audio-graph-card soundcard: cpcap-voice <-> 40126000.mcbsp mapping ok
+[    9.896728] Charging, 4350000 uV, 532000 uA
+[    9.910583] Charging, 4350000 uV, 532000 uA
+[    9.912414] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    9.921539] [drm] No driver support for vblank timestamp query.
+[    9.953979] [drm] Enabling DMM ywrap scrolling
+[    9.967132] Charging, 4350000 uV, 532000 uA
+[    9.970672] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   11.142059] usb 2-1: new full-speed USB device number 2 using ohci-platform
+[   11.182434] panel-dsi-cm 58004000.encoder:display: panel revision 70.01.02
+[   11.205718] Console: switching to colour frame buffer device 120x33
+[   11.249084] omapdrm omapdrm.0: fb0: omapdrm frame buffer device
+[   11.262329] [drm] Initialized omapdrm 1.0.0 20110917 for omapdrm.0 on minor 0
+[   11.276031] power_supply battery: battery: Found supply : usb
+[   11.287414] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio_keys/volume_down[0]' - status (0)
+[   11.300689] gpio gpiochip4: Persistence not supported for GPIO 26
+[   11.310180] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio_keys/slider[0]' - status (0)
+[   11.322998] gpio gpiochip3: Persistence not supported for GPIO 26
+[   11.332672] input: gpio_keys as /devices/platform/gpio_keys/input/input3
+[   11.345886] cpcap-rtc cpcap-rtc.0: setting system clock to 2018-05-14 14:06:26 UTC (1526306786)
+[   11.358428] sr_init: No PMIC hook to init smartreflex
+[   11.367584] smartreflex 4a0db000.smartreflex: omap_sr_probe: SmartReflex driver initialized
+[   11.379760] smartreflex 4a0dd000.smartreflex: omap_sr_probe: SmartReflex driver initialized
+[   11.391754] smartreflex 4a0d9000.smartreflex: omap_sr_probe: SmartReflex driver initialized
+[   11.403900] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   11.421295] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   11.432250] vwl1271: disabling
+[   11.439849] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[   11.440216] VAUDIO: disabling
+[   11.451660] cfg80211: failed to load regulatory.db
+[   11.458282] ALSA device list:
+[   11.471374]   #0: HDMI 58006000.encoder
+[   11.478149]   #1: Droid 4 Audio
+[   11.486846] Waiting 10 sec before mounting root device...
+[   11.492340] phy-mapphone-mdm6600 usb-phy@1: modem status: 4 awake
+[   11.504669] phy-mapphone-mdm6600 usb-phy@1: Powered up OK
+[   11.525543] usb 2-1: New USB device found, idVendor=22b8, idProduct=2a70, bcdDevice= 0.00
+[   11.536987] usb 2-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[   11.547088] usb 2-1: Product: Flash MZ600
+[   11.553955] usb 2-1: Manufacturer: Motorola, Incorporated
+[   11.570556] qcserial 2-1:1.0: Qualcomm USB modem converter detected
+[   11.580841] usb 2-1: Qualcomm USB modem converter now attached to ttyUSB0
+[   11.592773] qcserial 2-1:1.1: Qualcomm USB modem converter detected
+[   11.602478] usb 2-1: Qualcomm USB modem converter now attached to ttyUSB1
+[   11.613861] qcserial 2-1:1.2: Qualcomm USB modem converter detected
+[   11.623382] usb 2-1: Qualcomm USB modem converter now attached to ttyUSB2
+[   11.634765] qcserial 2-1:1.3: Qualcomm USB modem converter detected
+[   11.644226] usb 2-1: Qualcomm USB modem converter now attached to ttyUSB3
+[   11.655639] qcserial 2-1:1.4: Qualcomm USB modem converter detected
+[   11.665069] usb 2-1: Qualcomm USB modem converter now attached to ttyUSB4
+[   11.678283] qmi_wwan 2-1:1.5: cdc-wdm0: USB WDM device
+[   11.687591] qmi_wwan 2-1:1.5 wwan0: register 'qmi_wwan' at usb-4a064800.ohci-1, WWAN/QMI device, be:72:99:a5:56:ec
+[   11.703216] qmi_wwan 2-1:1.6: cdc-wdm1: USB WDM device
+[   11.712036] qmi_wwan 2-1:1.6 wwan1: register 'qmi_wwan' at usb-4a064800.ohci-1, WWAN/QMI device, be:72:99:a5:56:ec
+[   11.727081] qmi_wwan 2-1:1.7: cdc-wdm2: USB WDM device
+[   11.735931] qmi_wwan 2-1:1.7 wwan2: register 'qmi_wwan' at usb-4a064800.ohci-1, WWAN/QMI device, be:72:99:a5:56:ec
+[   11.752258] qmi_wwan 2-1:1.8: cdc-wdm3: USB WDM device
+[   11.761047] qmi_wwan 2-1:1.8 wwan3: register 'qmi_wwan' at usb-4a064800.ohci-1, WWAN/QMI device, be:72:99:a5:56:ec
+[   21.608795] EXT4-fs (mmcblk0p2): mounting ext3 file system using the ext4 subsystem
+[   21.638153] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+[   21.649658] VFS: Mounted root (ext3 filesystem) readonly on device 179:26.
+[   21.673858] devtmpfs: mounted
+[   21.681793] Freeing unused kernel memory: 1024K
+[   25.115356] udevd[458]: starting version 3.2.2
+[   25.142028] random: udevd: uninitialized urandom read (16 bytes read)
+[   25.157379] random: udevd: uninitialized urandom read (16 bytes read)
+[   25.167297] random: udevd: uninitialized urandom read (16 bytes read)
+[   25.258239] udevd[459]: starting eudev-3.2.2
+[   27.330200] (stc): gdata/new_proto/recv or reg_complete_cb not ready
+[   27.330230] fmdrv: Failed to get ST write func pointer
+[   27.349121] (stc):  chnl_id 8 not supported
+[   27.349121] fmdrv: st_unregister failed -93
+[   27.363464] fmdrv: Unable to prepare FM CORE
+[   27.505523] urandom_read: 6 callbacks suppressed
+[   27.505554] random: alsactl: uninitialized urandom read (4 bytes read)
+[   27.543792] Requested mode 0
+[   28.625427] EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+[   30.388519] FAT-fs (mmcblk0p1): bogus number of reserved sectors
+[   30.398193] FAT-fs (mmcblk0p1): Can't find a valid FAT filesystem
+[   32.745239] Requested mode 0
+[   40.164825] cpcap-usb-phy cpcap-usb-phy.0: connected to USB host
+[   54.832519] random: crng init done
+[   70.243560] cpcap-usb-phy cpcap-usb-phy.0: connected to USB host
+[  100.323333] cpcap-usb-phy cpcap-usb-phy.0: connected to USB host
+[  130.403472] cpcap-usb-phy cpcap-usb-phy.0: connected to USB host
+[  160.482757] cpcap-usb-phy cpcap-usb-phy.0: connected to USB host
+[  190.562408] cpcap-usb-phy cpcap-usb-phy.0: connected to USB host
+[  196.812255] omap-mcbsp 40124000.mcbsp: CLKS: could not clk_set_parent() to prcm_fck
+[  196.824066] omap-mcbsp 40124000.mcbsp: CLKS: could not clk_set_parent() to prcm_fck
+[  196.834045] omap-mcbsp 40124000.mcbsp: CLKS: could not clk_set_parent() to prcm_fck
+[  196.844940] omap-mcbsp 40124000.mcbsp: CLKS: could not clk_set_parent() to prcm_fck
+[  196.922973] omap-mcbsp 40124000.mcbsp: CLKS: could not clk_set_parent() to prcm_fck
+[  197.068664] omap-mcbsp 40124000.mcbsp: CLKS: could not clk_set_parent() to prcm_fck
+[  197.079650] ------------[ cut here ]------------
+[  197.084686] WARNING: CPU: 1 PID: 2167 at drivers/gpu/drm/omapdrm/dss/hdmi4.c:667 hdmi_audio_stop+0x5c/0x68
+[  197.094390] Modules linked in:
+[  197.097473] CPU: 1 PID: 2167 Comm: pulseaudio Not tainted 4.17.0-rc5-74797-gba8eaf3-dirty #664
+[  197.106140] Hardware name: Generic OMAP4 (Flattened Device Tree)
+[  197.112213] [<c0111854>] (unwind_backtrace) from [<c010d740>] (show_stack+0x10/0x14)
+[  197.120025] [<c010d740>] (show_stack) from [<c0944fa4>] (dump_stack+0xa8/0xe0)
+[  197.127319] [<c0944fa4>] (dump_stack) from [<c0134d54>] (__warn+0xf8/0x124)
+[  197.134307] [<c0134d54>] (__warn) from [<c0134dbc>] (warn_slowpath_null+0x3c/0x48)
+[  197.141937] [<c0134dbc>] (warn_slowpath_null) from [<c053de74>] (hdmi_audio_stop+0x5c/0x68)
+[  197.150360] [<c053de74>] (hdmi_audio_stop) from [<c0735c88>] (hdmi_dai_trigger+0x6c/0x88)
+[  197.158630] [<c0735c88>] (hdmi_dai_trigger) from [<c0722128>] (soc_pcm_trigger+0x140/0x184)
+[  197.167022] [<c0722128>] (soc_pcm_trigger) from [<c06f1a58>] (snd_pcm_do_stop+0x54/0x58)
+[  197.175201] [<c06f1a58>] (snd_pcm_do_stop) from [<c06f1800>] (snd_pcm_action_single+0x38/0x78)
+[  197.183868] [<c06f1800>] (snd_pcm_action_single) from [<c06f3a2c>] (snd_pcm_drop+0x48/0x94)
+[  197.192260] [<c06f3a2c>] (snd_pcm_drop) from [<c06f4b28>] (snd_pcm_ioctl+0x904/0x132c)
+[  197.200256] [<c06f4b28>] (snd_pcm_ioctl) from [<c02c80d4>] (do_vfs_ioctl+0x84/0xa70)
+[  197.208068] [<c02c80d4>] (do_vfs_ioctl) from [<c02c8b1c>] (ksys_ioctl+0x5c/0x80)
+[  197.215515] [<c02c8b1c>] (ksys_ioctl) from [<c0101000>] (ret_fast_syscall+0x0/0x28)
+[  197.223205] Exception stack(0xec08ffa8 to 0xec08fff0)
+[  197.228302] ffa0:                   005b8500 b1985394 00000015 00004143 00000000 005b84b0
+[  197.236541] ffc0: 005b8500 b1985394 00593638 00000036 0000000e b6fddce8 00531e58 beb3a544
+[  197.244750] ffe0: b19857c4 beb3a3c4 b1915be7 b6c8f716
+[  197.249847] irq event stamp: 59018
+[  197.253265] hardirqs last  enabled at (59017): [<c01c6f5c>] ktime_get_ts64+0x19c/0x1dc
+[  197.261230] hardirqs last disabled at (59018): [<c06f278c>] snd_pcm_stream_lock_irq+0x24/0x34
+[  197.269805] softirqs last  enabled at (58644): [<c01024a0>] __do_softirq+0x2e0/0x59c
+[  197.277587] softirqs last disabled at (58631): [<c013c688>] irq_exit+0x144/0x194
+[  197.285034] ---[ end trace 9fd5b3ccd8c6f2b7 ]---
+[  220.642456] cpcap-usb-phy cpcap-usb-phy.0: connected to USB host
