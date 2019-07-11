@@ -1,0 +1,558 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.19.0-rc1-00020-g36eb8f6-dirty (pavel@half) (gcc version 4.7.2 (GCC)) #105 SMP Wed Aug 29 10:58:42 CEST 2018
+[    0.000000] CPU: ARMv7 Processor [411fc083] revision 3 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+[    0.000000] OF: fdt: Machine model: Nokia N900
+[    0.000000] Memory policy: Data cache writeback
+[    0.000000] cma: Reserved 16 MiB at 0x8e800000
+[    0.000000] On node 0 totalpages: 65024
+[    0.000000]   Normal zone: 508 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 65024 pages, LIFO batch:15
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] OMAP3430/3530 ES3.1 (l2cache iva sgx neon isp)
+[    0.000000] random: get_random_bytes called from start_kernel+0x74/0x38c with crng_init=0
+[    0.000000] percpu: Embedded 16 pages/cpu @(ptrval) s36032 r8192 d21312 u65536
+[    0.000000] pcpu-alloc: s36032 r8192 d21312 u65536 alloc=16*4096
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 64516
+[    0.000000] Kernel command line: root=/dev/mmcblk0p4 console=ttyO2,115200 console=tty1 rootwait no-omap-wd no-ext-wd
+[    0.000000] Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Memory: 227016K/260096K available (8192K kernel code, 400K rwdata, 2876K rodata, 1024K init, 329K bss, 16696K reserved, 16384K cma-reserved, 0K highmem)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xd0000000 - 0xff800000   ( 760 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xcfe00000   ( 254 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0x(ptrval) - 0x(ptrval)   (9184 kB)
+[    0.000000]       .init : 0x(ptrval) - 0x(ptrval)   (1024 kB)
+[    0.000000]       .data : 0x(ptrval) - 0x(ptrval)   ( 401 kB)
+[    0.000000]        .bss : 0x(ptrval) - 0x(ptrval)   ( 330 kB)
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=2 to nr_cpu_ids=1.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] IRQ: Found an INTC at 0x(ptrval) (revision 4.0) with 96 interrupts
+[    0.000000] Clocking rate (Crystal/Core/MPU): 19.2/332/500 MHz
+[    0.000000] OMAP clockevent source: timer1 at 32768 Hz
+[    0.000000] clocksource: 32k_counter: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 58327039986419 ns
+[    0.000030] sched_clock: 32 bits at 32kHz, resolution 30517ns, wraps every 65535999984741ns
+[    0.000030] OMAP clocksource: 32k_counter at 32768 Hz
+[    0.001281] Console: colour dummy device 80x30
+[    0.002105] console [tty1] enabled
+[    0.002166] WARNING: Your 'console=ttyO2' has been replaced by 'ttyS2'
+[    0.002197] This ensures that you still see kernel messages. Please
+[    0.002227] update your kernel commandline.
+[    0.002288] Calibrating delay loop... 496.43 BogoMIPS (lpj=2482176)
+[    0.047882] pid_max: default: 32768 minimum: 301
+[    0.048126] Security Framework initialized
+[    0.048309] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.048370] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.049804] CPU: Testing write buffer coherency: ok
+[    0.049957] CPU0: Spectre v2: firmware did not set auxiliary control register IBE bit, system vulnerable
+[    0.050689] CPU0: thread -1, cpu 0, socket -1, mpidr 0
+[    0.052276] Setting up static identity map for 0x80100000 - 0x80100078
+[    0.052673] rcu: Hierarchical SRCU implementation.
+[    0.053985] smp: Bringing up secondary CPUs ...
+[    0.054046] smp: Brought up 1 node, 1 CPU
+[    0.054077] SMP: Total of 1 processors activated (496.43 BogoMIPS).
+[    0.054107] CPU: All CPU(s) started in SVC mode.
+[    0.057678] devtmpfs: initialized
+[    0.099517] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 1
+[    0.100128] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.100219] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.101898] pinctrl core: initialized pinctrl subsystem
+[    0.104309] NET: Registered protocol family 16
+[    0.110870] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.153106] omap_hwmod: mcbsp2_sidetone using broken dt data from mcbsp
+[    0.154418] omap_hwmod: mcbsp3_sidetone using broken dt data from mcbsp
+[    0.218627] cpuidle: using governor menu
+[    0.219390] Reprogramming SDRC clock to 332000000 Hz
+[    0.226867] gpio gpiochip0: (gpio-0-31): added GPIO chardev (254:0)
+[    0.227050] gpiochip_setup_dev: registered GPIOs 0 to 31 on device: gpiochip0 (gpio-0-31)
+[    0.227111] OMAP GPIO hardware version 2.5
+[    0.228698] gpio gpiochip1: (gpio-32-63): added GPIO chardev (254:1)
+[    0.228881] gpiochip_setup_dev: registered GPIOs 32 to 63 on device: gpiochip1 (gpio-32-63)
+[    0.230224] gpio gpiochip2: (gpio-64-95): added GPIO chardev (254:2)
+[    0.230377] gpiochip_setup_dev: registered GPIOs 64 to 95 on device: gpiochip2 (gpio-64-95)
+[    0.231689] gpio gpiochip3: (gpio-96-127): added GPIO chardev (254:3)
+[    0.231872] gpiochip_setup_dev: registered GPIOs 96 to 127 on device: gpiochip3 (gpio-96-127)
+[    0.233154] gpio gpiochip4: (gpio-128-159): added GPIO chardev (254:4)
+[    0.233306] gpiochip_setup_dev: registered GPIOs 128 to 159 on device: gpiochip4 (gpio-128-159)
+[    0.234588] gpio gpiochip5: (gpio-160-191): added GPIO chardev (254:5)
+[    0.234802] gpiochip_setup_dev: registered GPIOs 160 to 191 on device: gpiochip5 (gpio-160-191)
+[    0.254852] RX-51: Enabling ARM errata 430973 workaround
+[    0.256713] RX-51: Registering OMAP3 HWRNG device
+[    0.259429] omap4_sram_init:Unable to allocate sram needed to handle errata I688
+[    0.259521] omap4_sram_init:Unable to get sram pool needed to handle errata I688
+[    0.260589] Reserving DMA channels 0 and 1 for HS ROM code
+[    0.260620] OMAP DMA hardware revision 4.0
+[    0.301483] omap-dma-engine 48056000.dma-controller: OMAP DMA engine driver
+[    0.307678] omap-iommu 480bd400.mmu: 480bd400.mmu registered
+[    0.308410] iommu: Adding device 480bc000.isp to group 0
+[    0.311584] SCSI subsystem initialized
+[    0.312164] usbcore: registered new interface driver usbfs
+[    0.312316] usbcore: registered new interface driver hub
+[    0.312499] usbcore: registered new device driver usb
+[    0.313934] media: Linux media interface: v0.10
+[    0.314086] videodev: Linux video capture interface: v2.00
+[    0.314361] pps_core: LinuxPPS API ver. 1 registered
+[    0.314422] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.314483] PTP clock support registered
+[    0.315429] omap-mailbox 48094000.mailbox: omap mailbox rev 0x40
+[    0.316192] Advanced Linux Sound Architecture Driver Initialized.
+[    0.317413] Bluetooth: Core ver 2.22
+[    0.317565] NET: Registered protocol family 31
+[    0.317596] Bluetooth: HCI device and connection manager initialized
+[    0.317657] Bluetooth: HCI socket layer initialized
+[    0.317687] Bluetooth: L2CAP socket layer initialized
+[    0.317810] Bluetooth: SCO socket layer initialized
+[    0.319458] clocksource: Switched to clocksource 32k_counter
+[    0.342590] NET: Registered protocol family 2
+[    0.343963] tcp_listen_portaddr_hash hash table entries: 256 (order: 0, 6144 bytes)
+[    0.344055] TCP established hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.344146] TCP bind hash table entries: 2048 (order: 3, 40960 bytes)
+[    0.344299] TCP: Hash tables configured (established 2048 bind 2048)
+[    0.344543] UDP hash table entries: 256 (order: 1, 12288 bytes)
+[    0.344635] UDP-Lite hash table entries: 256 (order: 1, 12288 bytes)
+[    0.345001] NET: Registered protocol family 1
+[    0.346343] RPC: Registered named UNIX socket transport module.
+[    0.346405] RPC: Registered udp transport module.
+[    0.346466] RPC: Registered tcp transport module.
+[    0.346496] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.355010] Initialise system trusted keyrings
+[    0.355895] workingset: timestamp_bits=30 max_order=16 bucket_order=0
+[    0.357666] NFS: Registering the id_resolver key type
+[    0.357757] Key type id_resolver registered
+[    0.357818] Key type id_legacy registered
+[    0.366088] jitterentropy: Initialization failed with host not compliant with requirements: 2
+[    0.366760] Key type asymmetric registered
+[    0.366790] Asymmetric key parser 'x509' registered
+[    0.366882] io scheduler noop registered
+[    0.366912] io scheduler deadline registered
+[    0.367065] io scheduler cfq registered (default)
+[    0.367095] io scheduler mq-deadline registered
+[    0.368927] ti-sysc 480cb024.target-module: sysc_flags 00000100 != 00000110
+[    0.370513] ti-sysc 480c9024.target-module: sysc_flags 00000100 != 00000110
+[    0.374847] pinctrl-single 48002030.pinmux: 284 pins, size 568
+[    0.375610] pinctrl-single 48002a00.pinmux: 46 pins, size 92
+[    0.376495] pinctrl-single 480025d8.pinmux: 18 pins, size 36
+[    0.382415] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.386932] 4806c000.serial: ttyS1 at MMIO 0x4806c000 (irq = 89, base_baud = 3000000) is a 8250
+[    0.387359] serial serial0: tty port ttyS1 registered
+[    0.388519] 49020000.serial: ttyS2 at MMIO 0x49020000 (irq = 90, base_baud = 3000000) is a 8250
+[    1.148223] console [ttyS2] enabled
+[    1.155761] omap3_rom_rng: initializing
+[    1.159912] omap3_rom_rng: unable to get RNG clock
+[    1.164825] omap3-rom-rng: probe of omap3-rom-rng failed with error -2
+[    1.172454] omapdss_dss 48050000.dss: 48050000.dss supply vdda_video not found, using dummy regulator
+[    1.182067] omapdss_dss 48050000.dss: Linked as a consumer to regulator.0
+[    1.189056] DSS: OMAP DSS rev 2.0
+[    1.195037] omapdss_dss 48050000.dss: bound 48050400.dispc (ops dispc_component_ops)
+[    1.203399] omapdss_dss 48050000.dss: bound 48050c00.encoder (ops venc_component_ops)
+[    1.215545] Error: Driver 'tfp410' is already registered, aborting...
+[    1.250061] brd: module loaded
+[    1.273010] loop: module loaded
+[    1.278503] mtdoops: mtd device (mtddev=name/number) must be supplied
+[    1.289184] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/ocp@68000000/spi@48098000/acx565akm@2[0]' - status (0)
+[    1.299682] acx565akm spi0.2: omapfb: acx565akm rev ab LCD detected
+[    1.312469] omap_ssi 48058000.ssi-controller: ssi controller 0 initialized (1 ports)!
+[    1.321411] omap_ssi_port 4805a000.ssi-port: GPIO lookup for consumer ti,ssi-cawake
+[    1.321441] omap_ssi_port 4805a000.ssi-port: using device tree for GPIO lookup
+[    1.321472] of_get_named_gpiod_flags: can't parse 'ti,ssi-cawake-gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000[0]'
+[    1.321533] of_get_named_gpiod_flags: parsed 'ti,ssi-cawake-gpio' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000[0]' - status (0)
+[    1.321624] gpio gpiochip4: Persistence not supported for GPIO 23
+[    1.323333] omap_ssi_port 4805a000.ssi-port: ssi port 0 successfully initialized
+[    1.331604] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    1.331634] nokia-modem n900-modem: using device tree for GPIO lookup
+[    1.331695] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[0]' - status (0)
+[    1.331726] gpio gpiochip2: Persistence not supported for GPIO 6
+[    1.332061] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    1.332092] nokia-modem n900-modem: using device tree for GPIO lookup
+[    1.332153] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[1]' - status (0)
+[    1.332183] gpio gpiochip2: Persistence not supported for GPIO 9
+[    1.332458] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    1.332458] nokia-modem n900-modem: using device tree for GPIO lookup
+[    1.332519] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[2]' - status (0)
+[    1.332550] gpio gpiochip2: Persistence not supported for GPIO 10
+[    1.332824] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    1.332824] nokia-modem n900-modem: using device tree for GPIO lookup
+[    1.332885] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[3]' - status (0)
+[    1.332916] gpio gpiochip2: Persistence not supported for GPIO 11
+[    1.333190] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    1.333190] nokia-modem n900-modem: using device tree for GPIO lookup
+[    1.333251] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[4]' - status (0)
+[    1.333282] gpio gpiochip4: Persistence not supported for GPIO 29
+[    1.334777] SSI protocol aka McSAAB added
+[    1.338928] CMT speech driver added
+[    1.342803] HSI/SSI char device loaded
+[    1.347106] mdio_bus fixed-0: GPIO lookup for consumer reset
+[    1.347106] mdio_bus fixed-0: using lookup tables for GPIO lookup
+[    1.347137] mdio_bus fixed-0: No GPIO consumer reset found
+[    1.347167] libphy: Fixed MDIO Bus: probed
+[    1.352416] of_get_named_gpiod_flags: parsed 'ti,power-gpio' property of node '/ocp@68000000/spi@480ba000/wl1251@0[0]' - status (0)
+[    1.352600] wl1251: ERROR vio regulator missing: -517
+[    1.358032] usbcore: registered new interface driver qmi_wwan
+[    1.363983] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.370330] ohci-platform: OHCI generic platform driver
+[    1.376403] ohci-platform 48064400.ohci: Generic Platform OHCI controller
+[    1.383422] ohci-platform 48064400.ohci: new USB bus registered, assigned bus number 1
+[    1.392181] ohci-platform 48064400.ohci: irq 92, io mem 0x48064400
+[    1.481445] hub 1-0:1.0: USB hub found
+[    1.485382] hub 1-0:1.0: 3 ports detected
+[    1.491119] usbcore: registered new interface driver cdc_wdm
+[    1.497100] usbcore: registered new interface driver qcserial
+[    1.503112] usbserial: USB Serial support registered for Qualcomm USB modem
+[    1.512023] udc-core: couldn't find an available UDC - added [g_ether] to list of pending drivers
+[    1.521972] mousedev: PS/2 mouse device common for all mice
+[    1.529144] tsc2005 spi0.0: GPIO lookup for consumer reset
+[    1.529174] tsc2005 spi0.0: using device tree for GPIO lookup
+[    1.529235] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/ocp@68000000/spi@48098000/tsc2005@0[0]' - status (0)
+[    1.529266] gpio gpiochip3: Persistence not supported for GPIO 8
+[    1.529327] tsc2005 spi0.0: error acquiring vio regulator: -517
+[    1.537658] i2c /dev entries driver
+[    1.546417] ti-soc-thermal 48002524.bandgap: This OMAP thermal sensor is unreliable. You've been warned
+[    1.556121] ti-soc-thermal 48002524.bandgap: Non-trimmed BGAP, Temp not accurate
+[    1.566345] omap_wdt: OMAP Watchdog Timer Rev 0x31: initial timeout 60 sec
+[    1.574157] Bluetooth: HCI UART driver ver 2.3
+[    1.578674] Bluetooth: HCI UART protocol H4 registered
+[    1.584045] Bluetooth: HCI UART protocol LL registered
+[    1.589599] Bluetooth: HCI UART protocol Broadcom registered
+[    1.597351] omap_hsmmc 4809c000.mmc: GPIO lookup for consumer cd
+[    1.597351] omap_hsmmc 4809c000.mmc: using device tree for GPIO lookup
+[    1.597442] of_get_named_gpiod_flags: parsed 'cd-gpios' property of node '/ocp@68000000/mmc@4809c000[0]' - status (0)
+[    1.597534] gpio gpiochip5: Persistence not supported for GPIO 0
+[    1.597564] omap_hsmmc 4809c000.mmc: Got CD GPIO
+[    1.602386] omap_hsmmc 4809c000.mmc: GPIO lookup for consumer wp
+[    1.602386] omap_hsmmc 4809c000.mmc: using device tree for GPIO lookup
+[    1.602416] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp@68000000/mmc@4809c000[0]'
+[    1.602447] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp@68000000/mmc@4809c000[0]'
+[    1.602478] omap_hsmmc 4809c000.mmc: using lookup tables for GPIO lookup
+[    1.602478] omap_hsmmc 4809c000.mmc: No GPIO consumer wp found
+[    1.605285] omap_hsmmc 480b4000.mmc: GPIO lookup for consumer wp
+[    1.605316] omap_hsmmc 480b4000.mmc: using device tree for GPIO lookup
+[    1.605346] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp@68000000/mmc@480b4000[0]'
+[    1.605377] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp@68000000/mmc@480b4000[0]'
+[    1.605407] omap_hsmmc 480b4000.mmc: using lookup tables for GPIO lookup
+[    1.605407] omap_hsmmc 480b4000.mmc: No GPIO consumer wp found
+[    1.607666] of_get_named_gpiod_flags: parsed 'gpios' property of node '/leds/heartbeat[0]' - status (0)
+[    1.607757] gpio gpiochip5: Persistence not supported for GPIO 2
+[    1.607757] no flags found for gpios
+[    1.608367] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.625732] rx51-audio n900-audio: GPIO lookup for consumer tvout-selection
+[    1.625732] rx51-audio n900-audio: using device tree for GPIO lookup
+[    1.625793] of_get_named_gpiod_flags: parsed 'tvout-selection-gpios' property of node '/n900-audio[0]' - status (0)
+[    1.625854] gpio gpiochip1: Persistence not supported for GPIO 8
+[    1.625854] rx51-audio n900-audio: GPIO lookup for consumer jack-detection
+[    1.625885] rx51-audio n900-audio: using device tree for GPIO lookup
+[    1.625915] of_get_named_gpiod_flags: parsed 'jack-detection-gpios' property of node '/n900-audio[0]' - status (0)
+[    1.625946] gpio gpiochip5: Persistence not supported for GPIO 17
+[    1.625976] no flags found for jack-detection
+[    1.625976] rx51-audio n900-audio: GPIO lookup for consumer eci-switch
+[    1.626007] rx51-audio n900-audio: using device tree for GPIO lookup
+[    1.626037] of_get_named_gpiod_flags: parsed 'eci-switch-gpios' property of node '/n900-audio[0]' - status (0)
+[    1.626068] gpio gpiochip5: Persistence not supported for GPIO 22
+[    1.626068] rx51-audio n900-audio: GPIO lookup for consumer speaker-amplifier
+[    1.626098] rx51-audio n900-audio: using device tree for GPIO lookup
+[    1.626129] rx51-audio n900-audio: No GPIO consumer speaker-amplifier found
+[    1.626159] rx51-audio n900-audio: could not get speaker enable gpio
+[    1.635772] Initializing XFRM netlink socket
+[    1.640319] NET: Registered protocol family 17
+[    1.644866] NET: Registered protocol family 15
+[    1.649902] Bluetooth: RFCOMM TTY layer initialized
+[    1.654876] Bluetooth: RFCOMM socket layer initialized
+[    1.660217] Bluetooth: RFCOMM ver 1.11
+[    1.664062] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    1.669433] Bluetooth: BNEP filters: protocol multicast
+[    1.674774] Bluetooth: BNEP socket layer initialized
+[    1.679870] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    1.685882] Bluetooth: HIDP socket layer initialized
+[    1.691101] NET: Registered protocol family 35
+[    1.695739] Key type dns_resolver registered
+[    1.700439] ThumbEE CPU extension supported.
+[    1.704772] Registering SWP/SWPB emulation handler
+[    1.709777] omap2_set_init_voltage: unable to find boot up OPP for vdd_mpu_iva
+[    1.717071] omap2_set_init_voltage: unable to set vdd_mpu_iva
+[    1.722961] omap2_set_init_voltage: unable to find boot up OPP for vdd_core
+[    1.730041] omap2_set_init_voltage: unable to set vdd_core
+[    1.739044] SmartReflex Class3 initialized
+[    1.744903] Loading compiled-in X.509 certificates
+[    1.797027] omap-gpmc 6e000000.gpmc: GPMC revision 5.0
+[    1.802459] gpmc_mem_init: disabling cs 0 mapped at 0x0-0x1000000
+[    1.808685] gpiochip_find_base: found new base at 508
+[    1.809234] gpio gpiochip6: (omap-gpmc): added GPIO chardev (254:6)
+[    1.809448] gpiochip_setup_dev: registered GPIOs 508 to 511 on device: gpiochip6 (omap-gpmc)
+[    1.810974] omap2-onenand 1000000.onenand: GPIO lookup for consumer int
+[    1.811004] omap2-onenand 1000000.onenand: using device tree for GPIO lookup
+[    1.811035] of_get_named_gpiod_flags: can't parse 'int-gpios' property of node '/ocp@68000000/gpmc@6e000000/onenand@0,0[0]'
+[    1.811065] of_get_named_gpiod_flags: can't parse 'int-gpio' property of node '/ocp@68000000/gpmc@6e000000/onenand@0,0[0]'
+[    1.811096] omap2-onenand 1000000.onenand: using lookup tables for GPIO lookup
+[    1.811096] omap2-onenand 1000000.onenand: No GPIO consumer int found
+[    1.811157] omap2-onenand 1000000.onenand: initializing on CS0 (0x01000000), va (ptrval), DMA mode
+[    1.820373] OneNAND Manufacturer: Unknown (0xa0)
+[    1.826812] Skipping twl internal clock init and using bootloader value (unknown osc rate)
+[    1.840606] twl 1-0048: PIH (irq 23) chaining IRQs 155..163
+[    1.846435] twl 1-0048: power (irq 160) chaining IRQs 163..170
+[    1.855194] twl_rtc 48070000.i2c:twl@48:rtc: Enabling TWL-RTC
+[    1.861511] random: fast init done
+[    1.867645] twl_rtc 48070000.i2c:twl@48:rtc: rtc core: registered 48070000.i2c:twl@48:rtc as rtc0
+[    1.908416] V28_A: Bringing 2600000uV into 2800000-2800000uV
+[    1.932342] twl4030_gpio twl4030-gpio: gpio (irq 155) chaining IRQs 171..188
+[    1.940032] gpiochip_find_base: found new base at 490
+[    1.940460] gpio gpiochip7: (twl4030): added GPIO chardev (254:7)
+[    1.940673] gpiochip_setup_dev: registered GPIOs 490 to 507 on device: gpiochip7 (twl4030)
+[    1.942352] twl4030_usb 48070000.i2c:twl@48:twl4030-usb: Linked as a consumer to regulator.16
+[    1.951599] twl4030_usb 48070000.i2c:twl@48:twl4030-usb: Linked as a consumer to regulator.14
+[    1.960723] twl4030_usb 48070000.i2c:twl@48:twl4030-usb: Linked as a consumer to regulator.15
+[    2.040557] twl4030_usb 48070000.i2c:twl@48:twl4030-usb: Initialized TWL4030 USB module
+[    2.053070] input: twl4030_pwrbutton as /devices/platform/68000000.ocp/48070000.i2c/i2c-1/1-0048/48070000.i2c:twl@48:pwrbutton/input/input1
+[    2.067810] input: TWL4030 Keypad as /devices/platform/68000000.ocp/48070000.i2c/i2c-1/1-0048/48070000.i2c:twl@48:keypad/input/input2
+[    2.086059] twl4030_madc 48070000.i2c:twl@48:madc: 48070000.i2c:twl@48:madc supply vusb3v1 not found, using dummy regulator
+[    2.097656] twl4030_madc 48070000.i2c:twl@48:madc: Linked as a consumer to regulator.0
+[    2.109130] input: twl4030:vibrator as /devices/platform/68000000.ocp/48070000.i2c/i2c-1/1-0048/48070000.i2c:twl@48:audio/twl4030-vibra/input/input3
+[    2.167022] omap_i2c 48070000.i2c: bus 1 rev3.3 at 2200 kHz
+[    2.175750] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/ocp@68000000/i2c@48072000/tlv320aic3x@18[0]' - status (0)
+[    2.175964] tlv320aic3x-codec 2-0018: Linked as a consumer to regulator.8
+[    2.183624] tlv320aic3x-codec 2-0018: Linked as a consumer to regulator.13
+[    2.192413] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/ocp@68000000/i2c@48072000/tlv320aic3x@19[0]' - status (0)
+[    2.192626] tlv320aic3x-codec 2-0019: Linked as a consumer to regulator.8
+[    2.200164] tlv320aic3x-codec 2-0019: Linked as a consumer to regulator.13
+[    2.210998] tsl2563 2-0029: model 7, rev. 0
+[    2.219970] of_get_named_gpiod_flags: parsed 'enable-gpio' property of node '/ocp@68000000/i2c@48072000/lp5523@32[0]' - status (0)
+[    3.279907] omap_i2c 48072000.i2c: controller timed out
+[    3.388122] lp5523x 2-0032: lp5523 Programmable led chip found
+[    3.400970] power_supply bq27200-0: Not all required supplies found, defer probe
+[    3.408477] bq27xxx-battery 2-0055: failed to register battery
+[    3.415374] of_get_named_gpiod_flags: parsed 'power-gpio' property of node '/ocp@68000000/i2c@48072000/tpa6130a2@60[0]' - status (0)
+[    3.416046] tpa6130a2 2-0060: Linked as a consumer to regulator.13
+[    3.445831] bq2415x-charger 2-006b: automode supported, waiting for events
+[    3.454559] bq2415x-charger 2-006b: driver registered
+[    3.459869] omap_i2c 48072000.i2c: bus 2 rev3.3 at 100 kHz
+[    3.468872] lis3lv02d_i2c 3-001d: Linked as a consumer to regulator.2
+[    3.475738] lis3lv02d_i2c 3-001d: Linked as a consumer to regulator.8
+[    3.500061] lis3lv02d: 8 bits sensor found
+[    3.570220] input: ST LIS3LV02DL Accelerometer as /devices/platform/lis3lv02d/input/input4
+[    3.585327] et8ek8 3-003e: GPIO lookup for consumer reset
+[    3.585357] et8ek8 3-003e: using device tree for GPIO lookup
+[    3.585388] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]'
+[    3.585449] of_get_named_gpiod_flags: parsed 'reset-gpio' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]' - status (0)
+[    3.585479] gpio gpiochip3: Persistence not supported for GPIO 6
+[    3.585723] et8ek8 3-003e: Linked as a consumer to regulator.5
+[    3.591857] et8ek8 3-003e: could not get clock
+[    3.596527] et8ek8 3-003e: Dropping the link to regulator.5
+[    3.603088] ad5820 3-000c: Linked as a consumer to regulator.5
+[    3.609130] omap_i2c 48060000.i2c: bus 3 rev3.3 at 400 kHz
+[    3.616821] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    3.616851] nokia-modem n900-modem: using device tree for GPIO lookup
+[    3.616912] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[0]' - status (0)
+[    3.616943] gpio gpiochip2: Persistence not supported for GPIO 6
+[    3.617187] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    3.617218] nokia-modem n900-modem: using device tree for GPIO lookup
+[    3.617248] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[1]' - status (0)
+[    3.617279] gpio gpiochip2: Persistence not supported for GPIO 9
+[    3.617462] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    3.617492] nokia-modem n900-modem: using device tree for GPIO lookup
+[    3.617553] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[2]' - status (0)
+[    3.617553] gpio gpiochip2: Persistence not supported for GPIO 10
+[    3.617736] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    3.617767] nokia-modem n900-modem: using device tree for GPIO lookup
+[    3.617828] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[3]' - status (0)
+[    3.617858] gpio gpiochip2: Persistence not supported for GPIO 11
+[    3.618041] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    3.618041] nokia-modem n900-modem: using device tree for GPIO lookup
+[    3.618103] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[4]' - status (0)
+[    3.618133] gpio gpiochip4: Persistence not supported for GPIO 29
+[    3.620574] nokia-modem n900-modem: Registered Nokia HSI modem
+[    3.627014] of_get_named_gpiod_flags: parsed 'ti,power-gpio' property of node '/ocp@68000000/spi@480ba000/wl1251@0[0]' - status (0)
+[    3.627349] wl1251 spi3.0: Linked as a consumer to regulator.8
+[    3.633697] wl1251 spi3.0: Direct firmware load for ti-connectivity/wl1251-nvs.bin failed with error -2
+[    3.643341] wl1251: ERROR could not get nvs file: -2
+[    3.648590] wl1251 spi3.0: Dropping the link to regulator.8
+[    3.654479] wl1251: probe of spi3.0 failed with error -2
+[    3.660949] udc musb-hdrc.0.auto: registering UDC driver [g_ether]
+[    3.661041] using random self ethernet address
+[    3.665588] using random host ethernet address
+[    3.670196] g_ether gadget: adding config #1 'CDC Ethernet (ECM)'/(ptrval)
+[    3.670227] g_ether gadget: adding 'cdc_ethernet'/(ptrval) to config 'CDC Ethernet (ECM)'/(ptrval)
+[    3.671264] usb0: HOST MAC 1a:32:b2:39:84:c8
+[    3.675659] usb0: MAC ba:ea:c8:31:07:4a
+[    3.679656] g_ether gadget: CDC Ethernet: dual speed IN/ep1in OUT/ep1out NOTIFY/ep2in
+[    3.679687] g_ether gadget: cfg 1/(ptrval) speeds: high full
+[    3.679718] g_ether gadget:   interface 0 = cdc_ethernet/(ptrval)
+[    3.679718] g_ether gadget:   interface 1 = cdc_ethernet/(ptrval)
+[    3.679748] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+[    3.686431] g_ether gadget: g_ether ready
+[    3.691223] tsc2005 spi0.0: GPIO lookup for consumer reset
+[    3.691223] tsc2005 spi0.0: using device tree for GPIO lookup
+[    3.691314] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/ocp@68000000/spi@48098000/tsc2005@0[0]' - status (0)
+[    3.691345] gpio gpiochip3: Persistence not supported for GPIO 8
+[    3.691558] tsc2005 spi0.0: Linked as a consumer to regulator.8
+[    3.699096] input: TSC2005 touchscreen as /devices/platform/68000000.ocp/48098000.spi/spi_master/spi0/spi0.0/input/input5
+[    3.714874] omap_hsmmc 4809c000.mmc: GPIO lookup for consumer cd
+[    3.714904] omap_hsmmc 4809c000.mmc: using device tree for GPIO lookup
+[    3.714965] of_get_named_gpiod_flags: parsed 'cd-gpios' property of node '/ocp@68000000/mmc@4809c000[0]' - status (0)
+[    3.714996] gpio gpiochip5: Persistence not supported for GPIO 0
+[    3.715057] omap_hsmmc 4809c000.mmc: Got CD GPIO
+[    3.719970] omap_hsmmc 4809c000.mmc: GPIO lookup for consumer wp
+[    3.719970] omap_hsmmc 4809c000.mmc: using device tree for GPIO lookup
+[    3.720001] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp@68000000/mmc@4809c000[0]'
+[    3.720031] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp@68000000/mmc@4809c000[0]'
+[    3.720062] omap_hsmmc 4809c000.mmc: using lookup tables for GPIO lookup
+[    3.720092] omap_hsmmc 4809c000.mmc: No GPIO consumer wp found
+[    3.720886] omap_hsmmc 4809c000.mmc: Linked as a consumer to regulator.12
+[    3.727996] omap_hsmmc 4809c000.mmc: Linked as a consumer to regulator.1
+[    3.767608] omap_hsmmc 480b4000.mmc: GPIO lookup for consumer wp
+[    3.767608] omap_hsmmc 480b4000.mmc: using device tree for GPIO lookup
+[    3.767669] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp@68000000/mmc@480b4000[0]'
+[    3.767700] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp@68000000/mmc@480b4000[0]'
+[    3.767700] omap_hsmmc 480b4000.mmc: using lookup tables for GPIO lookup
+[    3.767730] omap_hsmmc 480b4000.mmc: No GPIO consumer wp found
+[    3.768463] omap_hsmmc 480b4000.mmc: Linked as a consumer to regulator.4
+[    3.775634] omap_hsmmc 480b4000.mmc: Linked as a consumer to regulator.19
+[    3.810913] rx51-audio n900-audio: GPIO lookup for consumer tvout-selection
+[    3.810913] rx51-audio n900-audio: using device tree for GPIO lookup
+[    3.811004] of_get_named_gpiod_flags: parsed 'tvout-selection-gpios' property of node '/n900-audio[0]' - status (0)
+[    3.811035] gpio gpiochip1: Persistence not supported for GPIO 8
+[    3.811065] rx51-audio n900-audio: GPIO lookup for consumer jack-detection
+[    3.811065] rx51-audio n900-audio: using device tree for GPIO lookup
+[    3.811126] of_get_named_gpiod_flags: parsed 'jack-detection-gpios' property of node '/n900-audio[0]' - status (0)
+[    3.811157] gpio gpiochip5: Persistence not supported for GPIO 17
+[    3.811157] no flags found for jack-detection
+[    3.811187] rx51-audio n900-audio: GPIO lookup for consumer eci-switch
+[    3.811187] rx51-audio n900-audio: using device tree for GPIO lookup
+[    3.811218] of_get_named_gpiod_flags: parsed 'eci-switch-gpios' property of node '/n900-audio[0]' - status (0)
+[    3.811248] gpio gpiochip5: Persistence not supported for GPIO 22
+[    3.811279] rx51-audio n900-audio: GPIO lookup for consumer speaker-amplifier
+[    3.811279] rx51-audio n900-audio: using device tree for GPIO lookup
+[    3.811340] of_get_named_gpiod_flags: parsed 'speaker-amplifier-gpios' property of node '/n900-audio[0]' - status (0)
+[    3.820159] rx51-audio n900-audio: tlv320aic3x-hifi <-> 49022000.mcbsp mapping ok
+[    3.840454] input: RX-51 AV Jack as /devices/platform/n900-audio/sound/card0/input6
+[    3.858001] omapdss_dss 48050000.dss: Linked as a consumer to regulator.2
+[    3.865325] omapdss_venc 48050c00.encoder: Linked as a consumer to regulator.7
+[    3.873168] omapdrm omapdrm.0: DMM not available, disable DMM support
+[    3.880432] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    3.887176] [drm] No driver support for vblank timestamp query.
+[    3.944854] mmc0: host does not support reading read-only switch, assuming write-enable
+[    3.950439] mmc0: new high speed SDHC card at address e624
+[    3.952850] mmcblk0: mmc0:e624 SU16G 14.8 GiB 
+[    3.962493]  mmcblk0: p1 p2 p3 p4
+[    4.004425] Console: switching to colour frame buffer device 100x30
+[    4.072509] omapdrm omapdrm.0: fb0: omapdrm frame buffer device
+[    4.085723] [drm] Initialized omapdrm 1.0.0 20110917 for omapdrm.0 on minor 0
+[    4.108398] power_supply bq27200-0: bq27200-0: Found supply : bq24150a-0
+[    4.122253] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[    4.133666] g_ether gadget: init ecm
+[    4.133697] g_ether gadget: notify connect false
+[    4.134613] g_ether gadget: activate ecm
+[    4.134674] usb0: qlen 10
+[    4.134674] g_ether gadget: ecm_close
+[    4.134979] g_ether gadget: packet filter 0c
+[    4.135009] g_ether gadget: ecm req21.43 v000c i0000 l0
+[    4.135772] bq27xxx-battery 2-0055: battery is not calibrated! ignoring capacity values
+[    4.149291] mmc1: switch to bus width 8 failed
+[    4.159820] mmc1: switch to bus width 4 failed
+[    4.169464] mmc1: new high speed MMC card at address 0001
+[    4.182586] mmcblk1: mmc1:0001 MMC32G 29.8 GiB 
+[    4.194549] mmcblk1boot0: mmc1:0001 MMC32G partition 1 512 KiB
+[    4.207611] mmcblk1boot1: mmc1:0001 MMC32G partition 2 512 KiB
+[    4.222656] et8ek8 3-003e: GPIO lookup for consumer reset
+[    4.222686] et8ek8 3-003e: using device tree for GPIO lookup
+[    4.222717] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]'
+[    4.222778] of_get_named_gpiod_flags: parsed 'reset-gpio' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]' - status (0)
+[    4.222808] gpio gpiochip3: Persistence not supported for GPIO 6
+[    4.223052] et8ek8 3-003e: Linked as a consumer to regulator.5
+[    4.234313] et8ek8 3-003e: could not get clock
+[    4.244079]  mmcblk1: p1 p2 p3 p4
+[    4.261169] et8ek8 3-003e: Dropping the link to regulator.5
+[    4.273590] et8ek8 3-003e: GPIO lookup for consumer reset
+[    4.273681] et8ek8 3-003e: using device tree for GPIO lookup
+[    4.273712] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]'
+[    4.273773] of_get_named_gpiod_flags: parsed 'reset-gpio' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]' - status (0)
+[    4.273803] gpio gpiochip3: Persistence not supported for GPIO 6
+[    4.274047] et8ek8 3-003e: Linked as a consumer to regulator.5
+[    4.284912] et8ek8 3-003e: could not get clock
+[    4.294281] et8ek8 3-003e: Dropping the link to regulator.5
+[    4.305694] omap3isp 480bc000.isp: ignoring dependency for device, assuming no driver
+[    4.318756] omap3isp 480bc000.isp: parsing endpoint /ocp@68000000/isp@480bc000/ports/port@1/endpoint, interface 1
+[    4.318786] omap3isp 480bc000.isp: CSI-1/CCP-2 configuration
+[    4.318786] omap3isp 480bc000.isp: clock lane polarity 0, pos 1
+[    4.318817] omap3isp 480bc000.isp: data lane polarity 0, pos 0
+[    4.318878] omap3isp 480bc000.isp: 480bc000.isp supply vdd-csiphy1 not found, using dummy regulator
+[    4.337219] omap3isp 480bc000.isp: Linked as a consumer to regulator.0
+[    4.348602] omap3isp 480bc000.isp: 480bc000.isp supply vdd-csiphy2 not found, using dummy regulator
+[    4.367736] omap3isp 480bc000.isp: Revision 2.0 found
+[    4.378875] omap-iommu 480bd400.mmu: 480bd400.mmu: version 1.1
+[    4.389984] omap3isp 480bc000.isp: Linked as a consumer to regulator.3
+[    4.401641] omap3isp 480bc000.isp: hist: using DMA channel dma0chan12
+[    4.401733] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP CCP2 was not initialized!
+[    4.415863] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP CSI2a was not initialized!
+[    4.429870] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP CCDC was not initialized!
+[    4.443420] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP preview was not initialized!
+[    4.457611] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP resizer was not initialized!
+[    4.471649] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP AEWB was not initialized!
+[    4.484771] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP AF was not initialized!
+[    4.497589] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP histogram was not initialized!
+[    4.515777] et8ek8 3-003e: GPIO lookup for consumer reset
+[    4.515808] et8ek8 3-003e: using device tree for GPIO lookup
+[    4.515838] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]'
+[    4.515899] of_get_named_gpiod_flags: parsed 'reset-gpio' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]' - status (0)
+[    4.515930] gpio gpiochip3: Persistence not supported for GPIO 6
+[    4.516143] et8ek8 3-003e: Linked as a consumer to regulator.5
+[    4.528106] omap3isp 480bc000.isp: isp_xclk_set_rate: cam_xclka set to 9600000 Hz (div 18)
+[    4.560119] et8ek8 3-003e: meta_reglist version V14 03-June-2008
+[    4.651214] omap3isp 480bc000.isp: Entity type for entity ad5820 focus was not initialized!
+[    4.669738] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio_keys/camera_lens_cover[0]' - status (0)
+[    4.669769] gpio gpiochip3: Persistence not supported for GPIO 14
+[    4.670135] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio_keys/camera_focus[0]' - status (0)
+[    4.670166] gpio gpiochip2: Persistence not supported for GPIO 4
+[    4.670410] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio_keys/camera_capture[0]' - status (0)
+[    4.670440] gpio gpiochip2: Persistence not supported for GPIO 5
+[    4.670684] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio_keys/lock_button[0]' - status (0)
+[    4.670715] gpio gpiochip3: Persistence not supported for GPIO 17
+[    4.670959] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio_keys/keypad_slide[0]' - status (0)
+[    4.670959] gpio gpiochip2: Persistence not supported for GPIO 7
+[    4.671234] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio_keys/proximity_sensor[0]' - status (0)
+[    4.671264] gpio gpiochip2: Persistence not supported for GPIO 25
+[    4.671813] input: gpio_keys as /devices/platform/gpio_keys/input/input7
+[    4.685882] twl_rtc 48070000.i2c:twl@48:rtc: setting system clock to 2018-10-06 20:18:08 UTC (1538857088)
+[    4.705688] sr_init: No PMIC hook to init smartreflex
+[    4.716857] smartreflex 480cb000.smartreflex: omap_sr_probe: SmartReflex driver initialized
+[    4.731292] smartreflex 480c9000.smartreflex: omap_sr_probe: SmartReflex driver initialized
+[    4.746459] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    4.770080] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    4.783630] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    4.797546] cfg80211: failed to load regulatory.db
+[    4.811828] VCSI: disabling
+[    4.821441] twl4030_bci 48070000.i2c:twl@48:bci: battery temperature out of range
+[    4.835876] ALSA device list:
+[    4.843902]   #0: RX-51
+[    4.877075] EXT4-fs (mmcblk0p4): mounted filesystem with ordered data mode. Opts: (null)
+[    4.890960] VFS: Mounted root (ext4 filesystem) readonly on device 179:4.
+[    4.921234] devtmpfs: mounted
+[    4.933532] Freeing unused kernel memory: 1024K
+[    4.944641] Run /sbin/init as init process
+[    6.764038] udevd[195]: starting version 175
+[   14.590667] (stc): gdata/new_proto/recv or reg_complete_cb not ready
+[   14.590698] fmdrv: Failed to get ST write func pointer
+[   14.613555] (stc):  chnl_id 8 not supported
+[   14.613555] fmdrv: st_unregister failed -93
+[   14.632629] fmdrv: Unable to prepare FM CORE
+[   14.705322] random: alsactl: uninitialized urandom read (4 bytes read)
+[   16.659942] random: crng init done
+[   17.620391] EXT4-fs (mmcblk0p4): re-mounted. Opts: (null)
+[   25.598083] EXT4-fs (mmcblk0p1): mounted filesystem with ordered data mode. Opts: errors=remount-ro
+[   25.689208] EXT4-fs (mmcblk1p4): mounted filesystem with ordered data mode. Opts: errors=remount-ro
+[   28.786987] usb0: eth_open
+[   28.786987] usb0: eth_start
+[   28.787109] g_ether gadget: ecm_open
+[   48.491638] omapdrm omapdrm.0: no framedone handler?
+[   89.154998] g_ether gadget: packet filter 0e
+[   89.155029] g_ether gadget: ecm req21.43 v000e i0000 l0
+[   89.155395] g_ether gadget: packet filter 0e
+[   89.155395] g_ether gadget: ecm req21.43 v000e i0000 l0
+[   89.166839] g_ether gadget: notify connect true
+[   89.198852] g_ether gadget: notify speed 425984000
+[  113.774993] twl4030_bci 48070000.i2c:twl@48:bci: battery temperature out of range
