@@ -1,0 +1,431 @@
+[    1.863419] PM: Adding info for No Bus:regulator.12
+[    1.863751] random: fast init done
+[    1.867357] device: 'regulator.13': device_add
+[    1.867407] PM: Adding info for No Bus:regulator.13
+[    1.867903] device: 'regulator.14': device_add
+[    1.867955] PM: Adding info for No Bus:regulator.14
+[    1.868426] device: 'regulator.15': device_add
+[    1.868471] PM: Adding info for No Bus:regulator.15
+[    1.868629] ldo5: supplied by buck6
+[    1.872697] device: 'regulator.16': device_add
+[    1.872745] PM: Adding info for No Bus:regulator.16
+[    1.873513] ldo6: supplied by buck7
+[    1.877630] device: 'regulator.17': device_add
+[    1.877680] PM: Adding info for No Bus:regulator.17
+[    1.878435] device: 'regulator.18': device_add
+[    1.878480] PM: Adding info for No Bus:regulator.18
+[    1.878602] driver: 'bd718xx-pmic': driver_bound: bound to device 'bd718xx-pmic.2.auto'
+[    1.878628] bus: 'platform': really_probe: bound device bd718xx-pmic.2.auto to driver bd718xx-pmic
+[    1.878637] driver: 'rohm-bd718x7': driver_bound: bound to device '0-004b'
+[    1.878664] bus: 'i2c': really_probe: bound device 0-004b to driver rohm-bd718x7
+[    1.878685] device: '0-0052': device_add
+[    1.878705] bus: 'i2c': add device 0-0052
+[    1.878724] PM: Adding info for i2c:0-0052
+[    1.878848] device: '0-006b': device_add
+[    1.878863] bus: 'i2c': add device 0-006b
+[    1.878881] PM: Adding info for i2c:0-006b
+[    1.878995] bus: 'i2c': driver_probe_device: matched device 0-006b with driver bq25890-charger
+[    1.879001] bus: 'i2c': really_probe: probing driver bq25890-charger with device 0-006b
+[    1.879071] bq25890-charger 0-006b: no init pinctrl state
+[    1.879078] bq25890-charger 0-006b: no sleep pinctrl state
+[    1.879084] bq25890-charger 0-006b: no idle pinctrl state
+[    1.879111] of_clk_set_defaults, node ffff8000bf9ed628
+[    1.893620] device: 'bq25890-charger': device_add
+[    1.893706] PM: Adding info for No Bus:bq25890-charger
+[    1.893722] device: 'bq25890-charger': dev_uevent: class uevent() returned -11
+[    1.893743] driver: 'bq25890-charger': driver_bound: bound to device '0-006b'
+[    1.893824] bus: 'i2c': really_probe: bound device 0-006b to driver bq25890-charger
+[    1.893842] device: '0-0068': device_add
+[    1.893862] bus: 'i2c': add device 0-0068
+[    1.893879] PM: Adding info for i2c:0-0068
+[    1.893990] bus: 'i2c': driver_probe_device: matched device 0-0068 with driver rtc-m41t80
+[    1.893996] bus: 'i2c': really_probe: probing driver rtc-m41t80 with device 0-0068
+[    1.894052] rtc-m41t80 0-0068: no init pinctrl state
+[    1.894058] rtc-m41t80 0-0068: no sleep pinctrl state
+[    1.894063] rtc-m41t80 0-0068: no idle pinctrl state
+[    1.894086] of_clk_set_defaults, node ffff8000bf9edbb0
+[    1.901669] of_clk_set_defaults, node ffff8000bf9edbb0
+[    1.907406] rtc-m41t80 0-0068: Oscillator failure, data is invalid.
+[    1.914005] device: 'rtc0': device_add
+[    1.914054] PM: Adding info for No Bus:rtc0
+[    1.914250] rtc-m41t80 0-0068: registered as rtc0
+[    1.919229] driver: 'rtc-m41t80': driver_bound: bound to device '0-0068'
+[    1.919336] bus: 'i2c': really_probe: bound device 0-0068 to driver rtc-m41t80
+[    1.919357] i2c i2c-0: IMX I2C adapter registered
+[    1.924397] i2c i2c-0: can't use DMA, using PIO instead.
+[    1.930026] driver: 'imx-i2c': driver_bound: bound to device '30a20000.i2c'
+[    1.930107] bus: 'platform': really_probe: bound device 30a20000.i2c to driver imx-i2c
+[    1.930115] devices_kset: Moving 30a40000.i2c to end of list
+[    1.930119] PM: Moving platform:30a40000.i2c to end of list
+[    1.930125] platform 30a40000.i2c: Retrying from deferred list
+[    1.930163] bus: 'platform': driver_probe_device: matched device 30a40000.i2c with driver imx-i2c
+[    1.930169] bus: 'platform': really_probe: probing driver imx-i2c with device 30a40000.i2c
+[    1.930322] imx-i2c 30a40000.i2c: no init pinctrl state
+[    1.930363] imx-i2c 30a40000.i2c: no sleep pinctrl state
+[    1.930368] imx-i2c 30a40000.i2c: no idle pinctrl state
+[    1.930394] platform_drv_probe ffff8000a765f810 ffff8000bf9ee348
+[    1.936782] of_clk_set_defaults, node ffff8000bf9ee348
+[    1.942477] device: 'i2c-2': device_add
+[    1.942496] bus: 'i2c': add device i2c-2
+[    1.942514] PM: Adding info for i2c:i2c-2
+[    1.942529] device: 'i2c-2': device_add
+[    1.942564] PM: Adding info for No Bus:i2c-2
+[    1.942887] device: '2-003c': device_add
+[    1.942903] bus: 'i2c': add device 2-003c
+[    1.942920] PM: Adding info for i2c:2-003c
+[    1.943067] device: '2-000a': device_add
+[    1.943083] bus: 'i2c': add device 2-000a
+[    1.943103] PM: Adding info for i2c:2-000a
+[    1.943225] bus: 'i2c': driver_probe_device: matched device 2-000a with driver sgtl5000
+[    1.943230] bus: 'i2c': really_probe: probing driver sgtl5000 with device 2-000a
+[    1.943241] sgtl5000 2-000a: no pinctrl handle
+[    1.943260] of_clk_set_defaults, node ffff8000bf9ef0d8
+[    1.948784] devices_kset: Moving 2-000a to end of list
+[    1.948788] PM: Moving i2c:2-000a to end of list
+[    1.948794] sgtl5000 2-000a: Linked as a consumer to regulator.10
+[    1.955246] sgtl5000 2-000a: Dropping the link to regulator.10
+[    1.961458] devices_kset: Moving 2-000a to end of list
+[    1.961462] PM: Moving i2c:2-000a to end of list
+[    1.961467] sgtl5000 2-000a: Linked as a consumer to regulator.14
+[    1.967944] devices_kset: Moving 2-000a to end of list
+[    1.967947] PM: Moving i2c:2-000a to end of list
+[    1.967952] sgtl5000 2-000a: Linked as a consumer to regulator.10
+[    1.975503] sgtl5000 2-000a: sgtl5000 revision 0x11
+[    2.006902] driver: 'sgtl5000': driver_bound: bound to device '2-000a'
+[    2.006983] bus: 'i2c': really_probe: bound device 2-000a to driver sgtl5000
+[    2.007000] device: '2-006a': device_add
+[    2.007018] bus: 'i2c': add device 2-006a
+[    2.007036] PM: Adding info for i2c:2-006a
+[    2.007169] bus: 'i2c': driver_probe_device: matched device 2-006a with driver st-gyro-i2c
+[    2.007174] bus: 'i2c': really_probe: probing driver st-gyro-i2c with device 2-006a
+[    2.007184] st-gyro-i2c 2-006a: no pinctrl handle
+[    2.007207] of_clk_set_defaults, node ffff8000bf9ef508
+[    2.012662] st-gyro-i2c 2-006a: 2-006a supply vdd not found, using dummy regulator
+[    2.020643] devices_kset: Moving 2-006a to end of list
+[    2.020646] PM: Moving i2c:2-006a to end of list
+[    2.020652] st-gyro-i2c 2-006a: Linked as a consumer to regulator.0
+[    2.027204] st-gyro-i2c 2-006a: 2-006a supply vddio not found, using dummy regulator
+[    2.036027] iio iio:device0: lsm9ds0_gyro: WhoAmI mismatch (0x68).
+[    2.042599] st-gyro-i2c: probe of 2-006a failed with error -22
+[    2.048763] device: '2-001e': device_add
+[    2.048783] bus: 'i2c': add device 2-001e
+[    2.048802] PM: Adding info for i2c:2-001e
+[    2.048925] bus: 'i2c': driver_probe_device: matched device 2-001e with driver st-magn-i2c
+[    2.048930] bus: 'i2c': really_probe: probing driver st-magn-i2c with device 2-001e
+[    2.048940] st-magn-i2c 2-001e: no pinctrl handle
+[    2.048960] of_clk_set_defaults, node ffff8000bf9ef7d0
+[    2.054400] st-magn-i2c 2-001e: 2-001e supply vdd not found, using dummy regulator
+[    2.062376] devices_kset: Moving 2-001e to end of list
+[    2.062380] PM: Moving i2c:2-001e to end of list
+[    2.062385] st-magn-i2c 2-001e: Linked as a consumer to regulator.0
+[    2.068989] st-magn-i2c 2-001e: 2-001e supply vddio not found, using dummy regulator
+[    2.082346] iio iio:device0: falling/low specified for IRQ but hardware supports only rising/high: will request rising/high
+[    2.094244] device: 'trigger0': device_add
+[    2.094262] bus: 'iio': add device trigger0
+[    2.094281] PM: Adding info for iio:trigger0
+[    2.094460] device: 'iio:device0': device_add
+[    2.094530] bus: 'iio': add device iio:device0
+[    2.094548] PM: Adding info for iio:iio:device0
+[    2.094764] iio iio:device0: registered magnetometer lsm9ds1_magn
+[    2.101188] driver: 'st-magn-i2c': driver_bound: bound to device '2-001e'
+[    2.101267] bus: 'i2c': really_probe: bound device 2-001e to driver st-magn-i2c
+[    2.101285] device: '2-0060': device_add
+[    2.101301] bus: 'i2c': add device 2-0060
+[    2.101323] PM: Adding info for i2c:2-0060
+[    2.101445] bus: 'i2c': driver_probe_device: matched device 2-0060 with driver vcnl4000
+[    2.101450] bus: 'i2c': really_probe: probing driver vcnl4000 with device 2-0060
+[    2.101460] vcnl4000 2-0060: no pinctrl handle
+[    2.101479] of_clk_set_defaults, node ffff8000bf9efaa0
+[    2.109621] vcnl4000 2-0060: VCNL4040 Ambient light/proximity sensor, Rev: 01
+[    2.117134] device: 'iio:device1': device_add
+[    2.117154] bus: 'iio': add device iio:device1
+[    2.117172] PM: Adding info for iio:iio:device1
+[    2.117381] driver: 'vcnl4000': driver_bound: bound to device '2-0060'
+[    2.117458] bus: 'i2c': really_probe: bound device 2-0060 to driver vcnl4000
+[    2.117478] device: '2-005d': device_add
+[    2.117498] bus: 'i2c': add device 2-005d
+[    2.117516] PM: Adding info for i2c:2-005d
+[    2.117658] i2c i2c-2: IMX I2C adapter registered
+[    2.122684] i2c i2c-2: can't use DMA, using PIO instead.
+[    2.128283] driver: 'imx-i2c': driver_bound: bound to device '30a40000.i2c'
+[    2.128364] bus: 'platform': really_probe: bound device 30a40000.i2c to driver imx-i2c
+[    2.128371] devices_kset: Moving 381f0040.phy0 to end of list
+[    2.128375] PM: Moving platform:381f0040.phy0 to end of list
+[    2.128381] platform 381f0040.phy0: Retrying from deferred list
+[    2.128431] bus: 'platform': driver_probe_device: matched device 381f0040.phy0 with driver imx8mq-usb-phy
+[    2.128436] bus: 'platform': really_probe: probing driver imx8mq-usb-phy with device 381f0040.phy0
+[    2.128447] imx8mq-usb-phy 381f0040.phy0: no pinctrl handle
+[    2.128467] platform_drv_probe ffff8000a77e5010 ffff8000bf9f3200
+[    2.134735] of_clk_set_defaults, node ffff8000bf9f3200
+[    2.140182] imx8mq-usb-phy 381f0040.phy0: failed to get imx8mq usb phy clock
+[    2.147591] imx8mq-usb-phy: probe of 381f0040.phy0 failed with error -2
+[    2.154738] devices_kset: Moving cpufreq-dt to end of list
+[    2.154742] PM: Moving platform:cpufreq-dt to end of list
+[    2.154748] platform cpufreq-dt: Retrying from deferred list
+[    2.154784] bus: 'platform': driver_probe_device: matched device cpufreq-dt with driver cpufreq-dt
+[    2.154789] bus: 'platform': really_probe: probing driver cpufreq-dt with device cpufreq-dt
+[    2.154808] cpufreq-dt cpufreq-dt: no default pinctrl state
+[    2.154822] platform_drv_probe ffff8000a5567410 0
+[    2.159785] of_clk_set_defaults, node 0
+[    2.163843] devices_kset: Moving cpu0 to end of list
+[    2.163847] PM: Moving cpu:cpu0 to end of list
+[    2.163851] devices_kset: Moving cache to end of list
+[    2.163854] PM: Moving No Bus:cache to end of list
+[    2.163857] devices_kset: Moving index0 to end of list
+[    2.163860] PM: Moving No Bus:index0 to end of list
+[    2.163864] devices_kset: Moving index1 to end of list
+[    2.163866] PM: Moving No Bus:index1 to end of list
+[    2.163870] devices_kset: Moving index2 to end of list
+[    2.163873] PM: Moving No Bus:index2 to end of list
+[    2.163879] cpu cpu0: Linked as a consumer to regulator.5
+[    2.169592] cpu cpu0: Dropping the link to regulator.5
+[    2.175066] devices_kset: Moving cpu0 to end of list
+[    2.175070] PM: Moving cpu:cpu0 to end of list
+[    2.175073] devices_kset: Moving cache to end of list
+[    2.175075] PM: Moving No Bus:cache to end of list
+[    2.175078] devices_kset: Moving index0 to end of list
+[    2.175081] PM: Moving No Bus:index0 to end of list
+[    2.175084] devices_kset: Moving index1 to end of list
+[    2.175087] PM: Moving No Bus:index1 to end of list
+[    2.175090] devices_kset: Moving index2 to end of list
+[    2.175092] PM: Moving No Bus:index2 to end of list
+[    2.175098] cpu cpu0: Linked as a consumer to regulator.5
+[    2.180893] of: _opp_add_static_v2: turbo:0 rate:1000000000 uv:900000 uvmin:900000 uvmax:900000 latency:150000
+[    2.180971] of: _opp_add_static_v2: turbo:0 rate:1500000000 uv:1000000 uvmin:1000000 uvmax:1000000 latency:150000
+[    2.181129] device: 'cooling_device0': device_add
+[    2.181164] PM: Adding info for No Bus:cooling_device0
+[    2.181335] driver: 'cpufreq-dt': driver_bound: bound to device 'cpufreq-dt'
+[    2.181405] bus: 'platform': really_probe: bound device cpufreq-dt to driver cpufreq-dt
+[    2.181412] devices_kset: Moving sound to end of list
+[    2.181415] PM: Moving platform:sound to end of list
+[    2.181421] platform sound: Retrying from deferred list
+[    2.181541] bus: 'platform': driver_probe_device: matched device sound with driver asoc-simple-card
+[    2.181546] bus: 'platform': really_probe: probing driver asoc-simple-card with device sound
+[    2.181557] asoc-simple-card sound: no pinctrl handle
+[    2.181577] platform_drv_probe ffff8000a77e6c10 ffff8000bf9f8078
+[    2.187898] of_clk_set_defaults, node ffff8000bf9f8078
+[    2.193394] platform sound: Driver asoc-simple-card requests probe deferral
+[    2.193399] platform sound: Added to deferred list
+[    2.193425] devices_kset: Moving 308b0000.sai to end of list
+[    2.193429] PM: Moving platform:308b0000.sai to end of list
+[    2.193435] platform 308b0000.sai: Retrying from deferred list
+[    2.193565] bus: 'platform': driver_probe_device: matched device 308b0000.sai with driver fsl-sai
+[    2.193570] bus: 'platform': really_probe: probing driver fsl-sai with device 308b0000.sai
+[    2.193697] fsl-sai 308b0000.sai: no init pinctrl state
+[    2.193710] fsl-sai 308b0000.sai: no sleep pinctrl state
+[    2.193715] fsl-sai 308b0000.sai: no idle pinctrl state
+[    2.193737] platform_drv_probe ffff8000a765f010 ffff8000bf9e8188
+[    2.200058] of_clk_set_defaults, node ffff8000bf9e8188
+[    2.205748] platform 308b0000.sai: Driver fsl-sai requests probe deferral
+[    2.205753] platform 308b0000.sai: Added to deferred list
+[    2.205846] devices_kset: Moving sound to end of list
+[    2.205850] PM: Moving platform:sound to end of list
+[    2.205855] platform sound: Retrying from deferred list
+[    2.205969] bus: 'platform': driver_probe_device: matched device sound with driver asoc-simple-card
+[    2.205975] bus: 'platform': really_probe: probing driver asoc-simple-card with device sound
+[    2.205984] asoc-simple-card sound: no pinctrl handle
+[    2.205995] platform_drv_probe ffff8000a77e6c10 ffff8000bf9f8078
+[    2.212319] of_clk_set_defaults, node ffff8000bf9f8078
+[    2.217828] platform sound: Driver asoc-simple-card requests probe deferral
+[    2.217831] platform sound: Added to deferred list
+[    2.217844] devices_kset: Moving 308b0000.sai to end of list
+[    2.217846] PM: Moving platform:308b0000.sai to end of list
+[    2.217850] platform 308b0000.sai: Retrying from deferred list
+[    2.217936] bus: 'platform': driver_probe_device: matched device 308b0000.sai with driver fsl-sai
+[    2.217939] bus: 'platform': really_probe: probing driver fsl-sai with device 308b0000.sai
+[    2.218011] fsl-sai 308b0000.sai: no init pinctrl state
+[    2.218019] fsl-sai 308b0000.sai: no sleep pinctrl state
+[    2.218022] fsl-sai 308b0000.sai: no idle pinctrl state
+[    2.218033] platform_drv_probe ffff8000a765f010 ffff8000bf9e8188
+[    2.224348] of_clk_set_defaults, node ffff8000bf9e8188
+[    2.229934] platform 308b0000.sai: Driver fsl-sai requests probe deferral
+[    2.229937] platform 308b0000.sai: Added to deferred list
+[    2.230119] bus: 'platform': add driver gpio-keys
+[    2.230217] bus: 'platform': driver_probe_device: matched device gpio-keys with driver gpio-keys
+[    2.230221] bus: 'platform': really_probe: probing driver gpio-keys with device gpio-keys
+[    2.230277] gpio-keys gpio-keys: no init pinctrl state
+[    2.230283] gpio-keys gpio-keys: no sleep pinctrl state
+[    2.230286] gpio-keys gpio-keys: no idle pinctrl state
+[    2.230297] platform_drv_probe ffff8000a77e7410 ffff8000bf9f96a0
+[    2.236620] of_clk_set_defaults, node ffff8000bf9f96a0
+[    2.242236] device: 'input0': device_add
+[    2.242286] PM: Adding info for No Bus:input0
+[    2.242376] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    2.249575] device: 'event0': device_add
+[    2.249594] PM: Adding info for No Bus:event0
+[    2.249821] driver: 'gpio-keys': driver_bound: bound to device 'gpio-keys'
+[    2.249830] devices_kset: Moving sound to end of list
+[    2.249832] PM: Moving platform:sound to end of list
+[    2.249836] platform sound: Retrying from deferred list
+[    2.249900] bus: 'platform': driver_probe_device: matched device sound with driver asoc-simple-card
+[    2.249904] bus: 'platform': really_probe: probing driver asoc-simple-card with device sound
+[    2.249911] asoc-simple-card sound: no pinctrl handle
+[    2.249923] platform_drv_probe ffff8000a77e6c10 ffff8000bf9f8078
+[    2.251709] bus: 'platform': really_probe: bound device gpio-keys to driver gpio-keys
+[    2.256197] bus: 'platform': driver_probe_device: matched device gpio-keys.0.auto with driver gpio-keys
+[    2.256201] bus: 'platform': really_probe: probing driver gpio-keys with device gpio-keys.0.auto
+[    2.256211] gpio-keys gpio-keys.0.auto: no default pinctrl state
+[    2.256220] platform_drv_probe ffff8000a548dc10 0
+[    2.256241] of_clk_set_defaults, node ffff8000bf9f8078
+[    2.261126] of_clk_set_defaults, node 0
+[    2.270798] platform sound: Driver asoc-simple-card requests probe deferral
+[    2.270801] platform sound: Added to deferred list
+[    2.270815] devices_kset: Moving 308b0000.sai to end of list
+[    2.270817] PM: Moving platform:308b0000.sai to end of list
+[    2.270821] platform 308b0000.sai: Retrying from deferred list
+[    2.270907] bus: 'platform': driver_probe_device: matched device 308b0000.sai with driver fsl-sai
+[    2.270911] bus: 'platform': really_probe: probing driver fsl-sai with device 308b0000.sai
+[    2.271040] fsl-sai 308b0000.sai: no init pinctrl state
+[    2.271047] fsl-sai 308b0000.sai: no sleep pinctrl state
+[    2.271050] fsl-sai 308b0000.sai: no idle pinctrl state
+[    2.271117] platform_drv_probe ffff8000a765f010 ffff8000bf9e8188
+[    2.277435] of_clk_set_defaults, node ffff8000bf9e8188
+[    2.277462] device: 'input1': device_add
+[    2.282891] PM: Adding info for No Bus:input1
+[    2.282970] platform 308b0000.sai: Driver fsl-sai requests probe deferral
+[    2.282973] platform 308b0000.sai: Added to deferred list
+[    2.282977] input: bd718xx-pwrkey as /devices/platform/soc@0/soc@0:bus@30800000/30a20000.i2c/i2c-0/0-004b/gpio-keys.0.auto/input/input1
+[    2.295737] device: 'event1': device_add
+[    2.295755] PM: Adding info for No Bus:event1
+[    2.295956] driver: 'gpio-keys': driver_bound: bound to device 'gpio-keys.0.auto'
+[    2.295963] devices_kset: Moving sound to end of list
+[    2.295966] PM: Moving platform:sound to end of list
+[    2.295970] platform sound: Retrying from deferred list
+[    2.296032] bus: 'platform': driver_probe_device: matched device sound with driver asoc-simple-card
+[    2.296035] bus: 'platform': really_probe: probing driver asoc-simple-card with device sound
+[    2.296042] asoc-simple-card sound: no pinctrl handle
+[    2.296054] platform_drv_probe ffff8000a77e6c10 ffff8000bf9f8078
+[    2.299683] bus: 'platform': really_probe: bound device gpio-keys.0.auto to driver gpio-keys
+[    2.302320] of_clk_set_defaults, node ffff8000bf9f8078
+[    2.302906] rtc-m41t80 0-0068: Oscillator failure, data is invalid.
+[    2.307723] platform sound: Driver asoc-simple-card requests probe deferral
+[    2.314236] rtc-m41t80 0-0068: hctosys: unable to read the hardware clock
+[    2.314350] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    2.321399] platform sound: Added to deferred list
+[    2.329479] devices_kset: Moving 308b0000.sai to end of list
+[    2.329482] PM: Moving platform:308b0000.sai to end of list
+[    2.329485] platform 308b0000.sai: Retrying from deferred list
+[    2.329572] bus: 'platform': driver_probe_device: matched device 308b0000.sai with driver fsl-sai
+[    2.329575] bus: 'platform': really_probe: probing driver fsl-sai with device 308b0000.sai
+[    2.329647] fsl-sai 308b0000.sai: no init pinctrl state
+[    2.329654] fsl-sai 308b0000.sai: no sleep pinctrl state
+[    2.329657] fsl-sai 308b0000.sai: no idle pinctrl state
+[    2.329667] platform_drv_probe ffff8000a765f010 ffff8000bf9e8188
+[    2.335994] of_clk_set_defaults, node ffff8000bf9e8188
+[    2.341782] platform 308b0000.sai: Driver fsl-sai requests probe deferral
+[    2.341790] platform 308b0000.sai: Added to deferred list
+[    2.347076] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    2.354116] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    2.356173] buck5: disabling
+[    2.363151] platform regulatory.0: Falling back to syfs fallback for: regulatory.db
+[    2.366295] ALSA device list:
+[    2.374209] device: 'regulatory.db': device_add
+[    2.374267] PM: Adding info for No Bus:regulatory.db
+[    2.377455]   No soundcards found.
+[    2.381424] Freeing unused kernel memory: 704K
+[    2.407675] Run /init as init process
+[    2.581592] PM: Removing info for No Bus:regulatory.db
+[    2.581629] cfg80211: failed to load regulatory.db
+[    2.779103] EXT4-fs (mmcblk0p2): INFO: recovery required on readonly filesystem
+[    2.787742] EXT4-fs (mmcblk0p2): write access will be enabled during recovery
+[    3.011881] EXT4-fs (mmcblk0p2): recovery complete
+[    3.018230] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+[    3.368530] systemd[1]: System time before build time, advancing clock.
+[    3.403775] systemd[1]: systemd 241 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+[    3.426447] systemd[1]: Detected architecture arm64.
+[    3.452113] systemd[1]: Set hostname to <pureos>.
+[    3.650419] random: lvmconfig: uninitialized urandom read (4 bytes read)
+[    3.679008] systemd[1]: File /lib/systemd/system/systemd-journald.service:12 configures an IP firewall (IPAddressDeny=any), but the local system does not support BPF/cgroup based firewalling.
+[    3.696897] systemd[1]: Proceeding WITHOUT firewalling in effect! (This warning is only shown for the first loaded unit using IP firewalling.)
+[    3.874779] systemd[1]: Binding to IPv6 address not available since kernel does not support IPv6.
+[    3.887121] random: systemd: uninitialized urandom read (16 bytes read)
+[    3.897603] random: systemd: uninitialized urandom read (16 bytes read)
+[    3.904891] systemd[1]: Listening on Journal Socket (/dev/log).
+[    3.928530] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[    3.954089] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[    3.977160] systemd[1]: Created slice system-getty.slice.
+[    4.740151] EXT4-fs (mmcblk0p2): re-mounted. Opts: errors=remount-ro
+[    4.964676] systemd-journald[1179]: Received request to flush runtime journal from PID 1
+[    4.986147] systemd-journald[1179]: File /var/log/journal/a10eb4ab9eba403abb076bbd4f865a4b/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[    5.415250] driver: 'Generic PHY': driver_bound: bound to device '30be0000.ethernet-1:01'
+[    5.415285] devices_kset: Moving sound to end of list
+[    5.415289] PM: Moving platform:sound to end of list
+[    5.415297] platform sound: Retrying from deferred list
+[    5.415500] bus: 'platform': driver_probe_device: matched device sound with driver asoc-simple-card
+[    5.415507] bus: 'platform': really_probe: probing driver asoc-simple-card with device sound
+[    5.415525] asoc-simple-card sound: no pinctrl handle
+[    5.415548] platform_drv_probe ffff8000a77e6c10 ffff8000bf9f8078
+[    5.422438] of_clk_set_defaults, node ffff8000bf9f8078
+[    5.424498] Generic PHY 30be0000.ethernet-1:01: attached PHY driver [Generic PHY] (mii_bus:phy_addr=30be0000.ethernet-1:01, irq=POLL)
+[    5.430054] platform sound: Driver asoc-simple-card requests probe deferral
+[    5.442382] platform sound: Added to deferred list
+[    5.442429] devices_kset: Moving 308b0000.sai to end of list
+[    5.442433] PM: Moving platform:308b0000.sai to end of list
+[    5.442437] platform 308b0000.sai: Retrying from deferred list
+[    5.442662] bus: 'platform': driver_probe_device: matched device 308b0000.sai with driver fsl-sai
+[    5.442668] bus: 'platform': really_probe: probing driver fsl-sai with device 308b0000.sai
+[    5.442805] fsl-sai 308b0000.sai: no init pinctrl state
+[    5.442818] fsl-sai 308b0000.sai: no sleep pinctrl state
+[    5.442822] fsl-sai 308b0000.sai: no idle pinctrl state
+[    5.442858] platform_drv_probe ffff8000a765f010 ffff8000bf9e8188
+[    5.452596] of_clk_set_defaults, node ffff8000bf9e8188
+[    5.458581] platform 308b0000.sai: Driver fsl-sai requests probe deferral
+[    5.458587] platform 308b0000.sai: Added to deferred list
+[    6.236137] random: crng init done
+[    6.239718] random: 7 urandom warning(s) missed due to ratelimiting
+[    6.537565] systemd-journald[1179]: Failed to read journal file /var/log/journal/a10eb4ab9eba403abb076bbd4f865a4b/user-1000.journal for rotation, trying to move it out of the way: Device or resource busy
+[    6.772455] device: 'vcs6': device_add
+[    6.772508] PM: Adding info for No Bus:vcs6
+[    6.772763] device: 'vcsu6': device_add
+[    6.772782] PM: Adding info for No Bus:vcsu6
+[    6.773001] device: 'vcsa6': device_add
+[    6.773024] PM: Adding info for No Bus:vcsa6
+[    6.773471] device: 'vcs2': device_add
+[    6.773494] PM: Adding info for No Bus:vcs2
+[    6.773542] device: 'vcsu2': device_add
+[    6.773563] PM: Adding info for No Bus:vcsu2
+[    6.773604] device: 'vcsa2': device_add
+[    6.773625] PM: Adding info for No Bus:vcsa2
+[    6.773734] device: 'vcs3': device_add
+[    6.773752] PM: Adding info for No Bus:vcs3
+[    6.773800] device: 'vcsu3': device_add
+[    6.773819] PM: Adding info for No Bus:vcsu3
+[    6.773989] device: 'vcsa3': device_add
+[    6.774007] PM: Adding info for No Bus:vcsa3
+[    6.774233] device: 'vcs4': device_add
+[    6.774253] PM: Adding info for No Bus:vcs4
+[    6.775446] device: 'vcsu4': device_add
+[    6.775473] PM: Adding info for No Bus:vcsu4
+[    6.776214] device: 'vcsa4': device_add
+[    6.776250] PM: Adding info for No Bus:vcsa4
+[    6.778320] device: 'vcs5': device_add
+[    6.778375] PM: Adding info for No Bus:vcs5
+[    6.778558] device: 'vcsu5': device_add
+[    6.778579] PM: Adding info for No Bus:vcsu5
+[    6.778727] device: 'vcsa5': device_add
+[    6.778749] PM: Adding info for No Bus:vcsa5
+[    7.082341] device: 'lo': device_add
+[    7.082466] PM: Adding info for No Bus:lo
+[    7.340768] device: 'vcs7': device_add
+[    7.340825] PM: Adding info for No Bus:vcs7
+[    7.341089] device: 'vcsu7': device_add
+[    7.341108] PM: Adding info for No Bus:vcsu7
+[    7.342237] device: 'vcsa7': device_add
+[    7.342273] PM: Adding info for No Bus:vcsa7
+[    7.344308] device: 'vcs7': device_unregister
+[    7.344595] PM: Removing info for No Bus:vcs7
+[    7.344648] device: 'vcs7': device_create_release
+[    7.344659] device: 'vcsu7': device_unregister
+[    7.345352] PM: Removing info for No Bus:vcsu7
+[    7.345383] device: 'vcsu7': device_create_release
+[    7.345395] device: 'vcsa7': device_unregister
+[    7.345888] PM: Removing info for No Bus:vcsa7
+[    7.345916] device: 'vcsa7': device_create_release
+[    7.449865] device: 'vcs7': device_add
+[    7.449920] PM: Adding info for No Bus:vcs7
+[    7.450093] device: 'vcsu7': device_add
+[    7.450116] PM: Adding info for No Bus:vcsu7
+[    7.450572] device: 'vcsa7': device_add
+[    7.450596] PM: Adding info for No Bus:vcsa7
+[    7.496859] fec 30be0000.ethernet eth0: Link is Up - 100Mbps/Full - flow control rx/tx
+[   37.329038] PM: Removing info for No Bus:lo

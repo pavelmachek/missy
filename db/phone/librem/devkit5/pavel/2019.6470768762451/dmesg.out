@@ -1,0 +1,1770 @@
+[    0.043099] bus: 'platform': really_probe: probing driver gpio-mxc with device 30210000.gpio
+[    0.043108] gpio-mxc 30210000.gpio: no pinctrl handle
+[    0.043161] platform 30210000.gpio: Driver gpio-mxc requests probe deferral
+[    0.043165] platform 30210000.gpio: Added to deferred list
+[    0.043176] bus: 'platform': driver_probe_device: matched device 30220000.gpio with driver gpio-mxc
+[    0.043181] bus: 'platform': really_probe: probing driver gpio-mxc with device 30220000.gpio
+[    0.043190] gpio-mxc 30220000.gpio: no pinctrl handle
+[    0.043243] platform 30220000.gpio: Driver gpio-mxc requests probe deferral
+[    0.043247] platform 30220000.gpio: Added to deferred list
+[    0.043258] bus: 'platform': driver_probe_device: matched device 30230000.gpio with driver gpio-mxc
+[    0.043262] bus: 'platform': really_probe: probing driver gpio-mxc with device 30230000.gpio
+[    0.043272] gpio-mxc 30230000.gpio: no pinctrl handle
+[    0.043325] platform 30230000.gpio: Driver gpio-mxc requests probe deferral
+[    0.043329] platform 30230000.gpio: Added to deferred list
+[    0.043339] bus: 'platform': driver_probe_device: matched device 30240000.gpio with driver gpio-mxc
+[    0.043344] bus: 'platform': really_probe: probing driver gpio-mxc with device 30240000.gpio
+[    0.043353] gpio-mxc 30240000.gpio: no pinctrl handle
+[    0.043405] platform 30240000.gpio: Driver gpio-mxc requests probe deferral
+[    0.043409] platform 30240000.gpio: Added to deferred list
+[    0.043639] bus: 'i2c': add driver pca953x
+[    0.043665] device class 'pwm': registering
+[    0.043686] bus: 'platform': add driver xgene-msi
+[    0.043780] device class 'graphics': registering
+[    0.043795] device: 'fbcon': device_add
+[    0.043826] PM: Adding info for No Bus:fbcon
+[    0.043843] ACPI: Interpreter disabled.
+[    0.043870] bus: 'pnp': registered
+[    0.043874] bus: 'platform': add driver reg-fixed-voltage
+[    0.043931] bus: 'platform': driver_probe_device: matched device regulator-1v8-p with driver reg-fixed-voltage
+[    0.043937] bus: 'platform': really_probe: probing driver reg-fixed-voltage with device regulator-1v8-p
+[    0.043947] reg-fixed-voltage regulator-1v8-p: no pinctrl handle
+[    0.044030] device: 'regulator.1': device_add
+[    0.044085] PM: Adding info for No Bus:regulator.1
+[    0.044136] driver: 'reg-fixed-voltage': driver_bound: bound to device 'regulator-1v8-p'
+[    0.044158] bus: 'platform': really_probe: bound device regulator-1v8-p to driver reg-fixed-voltage
+[    0.044165] bus: 'platform': driver_probe_device: matched device regulator-2v8-p with driver reg-fixed-voltage
+[    0.044170] bus: 'platform': really_probe: probing driver reg-fixed-voltage with device regulator-2v8-p
+[    0.044180] reg-fixed-voltage regulator-2v8-p: no pinctrl handle
+[    0.044238] device: 'regulator.2': device_add
+[    0.044284] PM: Adding info for No Bus:regulator.2
+[    0.044323] driver: 'reg-fixed-voltage': driver_bound: bound to device 'regulator-2v8-p'
+[    0.044342] bus: 'platform': really_probe: bound device regulator-2v8-p to driver reg-fixed-voltage
+[    0.044349] bus: 'platform': driver_probe_device: matched device regulator-3v3-p with driver reg-fixed-voltage
+[    0.044354] bus: 'platform': really_probe: probing driver reg-fixed-voltage with device regulator-3v3-p
+[    0.044366] reg-fixed-voltage regulator-3v3-p: no pinctrl handle
+[    0.044451] device: 'regulator.3': device_add
+[    0.044494] PM: Adding info for No Bus:regulator.3
+[    0.044537] driver: 'reg-fixed-voltage': driver_bound: bound to device 'regulator-3v3-p'
+[    0.044556] bus: 'platform': really_probe: bound device regulator-3v3-p to driver reg-fixed-voltage
+[    0.044562] bus: 'platform': driver_probe_device: matched device regulator-5v-p with driver reg-fixed-voltage
+[    0.044567] bus: 'platform': really_probe: probing driver reg-fixed-voltage with device regulator-5v-p
+[    0.044577] reg-fixed-voltage regulator-5v-p: no pinctrl handle
+[    0.044639] device: 'regulator.4': device_add
+[    0.044686] PM: Adding info for No Bus:regulator.4
+[    0.044753] driver: 'reg-fixed-voltage': driver_bound: bound to device 'regulator-5v-p'
+[    0.044773] bus: 'platform': really_probe: bound device regulator-5v-p to driver reg-fixed-voltage
+[    0.044779] bus: 'platform': driver_probe_device: matched device regulator-22v4-p with driver reg-fixed-voltage
+[    0.044784] bus: 'platform': really_probe: probing driver reg-fixed-voltage with device regulator-22v4-p
+[    0.044793] reg-fixed-voltage regulator-22v4-p: no pinctrl handle
+[    0.044853] device: 'regulator.5': device_add
+[    0.044899] PM: Adding info for No Bus:regulator.5
+[    0.044950] driver: 'reg-fixed-voltage': driver_bound: bound to device 'regulator-22v4-p'
+[    0.044970] bus: 'platform': really_probe: bound device regulator-22v4-p to driver reg-fixed-voltage
+[    0.044977] bus: 'platform': driver_probe_device: matched device regulator-pwr-en with driver reg-fixed-voltage
+[    0.044981] bus: 'platform': really_probe: probing driver reg-fixed-voltage with device regulator-pwr-en
+[    0.045029] reg-fixed-voltage regulator-pwr-en: no init pinctrl state
+[    0.045040] reg-fixed-voltage regulator-pwr-en: no sleep pinctrl state
+[    0.045045] reg-fixed-voltage regulator-pwr-en: no idle pinctrl state
+[    0.045111] platform regulator-pwr-en: Driver reg-fixed-voltage requests probe deferral
+[    0.045115] platform regulator-pwr-en: Added to deferred list
+[    0.045122] bus: 'platform': driver_probe_device: matched device regulator-usdhc2-vmmc with driver reg-fixed-voltage
+[    0.045127] bus: 'platform': really_probe: probing driver reg-fixed-voltage with device regulator-usdhc2-vmmc
+[    0.045166] reg-fixed-voltage regulator-usdhc2-vmmc: no init pinctrl state
+[    0.045172] reg-fixed-voltage regulator-usdhc2-vmmc: no sleep pinctrl state
+[    0.045177] reg-fixed-voltage regulator-usdhc2-vmmc: no idle pinctrl state
+[    0.045236] platform regulator-usdhc2-vmmc: Driver reg-fixed-voltage requests probe deferral
+[    0.045241] platform regulator-usdhc2-vmmc: Added to deferred list
+[    0.045251] bus: 'platform': driver_probe_device: matched device regulator-wifi-en with driver reg-fixed-voltage
+[    0.045256] bus: 'platform': really_probe: probing driver reg-fixed-voltage with device regulator-wifi-en
+[    0.045292] reg-fixed-voltage regulator-wifi-en: no init pinctrl state
+[    0.045298] reg-fixed-voltage regulator-wifi-en: no sleep pinctrl state
+[    0.045302] reg-fixed-voltage regulator-wifi-en: no idle pinctrl state
+[    0.045362] platform regulator-wifi-en: Driver reg-fixed-voltage requests probe deferral
+[    0.045367] platform regulator-wifi-en: Added to deferred list
+[    0.045384] bus: 'platform': add driver gpio-regulator
+[    0.045464] device class 'misc': registering
+[    0.045483] device: 'vga_arbiter': device_add
+[    0.045507] PM: Adding info for No Bus:vga_arbiter
+[    0.045589] vgaarb: loaded
+[    0.045613] bus: 'i2c': add driver rohm-bd718x7
+[    0.045794] device class 'scsi_host': registering
+[    0.045843] bus: 'scsi': registered
+[    0.045846] device class 'scsi_device': registering
+[    0.045857] SCSI subsystem initialized
+[    0.045864] device class 'ata_link': registering
+[    0.045875] device class 'ata_port': registering
+[    0.045885] device class 'ata_device': registering
+[    0.045899] libata version 3.00 loaded.
+[    0.045902] device class 'mdio_bus': registering
+[    0.045929] bus: 'mdio_bus': registered
+[    0.045936] bus: 'mdio_bus': add driver Generic Clause 45 PHY
+[    0.045956] bus: 'mdio_bus': add driver Generic PHY
+[    0.046001] bus: 'usb': registered
+[    0.046009] bus: 'usb': add driver usbfs
+[    0.046054] usbcore: registered new interface driver usbfs
+[    0.046063] bus: 'usb': add driver hub
+[    0.046088] usbcore: registered new interface driver hub
+[    0.046125] bus: 'usb': add driver usb
+[    0.046146] usbcore: registered new device driver usb
+[    0.046169] bus: 'typec': registered
+[    0.046172] device class 'typec_mux': registering
+[    0.046182] device class 'typec': registering
+[    0.046193] device class 'usb_role': registering
+[    0.046204] device class 'input': registering
+[    0.046221] device class 'rtc': registering
+[    0.046234] bus: 'platform': add driver i2c_designware
+[    0.046336] bus: 'platform': add driver imx-i2c
+[    0.046407] bus: 'platform': driver_probe_device: matched device 30a20000.i2c with driver imx-i2c
+[    0.046412] bus: 'platform': really_probe: probing driver imx-i2c with device 30a20000.i2c
+[    0.046474] imx-i2c 30a20000.i2c: no init pinctrl state
+[    0.046481] imx-i2c 30a20000.i2c: no sleep pinctrl state
+[    0.046485] imx-i2c 30a20000.i2c: no idle pinctrl state
+[    0.046547] platform 30a20000.i2c: Driver imx-i2c requests probe deferral
+[    0.046551] platform 30a20000.i2c: Added to deferred list
+[    0.046559] bus: 'platform': driver_probe_device: matched device 30a40000.i2c with driver imx-i2c
+[    0.046564] bus: 'platform': really_probe: probing driver imx-i2c with device 30a40000.i2c
+[    0.046618] imx-i2c 30a40000.i2c: no init pinctrl state
+[    0.046625] imx-i2c 30a40000.i2c: no sleep pinctrl state
+[    0.046629] imx-i2c 30a40000.i2c: no idle pinctrl state
+[    0.046678] platform 30a40000.i2c: Driver imx-i2c requests probe deferral
+[    0.046682] platform 30a40000.i2c: Added to deferred list
+[    0.046772] bus: 'cec': registered
+[    0.046776] device class 'pps': registering
+[    0.046792] pps_core: LinuxPPS API ver. 1 registered
+[    0.046797] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.046802] device class 'ptp': registering
+[    0.046812] PTP clock support registered
+[    0.046818] device class 'power_supply': registering
+[    0.046832] device class 'hwmon': registering
+[    0.046861] bus: 'mmc': registered
+[    0.046864] device class 'mmc_host': registering
+[    0.046891] bus: 'sdio': registered
+[    0.046894] device class 'leds': registering
+[    0.046910] bus: 'virtio': add driver virtio_rpmsg_bus
+[    0.046927] device class 'devfreq': registering
+[    0.047035] bus: 'iio': registered
+[    0.047109] bus: 'nvmem': registered
+[    0.047113] device class 'sound': registering
+[    0.047145] Advanced Linux Sound Architecture Driver Initialized.
+[    0.047164] device class 'net': registering
+[    0.047203] device: 'lo': device_add
+[    0.047324] PM: Adding info for No Bus:lo
+[    0.047491] device class 'rfkill': registering
+[    0.047506] device: 'rfkill': device_add
+[    0.047528] PM: Adding info for No Bus:rfkill
+[    0.047715] clocksource: Switched to clocksource arch_sys_counter
+[    0.047860] *** VALIDATE hugetlbfs ***
+[    0.047961] bus: 'pnp': add driver system
+[    0.047984] pnp: PnP ACPI: disabled
+[    0.047992] device class 'mem': registering
+[    0.048006] device: 'mem': device_add
+[    0.048030] PM: Adding info for No Bus:mem
+[    0.048073] device: 'null': device_add
+[    0.048094] PM: Adding info for No Bus:null
+[    0.048134] device: 'port': device_add
+[    0.048160] PM: Adding info for No Bus:port
+[    0.048200] device: 'zero': device_add
+[    0.048220] PM: Adding info for No Bus:zero
+[    0.048261] device: 'full': device_add
+[    0.048285] PM: Adding info for No Bus:full
+[    0.048324] device: 'random': device_add
+[    0.048345] PM: Adding info for No Bus:random
+[    0.048387] device: 'urandom': device_add
+[    0.048408] PM: Adding info for No Bus:urandom
+[    0.048462] device: 'kmsg': device_add
+[    0.048486] PM: Adding info for No Bus:kmsg
+[    0.048536] device: 'tty': device_add
+[    0.048561] PM: Adding info for No Bus:tty
+[    0.048602] device: 'console': device_add
+[    0.048631] PM: Adding info for No Bus:console
+[    0.048672] device: 'tty0': device_add
+[    0.048695] PM: Adding info for No Bus:tty0
+[    0.048734] device class 'vc': registering
+[    0.048748] device: 'vcs': device_add
+[    0.048770] PM: Adding info for No Bus:vcs
+[    0.048815] device: 'vcsu': device_add
+[    0.048836] PM: Adding info for No Bus:vcsu
+[    0.048878] device: 'vcsa': device_add
+[    0.048899] PM: Adding info for No Bus:vcsa
+[    0.048940] device: 'vcs1': device_add
+[    0.048964] PM: Adding info for No Bus:vcs1
+[    0.049003] device: 'vcsu1': device_add
+[    0.049025] PM: Adding info for No Bus:vcsu1
+[    0.049065] device: 'vcsa1': device_add
+[    0.049087] PM: Adding info for No Bus:vcsa1
+[    0.049136] device: 'tty1': device_add
+[    0.049158] PM: Adding info for No Bus:tty1
+[    0.049199] device: 'tty2': device_add
+[    0.049221] PM: Adding info for No Bus:tty2
+[    0.049261] device: 'tty3': device_add
+[    0.049286] PM: Adding info for No Bus:tty3
+[    0.049331] device: 'tty4': device_add
+[    0.049353] PM: Adding info for No Bus:tty4
+[    0.049393] device: 'tty5': device_add
+[    0.049415] PM: Adding info for No Bus:tty5
+[    0.049477] device: 'tty6': device_add
+[    0.049499] PM: Adding info for No Bus:tty6
+[    0.049539] device: 'tty7': device_add
+[    0.049561] PM: Adding info for No Bus:tty7
+[    0.049602] device: 'tty8': device_add
+[    0.049627] PM: Adding info for No Bus:tty8
+[    0.049670] device: 'tty9': device_add
+[    0.049691] PM: Adding info for No Bus:tty9
+[    0.049732] device: 'tty10': device_add
+[    0.049753] PM: Adding info for No Bus:tty10
+[    0.049797] device: 'tty11': device_add
+[    0.049818] PM: Adding info for No Bus:tty11
+[    0.049862] device: 'tty12': device_add
+[    0.049883] PM: Adding info for No Bus:tty12
+[    0.049927] device: 'tty13': device_add
+[    0.049952] PM: Adding info for No Bus:tty13
+[    0.049992] device: 'tty14': device_add
+[    0.050018] PM: Adding info for No Bus:tty14
+[    0.050058] device: 'tty15': device_add
+[    0.050080] PM: Adding info for No Bus:tty15
+[    0.050123] device: 'tty16': device_add
+[    0.050145] PM: Adding info for No Bus:tty16
+[    0.050185] device: 'tty17': device_add
+[    0.050207] PM: Adding info for No Bus:tty17
+[    0.050247] device: 'tty18': device_add
+[    0.050284] PM: Adding info for No Bus:tty18
+[    0.050325] device: 'tty19': device_add
+[    0.050347] PM: Adding info for No Bus:tty19
+[    0.050392] device: 'tty20': device_add
+[    0.050415] PM: Adding info for No Bus:tty20
+[    0.050458] device: 'tty21': device_add
+[    0.050480] PM: Adding info for No Bus:tty21
+[    0.050521] device: 'tty22': device_add
+[    0.050542] PM: Adding info for No Bus:tty22
+[    0.050582] device: 'tty23': device_add
+[    0.050607] PM: Adding info for No Bus:tty23
+[    0.050664] device: 'tty24': device_add
+[    0.050687] PM: Adding info for No Bus:tty24
+[    0.050730] device: 'tty25': device_add
+[    0.050752] PM: Adding info for No Bus:tty25
+[    0.050796] device: 'tty26': device_add
+[    0.050817] PM: Adding info for No Bus:tty26
+[    0.050857] device: 'tty27': device_add
+[    0.050879] PM: Adding info for No Bus:tty27
+[    0.050920] device: 'tty28': device_add
+[    0.050945] PM: Adding info for No Bus:tty28
+[    0.050988] device: 'tty29': device_add
+[    0.051010] PM: Adding info for No Bus:tty29
+[    0.051068] device: 'tty30': device_add
+[    0.051093] PM: Adding info for No Bus:tty30
+[    0.051139] device: 'tty31': device_add
+[    0.051161] PM: Adding info for No Bus:tty31
+[    0.051202] device: 'tty32': device_add
+[    0.051223] PM: Adding info for No Bus:tty32
+[    0.051267] device: 'tty33': device_add
+[    0.051292] PM: Adding info for No Bus:tty33
+[    0.051333] device: 'tty34': device_add
+[    0.051355] PM: Adding info for No Bus:tty34
+[    0.051395] device: 'tty35': device_add
+[    0.051417] PM: Adding info for No Bus:tty35
+[    0.051466] device: 'tty36': device_add
+[    0.051488] PM: Adding info for No Bus:tty36
+[    0.051529] device: 'tty37': device_add
+[    0.051552] PM: Adding info for No Bus:tty37
+[    0.051593] device: 'tty38': device_add
+[    0.051618] PM: Adding info for No Bus:tty38
+[    0.051659] device: 'tty39': device_add
+[    0.051682] PM: Adding info for No Bus:tty39
+[    0.051861] device: 'tty40': device_add
+[    0.051884] PM: Adding info for No Bus:tty40
+[    0.051932] device: 'tty41': device_add
+[    0.051954] PM: Adding info for No Bus:tty41
+[    0.051995] device: 'tty42': device_add
+[    0.052017] PM: Adding info for No Bus:tty42
+[    0.052058] device: 'tty43': device_add
+[    0.052083] PM: Adding info for No Bus:tty43
+[    0.052125] device: 'tty44': device_add
+[    0.052147] PM: Adding info for No Bus:tty44
+[    0.052192] device: 'tty45': device_add
+[    0.052214] PM: Adding info for No Bus:tty45
+[    0.052258] device: 'tty46': device_add
+[    0.052283] PM: Adding info for No Bus:tty46
+[    0.052324] device: 'tty47': device_add
+[    0.052346] PM: Adding info for No Bus:tty47
+[    0.052386] device: 'tty48': device_add
+[    0.052411] PM: Adding info for No Bus:tty48
+[    0.052452] device: 'tty49': device_add
+[    0.052474] PM: Adding info for No Bus:tty49
+[    0.052515] device: 'tty50': device_add
+[    0.052537] PM: Adding info for No Bus:tty50
+[    0.052581] device: 'tty51': device_add
+[    0.052602] PM: Adding info for No Bus:tty51
+[    0.052647] device: 'tty52': device_add
+[    0.052669] PM: Adding info for No Bus:tty52
+[    0.052710] device: 'tty53': device_add
+[    0.052735] PM: Adding info for No Bus:tty53
+[    0.052793] device: 'tty54': device_add
+[    0.052815] PM: Adding info for No Bus:tty54
+[    0.052856] device: 'tty55': device_add
+[    0.052878] PM: Adding info for No Bus:tty55
+[    0.052922] device: 'tty56': device_add
+[    0.052944] PM: Adding info for No Bus:tty56
+[    0.052988] device: 'tty57': device_add
+[    0.053009] PM: Adding info for No Bus:tty57
+[    0.053050] device: 'tty58': device_add
+[    0.053088] PM: Adding info for No Bus:tty58
+[    0.053129] device: 'tty59': device_add
+[    0.053151] PM: Adding info for No Bus:tty59
+[    0.053192] device: 'tty60': device_add
+[    0.053213] PM: Adding info for No Bus:tty60
+[    0.053261] device: 'tty61': device_add
+[    0.053283] PM: Adding info for No Bus:tty61
+[    0.053323] device: 'tty62': device_add
+[    0.053349] PM: Adding info for No Bus:tty62
+[    0.053389] device: 'tty63': device_add
+[    0.053414] PM: Adding info for No Bus:tty63
+[    0.053562] thermal_sys: Registered thermal governor 'step_wise'
+[    0.053564] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.053570] device class 'thermal': registering
+[    0.053676] device: 'thermal_zone0': device_add
+[    0.053742] PM: Adding info for No Bus:thermal_zone0
+[    0.053775] device: 'thermal_zone1': device_add
+[    0.053828] PM: Adding info for No Bus:thermal_zone1
+[    0.053853] device: 'thermal_zone2': device_add
+[    0.053906] PM: Adding info for No Bus:thermal_zone2
+[    0.054049] device class 'powercap': registering
+[    0.054143] NET: Registered protocol family 2
+[    0.054470] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    0.054526] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.054783] TCP bind hash table entries: 32768 (order: 7, 524288 bytes, linear)
+[    0.055261] TCP: Hash tables configured (established 32768 bind 32768)
+[    0.055345] UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    0.055437] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    0.055619] NET: Registered protocol family 1
+[    0.056063] RPC: Registered named UNIX socket transport module.
+[    0.056069] RPC: Registered udp transport module.
+[    0.056073] RPC: Registered tcp transport module.
+[    0.056077] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.056084] device class 'ieee80211': registering
+[    0.056238] Registering platform device 'regulatory.0'. Parent at platform
+[    0.056241] device: 'regulatory.0': device_add
+[    0.056254] bus: 'platform': add device regulatory.0
+[    0.056282] PM: Adding info for platform:regulatory.0
+[    0.056390] PCI: CLS 0 bytes, default 64
+[    0.056523] Unpacking initramfs...
+[    0.430205] Freeing initrd memory: 7592K
+[    0.430504] bus: 'platform': add driver armv8-pmu
+[    0.430537] bus: 'platform': driver_probe_device: matched device pmu with driver armv8-pmu
+[    0.430546] bus: 'platform': really_probe: probing driver armv8-pmu with device pmu
+[    0.430567] armv8-pmu pmu: no pinctrl handle
+[    0.430786] hw perfevents: enabled with armv8_cortex_a53 PMU driver, 7 counters available
+[    0.430793] driver: 'armv8-pmu': driver_bound: bound to device 'pmu'
+[    0.430829] bus: 'platform': really_probe: bound device pmu to driver armv8-pmu
+[    0.492762] bus: 'clocksource': registered
+[    0.492776] device: 'clocksource': device_add
+[    0.492811] PM: Adding info for No Bus:clocksource
+[    0.492822] device: 'clocksource0': device_add
+[    0.492836] bus: 'clocksource': add device clocksource0
+[    0.492855] PM: Adding info for clocksource:clocksource0
+[    0.492887] bus: 'platform': add driver alarmtimer
+[    0.493015] Registering platform device 'alarmtimer'. Parent at platform
+[    0.493018] device: 'alarmtimer': device_add
+[    0.493029] bus: 'platform': add device alarmtimer
+[    0.493056] PM: Adding info for platform:alarmtimer
+[    0.493092] bus: 'platform': driver_probe_device: matched device alarmtimer with driver alarmtimer
+[    0.493099] bus: 'platform': really_probe: probing driver alarmtimer with device alarmtimer
+[    0.493115] alarmtimer alarmtimer: no default pinctrl state
+[    0.493132] driver: 'alarmtimer': driver_bound: bound to device 'alarmtimer'
+[    0.493144] bus: 'platform': really_probe: bound device alarmtimer to driver alarmtimer
+[    0.493217] bus: 'clockevents': registered
+[    0.493222] device: 'clockevents': device_add
+[    0.493239] PM: Adding info for No Bus:clockevents
+[    0.493246] device: 'clockevent0': device_add
+[    0.493254] bus: 'clockevents': add device clockevent0
+[    0.493270] PM: Adding info for clockevents:clockevent0
+[    0.493290] device: 'clockevent1': device_add
+[    0.493298] bus: 'clockevents': add device clockevent1
+[    0.493315] PM: Adding info for clockevents:clockevent1
+[    0.493331] device: 'clockevent2': device_add
+[    0.493338] bus: 'clockevents': add device clockevent2
+[    0.493355] PM: Adding info for clockevents:clockevent2
+[    0.493371] device: 'clockevent3': device_add
+[    0.493378] bus: 'clockevents': add device clockevent3
+[    0.493397] PM: Adding info for clockevents:clockevent3
+[    0.493412] device: 'broadcast': device_add
+[    0.493419] bus: 'clockevents': add device broadcast
+[    0.493434] PM: Adding info for clockevents:broadcast
+[    0.493524] bus: 'event_source': registered
+[    0.493531] device: 'armv8_cortex_a53': device_add
+[    0.493597] bus: 'event_source': add device armv8_cortex_a53
+[    0.493621] PM: Adding info for event_source:armv8_cortex_a53
+[    0.493633] device: 'breakpoint': device_add
+[    0.493641] bus: 'event_source': add device breakpoint
+[    0.493660] PM: Adding info for event_source:breakpoint
+[    0.493671] device: 'software': device_add
+[    0.493678] bus: 'event_source': add device software
+[    0.493701] PM: Adding info for event_source:software
+[    0.493710] Initialise system trusted keyrings
+[    0.493858] workingset: timestamp_bits=46 max_order=20 bucket_order=0
+[    0.499403] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.500043] device: 'autofs': device_add
+[    0.500070] PM: Adding info for No Bus:autofs
+[    0.522850] Key type asymmetric registered
+[    0.522864] Asymmetric key parser 'x509' registered
+[    0.522884] device class 'bsg': registering
+[    0.522928] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 248)
+[    0.523247] bus: 'platform': add driver imx-irqsteer
+[    0.523387] bus: 'platform': driver_probe_device: matched device 32e2d000.interrupt-controller with driver imx-irqsteer
+[    0.523398] bus: 'platform': really_probe: probing driver imx-irqsteer with device 32e2d000.interrupt-controller
+[    0.523418] imx-irqsteer 32e2d000.interrupt-controller: no pinctrl handle
+[    0.523503] platform 32e2d000.interrupt-controller: Driver imx-irqsteer requests probe deferral
+[    0.523508] platform 32e2d000.interrupt-controller: Added to deferred list
+[    0.523588] bus: 'platform': add driver imx-weim
+[    0.523810] bus: 'platform': remove driver imx-weim
+[    0.523823] driver: 'imx-weim': driver_release
+[    0.523827] device class 'phy': registering
+[    0.523842] bus: 'platform': add driver xgene-phy
+[    0.523918] bus: 'platform': add driver mixel-mipi-dphy
+[    0.523961] bus: 'platform': driver_probe_device: matched device 30a00300.dphy with driver mixel-mipi-dphy
+[    0.523967] bus: 'platform': really_probe: probing driver mixel-mipi-dphy with device 30a00300.dphy
+[    0.523978] mixel-mipi-dphy 30a00300.dphy: no pinctrl handle
+[    0.524006] platform 30a00300.dphy: Driver mixel-mipi-dphy requests probe deferral
+[    0.524011] platform 30a00300.dphy: Added to deferred list
+[    0.524058] bus: 'platform': add driver max77620-pinctrl
+[    0.524105] bus: 'platform': add driver pinctrl-single
+[    0.524292] bus: 'platform': add driver basic-mmio-gpio
+[    0.524409] bus: 'platform': add driver gpio-dwapb
+[    0.524512] bus: 'platform': add driver max77620-gpio
+[    0.524562] bus: 'amba': add driver pl061_gpio
+[    0.524581] bus: 'platform': add driver xgene-gpio
+[    0.524663] bus: 'platform': add driver pwm-imx27
+[    0.524698] bus: 'platform': driver_probe_device: matched device 30660000.pwm with driver pwm-imx27
+[    0.524703] bus: 'platform': really_probe: probing driver pwm-imx27 with device 30660000.pwm
+[    0.524739] pwm-imx27 30660000.pwm: no init pinctrl state
+[    0.524750] pwm-imx27 30660000.pwm: no sleep pinctrl state
+[    0.524754] pwm-imx27 30660000.pwm: no idle pinctrl state
+[    0.524779] pwm-imx27 30660000.pwm: getting ipg clock failed with -517
+[    0.524796] platform 30660000.pwm: Driver pwm-imx27 requests probe deferral
+[    0.524800] platform 30660000.pwm: Added to deferred list
+[    0.524864] bus: 'pci_express': add driver aer
+[    0.524882] bus: 'pci_express': add driver pcie_pme
+[    0.524899] bus: 'pci': add driver pcieport
+[    0.524938] bus: 'platform': add driver pci-host-generic
+[    0.525091] bus: 'platform': add driver xilinx-pcie
+[    0.525163] bus: 'platform': add driver xgene-pcie
+[    0.525235] bus: 'platform': add driver pwm-backlight
+[    0.525287] bus: 'platform': driver_probe_device: matched device backlight-dsi with driver pwm-backlight
+[    0.525293] bus: 'platform': really_probe: probing driver pwm-backlight with device backlight-dsi
+[    0.525303] pwm-backlight backlight-dsi: no pinctrl handle
+[    0.525374] platform backlight-dsi: Driver pwm-backlight requests probe deferral
+[    0.525378] platform backlight-dsi: Added to deferred list
+[    0.525410] bus: 'amba': add driver clcd-pl11x
+[    0.525428] bus: 'platform': add driver acpi-ged
+[    0.525472] bus: 'platform': add driver acpi-fan
+[    0.525676] bus: 'platform': add driver of_fixed_factor_clk
+[    0.525760] bus: 'platform': add driver of_fixed_clk
+[    0.525837] bus: 'platform': add driver gpio-clk
+[    0.525935] bus: 'platform': add driver of_fixed_mmio_clk
+[    0.526011] bus: 'platform': add driver imx8mq-ccm
+[    0.526044] bus: 'platform': driver_probe_device: matched device 30380000.clock-controller with driver imx8mq-ccm
+[    0.526049] bus: 'platform': really_probe: probing driver imx8mq-ccm with device 30380000.clock-controller
+[    0.526059] imx8mq-ccm 30380000.clock-controller: no pinctrl handle
+[    0.529009] driver: 'imx8mq-ccm': driver_bound: bound to device '30380000.clock-controller'
+[    0.529042] bus: 'platform': really_probe: bound device 30380000.clock-controller to driver imx8mq-ccm
+[    0.529104] bus: 'platform': add driver imx-pgc
+[    0.529149] bus: 'platform': add driver imx-gpcv2
+[    0.529194] bus: 'platform': driver_probe_device: matched device 303a0000.gpc with driver imx-gpcv2
+[    0.529199] bus: 'platform': really_probe: probing driver imx-gpcv2 with device 303a0000.gpc
+[    0.529212] imx-gpcv2 303a0000.gpc: no pinctrl handle
+[    0.529302] Registering platform device 'imx-pgc-domain.0'. Parent at 303a0000.gpc
+[    0.529307] device: 'imx-pgc-domain.0': device_add
+[    0.529325] bus: 'platform': add device imx-pgc-domain.0
+[    0.529358] PM: Adding info for platform:imx-pgc-domain.0
+[    0.529441] bus: 'platform': driver_probe_device: matched device imx-pgc-domain.0 with driver imx-pgc
+[    0.529445] bus: 'platform': really_probe: probing driver imx-pgc with device imx-pgc-domain.0
+[    0.529454] imx-pgc imx-pgc-domain.0: no pinctrl handle
+[    0.529462] imx-pgc imx-pgc-domain.0: DMA mask not set
+[    0.529492] platform imx-pgc-domain.0: Driver imx-pgc requests probe deferral
+[    0.529497] platform imx-pgc-domain.0: Added to deferred list
+[    0.529510] Registering platform device 'imx-pgc-domain.1'. Parent at 303a0000.gpc
+[    0.529513] device: 'imx-pgc-domain.1': device_add
+[    0.529524] bus: 'platform': add device imx-pgc-domain.1
+[    0.529547] PM: Adding info for platform:imx-pgc-domain.1
+[    0.529599] bus: 'platform': driver_probe_device: matched device imx-pgc-domain.1 with driver imx-pgc
+[    0.529603] bus: 'platform': really_probe: probing driver imx-pgc with device imx-pgc-domain.1
+[    0.529612] imx-pgc imx-pgc-domain.1: no pinctrl handle
+[    0.529619] imx-pgc imx-pgc-domain.1: DMA mask not set
+[    0.529641] imx-pgc imx-pgc-domain.1: __genpd_dev_pm_attach() failed to find PM domain: -2
+[    0.529650] platform imx-pgc-domain.1: Driver imx-pgc requests probe deferral
+[    0.529655] platform imx-pgc-domain.1: Added to deferred list
+[    0.529673] Registering platform device 'imx-pgc-domain.2'. Parent at 303a0000.gpc
+[    0.529676] device: 'imx-pgc-domain.2': device_add
+[    0.529687] bus: 'platform': add device imx-pgc-domain.2
+[    0.529708] PM: Adding info for platform:imx-pgc-domain.2
+[    0.529758] bus: 'platform': driver_probe_device: matched device imx-pgc-domain.2 with driver imx-pgc
+[    0.529762] bus: 'platform': really_probe: probing driver imx-pgc with device imx-pgc-domain.2
+[    0.529770] imx-pgc imx-pgc-domain.2: no pinctrl handle
+[    0.529777] imx-pgc imx-pgc-domain.2: DMA mask not set
+[    0.529812] PM: Added domain provider from /soc@0/bus@30000000/gpc@303a0000/pgc/power-domain@2
+[    0.529815] driver: 'imx-pgc': driver_bound: bound to device 'imx-pgc-domain.2'
+[    0.529833] bus: 'platform': really_probe: bound device imx-pgc-domain.2 to driver imx-pgc
+[    0.529846] Registering platform device 'imx-pgc-domain.3'. Parent at 303a0000.gpc
+[    0.529849] device: 'imx-pgc-domain.3': device_add
+[    0.529859] bus: 'platform': add device imx-pgc-domain.3
+[    0.529881] PM: Adding info for platform:imx-pgc-domain.3
+[    0.529930] bus: 'platform': driver_probe_device: matched device imx-pgc-domain.3 with driver imx-pgc
+[    0.529934] bus: 'platform': really_probe: probing driver imx-pgc with device imx-pgc-domain.3
+[    0.529942] imx-pgc imx-pgc-domain.3: no pinctrl handle
+[    0.529949] imx-pgc imx-pgc-domain.3: DMA mask not set
+[    0.529973] PM: Added domain provider from /soc@0/bus@30000000/gpc@303a0000/pgc/power-domain@3
+[    0.529977] driver: 'imx-pgc': driver_bound: bound to device 'imx-pgc-domain.3'
+[    0.529995] bus: 'platform': really_probe: bound device imx-pgc-domain.3 to driver imx-pgc
+[    0.530006] Registering platform device 'imx-pgc-domain.4'. Parent at 303a0000.gpc
+[    0.530009] device: 'imx-pgc-domain.4': device_add
+[    0.530020] bus: 'platform': add device imx-pgc-domain.4
+[    0.530041] PM: Adding info for platform:imx-pgc-domain.4
+[    0.530088] bus: 'platform': driver_probe_device: matched device imx-pgc-domain.4 with driver imx-pgc
+[    0.530092] bus: 'platform': really_probe: probing driver imx-pgc with device imx-pgc-domain.4
+[    0.530100] imx-pgc imx-pgc-domain.4: no pinctrl handle
+[    0.530107] imx-pgc imx-pgc-domain.4: DMA mask not set
+[    0.530135] PM: Added domain provider from /soc@0/bus@30000000/gpc@303a0000/pgc/power-domain@4
+[    0.530138] driver: 'imx-pgc': driver_bound: bound to device 'imx-pgc-domain.4'
+[    0.530156] bus: 'platform': really_probe: bound device imx-pgc-domain.4 to driver imx-pgc
+[    0.530168] Registering platform device 'imx-pgc-domain.5'. Parent at 303a0000.gpc
+[    0.530171] device: 'imx-pgc-domain.5': device_add
+[    0.530183] bus: 'platform': add device imx-pgc-domain.5
+[    0.530207] PM: Adding info for platform:imx-pgc-domain.5
+[    0.530261] bus: 'platform': driver_probe_device: matched device imx-pgc-domain.5 with driver imx-pgc
+[    0.530266] bus: 'platform': really_probe: probing driver imx-pgc with device imx-pgc-domain.5
+[    0.530274] imx-pgc imx-pgc-domain.5: no pinctrl handle
+[    0.530281] imx-pgc imx-pgc-domain.5: DMA mask not set
+[    0.530308] platform imx-pgc-domain.5: Driver imx-pgc requests probe deferral
+[    0.530312] platform imx-pgc-domain.5: Added to deferred list
+[    0.530325] Registering platform device 'imx-pgc-domain.6'. Parent at 303a0000.gpc
+[    0.530328] device: 'imx-pgc-domain.6': device_add
+[    0.530339] bus: 'platform': add device imx-pgc-domain.6
+[    0.530361] PM: Adding info for platform:imx-pgc-domain.6
+[    0.530410] bus: 'platform': driver_probe_device: matched device imx-pgc-domain.6 with driver imx-pgc
+[    0.530414] bus: 'platform': really_probe: probing driver imx-pgc with device imx-pgc-domain.6
+[    0.530422] imx-pgc imx-pgc-domain.6: no pinctrl handle
+[    0.530429] imx-pgc imx-pgc-domain.6: DMA mask not set
+[    0.530454] platform imx-pgc-domain.6: Driver imx-pgc requests probe deferral
+[    0.530459] platform imx-pgc-domain.6: Added to deferred list
+[    0.530472] Registering platform device 'imx-pgc-domain.7'. Parent at 303a0000.gpc
+[    0.530475] device: 'imx-pgc-domain.7': device_add
+[    0.530486] bus: 'platform': add device imx-pgc-domain.7
+[    0.530511] PM: Adding info for platform:imx-pgc-domain.7
+[    0.530558] bus: 'platform': driver_probe_device: matched device imx-pgc-domain.7 with driver imx-pgc
+[    0.530563] bus: 'platform': really_probe: probing driver imx-pgc with device imx-pgc-domain.7
+[    0.530571] imx-pgc imx-pgc-domain.7: no pinctrl handle
+[    0.530578] imx-pgc imx-pgc-domain.7: DMA mask not set
+[    0.530602] PM: Added domain provider from /soc@0/bus@30000000/gpc@303a0000/pgc/power-domain@7
+[    0.530605] driver: 'imx-pgc': driver_bound: bound to device 'imx-pgc-domain.7'
+[    0.530623] bus: 'platform': really_probe: bound device imx-pgc-domain.7 to driver imx-pgc
+[    0.530634] Registering platform device 'imx-pgc-domain.8'. Parent at 303a0000.gpc
+[    0.530638] device: 'imx-pgc-domain.8': device_add
+[    0.530649] bus: 'platform': add device imx-pgc-domain.8
+[    0.530670] PM: Adding info for platform:imx-pgc-domain.8
+[    0.530717] bus: 'platform': driver_probe_device: matched device imx-pgc-domain.8 with driver imx-pgc
+[    0.530721] bus: 'platform': really_probe: probing driver imx-pgc with device imx-pgc-domain.8
+[    0.530729] imx-pgc imx-pgc-domain.8: no pinctrl handle
+[    0.530736] imx-pgc imx-pgc-domain.8: DMA mask not set
+[    0.530760] PM: Added domain provider from /soc@0/bus@30000000/gpc@303a0000/pgc/power-domain@8
+[    0.530763] driver: 'imx-pgc': driver_bound: bound to device 'imx-pgc-domain.8'
+[    0.530781] bus: 'platform': really_probe: bound device imx-pgc-domain.8 to driver imx-pgc
+[    0.530792] Registering platform device 'imx-pgc-domain.9'. Parent at 303a0000.gpc
+[    0.530795] device: 'imx-pgc-domain.9': device_add
+[    0.530806] bus: 'platform': add device imx-pgc-domain.9
+[    0.530830] PM: Adding info for platform:imx-pgc-domain.9
+[    0.530877] bus: 'platform': driver_probe_device: matched device imx-pgc-domain.9 with driver imx-pgc
+[    0.530881] bus: 'platform': really_probe: probing driver imx-pgc with device imx-pgc-domain.9
+[    0.530889] imx-pgc imx-pgc-domain.9: no pinctrl handle
+[    0.530896] imx-pgc imx-pgc-domain.9: DMA mask not set
+[    0.530920] PM: Added domain provider from /soc@0/bus@30000000/gpc@303a0000/pgc/power-domain@9
+[    0.530923] driver: 'imx-pgc': driver_bound: bound to device 'imx-pgc-domain.9'
+[    0.530941] bus: 'platform': really_probe: bound device imx-pgc-domain.9 to driver imx-pgc
+[    0.530952] Registering platform device 'imx-pgc-domain.10'. Parent at 303a0000.gpc
+[    0.530955] device: 'imx-pgc-domain.10': device_add
+[    0.530966] bus: 'platform': add device imx-pgc-domain.10
+[    0.530986] PM: Adding info for platform:imx-pgc-domain.10
+[    0.531035] bus: 'platform': driver_probe_device: matched device imx-pgc-domain.10 with driver imx-pgc
+[    0.531039] bus: 'platform': really_probe: probing driver imx-pgc with device imx-pgc-domain.10
+[    0.531047] imx-pgc imx-pgc-domain.10: no pinctrl handle
+[    0.531054] imx-pgc imx-pgc-domain.10: DMA mask not set
+[    0.531078] PM: Added domain provider from /soc@0/bus@30000000/gpc@303a0000/pgc/power-domain@a
+[    0.531082] driver: 'imx-pgc': driver_bound: bound to device 'imx-pgc-domain.10'
+[    0.531100] bus: 'platform': really_probe: bound device imx-pgc-domain.10 to driver imx-pgc
+[    0.531105] driver: 'imx-gpcv2': driver_bound: bound to device '303a0000.gpc'
+[    0.531123] bus: 'platform': really_probe: bound device 303a0000.gpc to driver imx-gpcv2
+[    0.531317] device: 'soc0': device_add
+[    0.531339] bus: 'soc': add device soc0
+[    0.531360] PM: Adding info for soc:soc0
+[    0.531373] bus: 'platform': add driver bd718xx-pmic
+[    0.531423] bus: 'platform': add driver max77620-pmic
+[    0.531480] bus: 'platform': add driver qcom-spmi-regulator
+[    0.531690] bus: 'i2c': add driver pfuze100-regulator
+[    0.531729] bus: 'platform': add driver pwm-regulator
+[    0.531818] bus: 'platform': add driver reset_imx7
+[    0.531862] bus: 'platform': driver_probe_device: matched device 30390000.reset-controller with driver reset_imx7
+[    0.531867] bus: 'platform': really_probe: probing driver reset_imx7 with device 30390000.reset-controller
+[    0.531876] reset_imx7 30390000.reset-controller: no pinctrl handle
+[    0.531971] driver: 'reset_imx7': driver_bound: bound to device '30390000.reset-controller'
+[    0.531994] bus: 'platform': really_probe: bound device 30390000.reset-controller to driver reset_imx7
+[    0.532091] device: 'ptyp0': device_add
+[    0.532121] PM: Adding info for No Bus:ptyp0
+[    0.532209] device: 'ptyp1': device_add
+[    0.532237] PM: Adding info for No Bus:ptyp1
+[    0.532282] device: 'ptyp2': device_add
+[    0.532307] PM: Adding info for No Bus:ptyp2
+[    0.532351] device: 'ptyp3': device_add
+[    0.532375] PM: Adding info for No Bus:ptyp3
+[    0.532419] device: 'ptyp4': device_add
+[    0.532446] PM: Adding info for No Bus:ptyp4
+[    0.532487] device: 'ptyp5': device_add
+[    0.532511] PM: Adding info for No Bus:ptyp5
+[    0.532569] device: 'ptyp6': device_add
+[    0.532596] PM: Adding info for No Bus:ptyp6
+[    0.532638] device: 'ptyp7': device_add
+[    0.532662] PM: Adding info for No Bus:ptyp7
+[    0.532703] device: 'ptyp8': device_add
+[    0.532727] PM: Adding info for No Bus:ptyp8
+[    0.532768] device: 'ptyp9': device_add
+[    0.532796] PM: Adding info for No Bus:ptyp9
+[    0.532838] device: 'ptypa': device_add
+[    0.532860] PM: Adding info for No Bus:ptypa
+[    0.532900] device: 'ptypb': device_add
+[    0.532926] PM: Adding info for No Bus:ptypb
+[    0.532969] device: 'ptypc': device_add
+[    0.532992] PM: Adding info for No Bus:ptypc
+[    0.533050] device: 'ptypd': device_add
+[    0.533074] PM: Adding info for No Bus:ptypd
+[    0.533114] device: 'ptype': device_add
+[    0.533140] PM: Adding info for No Bus:ptype
+[    0.533180] device: 'ptypf': device_add
+[    0.533202] PM: Adding info for No Bus:ptypf
+[    0.533246] device: 'ttyp0': device_add
+[    0.533271] PM: Adding info for No Bus:ttyp0
+[    0.533311] device: 'ttyp1': device_add
+[    0.533335] PM: Adding info for No Bus:ttyp1
+[    0.533375] device: 'ttyp2': device_add
+[    0.533399] PM: Adding info for No Bus:ttyp2
+[    0.533446] device: 'ttyp3': device_add
+[    0.533471] PM: Adding info for No Bus:ttyp3
+[    0.533511] device: 'ttyp4': device_add
+[    0.533534] PM: Adding info for No Bus:ttyp4
+[    0.533574] device: 'ttyp5': device_add
+[    0.533601] PM: Adding info for No Bus:ttyp5
+[    0.533644] device: 'ttyp6': device_add
+[    0.533666] PM: Adding info for No Bus:ttyp6
+[    0.533707] device: 'ttyp7': device_add
+[    0.533730] PM: Adding info for No Bus:ttyp7
+[    0.533770] device: 'ttyp8': device_add
+[    0.533795] PM: Adding info for No Bus:ttyp8
+[    0.533837] device: 'ttyp9': device_add
+[    0.533859] PM: Adding info for No Bus:ttyp9
+[    0.533899] device: 'ttypa': device_add
+[    0.533925] PM: Adding info for No Bus:ttypa
+[    0.533968] device: 'ttypb': device_add
+[    0.533990] PM: Adding info for No Bus:ttypb
+[    0.534031] device: 'ttypc': device_add
+[    0.534053] PM: Adding info for No Bus:ttypc
+[    0.534093] device: 'ttypd': device_add
+[    0.534119] PM: Adding info for No Bus:ttypd
+[    0.534159] device: 'ttype': device_add
+[    0.534181] PM: Adding info for No Bus:ttype
+[    0.534222] device: 'ttypf': device_add
+[    0.534247] PM: Adding info for No Bus:ttypf
+[    0.534297] device: 'ptmx': device_add
+[    0.534318] PM: Adding info for No Bus:ptmx
+[    0.534391] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    0.534412] bus: 'pnp': add driver serial
+[    0.534434] Registering platform device 'serial8250'. Parent at platform
+[    0.534437] device: 'serial8250': device_add
+[    0.534447] bus: 'platform': add device serial8250
+[    0.534471] PM: Adding info for platform:serial8250
+[    0.534515] device: 'serial0': device_add
+[    0.534524] bus: 'serial': add device serial0
+[    0.534534] PM: Adding info for serial:serial0
+[    0.534571] bus: 'serial': remove device serial0
+[    0.534575] PM: Removing info for serial:serial0
+[    0.534595] device: 'ttyS0': device_add
+[    0.534643] PM: Adding info for No Bus:ttyS0
+[    0.534715] device: 'serial0': device_add
+[    0.534723] bus: 'serial': add device serial0
+[    0.534732] PM: Adding info for serial:serial0
+[    0.534758] bus: 'serial': remove device serial0
+[    0.534761] PM: Removing info for serial:serial0
+[    0.534776] device: 'ttyS1': device_add
+[    0.534822] PM: Adding info for No Bus:ttyS1
+[    0.534885] device: 'serial0': device_add
+[    0.534893] bus: 'serial': add device serial0
+[    0.534902] PM: Adding info for serial:serial0
+[    0.534928] bus: 'serial': remove device serial0
+[    0.534931] PM: Removing info for serial:serial0
+[    0.534946] device: 'ttyS2': device_add
+[    0.534992] PM: Adding info for No Bus:ttyS2
+[    0.535057] device: 'serial0': device_add
+[    0.535065] bus: 'serial': add device serial0
+[    0.535074] PM: Adding info for serial:serial0
+[    0.535100] bus: 'serial': remove device serial0
+[    0.535103] PM: Removing info for serial:serial0
+[    0.535118] device: 'ttyS3': device_add
+[    0.535164] PM: Adding info for No Bus:ttyS3
+[    0.535239] bus: 'platform': add driver serial8250
+[    0.535279] bus: 'platform': driver_probe_device: matched device serial8250 with driver serial8250
+[    0.535284] bus: 'platform': really_probe: probing driver serial8250 with device serial8250
+[    0.535293] serial8250 serial8250: no default pinctrl state
+[    0.535306] driver: 'serial8250': driver_bound: bound to device 'serial8250'
+[    0.535317] bus: 'platform': really_probe: bound device serial8250 to driver serial8250
+[    0.535334] bus: 'pci': add driver serial
+[    0.535378] bus: 'platform': add driver dw-apb-uart
+[    0.535537] bus: 'platform': add driver of_serial
+[    0.535973] bus: 'platform': add driver imx-uart
+[    0.536051] bus: 'platform': driver_probe_device: matched device 30860000.serial with driver imx-uart
+[    0.536057] bus: 'platform': really_probe: probing driver imx-uart with device 30860000.serial
+[    0.536145] imx-uart 30860000.serial: no init pinctrl state
+[    0.536156] imx-uart 30860000.serial: no sleep pinctrl state
+[    0.536160] imx-uart 30860000.serial: no idle pinctrl state
+[    0.536304] 30860000.serial: ttymxc0 at MMIO 0x30860000 (irq = 27, base_baud = 1562500) is a IMX
+[    1.342999] printk: console [ttymxc0] enabled
+[    1.347553] device: 'serial0': device_add
+[    1.347569] bus: 'serial': add device serial0
+[    1.347578] PM: Adding info for serial:serial0
+[    1.347616] bus: 'serial': remove device serial0
+[    1.347620] PM: Removing info for serial:serial0
+[    1.347645] device: 'ttymxc0': device_add
+[    1.347707] PM: Adding info for No Bus:ttymxc0
+[    1.347776] driver: 'imx-uart': driver_bound: bound to device '30860000.serial'
+[    1.347799] bus: 'platform': really_probe: bound device 30860000.serial to driver imx-uart
+[    1.347808] bus: 'platform': driver_probe_device: matched device 30880000.serial with driver imx-uart
+[    1.347813] bus: 'platform': really_probe: probing driver imx-uart with device 30880000.serial
+[    1.347880] imx-uart 30880000.serial: no init pinctrl state
+[    1.347888] imx-uart 30880000.serial: no sleep pinctrl state
+[    1.347893] imx-uart 30880000.serial: no idle pinctrl state
+[    1.348005] 30880000.serial: ttymxc2 at MMIO 0x30880000 (irq = 28, base_baud = 1562500) is a IMX
+[    1.357173] device: 'serial0': device_add
+[    1.357184] bus: 'serial': add device serial0
+[    1.357193] PM: Adding info for serial:serial0
+[    1.357230] bus: 'serial': remove device serial0
+[    1.357233] PM: Removing info for serial:serial0
+[    1.357259] device: 'ttymxc2': device_add
+[    1.357308] PM: Adding info for No Bus:ttymxc2
+[    1.357373] driver: 'imx-uart': driver_bound: bound to device '30880000.serial'
+[    1.357395] bus: 'platform': really_probe: bound device 30880000.serial to driver imx-uart
+[    1.357416] bus: 'platform': driver_probe_device: matched device 30a60000.serial with driver imx-uart
+[    1.357422] bus: 'platform': really_probe: probing driver imx-uart with device 30a60000.serial
+[    1.357540] imx-uart 30a60000.serial: no init pinctrl state
+[    1.357552] imx-uart 30a60000.serial: no sleep pinctrl state
+[    1.357556] imx-uart 30a60000.serial: no idle pinctrl state
+[    1.357667] 30a60000.serial: ttymxc3 at MMIO 0x30a60000 (irq = 33, base_baud = 1562500) is a IMX
+[    1.366835] device: 'serial0': device_add
+[    1.366847] bus: 'serial': add device serial0
+[    1.366856] PM: Adding info for serial:serial0
+[    1.366893] bus: 'serial': remove device serial0
+[    1.366896] PM: Removing info for serial:serial0
+[    1.366921] device: 'ttymxc3': device_add
+[    1.366968] PM: Adding info for No Bus:ttymxc3
+[    1.367037] driver: 'imx-uart': driver_bound: bound to device '30a60000.serial'
+[    1.367060] bus: 'platform': really_probe: bound device 30a60000.serial to driver imx-uart
+[    1.367162] bus: 'platform': add driver fsl-lpuart
+[    1.367333] device: 'hw_random': device_add
+[    1.367363] PM: Adding info for No Bus:hw_random
+[    1.367412] bus: 'platform': add driver arm-smmu
+[    1.367625] bus: 'platform': add driver arm-smmu-v3
+[    1.367720] device class 'drm': registering
+[    1.367773] bus: 'platform': add driver imx-drm
+[    1.367827] bus: 'platform': driver_probe_device: matched device soc@0:display-subsystem with driver imx-drm
+[    1.367833] bus: 'platform': really_probe: probing driver imx-drm with device soc@0:display-subsystem
+[    1.367843] imx-drm soc@0:display-subsystem: no pinctrl handle
+[    1.367895] imx-drm soc@0:display-subsystem: trying to bring up master
+[    1.367900] imx-drm soc@0:display-subsystem: Looking for component 0
+[    1.367905] imx-drm soc@0:display-subsystem: master has incomplete components
+[    1.367909] driver: 'imx-drm': driver_bound: bound to device 'soc@0:display-subsystem'
+[    1.367930] bus: 'platform': really_probe: bound device soc@0:display-subsystem to driver imx-drm
+[    1.367976] bus: 'platform': add driver imx-dcss-crtc
+[    1.368026] bus: 'platform': add driver imx-nwl-dsi
+[    1.368067] bus: 'platform': driver_probe_device: matched device 30a00000.mipi_dsi with driver imx-nwl-dsi
+[    1.368072] bus: 'platform': really_probe: probing driver imx-nwl-dsi with device 30a00000.mipi_dsi
+[    1.368085] imx-nwl-dsi 30a00000.mipi_dsi: no pinctrl handle
+[    1.368229] imx-nwl-dsi 30a00000.mipi_dsi: __genpd_dev_pm_attach() failed to find PM domain: -2
+[    1.368240] platform 30a00000.mipi_dsi: Driver imx-nwl-dsi requests probe deferral
+[    1.368245] platform 30a00000.mipi_dsi: Added to deferred list
+[    1.368303] bus: 'mipi-dsi': add driver panel-rocktech-jh057n00900
+[    1.368321] bus: 'mipi-dsi': add driver adv7533
+[    1.368339] bus: 'i2c': add driver adv7511
+[    1.368368] bus: 'platform': add driver etnaviv-gpu
+[    1.368418] bus: 'platform': driver_probe_device: matched device 38000000.gpu with driver etnaviv-gpu
+[    1.368423] bus: 'platform': really_probe: probing driver etnaviv-gpu with device 38000000.gpu
+[    1.368433] etnaviv-gpu 38000000.gpu: no pinctrl handle
+[    1.368573] etnaviv-gpu 38000000.gpu: __genpd_dev_pm_attach() failed to find PM domain: -2
+[    1.368582] platform 38000000.gpu: Driver etnaviv-gpu requests probe deferral
+[    1.368586] platform 38000000.gpu: Added to deferred list
+[    1.368631] bus: 'platform': add driver etnaviv
+[    1.368794] Registering platform device 'etnaviv'. Parent at platform
+[    1.368797] device: 'etnaviv': device_add
+[    1.368808] bus: 'platform': add device etnaviv
+[    1.368831] PM: Adding info for platform:etnaviv
+[    1.368871] bus: 'platform': driver_probe_device: matched device etnaviv with driver etnaviv
+[    1.368875] bus: 'platform': really_probe: probing driver etnaviv with device etnaviv
+[    1.368883] etnaviv etnaviv: no default pinctrl state
+[    1.369004] etnaviv etnaviv: trying to bring up master
+[    1.369009] etnaviv etnaviv: Looking for component 0
+[    1.369013] etnaviv etnaviv: master has incomplete components
+[    1.369017] driver: 'etnaviv': driver_bound: bound to device 'etnaviv'
+[    1.369027] bus: 'platform': really_probe: bound device etnaviv to driver etnaviv
+[    1.369036] bus: 'platform': add driver mxsfb
+[    1.369190] bus: 'platform': add driver dcss-core
+[    1.369237] bus: 'platform': driver_probe_device: matched device 32e00000.dcss with driver dcss-core
+[    1.369242] bus: 'platform': really_probe: probing driver dcss-core with device 32e00000.dcss
+[    1.369252] dcss-core 32e00000.dcss: no pinctrl handle
+[    1.369506] dcss-core 32e00000.dcss: dcss_submodules_init 131.
+[    1.376619] dcss-core 32e00000.dcss: ctxld: can't get irq number
+[    1.382890] dcss-core 32e00000.dcss: submodules initialization failed
+[    1.389659] platform 32e00000.dcss: Driver dcss-core requests probe deferral
+[    1.389664] platform 32e00000.dcss: Added to deferred list
+[    1.389853] device: 'cache': device_add
+[    1.389871] device: 'index0': device_add
+[    1.389892] device: 'index1': device_add
+[    1.389912] device: 'index2': device_add
+[    1.389962] device: 'cache': device_add
+[    1.389978] device: 'index0': device_add
+[    1.389998] device: 'index1': device_add
+[    1.390018] device: 'index2': device_add
+[    1.390086] device: 'cache': device_add
+[    1.390103] device: 'index0': device_add
+[    1.390123] device: 'index1': device_add
+[    1.390142] device: 'index2': device_add
+[    1.390196] device: 'cache': device_add
+[    1.390227] device: 'index0': device_add
+[    1.390247] device: 'index1': device_add
+[    1.390266] device: 'index2': device_add
+[    1.390292] device class 'devcoredump': registering
+[    1.390314] device: 'loop-control': device_add
+[    1.390342] PM: Adding info for No Bus:loop-control
+[    1.390552] device: '7:0': device_add
+[    1.390589] PM: Adding info for No Bus:7:0
+[    1.390616] device: 'loop0': device_add
+[    1.390666] PM: Adding info for No Bus:loop0
+[    1.391150] device: '7:1': device_add
+[    1.391180] PM: Adding info for No Bus:7:1
+[    1.391220] device: 'loop1': device_add
+[    1.391262] PM: Adding info for No Bus:loop1
+[    1.391724] device: '7:2': device_add
+[    1.391754] PM: Adding info for No Bus:7:2
+[    1.391775] device: 'loop2': device_add
+[    1.391817] PM: Adding info for No Bus:loop2
+[    1.392274] device: '7:3': device_add
+[    1.392307] PM: Adding info for No Bus:7:3
+[    1.392327] device: 'loop3': device_add
+[    1.392369] PM: Adding info for No Bus:loop3
+[    1.392830] device: '7:4': device_add
+[    1.392863] PM: Adding info for No Bus:7:4
+[    1.392884] device: 'loop4': device_add
+[    1.392925] PM: Adding info for No Bus:loop4
+[    1.393414] device: '7:5': device_add
+[    1.393448] PM: Adding info for No Bus:7:5
+[    1.393472] device: 'loop5': device_add
+[    1.393511] PM: Adding info for No Bus:loop5
+[    1.393961] device: '7:6': device_add
+[    1.393994] PM: Adding info for No Bus:7:6
+[    1.394015] device: 'loop6': device_add
+[    1.394054] PM: Adding info for No Bus:loop6
+[    1.394488] device: '7:7': device_add
+[    1.394521] PM: Adding info for No Bus:7:7
+[    1.394559] device: 'loop7': device_add
+[    1.394598] PM: Adding info for No Bus:loop7
+[    1.394922] loop: module loaded
+[    1.398219] bus: 'i2c': add driver max77620
+[    1.398242] device class 'sas_host': registering
+[    1.398256] device class 'sas_phy': registering
+[    1.398268] device class 'sas_port': registering
+[    1.398278] device class 'sas_device': registering
+[    1.398289] device class 'sas_end_device': registering
+[    1.398299] device class 'sas_expander': registering
+[    1.398357] device class 'scsi_disk': registering
+[    1.398386] bus: 'scsi': add driver sd
+[    1.398409] bus: 'pci': add driver ahci
+[    1.398462] bus: 'platform': add driver ahci
+[    1.398757] bus: 'platform': add driver fsl_lpspi
+[    1.398889] Registering platform device 'Fixed MDIO bus.0'. Parent at platform
+[    1.398892] device: 'Fixed MDIO bus.0': device_add
+[    1.398905] bus: 'platform': add device Fixed MDIO bus.0
+[    1.398933] PM: Adding info for platform:Fixed MDIO bus.0
+[    1.399013] device: 'fixed-0': device_add
+[    1.399040] PM: Adding info for No Bus:fixed-0
+[    1.399065] libphy: Fixed MDIO Bus: probed
+[    1.403346] bus: 'platform': add driver fec
+[    1.403508] bus: 'platform': driver_probe_device: matched device 30be0000.ethernet with driver fec
+[    1.403517] bus: 'platform': really_probe: probing driver fec with device 30be0000.ethernet
+[    1.403639] fec 30be0000.ethernet: no init pinctrl state
+[    1.403660] fec 30be0000.ethernet: no sleep pinctrl state
+[    1.403664] fec 30be0000.ethernet: no idle pinctrl state
+[    1.403864] platform 30be0000.ethernet: Driver fec requests probe deferral
+[    1.403869] platform 30be0000.ethernet: Added to deferred list
+[    1.403985] bus: 'usb': add driver cdc_subset
+[    1.404023] usbcore: registered new interface driver cdc_subset
+[    1.410216] bus: 'usb': add driver qmi_wwan
+[    1.410243] usbcore: registered new interface driver qmi_wwan
+[    1.416238] bus: 'usb': add driver cdc_wdm
+[    1.416260] usbcore: registered new interface driver cdc_wdm
+[    1.422165] bus: 'i2c': add driver tcpci
+[    1.422193] device: 'mice': device_add
+[    1.422221] PM: Adding info for No Bus:mice
+[    1.422295] device: 'psaux': device_add
+[    1.422324] PM: Adding info for No Bus:psaux
+[    1.422364] mousedev: PS/2 mouse device common for all mice
+[    1.428184] bus: 'i2c': add driver Goodix-TS
+[    1.428206] bus: 'platform': add driver gpio-vibrator
+[    1.428272] bus: 'platform': driver_probe_device: matched device vibrator with driver gpio-vibrator
+[    1.428278] bus: 'platform': really_probe: probing driver gpio-vibrator with device vibrator
+[    1.428324] gpio-vibrator vibrator: no init pinctrl state
+[    1.428331] gpio-vibrator vibrator: no sleep pinctrl state
+[    1.428336] gpio-vibrator vibrator: no idle pinctrl state
+[    1.428378] platform vibrator: Driver gpio-vibrator requests probe deferral
+[    1.428382] platform vibrator: Added to deferred list
+[    1.428414] bus: 'platform': add driver pwm-vibrator
+[    1.428501] bus: 'i2c': add driver rtc-ds3232
+[    1.428519] bus: 'spi': add driver ds3234
+[    1.428540] bus: 'platform': add driver rtc-efi
+[    1.428587] bus: 'platform': remove driver rtc-efi
+[    1.428598] driver: 'rtc-efi': driver_release
+[    1.428602] bus: 'i2c': add driver rtc-m41t80
+[    1.428622] bus: 'platform': add driver max77686-rtc
+[    1.428681] bus: 'amba': add driver rtc-pl031
+[    1.428702] bus: 'platform': add driver snvs_rtc
+[    1.428732] bus: 'platform': driver_probe_device: matched device 30370000.snvs:snvs-rtc-lp with driver snvs_rtc
+[    1.428738] bus: 'platform': really_probe: probing driver snvs_rtc with device 30370000.snvs:snvs-rtc-lp
+[    1.428749] snvs_rtc 30370000.snvs:snvs-rtc-lp: no pinctrl handle
+[    1.429019] device: 'rtc0': device_add
+[    1.429065] PM: Adding info for No Bus:rtc0
+[    1.429123] snvs_rtc 30370000.snvs:snvs-rtc-lp: registered as rtc0
+[    1.435577] driver: 'snvs_rtc': driver_bound: bound to device '30370000.snvs:snvs-rtc-lp'
+[    1.435604] bus: 'platform': really_probe: bound device 30370000.snvs:snvs-rtc-lp to driver snvs_rtc
+[    1.435671] i2c /dev entries driver
+[    1.439315] device class 'i2c-dev': registering
+[    1.439332] bus: 'i2c': add driver pca954x
+[    1.439353] bus: 'platform': add driver vexpress-reset
+[    1.439483] bus: 'platform': add driver syscon-reboot
+[    1.439571] bus: 'platform': add driver syscon-poweroff
+[    1.439662] bus: 'platform': add driver syscon-reboot-mode
+[    1.439762] bus: 'platform': add driver scpi-hwmon
+[    1.439871] bus: 'platform': add driver imx_thermal
+[    1.440017] bus: 'platform': add driver qoriq_thermal
+[    1.440043] bus: 'platform': driver_probe_device: matched device 30260000.tmu with driver qoriq_thermal
+[    1.440048] bus: 'platform': really_probe: probing driver qoriq_thermal with device 30260000.tmu
+[    1.440058] qoriq_thermal 30260000.tmu: no pinctrl handle
+[    1.440336] driver: 'qoriq_thermal': driver_bound: bound to device '30260000.tmu'
+[    1.440357] bus: 'platform': really_probe: bound device 30260000.tmu to driver qoriq_thermal
+[    1.440463] bus: 'platform': add driver cpufreq-dt
+[    1.440887] bus: 'platform': add driver pwrseq_simple
+[    1.440976] bus: 'platform': add driver pwrseq_emmc
+[    1.441081] bus: 'mmc_rpmb': registered
+[    1.441088] bus: 'mmc': add driver mmcblk
+[    1.441110] bus: 'amba': add driver mmci-pl18x
+[    1.441125] sdhci: Secure Digital Host Controller Interface driver
+[    1.447571] sdhci: Copyright(c) Pierre Ossman
+[    1.452117] bus: 'spi': add driver mmc_spi
+[    1.452134] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.458040] bus: 'platform': add driver sdhci-esdhc-imx
+[    1.458244] bus: 'platform': driver_probe_device: matched device 30b40000.mmc with driver sdhci-esdhc-imx
+[    1.458249] bus: 'platform': really_probe: probing driver sdhci-esdhc-imx with device 30b40000.mmc
+[    1.458535] sdhci-esdhc-imx 30b40000.mmc: no init pinctrl state
+[    1.458549] sdhci-esdhc-imx 30b40000.mmc: no sleep pinctrl state
+[    1.458554] sdhci-esdhc-imx 30b40000.mmc: no idle pinctrl state
+[    1.459016] device: 'mmc0::': device_add
+[    1.459052] PM: Adding info for No Bus:mmc0::
+[    1.459070] device: 'mmc0': device_add
+[    1.459100] PM: Adding info for No Bus:mmc0
+[    1.491727] mmc0: SDHCI controller on 30b40000.mmc [30b40000.mmc] using ADMA
+[    1.499088] driver: 'sdhci-esdhc-imx': driver_bound: bound to device '30b40000.mmc'
+[    1.499113] bus: 'platform': really_probe: bound device 30b40000.mmc to driver sdhci-esdhc-imx
+[    1.499128] bus: 'platform': driver_probe_device: matched device 30b50000.mmc with driver sdhci-esdhc-imx
+[    1.499133] bus: 'platform': really_probe: probing driver sdhci-esdhc-imx with device 30b50000.mmc
+[    1.499328] sdhci-esdhc-imx 30b50000.mmc: no init pinctrl state
+[    1.499339] sdhci-esdhc-imx 30b50000.mmc: no sleep pinctrl state
+[    1.499343] sdhci-esdhc-imx 30b50000.mmc: no idle pinctrl state
+[    1.499515] platform 30b50000.mmc: Driver sdhci-esdhc-imx requests probe deferral
+[    1.499520] platform 30b50000.mmc: Added to deferred list
+[    1.499683] bus: 'platform': add driver leds-gpio
+[    1.499753] bus: 'platform': driver_probe_device: matched device leds with driver leds-gpio
+[    1.499759] bus: 'platform': really_probe: probing driver leds-gpio with device leds
+[    1.499831] leds-gpio leds: no init pinctrl state
+[    1.499840] leds-gpio leds: no sleep pinctrl state
+[    1.499844] leds-gpio leds: no idle pinctrl state
+[    1.499892] platform leds: Driver leds-gpio requests probe deferral
+[    1.499896] platform leds: Added to deferred list
+[    1.499938] bus: 'platform': add driver leds_pwm
+[    1.500027] bus: 'platform': add driver leds-syscon
+[    1.500872] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.507147] bus: 'platform': add driver scpi_protocol
+[    1.507260] bus: 'platform': add driver scpi_power_domain
+[    1.507369] bus: 'hid': registered
+[    1.507381] bus: 'hid': add driver hid-generic
+[    1.507413] bus: 'hid': add driver kensington
+[    1.507434] bus: 'hid': add driver logitech
+[    1.507455] bus: 'amba': add driver mhu
+[    1.507475] bus: 'platform': add driver imx_mu
+[    1.507571] device class 'extcon': registering
+[    1.507588] bus: 'platform': add driver imx_ocotp
+[    1.507686] bus: 'platform': driver_probe_device: matched device 30350000.ocotp-ctrl with driver imx_ocotp
+[    1.507691] bus: 'platform': really_probe: probing driver imx_ocotp with device 30350000.ocotp-ctrl
+[    1.507713] imx_ocotp 30350000.ocotp-ctrl: no pinctrl handle
+[    1.507758] device: 'imx-ocotp0': device_add
+[    1.507776] bus: 'nvmem': add device imx-ocotp0
+[    1.507795] PM: Adding info for nvmem:imx-ocotp0
+[    1.507820] driver: 'imx_ocotp': driver_bound: bound to device '30350000.ocotp-ctrl'
+[    1.507841] bus: 'platform': really_probe: bound device 30350000.ocotp-ctrl to driver imx_ocotp
+[    1.508195] NET: Registered protocol family 26
+[    1.512940] NET: Registered protocol family 17
+[    1.519425] 9pnet: Installing 9P2000 support
+[    1.523889] bus: 'virtio': add driver 9pnet_virtio
+[    1.523937] Key type dns_resolver registered
+[    1.528486] device: 'cpu_dma_latency': device_add
+[    1.528513] PM: Adding info for No Bus:cpu_dma_latency
+[    1.529708] device: 'network_latency': device_add
+[    1.529732] PM: Adding info for No Bus:network_latency
+[    1.530883] device: 'network_throughput': device_add
+[    1.530912] PM: Adding info for No Bus:network_throughput
+[    1.532059] device: 'memory_bandwidth': device_add
+[    1.532086] PM: Adding info for No Bus:memory_bandwidth
+[    1.533300] registered taskstats version 1
+[    1.537578] Loading compiled-in X.509 certificates
+[    1.552694] devices_kset: Moving 30200000.gpio to end of list
+[    1.552702] PM: Moving platform:30200000.gpio to end of list
+[    1.552714] platform 30200000.gpio: Retrying from deferred list
+[    1.552752] bus: 'platform': driver_probe_device: matched device 30200000.gpio with driver gpio-mxc
+[    1.552760] bus: 'platform': really_probe: probing driver gpio-mxc with device 30200000.gpio
+[    1.552784] gpio-mxc 30200000.gpio: no pinctrl handle
+[    1.552991] device: 'gpiochip0': device_add
+[    1.553016] bus: 'gpio': add device gpiochip0
+[    1.553048] PM: Adding info for gpio:gpiochip0
+[    1.553181] device: 'gpiochip0': device_add
+[    1.553218] PM: Adding info for No Bus:gpiochip0
+[    1.554074] driver: 'gpio-mxc': driver_bound: bound to device '30200000.gpio'
+[    1.554104] bus: 'platform': really_probe: bound device 30200000.gpio to driver gpio-mxc
+[    1.554111] devices_kset: Moving 30210000.gpio to end of list
+[    1.554114] PM: Moving platform:30210000.gpio to end of list
+[    1.554120] platform 30210000.gpio: Retrying from deferred list
+[    1.554136] bus: 'platform': driver_probe_device: matched device 30210000.gpio with driver gpio-mxc
+[    1.554141] bus: 'platform': really_probe: probing driver gpio-mxc with device 30210000.gpio
+[    1.554154] gpio-mxc 30210000.gpio: no pinctrl handle
+[    1.554258] device: 'gpiochip1': device_add
+[    1.554270] bus: 'gpio': add device gpiochip1
+[    1.554288] PM: Adding info for gpio:gpiochip1
+[    1.554363] device: 'gpiochip32': device_add
+[    1.554400] PM: Adding info for No Bus:gpiochip32
+[    1.555244] driver: 'gpio-mxc': driver_bound: bound to device '30210000.gpio'
+[    1.555268] bus: 'platform': really_probe: bound device 30210000.gpio to driver gpio-mxc
+[    1.555274] devices_kset: Moving 30220000.gpio to end of list
+[    1.555277] PM: Moving platform:30220000.gpio to end of list
+[    1.555282] platform 30220000.gpio: Retrying from deferred list
+[    1.555297] bus: 'platform': driver_probe_device: matched device 30220000.gpio with driver gpio-mxc
+[    1.555302] bus: 'platform': really_probe: probing driver gpio-mxc with device 30220000.gpio
+[    1.555311] gpio-mxc 30220000.gpio: no pinctrl handle
+[    1.555409] device: 'gpiochip2': device_add
+[    1.555420] bus: 'gpio': add device gpiochip2
+[    1.555442] PM: Adding info for gpio:gpiochip2
+[    1.555507] device: 'gpiochip64': device_add
+[    1.555539] PM: Adding info for No Bus:gpiochip64
+[    1.556411] driver: 'gpio-mxc': driver_bound: bound to device '30220000.gpio'
+[    1.556435] bus: 'platform': really_probe: bound device 30220000.gpio to driver gpio-mxc
+[    1.556441] devices_kset: Moving 30230000.gpio to end of list
+[    1.556444] PM: Moving platform:30230000.gpio to end of list
+[    1.556449] platform 30230000.gpio: Retrying from deferred list
+[    1.556463] bus: 'platform': driver_probe_device: matched device 30230000.gpio with driver gpio-mxc
+[    1.556468] bus: 'platform': really_probe: probing driver gpio-mxc with device 30230000.gpio
+[    1.556480] gpio-mxc 30230000.gpio: no pinctrl handle
+[    1.556574] device: 'gpiochip3': device_add
+[    1.556585] bus: 'gpio': add device gpiochip3
+[    1.556603] PM: Adding info for gpio:gpiochip3
+[    1.556665] device: 'gpiochip96': device_add
+[    1.556701] PM: Adding info for No Bus:gpiochip96
+[    1.557537] driver: 'gpio-mxc': driver_bound: bound to device '30230000.gpio'
+[    1.557560] bus: 'platform': really_probe: bound device 30230000.gpio to driver gpio-mxc
+[    1.557566] devices_kset: Moving 30240000.gpio to end of list
+[    1.557569] PM: Moving platform:30240000.gpio to end of list
+[    1.557574] platform 30240000.gpio: Retrying from deferred list
+[    1.557588] bus: 'platform': driver_probe_device: matched device 30240000.gpio with driver gpio-mxc
+[    1.557593] bus: 'platform': really_probe: probing driver gpio-mxc with device 30240000.gpio
+[    1.557602] gpio-mxc 30240000.gpio: no pinctrl handle
+[    1.557701] device: 'gpiochip4': device_add
+[    1.557712] bus: 'gpio': add device gpiochip4
+[    1.557733] PM: Adding info for gpio:gpiochip4
+[    1.557791] device: 'gpiochip128': device_add
+[    1.557822] PM: Adding info for No Bus:gpiochip128
+[    1.558668] driver: 'gpio-mxc': driver_bound: bound to device '30240000.gpio'
+[    1.558692] bus: 'platform': really_probe: bound device 30240000.gpio to driver gpio-mxc
+[    1.558698] devices_kset: Moving regulator-pwr-en to end of list
+[    1.558701] PM: Moving platform:regulator-pwr-en to end of list
+[    1.558706] platform regulator-pwr-en: Retrying from deferred list
+[    1.558724] bus: 'platform': driver_probe_device: matched device regulator-pwr-en with driver reg-fixed-voltage
+[    1.558728] bus: 'platform': really_probe: probing driver reg-fixed-voltage with device regulator-pwr-en
+[    1.558788] reg-fixed-voltage regulator-pwr-en: no init pinctrl state
+[    1.558799] reg-fixed-voltage regulator-pwr-en: no sleep pinctrl state
+[    1.558803] reg-fixed-voltage regulator-pwr-en: no idle pinctrl state
+[    1.558900] device: 'regulator.6': device_add
+[    1.558959] PM: Adding info for No Bus:regulator.6
+[    1.559050] driver: 'reg-fixed-voltage': driver_bound: bound to device 'regulator-pwr-en'
+[    1.559071] bus: 'platform': really_probe: bound device regulator-pwr-en to driver reg-fixed-voltage
+[    1.559076] devices_kset: Moving regulator-usdhc2-vmmc to end of list
+[    1.559079] PM: Moving platform:regulator-usdhc2-vmmc to end of list
+[    1.559084] platform regulator-usdhc2-vmmc: Retrying from deferred list
+[    1.559098] bus: 'platform': driver_probe_device: matched device regulator-usdhc2-vmmc with driver reg-fixed-voltage
+[    1.559104] bus: 'platform': really_probe: probing driver reg-fixed-voltage with device regulator-usdhc2-vmmc
+[    1.559146] reg-fixed-voltage regulator-usdhc2-vmmc: no init pinctrl state
+[    1.559152] reg-fixed-voltage regulator-usdhc2-vmmc: no sleep pinctrl state
+[    1.559157] reg-fixed-voltage regulator-usdhc2-vmmc: no idle pinctrl state
+[    1.559230] device: 'regulator.7': device_add
+[    1.559276] PM: Adding info for No Bus:regulator.7
+[    1.559313] 1v8_p: supplied by PWR_EN
+[    1.563185] 2v8_p: supplied by PWR_EN
+[    1.567039] 3v3_p: supplied by PWR_EN
+[    1.570893] 5v_p: supplied by PWR_EN
+[    1.574651] 22v4_P: supplied by PWR_EN
+[    1.578607] driver: 'reg-fixed-voltage': driver_bound: bound to device 'regulator-usdhc2-vmmc'
+[    1.578628] bus: 'platform': really_probe: bound device regulator-usdhc2-vmmc to driver reg-fixed-voltage
+[    1.578634] devices_kset: Moving regulator-wifi-en to end of list
+[    1.578637] PM: Moving platform:regulator-wifi-en to end of list
+[    1.578642] platform regulator-wifi-en: Retrying from deferred list
+[    1.578657] bus: 'platform': driver_probe_device: matched device regulator-wifi-en with driver reg-fixed-voltage
+[    1.578662] bus: 'platform': really_probe: probing driver reg-fixed-voltage with device regulator-wifi-en
+[    1.578707] reg-fixed-voltage regulator-wifi-en: no init pinctrl state
+[    1.578713] reg-fixed-voltage regulator-wifi-en: no sleep pinctrl state
+[    1.578717] reg-fixed-voltage regulator-wifi-en: no idle pinctrl state
+[    1.578785] device: 'regulator.8': device_add
+[    1.578830] PM: Adding info for No Bus:regulator.8
+[    1.578867] driver: 'reg-fixed-voltage': driver_bound: bound to device 'regulator-wifi-en'
+[    1.578886] bus: 'platform': really_probe: bound device regulator-wifi-en to driver reg-fixed-voltage
+[    1.578892] devices_kset: Moving 30a20000.i2c to end of list
+[    1.578894] PM: Moving platform:30a20000.i2c to end of list
+[    1.578899] platform 30a20000.i2c: Retrying from deferred list
+[    1.578925] bus: 'platform': driver_probe_device: matched device 30a20000.i2c with driver imx-i2c
+[    1.578929] bus: 'platform': really_probe: probing driver imx-i2c with device 30a20000.i2c
+[    1.578993] imx-i2c 30a20000.i2c: no init pinctrl state
+[    1.579000] imx-i2c 30a20000.i2c: no sleep pinctrl state
+[    1.579004] imx-i2c 30a20000.i2c: no idle pinctrl state
+[    1.579163] device: 'i2c-0': device_add
+[    1.579186] bus: 'i2c': add device i2c-0
+[    1.579205] PM: Adding info for i2c:i2c-0
+[    1.579215] device: 'i2c-0': device_add
+[    1.579243] PM: Adding info for No Bus:i2c-0
+[    1.579367] device: '0-004b': device_add
+[    1.579382] bus: 'i2c': add device 0-004b
+[    1.579401] PM: Adding info for i2c:0-004b
+[    1.579447] bus: 'i2c': driver_probe_device: matched device 0-004b with driver rohm-bd718x7
+[    1.579452] bus: 'i2c': really_probe: probing driver rohm-bd718x7 with device 0-004b
+[    1.579477] rohm-bd718x7 0-004b: no init pinctrl state
+[    1.579483] rohm-bd718x7 0-004b: no sleep pinctrl state
+[    1.579487] rohm-bd718x7 0-004b: no idle pinctrl state
+[    1.589115] Registering platform device 'gpio-keys.0.auto'. Parent at 0-004b
+[    1.589118] device: 'gpio-keys.0.auto': device_add
+[    1.589128] bus: 'platform': add device gpio-keys.0.auto
+[    1.589157] PM: Adding info for platform:gpio-keys.0.auto
+[    1.589276] Registering platform device 'bd718xx-clk.1.auto'. Parent at 0-004b
+[    1.589279] device: 'bd718xx-clk.1.auto': device_add
+[    1.589290] bus: 'platform': add device bd718xx-clk.1.auto
+[    1.589312] PM: Adding info for platform:bd718xx-clk.1.auto
+[    1.589363] Registering platform device 'bd718xx-pmic.2.auto'. Parent at 0-004b
+[    1.589367] device: 'bd718xx-pmic.2.auto': device_add
+[    1.589376] bus: 'platform': add device bd718xx-pmic.2.auto
+[    1.589397] PM: Adding info for platform:bd718xx-pmic.2.auto
+[    1.589425] bus: 'platform': driver_probe_device: matched device bd718xx-pmic.2.auto with driver bd718xx-pmic
+[    1.589430] bus: 'platform': really_probe: probing driver bd718xx-pmic with device bd718xx-pmic.2.auto
+[    1.589440] bd718xx-pmic bd718xx-pmic.2.auto: no default pinctrl state
+[    1.609403] device: 'regulator.9': device_add
+[    1.609461] PM: Adding info for No Bus:regulator.9
+[    1.629669] device: 'regulator.10': device_add
+[    1.629722] PM: Adding info for No Bus:regulator.10
+[    1.637929] mmc0: new HS400 MMC card at address 0001
+[    1.640376] device: 'regulator.11': device_add
+[    1.643127] device: 'mmc0:0001': device_add
+[    1.643158] PM: Adding info for No Bus:regulator.11
+[    1.643189] bus: 'mmc': add device mmc0:0001
+[    1.643211] PM: Adding info for mmc:mmc0:0001
+[    1.643233] bus: 'mmc': driver_probe_device: matched device mmc0:0001 with driver mmcblk
+[    1.643237] bus: 'mmc': really_probe: probing driver mmcblk with device mmc0:0001
+[    1.643249] mmcblk mmc0:0001: no default pinctrl state
+[    1.643626] mmcblk0: mmc0:0001 M52532 28.5 GiB 
+[    1.648573] mmcblk0boot0: mmc0:0001 M52532 partition 1 4.00 MiB
+[    1.651153] device: 'regulator.12': device_add
+[    1.654799] PM: Adding info for No Bus:regulator.12
+[    1.654964] mmcblk0boot1: mmc0:0001 M52532 partition 2 4.00 MiB
+[    1.661144] device: 'mmcblk0rpmb': device_add
+[    1.661155] bus: 'mmc_rpmb': add device mmcblk0rpmb
+[    1.661178] PM: Adding info for mmc_rpmb:mmcblk0rpmb
+[    1.661791] mmcblk0rpmb: mmc0:0001 M52532 partition 3 4.00 MiB, chardev (246:0)
+[    1.665801] device: 'regulator.13': device_add
+[    1.669421] device: '179:0': device_add
+[    1.669462] PM: Adding info for No Bus:179:0
+[    1.669469] PM: Adding info for No Bus:regulator.13
+[    1.669489] device: 'mmcblk0': device_add
+[    1.669544] PM: Adding info for No Bus:mmcblk0
+[    1.672289]  mmcblk0: p1 p2
+[    1.673715] device: 'regulator.14': device_add
+[    1.675230] device: 'mmcblk0p1': device_add
+[    1.675254] PM: Adding info for No Bus:regulator.14
+[    1.675277] PM: Adding info for No Bus:mmcblk0p1
+[    1.676416] device: 'mmcblk0p2': device_add
+[    1.676469] PM: Adding info for No Bus:mmcblk0p2
+[    1.676507] device: 'regulator.15': device_add
+[    1.676559] PM: Adding info for No Bus:regulator.15
+[    1.677501] device: '179:64': device_add
+[    1.677536] PM: Adding info for No Bus:179:64
+[    1.677558] device: 'mmcblk0boot1': device_add
+[    1.677601] PM: Adding info for No Bus:mmcblk0boot1
+[    1.677877] device: 'regulator.16': device_add
+[    1.677929] PM: Adding info for No Bus:regulator.16
+[    1.678502] device: '179:32': device_add
+[    1.678535] PM: Adding info for No Bus:179:32
+[    1.678556] device: 'mmcblk0boot0': device_add
+[    1.678599] PM: Adding info for No Bus:mmcblk0boot0
+[    1.678913] device: 'regulator.17': device_add
+[    1.678961] PM: Adding info for No Bus:regulator.17
+[    1.679525] driver: 'mmcblk': driver_bound: bound to device 'mmc0:0001'
+[    1.679543] bus: 'mmc': really_probe: bound device mmc0:0001 to driver mmcblk
+[    1.679662] device: 'regulator.18': device_add
+[    1.679727] PM: Adding info for No Bus:regulator.18
+[    1.680452] device: 'regulator.19': device_add
+[    1.680503] PM: Adding info for No Bus:regulator.19
+[    1.681489] device: 'regulator.20': device_add
+[    1.681540] PM: Adding info for No Bus:regulator.20
+[    1.681919] ldo5: supplied by buck6
+[    1.685930] device: 'regulator.21': device_add
+[    1.685978] PM: Adding info for No Bus:regulator.21
+[    1.686262] random: fast init done
+[    1.693948] ldo6: supplied by buck7
+[    1.700110] device: 'regulator.22': device_add
+[    1.700164] PM: Adding info for No Bus:regulator.22
+[    1.706308] device: 'regulator.23': device_add
+[    1.706360] PM: Adding info for No Bus:regulator.23
+[    1.708308] driver: 'bd718xx-pmic': driver_bound: bound to device 'bd718xx-pmic.2.auto'
+[    1.708328] bus: 'platform': really_probe: bound device bd718xx-pmic.2.auto to driver bd718xx-pmic
+[    1.708339] driver: 'rohm-bd718x7': driver_bound: bound to device '0-004b'
+[    1.708364] bus: 'i2c': really_probe: bound device 0-004b to driver rohm-bd718x7
+[    1.708386] device: '0-0052': device_add
+[    1.708404] bus: 'i2c': add device 0-0052
+[    1.708422] PM: Adding info for i2c:0-0052
+[    1.708488] bus: 'i2c': driver_probe_device: matched device 0-0052 with driver tcpci
+[    1.708494] bus: 'i2c': really_probe: probing driver tcpci with device 0-0052
+[    1.708572] tcpci 0-0052: no init pinctrl state
+[    1.708581] tcpci 0-0052: no sleep pinctrl state
+[    1.708586] tcpci 0-0052: no idle pinctrl state
+[    1.712364] OF: graph: no port node found in /soc@0/bus@30800000/i2c@30a20000/usb_typec@52
+[    1.721000] device: 'tcpm-source-psy-0-0052': device_add
+[    1.721073] PM: Adding info for No Bus:tcpm-source-psy-0-0052
+[    1.721089] device: 'tcpm-source-psy-0-0052': dev_uevent: class uevent() returned -11
+[    1.721113] power_supply tcpm-source-psy-0-0052: hwmon: 'tcpm-source-psy-0-0052' is not a valid name attribute, please fix
+[    1.732646] device: 'hwmon0': device_add
+[    1.732688] PM: Adding info for No Bus:hwmon0
+[    1.732735] device: 'port0': device_add
+[    1.732783] PM: Adding info for No Bus:port0
+[    1.766237] driver: 'tcpci': driver_bound: bound to device '0-0052'
+[    1.766260] bus: 'i2c': really_probe: bound device 0-0052 to driver tcpci
+[    1.766278] device: '0-0068': device_add
+[    1.766295] bus: 'i2c': add device 0-0068
+[    1.766312] PM: Adding info for i2c:0-0068
+[    1.766379] bus: 'i2c': driver_probe_device: matched device 0-0068 with driver rtc-m41t80
+[    1.766384] bus: 'i2c': really_probe: probing driver rtc-m41t80 with device 0-0068
+[    1.766438] rtc-m41t80 0-0068: no init pinctrl state
+[    1.766445] rtc-m41t80 0-0068: no sleep pinctrl state
+[    1.766449] rtc-m41t80 0-0068: no idle pinctrl state
+[    1.812447] rtc-m41t80 0-0068: Oscillator failure, data is invalid.
+[    1.818991] device: 'rtc1': device_add
+[    1.819039] PM: Adding info for No Bus:rtc1
+[    1.819920] rtc-m41t80 0-0068: registered as rtc1
+[    1.824833] driver: 'rtc-m41t80': driver_bound: bound to device '0-0068'
+[    1.824856] bus: 'i2c': really_probe: bound device 0-0068 to driver rtc-m41t80
+[    1.824882] device: '0-006b': device_add
+[    1.824899] bus: 'i2c': add device 0-006b
+[    1.824920] PM: Adding info for i2c:0-006b
+[    1.825003] i2c i2c-0: IMX I2C adapter registered
+[    1.829914] driver: 'imx-i2c': driver_bound: bound to device '30a20000.i2c'
+[    1.829939] bus: 'platform': really_probe: bound device 30a20000.i2c to driver imx-i2c
+[    1.829947] devices_kset: Moving 30a40000.i2c to end of list
+[    1.829950] PM: Moving platform:30a40000.i2c to end of list
+[    1.829956] platform 30a40000.i2c: Retrying from deferred list
+[    1.829994] bus: 'platform': driver_probe_device: matched device 30a40000.i2c with driver imx-i2c
+[    1.829999] bus: 'platform': really_probe: probing driver imx-i2c with device 30a40000.i2c
+[    1.830064] imx-i2c 30a40000.i2c: no init pinctrl state
+[    1.830072] imx-i2c 30a40000.i2c: no sleep pinctrl state
+[    1.830076] imx-i2c 30a40000.i2c: no idle pinctrl state
+[    1.830259] device: 'i2c-2': device_add
+[    1.830277] bus: 'i2c': add device i2c-2
+[    1.830294] PM: Adding info for i2c:i2c-2
+[    1.830304] device: 'i2c-2': device_add
+[    1.830338] PM: Adding info for No Bus:i2c-2
+[    1.830449] device: '2-006a': device_add
+[    1.830464] bus: 'i2c': add device 2-006a
+[    1.830481] PM: Adding info for i2c:2-006a
+[    1.830552] device: '2-001e': device_add
+[    1.830566] bus: 'i2c': add device 2-001e
+[    1.830583] PM: Adding info for i2c:2-001e
+[    1.830650] device: '2-000a': device_add
+[    1.830668] bus: 'i2c': add device 2-000a
+[    1.830684] PM: Adding info for i2c:2-000a
+[    1.830750] device: '2-005d': device_add
+[    1.830764] bus: 'i2c': add device 2-005d
+[    1.830780] PM: Adding info for i2c:2-005d
+[    1.830824] bus: 'i2c': driver_probe_device: matched device 2-005d with driver Goodix-TS
+[    1.830829] bus: 'i2c': really_probe: probing driver Goodix-TS with device 2-005d
+[    1.830862] Goodix-TS 2-005d: no init pinctrl state
+[    1.830869] Goodix-TS 2-005d: no sleep pinctrl state
+[    1.830874] Goodix-TS 2-005d: no idle pinctrl state
+[    1.830937] devices_kset: Moving 2-005d to end of list
+[    1.830940] PM: Moving i2c:2-005d to end of list
+[    1.830947] Goodix-TS 2-005d: Linked as a consumer to regulator.2
+[    1.831005] devices_kset: Moving 2-005d to end of list
+[    1.831008] PM: Moving i2c:2-005d to end of list
+[    1.831014] Goodix-TS 2-005d: Linked as a consumer to regulator.1
+[    1.936619] Goodix-TS 2-005d: ID 5688, version: 0100
+[    1.941806] driver: 'Goodix-TS': driver_bound: bound to device '2-005d'
+[    1.941830] bus: 'i2c': really_probe: bound device 2-005d to driver Goodix-TS
+[    1.941847] device: '2-0060': device_add
+[    1.941867] bus: 'i2c': add device 2-0060
+[    1.941884] PM: Adding info for i2c:2-0060
+[    1.941961] i2c i2c-2: IMX I2C adapter registered
+[    1.946873] driver: 'imx-i2c': driver_bound: bound to device '30a40000.i2c'
+[    1.946896] bus: 'platform': really_probe: bound device 30a40000.i2c to driver imx-i2c
+[    1.946903] devices_kset: Moving 32e2d000.interrupt-controller to end of list
+[    1.946906] PM: Moving platform:32e2d000.interrupt-controller to end of list
+[    1.946912] platform 32e2d000.interrupt-controller: Retrying from deferred list
+[    1.946948] bus: 'platform': driver_probe_device: matched device 32e2d000.interrupt-controller with driver imx-irqsteer
+[    1.946953] bus: 'platform': really_probe: probing driver imx-irqsteer with device 32e2d000.interrupt-controller
+[    1.946964] imx-irqsteer 32e2d000.interrupt-controller: no pinctrl handle
+[    1.947051] driver: 'imx-irqsteer': driver_bound: bound to device '32e2d000.interrupt-controller'
+[    1.947076] bus: 'platform': really_probe: bound device 32e2d000.interrupt-controller to driver imx-irqsteer
+[    1.947082] devices_kset: Moving 30a00300.dphy to end of list
+[    1.947085] PM: Moving platform:30a00300.dphy to end of list
+[    1.947090] platform 30a00300.dphy: Retrying from deferred list
+[    1.947117] bus: 'platform': driver_probe_device: matched device 30a00300.dphy with driver mixel-mipi-dphy
+[    1.947122] bus: 'platform': really_probe: probing driver mixel-mipi-dphy with device 30a00300.dphy
+[    1.947132] mixel-mipi-dphy 30a00300.dphy: no pinctrl handle
+[    1.947285] device: 'phy-30a00300.dphy.0': device_add
+[    1.947319] PM: Adding info for No Bus:phy-30a00300.dphy.0
+[    1.947343] driver: 'mixel-mipi-dphy': driver_bound: bound to device '30a00300.dphy'
+[    1.947363] bus: 'platform': really_probe: bound device 30a00300.dphy to driver mixel-mipi-dphy
+[    1.947369] devices_kset: Moving 30660000.pwm to end of list
+[    1.947371] PM: Moving platform:30660000.pwm to end of list
+[    1.947377] platform 30660000.pwm: Retrying from deferred list
+[    1.947422] bus: 'platform': driver_probe_device: matched device 30660000.pwm with driver pwm-imx27
+[    1.947427] bus: 'platform': really_probe: probing driver pwm-imx27 with device 30660000.pwm
+[    1.947453] pwm-imx27 30660000.pwm: no init pinctrl state
+[    1.947460] pwm-imx27 30660000.pwm: no sleep pinctrl state
+[    1.947464] pwm-imx27 30660000.pwm: no idle pinctrl state
+[    1.947519] device: 'pwmchip0': device_add
+[    1.947556] PM: Adding info for No Bus:pwmchip0
+[    1.947568] driver: 'pwm-imx27': driver_bound: bound to device '30660000.pwm'
+[    1.947590] bus: 'platform': really_probe: bound device 30660000.pwm to driver pwm-imx27
+[    1.947595] devices_kset: Moving backlight-dsi to end of list
+[    1.947598] PM: Moving platform:backlight-dsi to end of list
+[    1.947603] platform backlight-dsi: Retrying from deferred list
+[    1.947644] bus: 'platform': driver_probe_device: matched device backlight-dsi with driver pwm-backlight
+[    1.947649] bus: 'platform': really_probe: probing driver pwm-backlight with device backlight-dsi
+[    1.947659] pwm-backlight backlight-dsi: no pinctrl handle
+[    1.947750] devices_kset: Moving backlight-dsi to end of list
+[    1.947753] PM: Moving platform:backlight-dsi to end of list
+[    1.947759] pwm-backlight backlight-dsi: Linked as a consumer to regulator.5
+[    1.947769] devices_kset: Moving backlight-dsi to end of list
+[    1.947772] PM: Moving platform:backlight-dsi to end of list
+[    1.947777] pwm-backlight backlight-dsi: Linked as a consumer to 30660000.pwm
+[    1.947787] device: 'backlight-dsi': device_add
+[    1.947828] PM: Adding info for No Bus:backlight-dsi
+[    1.947844] driver: 'pwm-backlight': driver_bound: bound to device 'backlight-dsi'
+[    1.947863] bus: 'platform': really_probe: bound device backlight-dsi to driver pwm-backlight
+[    1.947870] devices_kset: Moving imx-pgc-domain.0 to end of list
+[    1.947873] PM: Moving platform:imx-pgc-domain.0 to end of list
+[    1.947878] platform imx-pgc-domain.0: Retrying from deferred list
+[    1.947926] bus: 'platform': driver_probe_device: matched device imx-pgc-domain.0 with driver imx-pgc
+[    1.947931] bus: 'platform': really_probe: probing driver imx-pgc with device imx-pgc-domain.0
+[    1.947940] imx-pgc imx-pgc-domain.0: no pinctrl handle
+[    1.948000] devices_kset: Moving imx-pgc-domain.0 to end of list
+[    1.948002] PM: Moving platform:imx-pgc-domain.0 to end of list
+[    1.948008] imx-pgc imx-pgc-domain.0: Linked as a consumer to regulator.21
+[    1.948021] PM: Added domain provider from /soc@0/bus@30000000/gpc@303a0000/pgc/power-domain@0
+[    1.948024] driver: 'imx-pgc': driver_bound: bound to device 'imx-pgc-domain.0'
+[    1.948044] bus: 'platform': really_probe: bound device imx-pgc-domain.0 to driver imx-pgc
+[    1.948050] devices_kset: Moving imx-pgc-domain.1 to end of list
+[    1.948053] PM: Moving platform:imx-pgc-domain.1 to end of list
+[    1.948058] platform imx-pgc-domain.1: Retrying from deferred list
+[    1.948095] bus: 'platform': driver_probe_device: matched device imx-pgc-domain.1 with driver imx-pgc
+[    1.948099] bus: 'platform': really_probe: probing driver imx-pgc with device imx-pgc-domain.1
+[    1.948111] imx-pgc imx-pgc-domain.1: no pinctrl handle
+[    1.948136] imx-pgc imx-pgc-domain.1: adding to PM domain pcie2
+[    1.948141] imx-pgc imx-pgc-domain.1: genpd_add_device()
+[    1.948163] PM: pcie2: Power-on latency exceeded, new value 9250 ns
+[    1.948183] PM: Added domain provider from /soc@0/bus@30000000/gpc@303a0000/pgc/power-domain@1
+[    1.948187] driver: 'imx-pgc': driver_bound: bound to device 'imx-pgc-domain.1'
+[    1.948206] bus: 'platform': really_probe: bound device imx-pgc-domain.1 to driver imx-pgc
+[    1.948211] devices_kset: Moving imx-pgc-domain.5 to end of list
+[    1.948214] PM: Moving platform:imx-pgc-domain.5 to end of list
+[    1.948219] platform imx-pgc-domain.5: Retrying from deferred list
+[    1.948260] bus: 'platform': driver_probe_device: matched device imx-pgc-domain.5 with driver imx-pgc
+[    1.948264] bus: 'platform': really_probe: probing driver imx-pgc with device imx-pgc-domain.5
+[    1.948273] imx-pgc imx-pgc-domain.5: no pinctrl handle
+[    1.948327] devices_kset: Moving imx-pgc-domain.5 to end of list
+[    1.948330] PM: Moving platform:imx-pgc-domain.5 to end of list
+[    1.948336] imx-pgc imx-pgc-domain.5: Linked as a consumer to regulator.11
+[    1.948362] PM: Added domain provider from /soc@0/bus@30000000/gpc@303a0000/pgc/power-domain@5
+[    1.948366] driver: 'imx-pgc': driver_bound: bound to device 'imx-pgc-domain.5'
+[    1.948385] bus: 'platform': really_probe: bound device imx-pgc-domain.5 to driver imx-pgc
+[    1.948390] devices_kset: Moving imx-pgc-domain.6 to end of list
+[    1.948393] PM: Moving platform:imx-pgc-domain.6 to end of list
+[    1.948398] platform imx-pgc-domain.6: Retrying from deferred list
+[    1.948433] bus: 'platform': driver_probe_device: matched device imx-pgc-domain.6 with driver imx-pgc
+[    1.948437] bus: 'platform': really_probe: probing driver imx-pgc with device imx-pgc-domain.6
+[    1.948446] imx-pgc imx-pgc-domain.6: no pinctrl handle
+[    1.948517] devices_kset: Moving imx-pgc-domain.6 to end of list
+[    1.948520] PM: Moving platform:imx-pgc-domain.6 to end of list
+[    1.948526] imx-pgc imx-pgc-domain.6: Linked as a consumer to regulator.12
+[    1.948537] PM: Added domain provider from /soc@0/bus@30000000/gpc@303a0000/pgc/power-domain@6
+[    1.948541] driver: 'imx-pgc': driver_bound: bound to device 'imx-pgc-domain.6'
+[    1.948559] bus: 'platform': really_probe: bound device imx-pgc-domain.6 to driver imx-pgc
+[    1.948565] devices_kset: Moving 30a00000.mipi_dsi to end of list
+[    1.948568] PM: Moving platform:30a00000.mipi_dsi to end of list
+[    1.948573] platform 30a00000.mipi_dsi: Retrying from deferred list
+[    1.948668] bus: 'platform': driver_probe_device: matched device 30a00000.mipi_dsi with driver imx-nwl-dsi
+[    1.948673] bus: 'platform': really_probe: probing driver imx-nwl-dsi with device 30a00000.mipi_dsi
+[    1.948682] imx-nwl-dsi 30a00000.mipi_dsi: no pinctrl handle
+[    1.948776] imx-nwl-dsi 30a00000.mipi_dsi: adding to PM domain mipi
+[    1.948781] imx-nwl-dsi 30a00000.mipi_dsi: genpd_add_device()
+[    1.948798] PM: mipi: Power-on latency exceeded, new value 10500 ns
+[    1.948816] imx-nwl-dsi 30a00000.mipi_dsi: adding component (ops imx_nwl_dsi_component_ops)
+[    1.948822] etnaviv etnaviv: trying to bring up master
+[    1.948827] etnaviv etnaviv: Looking for component 0
+[    1.948832] etnaviv etnaviv: master has incomplete components
+[    1.948838] imx-drm soc@0:display-subsystem: trying to bring up master
+[    1.948842] imx-drm soc@0:display-subsystem: Looking for component 0
+[    1.948848] imx-drm soc@0:display-subsystem: master has incomplete components
+[    1.948852] driver: 'imx-nwl-dsi': driver_bound: bound to device '30a00000.mipi_dsi'
+[    1.948873] bus: 'platform': really_probe: bound device 30a00000.mipi_dsi to driver imx-nwl-dsi
+[    1.948879] devices_kset: Moving 38000000.gpu to end of list
+[    1.948882] PM: Moving platform:38000000.gpu to end of list
+[    1.948886] platform 38000000.gpu: Retrying from deferred list
+[    1.948949] bus: 'platform': driver_probe_device: matched device 38000000.gpu with driver etnaviv-gpu
+[    1.948954] bus: 'platform': really_probe: probing driver etnaviv-gpu with device 38000000.gpu
+[    1.948964] etnaviv-gpu 38000000.gpu: no pinctrl handle
+[    1.949067] etnaviv-gpu 38000000.gpu: adding to PM domain gpu
+[    1.949072] etnaviv-gpu 38000000.gpu: genpd_add_device()
+[    1.949109] PM: gpu: Power-on latency exceeded, new value 30625 ns
+[    1.949195] etnaviv-gpu 38000000.gpu: adding component (ops gpu_ops)
+[    1.949200] etnaviv etnaviv: trying to bring up master
+[    1.949205] etnaviv etnaviv: Looking for component 0
+[    1.949210] etnaviv etnaviv: found component 38000000.gpu, duplicate 0
+[    1.949293] etnaviv etnaviv: binding 38000000.gpu (ops gpu_ops)
+[    1.949303] device: 'cooling_device0': device_add
+[    1.949340] PM: Adding info for No Bus:cooling_device0
+[    1.949469] Goodix-TS 2-005d: Direct firmware load for goodix_5688_cfg.bin failed with error -2
+[    1.958604] etnaviv-gpu 38000000.gpu: genpd_runtime_resume()
+[    1.958638] etnaviv-gpu 38000000.gpu: resume latency exceeded, 26375 ns
+[    1.958650] etnaviv etnaviv: bound 38000000.gpu (ops gpu_ops)
+[    1.964653] etnaviv-gpu 38000000.gpu: model: GC7000, revision: 6214
+[    1.972175] device: 'renderD128': device_add
+[    1.972208] PM: Adding info for No Bus:renderD128
+[    1.972591] device: 'card0': device_add
+[    1.972616] PM: Adding info for No Bus:card0
+[    1.972666] [drm] Initialized etnaviv 1.2.0 20151214 for etnaviv on minor 0
+[    1.979937] driver: 'etnaviv-gpu': driver_bound: bound to device '38000000.gpu'
+[    1.979958] bus: 'platform': really_probe: bound device 38000000.gpu to driver etnaviv-gpu
+[    1.979965] devices_kset: Moving 32e00000.dcss to end of list
+[    1.979968] PM: Moving platform:32e00000.dcss to end of list
+[    1.979973] platform 32e00000.dcss: Retrying from deferred list
+[    1.980055] bus: 'platform': driver_probe_device: matched device 32e00000.dcss with driver dcss-core
+[    1.980060] bus: 'platform': really_probe: probing driver dcss-core with device 32e00000.dcss
+[    1.980072] dcss-core 32e00000.dcss: no pinctrl handle
+[    1.980233] dcss-core 32e00000.dcss: dcss_submodules_init 131.
+[    1.987171] dcss-core 32e00000.dcss: dcss_submodules_init 177.: ret: 0
+[    1.994014] Registering platform device 'imx-dcss-crtc.0'. Parent at 32e00000.dcss
+[    1.994017] device: 'imx-dcss-crtc.0': device_add
+[    1.994028] bus: 'platform': add device imx-dcss-crtc.0
+[    1.994052] PM: Adding info for platform:imx-dcss-crtc.0
+[    1.994092] bus: 'platform': driver_probe_device: matched device imx-dcss-crtc.0 with driver imx-dcss-crtc
+[    1.994096] bus: 'platform': really_probe: probing driver imx-dcss-crtc with device imx-dcss-crtc.0
+[    1.994115] imx-dcss-crtc imx-dcss-crtc.0: no default pinctrl state
+[    1.994133] imx-dcss-crtc imx-dcss-crtc.0: adding component (ops dcss_crtc_ops)
+[    1.994138] imx-drm soc@0:display-subsystem: trying to bring up master
+[    1.994143] imx-drm soc@0:display-subsystem: Looking for component 0
+[    1.994150] imx-drm soc@0:display-subsystem: found component imx-dcss-crtc.0, duplicate 0
+[    1.994155] imx-drm soc@0:display-subsystem: Looking for component 1
+[    1.994162] imx-drm soc@0:display-subsystem: found component 30a00000.mipi_dsi, duplicate 0
+[    1.994235] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    2.001138] [drm] No driver support for vblank timestamp query.
+[    2.007320] imx-drm soc@0:display-subsystem: binding imx-dcss-crtc.0 (ops dcss_crtc_ops)
+[    2.007455] imx-drm soc@0:display-subsystem: bound imx-dcss-crtc.0 (ops dcss_crtc_ops)
+[    2.015716] imx-drm soc@0:display-subsystem: binding 30a00000.mipi_dsi (ops imx_nwl_dsi_component_ops)
+[    2.015891] device: '30a00000.mipi_dsi.0': device_add
+[    2.015905] bus: 'mipi-dsi': add device 30a00000.mipi_dsi.0
+[    2.015924] PM: Adding info for mipi-dsi:30a00000.mipi_dsi.0
+[    2.015951] bus: 'mipi-dsi': driver_probe_device: matched device 30a00000.mipi_dsi.0 with driver panel-rocktech-jh057n00900
+[    2.015956] bus: 'mipi-dsi': really_probe: probing driver panel-rocktech-jh057n00900 with device 30a00000.mipi_dsi.0
+[    2.015970] panel-rocktech-jh057n00900 30a00000.mipi_dsi.0: no pinctrl handle
+[    2.016022] imx-nwl-dsi 30a00000.mipi_dsi: [drm:nwl_dsi_host_attach] lanes=4, format=0x0 flags=0x7
+[    2.025373] panel-rocktech-jh057n00900 30a00000.mipi_dsi.0: [drm:jh057n_probe] 720x1440@60 24bpp dsi 4dl - ready
+[    2.035991] driver: 'panel-rocktech-jh057n00900': driver_bound: bound to device '30a00000.mipi_dsi.0'
+[    2.036014] bus: 'mipi-dsi': really_probe: bound device 30a00000.mipi_dsi.0 to driver panel-rocktech-jh057n00900
+[    2.036033] imx-drm soc@0:display-subsystem: bound 30a00000.mipi_dsi (ops imx_nwl_dsi_component_ops)
+[    2.045608] device: 'card1': device_add
+[    2.045638] PM: Adding info for No Bus:card1
+[    2.045734] dcss-core 32e00000.dcss: Direct firmware load for dcss.fw failed with error -2
+[    2.054365] dcss-core 32e00000.dcss: hdr10: DCSS FW load failed.
+[    2.060682] device: 'card1-DSI-1': device_add
+[    2.060719] PM: Adding info for No Bus:card1-DSI-1
+[    2.060756] [drm] Initialized imx-drm 1.0.0 20120507 for soc@0:display-subsystem on minor 1
+[    2.071544] device: 'fb0': device_add
+[    2.071574] PM: Adding info for No Bus:fb0
+[    2.072242] device: 'vtcon1': device_add
+[    2.072271] PM: Adding info for No Bus:vtcon1
+[    2.072470] [drm] OPIPE_CFG: gamut = 0, nl = 1, pr = 1, pix_format = AR24
+[    2.201870] device: 'input1': device_add
+[    2.201940] PM: Adding info for No Bus:input1
+[    2.201993] input: Goodix Capacitive TouchScreen as /devices/platform/soc@0/soc@0:bus@30800000/30a40000.i2c/i2c-2/2-005d/input/input1
+[    2.202018] device: 'mouse0': device_add
+[    2.202045] PM: Adding info for No Bus:mouse0
+[    2.202636] device: 'event0': device_add
+[    2.202660] PM: Adding info for No Bus:event0
+[    2.207720] etnaviv-gpu 38000000.gpu: genpd_runtime_suspend()
+[    2.207749] etnaviv-gpu 38000000.gpu: suspend latency exceeded, 22375 ns
+[    2.207804] PM: gpu: Power-off latency exceeded, new value 50000 ns
+[    2.595740] imx-nwl-dsi 30a00000.mipi_dsi: [drm:imx_nwl_dsi_encoder_enable] Using DCSS as input source
+[    2.595750] imx-nwl-dsi 30a00000.mipi_dsi: genpd_runtime_resume()
+[    2.595758] imx-nwl-dsi 30a00000.mipi_dsi: resume latency exceeded, 625 ns
+[    2.792791] Console: switching to colour frame buffer device 90x90
+[    2.846163] imx-drm soc@0:display-subsystem: fb0: imx-drmdrmfb frame buffer device
+[    2.854089] driver: 'imx-dcss-crtc': driver_bound: bound to device 'imx-dcss-crtc.0'
+[    2.854106] bus: 'platform': really_probe: bound device imx-dcss-crtc.0 to driver imx-dcss-crtc
+[    2.854117] driver: 'dcss-core': driver_bound: bound to device '32e00000.dcss'
+[    2.854143] bus: 'platform': really_probe: bound device 32e00000.dcss to driver dcss-core
+[    2.854151] devices_kset: Moving 30be0000.ethernet to end of list
+[    2.854154] PM: Moving platform:30be0000.ethernet to end of list
+[    2.854160] platform 30be0000.ethernet: Retrying from deferred list
+[    2.854307] bus: 'platform': driver_probe_device: matched device 30be0000.ethernet with driver fec
+[    2.854314] bus: 'platform': really_probe: probing driver fec with device 30be0000.ethernet
+[    2.854448] fec 30be0000.ethernet: no init pinctrl state
+[    2.854468] fec 30be0000.ethernet: no sleep pinctrl state
+[    2.854473] fec 30be0000.ethernet: no idle pinctrl state
+[    2.854659] devices_kset: Moving 30be0000.ethernet to end of list
+[    2.854662] PM: Moving platform:30be0000.ethernet to end of list
+[    2.854669] fec 30be0000.ethernet: Linked as a consumer to regulator.3
+[    2.854755] device: 'ptp0': device_add
+[    2.854805] PM: Adding info for No Bus:ptp0
+[    2.855431] device: 'pps0': device_add
+[    2.855472] PM: Adding info for No Bus:pps0
+[    2.856048] pps pps0: new PPS source ptp0
+[    2.862022] device: '30be0000.ethernet-1': device_add
+[    2.862056] PM: Adding info for No Bus:30be0000.ethernet-1
+[    2.862092] libphy: fec_enet_mii_bus: probed
+[    2.875246] device: '30be0000.ethernet-1:01': device_add
+[    2.875293] bus: 'mdio_bus': add device 30be0000.ethernet-1:01
+[    2.875322] PM: Adding info for mdio_bus:30be0000.ethernet-1:01
+[    2.875414] device: 'eth0': device_add
+[    2.875547] PM: Adding info for No Bus:eth0
+[    2.875897] fec 30be0000.ethernet eth0: registered PHC device 0
+[    2.882082] driver: 'fec': driver_bound: bound to device '30be0000.ethernet'
+[    2.882114] bus: 'platform': really_probe: bound device 30be0000.ethernet to driver fec
+[    2.882127] devices_kset: Moving vibrator to end of list
+[    2.882131] PM: Moving platform:vibrator to end of list
+[    2.882137] platform vibrator: Retrying from deferred list
+[    2.882313] bus: 'platform': driver_probe_device: matched device vibrator with driver gpio-vibrator
+[    2.882320] bus: 'platform': really_probe: probing driver gpio-vibrator with device vibrator
+[    2.882407] gpio-vibrator vibrator: no init pinctrl state
+[    2.882418] gpio-vibrator vibrator: no sleep pinctrl state
+[    2.882423] gpio-vibrator vibrator: no idle pinctrl state
+[    2.882520] devices_kset: Moving vibrator to end of list
+[    2.882524] PM: Moving platform:vibrator to end of list
+[    2.882530] gpio-vibrator vibrator: Linked as a consumer to regulator.3
+[    2.882573] device: 'input2': device_add
+[    2.882642] PM: Adding info for No Bus:input2
+[    2.882686] input: gpio-vibrator as /devices/platform/vibrator/input/input2
+[    2.889976] device: 'event1': device_add
+[    2.890000] PM: Adding info for No Bus:event1
+[    2.890539] driver: 'gpio-vibrator': driver_bound: bound to device 'vibrator'
+[    2.890560] bus: 'platform': really_probe: bound device vibrator to driver gpio-vibrator
+[    2.890566] devices_kset: Moving 30b50000.mmc to end of list
+[    2.890569] PM: Moving platform:30b50000.mmc to end of list
+[    2.890575] platform 30b50000.mmc: Retrying from deferred list
+[    2.890729] bus: 'platform': driver_probe_device: matched device 30b50000.mmc with driver sdhci-esdhc-imx
+[    2.890734] bus: 'platform': really_probe: probing driver sdhci-esdhc-imx with device 30b50000.mmc
+[    2.890943] sdhci-esdhc-imx 30b50000.mmc: no init pinctrl state
+[    2.890954] sdhci-esdhc-imx 30b50000.mmc: no sleep pinctrl state
+[    2.890958] sdhci-esdhc-imx 30b50000.mmc: no idle pinctrl state
+[    2.891233] devices_kset: Moving 30b50000.mmc to end of list
+[    2.891236] PM: Moving platform:30b50000.mmc to end of list
+[    2.891242] sdhci-esdhc-imx 30b50000.mmc: Linked as a consumer to regulator.7
+[    2.892652] device: 'mmc1::': device_add
+[    2.892693] PM: Adding info for No Bus:mmc1::
+[    2.892714] device: 'mmc1': device_add
+[    2.892741] PM: Adding info for No Bus:mmc1
+[    2.926061] mmc1: SDHCI controller on 30b50000.mmc [30b50000.mmc] using ADMA
+[    2.933423] driver: 'sdhci-esdhc-imx': driver_bound: bound to device '30b50000.mmc'
+[    2.933450] bus: 'platform': really_probe: bound device 30b50000.mmc to driver sdhci-esdhc-imx
+[    2.933458] devices_kset: Moving leds to end of list
+[    2.933461] PM: Moving platform:leds to end of list
+[    2.933467] platform leds: Retrying from deferred list
+[    2.933571] bus: 'platform': driver_probe_device: matched device leds with driver leds-gpio
+[    2.933576] bus: 'platform': really_probe: probing driver leds-gpio with device leds
+[    2.933657] leds-gpio leds: no init pinctrl state
+[    2.933667] leds-gpio leds: no sleep pinctrl state
+[    2.933671] leds-gpio leds: no idle pinctrl state
+[    2.933727] device: 'LED 1': device_add
+[    2.933764] PM: Adding info for No Bus:LED 1
+[    2.933798] device: 'CSI_nRST': device_add
+[    2.933826] PM: Adding info for No Bus:CSI_nRST
+[    2.933856] device: 'CSI_PDWN': device_add
+[    2.933889] PM: Adding info for No Bus:CSI_PDWN
+[    2.933925] device: 'SPK_MUTE': device_add
+[    2.933954] PM: Adding info for No Bus:SPK_MUTE
+[    2.933986] device: 'MIC_SEL': device_add
+[    2.934017] PM: Adding info for No Bus:MIC_SEL
+[    2.934029] driver: 'leds-gpio': driver_bound: bound to device 'leds'
+[    2.934048] bus: 'platform': really_probe: bound device leds to driver leds-gpio
+[    2.935075] bus: 'platform': add driver gpio-keys
+[    2.935220] bus: 'platform': driver_probe_device: matched device gpio-keys with driver gpio-keys
+[    2.935226] bus: 'platform': really_probe: probing driver gpio-keys with device gpio-keys
+[    2.935318] gpio-keys gpio-keys: no init pinctrl state
+[    2.935328] gpio-keys gpio-keys: no sleep pinctrl state
+[    2.935332] gpio-keys gpio-keys: no idle pinctrl state
+[    2.935591] device: 'input3': device_add
+[    2.935656] PM: Adding info for No Bus:input3
+[    2.935721] input: gpio-keys as /devices/platform/gpio-keys/input/input3
+[    2.942783] device: 'event2': device_add
+[    2.942808] PM: Adding info for No Bus:event2
+[    2.943479] driver: 'gpio-keys': driver_bound: bound to device 'gpio-keys'
+[    2.943504] bus: 'platform': really_probe: bound device gpio-keys to driver gpio-keys
+[    2.943571] bus: 'platform': driver_probe_device: matched device gpio-keys.0.auto with driver gpio-keys
+[    2.943577] bus: 'platform': really_probe: probing driver gpio-keys with device gpio-keys.0.auto
+[    2.943592] gpio-keys gpio-keys.0.auto: no default pinctrl state
+[    2.947399] device: 'input4': device_add
+[    2.947459] PM: Adding info for No Bus:input4
+[    2.947499] input: bd718xx-pwrkey as /devices/platform/soc@0/soc@0:bus@30800000/30a20000.i2c/i2c-0/0-004b/gpio-keys.0.auto/input/input4
+[    2.960212] device: 'event3': device_add
+[    2.960237] PM: Adding info for No Bus:event3
+[    2.960837] driver: 'gpio-keys': driver_bound: bound to device 'gpio-keys.0.auto'
+[    2.960856] bus: 'platform': really_probe: bound device gpio-keys.0.auto to driver gpio-keys
+[    2.961464] snvs_rtc 30370000.snvs:snvs-rtc-lp: setting system clock to 1970-01-01T00:00:01 UTC (1)
+[    2.971055] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    2.989191] mmc1: new high speed SDIO card at address fffd
+[    2.994982] device: 'mmc1:fffd': device_add
+[    2.995018] bus: 'mmc': add device mmc1:fffd
+[    2.995051] PM: Adding info for mmc:mmc1:fffd
+[    2.995086] bus: 'mmc': driver_probe_device: matched device mmc1:fffd with driver mmcblk
+[    2.995095] bus: 'mmc': really_probe: probing driver mmcblk with device mmc1:fffd
+[    2.995143] mmcblk mmc1:fffd: no default pinctrl state
+[    2.995171] mmcblk: probe of mmc1:fffd rejects match -19
+[    2.995185] device: 'mmc1:fffd:1': device_add
+[    2.995200] bus: 'sdio': add device mmc1:fffd:1
+[    2.995226] PM: Adding info for sdio:mmc1:fffd:1
+[    3.004171] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    3.011646] 5v_p: disabling
+[    3.014598] ALSA device list:
+[    3.017701]   No soundcards found.
+[    3.021451] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    3.030447] cfg80211: failed to load regulatory.db
+[    3.030857] Freeing unused kernel memory: 896K
+[    3.055775] Run /init as init process
+[    3.518884] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+[    3.860118] systemd[1]: System time before build time, advancing clock.
+[    3.889693] systemd[1]: systemd 241 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+[    3.912330] systemd[1]: Detected architecture arm64.
+[    3.940651] systemd[1]: Set hostname to <pureos>.
+[    3.947370] systemd[1]: Failed to bump fs.file-max, ignoring: Invalid argument
+[    4.142375] random: lvmconfig: uninitialized urandom read (4 bytes read)
+[    4.174312] systemd[1]: File /lib/systemd/system/systemd-journald.service:12 configures an IP firewall (IPAddressDeny=any), but the local system does not support BPF/cgroup based firewalling.
+[    4.192093] systemd[1]: Proceeding WITHOUT firewalling in effect! (This warning is only shown for the first loaded unit using IP firewalling.)
+[    4.394116] systemd[1]: Binding to IPv6 address not available since kernel does not support IPv6.
+[    4.407648] random: systemd: uninitialized urandom read (16 bytes read)
+[    4.419405] random: systemd: uninitialized urandom read (16 bytes read)
+[    4.426362] systemd[1]: Reached target Swap.
+[    4.450059] systemd[1]: Created slice system-systemd\x2dfsck.slice.
+[    4.472306] systemd[1]: Listening on Network Service Netlink Socket.
+[    5.286444] EXT4-fs (mmcblk0p2): re-mounted. Opts: errors=remount-ro
+[    5.524616] systemd-journald[283]: Received request to flush runtime journal from PID 1
+[    5.535152] systemd-journald[283]: File /var/log/journal/a10eb4ab9eba403abb076bbd4f865a4b/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[    5.866469] driver: 'Generic PHY': driver_bound: bound to device '30be0000.ethernet-1:01'
+[    5.867852] Generic PHY 30be0000.ethernet-1:01: attached PHY driver [Generic PHY] (mii_bus:phy_addr=30be0000.ethernet-1:01, irq=POLL)
+[    6.959994] random: crng init done
+[    6.963550] random: 7 urandom warning(s) missed due to ratelimiting
+[    7.446064] device: 'vcs2': device_add
+[    7.446124] PM: Adding info for No Bus:vcs2
+[    7.446265] device: 'vcsu2': device_add
+[    7.446298] PM: Adding info for No Bus:vcsu2
+[    7.446366] device: 'vcsa2': device_add
+[    7.446390] PM: Adding info for No Bus:vcsa2
+[    7.446627] device: 'vcs3': device_add
+[    7.446652] PM: Adding info for No Bus:vcs3
+[    7.446719] device: 'vcsu3': device_add
+[    7.446743] PM: Adding info for No Bus:vcsu3
+[    7.446799] device: 'vcsa3': device_add
+[    7.446823] PM: Adding info for No Bus:vcsa3
+[    7.447066] device: 'vcs4': device_add
+[    7.447097] PM: Adding info for No Bus:vcs4
+[    7.447157] device: 'vcsu4': device_add
+[    7.447182] PM: Adding info for No Bus:vcsu4
+[    7.447234] device: 'vcsa4': device_add
+[    7.447257] PM: Adding info for No Bus:vcsa4
+[    7.447431] device: 'vcs5': device_add
+[    7.447456] PM: Adding info for No Bus:vcs5
+[    7.447519] device: 'vcsu5': device_add
+[    7.447541] PM: Adding info for No Bus:vcsu5
+[    7.447601] device: 'vcsa5': device_add
+[    7.447629] PM: Adding info for No Bus:vcsa5
+[    7.453903] device: 'vcs6': device_add
+[    7.453963] PM: Adding info for No Bus:vcs6
+[    7.454067] device: 'vcsu6': device_add
+[    7.454094] PM: Adding info for No Bus:vcsu6
+[    7.454799] device: 'vcsa6': device_add
+[    7.454836] PM: Adding info for No Bus:vcsa6
+[    7.772795] device: 'lo': device_add
+[    7.772974] PM: Adding info for No Bus:lo
+[    7.940853] fec 30be0000.ethernet eth0: Link is Up - 100Mbps/Full - flow control rx/tx
+[    8.081707] device: 'vcs7': device_add
+[    8.081775] PM: Adding info for No Bus:vcs7
+[    8.081924] device: 'vcsu7': device_add
+[    8.081953] PM: Adding info for No Bus:vcsu7
+[    8.082021] device: 'vcsa7': device_add
+[    8.082046] PM: Adding info for No Bus:vcsa7
+[    8.082496] device: 'vcs7': device_unregister
+[    8.084150] PM: Removing info for No Bus:vcs7
+[    8.084192] device: 'vcs7': device_create_release
+[    8.084211] device: 'vcsu7': device_unregister
+[    8.084415] PM: Removing info for No Bus:vcsu7
+[    8.084440] device: 'vcsu7': device_create_release
+[    8.084451] device: 'vcsa7': device_unregister
+[    8.086163] PM: Removing info for No Bus:vcsa7
+[    8.086193] device: 'vcsa7': device_create_release
+[    8.151485] device: 'vcs7': device_add
+[    8.151547] PM: Adding info for No Bus:vcs7
+[    8.154589] device: 'vcsu7': device_add
+[    8.154655] PM: Adding info for No Bus:vcsu7
+[    8.155222] device: 'vcsa7': device_add
+[    8.155263] PM: Adding info for No Bus:vcsa7
+[    9.920707] etnaviv-gpu 38000000.gpu: genpd_runtime_resume()
+[    9.920787] PM: gpu: Power-on latency exceeded, new value 68125 ns
+[    9.920838] etnaviv-gpu 38000000.gpu: resume latency exceeded, 43625 ns
+[    9.929528] etnaviv-gpu 38000000.gpu: etnaviv_warn_if_non_sensitive: relocation for non-sensitive state 0x14020 at offset 340
+[   10.191760] etnaviv-gpu 38000000.gpu: genpd_runtime_suspend()
+[   10.191815] etnaviv-gpu 38000000.gpu: suspend latency exceeded, 39250 ns
+[   10.191877] PM: gpu: Power-off latency exceeded, new value 53500 ns
+[   10.390164] etnaviv-gpu 38000000.gpu: genpd_runtime_resume()
+[   10.619763] etnaviv-gpu 38000000.gpu: genpd_runtime_suspend()
+[   11.851748] etnaviv-gpu 38000000.gpu: genpd_runtime_suspend()
+[   11.851860] PM: gpu: Power-off latency exceeded, new value 54500 ns
+[   11.902060] etnaviv-gpu 38000000.gpu: genpd_runtime_resume()
+[   11.902146] PM: gpu: Power-on latency exceeded, new value 69875 ns
+[   11.902198] etnaviv-gpu 38000000.gpu: resume latency exceeded, 44250 ns
+[   12.183814] etnaviv-gpu 38000000.gpu: genpd_runtime_suspend()
+[   12.183923] PM: gpu: Power-off latency exceeded, new value 55625 ns
+[   12.489070] etnaviv-gpu 38000000.gpu: genpd_runtime_resume()
+[   12.489158] PM: gpu: Power-on latency exceeded, new value 73125 ns
+[   12.489218] etnaviv-gpu 38000000.gpu: resume latency exceeded, 51000 ns
+[   13.419767] etnaviv-gpu 38000000.gpu: genpd_runtime_suspend()
+[   14.772105] device: 'lo': device_add
+[   14.772258] PM: Adding info for No Bus:lo
+[   15.542195] device: 'lo': device_add
+[   15.542354] PM: Adding info for No Bus:lo
+[   17.366034] PM: Removing info for No Bus:lo
+[   17.659934] device: 'lo': device_add
+[   17.660113] PM: Adding info for No Bus:lo
+[   19.116314] PM: Removing info for No Bus:lo
+[   40.958620] etnaviv-gpu 38000000.gpu: genpd_runtime_suspend()
+[   45.656818] PM: Removing info for No Bus:lo
+[   49.930349] PM: Removing info for No Bus:lo
+[   72.860407] etnaviv-gpu 38000000.gpu: genpd_runtime_resume()
+[   73.132034] etnaviv-gpu 38000000.gpu: genpd_runtime_suspend()
+[   81.547352] etnaviv-gpu 38000000.gpu: genpd_runtime_suspend()
+[  105.105992] etnaviv-gpu 38000000.gpu: genpd_runtime_resume()
+[  105.359920] etnaviv-gpu 38000000.gpu: genpd_runtime_suspend()
