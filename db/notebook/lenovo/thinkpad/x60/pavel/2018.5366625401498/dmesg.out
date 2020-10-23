@@ -1,0 +1,870 @@
+[    0.000000] Linux version 4.18.0-rc4-next-20180710 (pavel@amd) (gcc version 4.9.2 (Debian 4.9.2-10+deb8u1)) #137 SMP Wed Jul 11 09:36:39 CEST 2018
+[    0.000000] Disabled fast string operations
+[    0.000000] x86/fpu: x87 FPU will use FXSAVE
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009efff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009f000-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000dc000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000bf6cffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000bf6d0000-0x00000000bf6defff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x00000000bf6df000-0x00000000bf6fffff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x00000000bf700000-0x00000000bfffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000f0000000-0x00000000f3ffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec0ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed00000-0x00000000fed003ff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed14000-0x00000000fed19fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed1c000-0x00000000fed8ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000ff800000-0x00000000ffffffff] reserved
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] SMBIOS 2.4 present.
+[    0.000000] DMI: LENOVO 17097HU/17097HU, BIOS 7BETD8WW (2.19 ) 03/31/2011
+[    0.000000] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000000] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000000] last_pfn = 0xbf6d0 max_arch_pfn = 0x1000000
+[    0.000000] MTRR default type: uncachable
+[    0.000000] MTRR fixed ranges enabled:
+[    0.000000]   00000-9FFFF write-back
+[    0.000000]   A0000-BFFFF uncachable
+[    0.000000]   C0000-CFFFF write-protect
+[    0.000000]   D0000-DBFFF uncachable
+[    0.000000]   DC000-DFFFF write-back
+[    0.000000]   E0000-FFFFF write-protect
+[    0.000000] MTRR variable ranges enabled:
+[    0.000000]   0 base 000000000 mask F80000000 write-back
+[    0.000000]   1 base 080000000 mask FC0000000 write-back
+[    0.000000]   2 base 0BF700000 mask FFFF00000 uncachable
+[    0.000000]   3 base 0BF800000 mask FFF800000 uncachable
+[    0.000000]   4 disabled
+[    0.000000]   5 disabled
+[    0.000000]   6 disabled
+[    0.000000]   7 disabled
+[    0.000000] x86/PAT: PAT not supported by CPU.
+[    0.000000] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+[    0.000000] initial memory mapped: [mem 0x00000000-0x05dfffff]
+[    0.000000] Base memory trampoline at [(ptrval)] 9b000 size 16384
+[    0.000000] BRK [0x05838000, 0x05838fff] PGTABLE
+[    0.000000] BRK [0x05839000, 0x05839fff] PGTABLE
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000000F67C0 000024 (v02 LENOVO)
+[    0.000000] ACPI: XSDT 0x00000000BF6D191C 000084 (v01 LENOVO TP-7B    00002190  LTP 00000000)
+[    0.000000] ACPI: FACP 0x00000000BF6D1A00 0000F4 (v03 LENOVO TP-7B    00002190 LNVO 00000001)
+[    0.000000] ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Gpe0Block: 64/32 (20180531/tbfadt-569)
+[    0.000000] ACPI BIOS Warning (bug): Optional FADT field Gpe1Block has valid Address but zero Length: 0x000000000000102C/0x0 (20180531/tbfadt-624)
+[    0.000000] ACPI: DSDT 0x00000000BF6D1D90 00CFB9 (v01 LENOVO TP-7B    00002190 MSFT 0100000E)
+[    0.000000] ACPI: FACS 0x00000000BF6F4000 000040
+[    0.000000] ACPI: FACS 0x00000000BF6F4000 000040
+[    0.000000] ACPI: SSDT 0x00000000BF6D1BB4 0001DC (v01 LENOVO TP-7B    00002190 MSFT 0100000E)
+[    0.000000] ACPI: ECDT 0x00000000BF6DED49 000052 (v01 LENOVO TP-7B    00002190 LNVO 00000001)
+[    0.000000] ACPI: TCPA 0x00000000BF6DED9B 000032 (v02 LENOVO TP-7B    00002190 LNVO 00000001)
+[    0.000000] ACPI: APIC 0x00000000BF6DEDCD 000068 (v01 LENOVO TP-7B    00002190 LNVO 00000001)
+[    0.000000] ACPI: MCFG 0x00000000BF6DEE35 00003C (v01 LENOVO TP-7B    00002190 LNVO 00000001)
+[    0.000000] ACPI: HPET 0x00000000BF6DEE71 000038 (v01 LENOVO TP-7B    00002190 LNVO 00000001)
+[    0.000000] ACPI: BOOT 0x00000000BF6DEFD8 000028 (v01 LENOVO TP-7B    00002190  LTP 00000001)
+[    0.000000] ACPI: SSDT 0x00000000BF6F2645 00025F (v01 LENOVO TP-7B    00002190 INTL 20050513)
+[    0.000000] ACPI: SSDT 0x00000000BF6F28A4 0000A6 (v01 LENOVO TP-7B    00002190 INTL 20050513)
+[    0.000000] ACPI: SSDT 0x00000000BF6F294A 0004F7 (v01 LENOVO TP-7B    00002190 INTL 20050513)
+[    0.000000] ACPI: SSDT 0x00000000BF6F2E41 0001D8 (v01 LENOVO TP-7B    00002190 INTL 20050513)
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] 2174MB HIGHMEM available.
+[    0.000000] 887MB LOWMEM available.
+[    0.000000]   mapped low ram: 0 - 377fe000
+[    0.000000]   low ram: 0 - 377fe000
+[    0.000000] tsc: Fast TSC calibration using PIT
+[    0.000000] BRK [0x0583a000, 0x0583afff] PGTABLE
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.000000]   Normal   [mem 0x0000000001000000-0x00000000377fdfff]
+[    0.000000]   HighMem  [mem 0x00000000377fe000-0x00000000bf6cffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.000000]   node   0: [mem 0x0000000000100000-0x00000000bf6cffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x00000000bf6cffff]
+[    0.000000] On node 0 totalpages: 783982
+[    0.000000]   DMA zone: 32 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 3998 pages, LIFO batch:0
+[    0.000000]   Normal zone: 1744 pages used for memmap
+[    0.000000]   Normal zone: 223230 pages, LIFO batch:31
+[    0.000000]   HighMem zone: 556754 pages, LIFO batch:31
+[    0.000000] Reserved but unavailable: 402 pages
+[    0.000000] Using APIC driver default
+[    0.000000] Reserving Intel graphics memory at [mem 0xbf800000-0xbfffffff]
+[    0.000000] ACPI: PM-Timer IO Port: 0x1008
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x00] high edge lint[0x1])
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+[    0.000000] IOAPIC[0]: apic_id 1, version 32, address 0xfec00000, GSI 0-23
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.000000] ACPI: IRQ0 used by override.
+[    0.000000] ACPI: IRQ9 used by override.
+[    0.000000] Using ACPI (MADT) for SMP configuration information
+[    0.000000] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.000000] smpboot: Allowing 2 CPUs, 0 hotplug CPUs
+[    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000dbfff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000dc000-0x000fffff]
+[    0.000000] [mem 0xc0000000-0xefffffff] available for PCI devices
+[    0.000000] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[    0.000000] random: get_random_bytes called from start_kernel+0x74/0x347 with crng_init=0
+[    0.000000] setup_percpu: NR_CPUS:8 nr_cpumask_bits:8 nr_cpu_ids:2 nr_node_ids:1
+[    0.000000] percpu: Embedded 29 pages/cpu @(ptrval) s86376 r0 d32408 u118784
+[    0.000000] pcpu-alloc: s86376 r0 d32408 u118784 alloc=29*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 782206
+[    0.000000] Kernel command line: BOOT_IMAGE=(hd0,2)/fast/l/linux-next-32/arch/x86/boot/bzImage root=/dev/sda4 resume=/dev/sda1
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Initializing CPU#0
+[    0.000000] Initializing HighMem for node 0 (000377fe:000bf6d0)
+[    0.000000] Initializing Movable for node 0 (00000000:00000000)
+[    0.000000] Memory: 3085508K/3135928K available (12190K kernel code, 706K rwdata, 4764K rodata, 600K init, 6136K bss, 50420K reserved, 0K cma-reserved, 2227016K highmem)
+[    0.000000] virtual kernel memory layout:
+    fixmap  : 0xffe70000 - 0xfffff000   (1596 kB)
+  cpu_entry : 0xffa00000 - 0xffb39000   (1252 kB)
+    pkmap   : 0xff800000 - 0xffa00000   (2048 kB)
+    vmalloc : 0xf7ffe000 - 0xff7fe000   ( 120 MB)
+    lowmem  : 0xc0000000 - 0xf77fe000   ( 887 MB)
+      .init : 0xc5169000 - 0xc51ff000   ( 600 kB)
+      .data : 0xc4be7bd8 - 0xc5146a40   (5499 kB)
+      .text : 0xc4000000 - 0xc4be7bd8   (12190 kB)
+[    0.000000] Checking if this processor honours the WP bit even in supervisor mode...Ok.
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=2.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] NR_IRQS: 2304, nr_irqs: 56, preallocated irqs: 16
+[    0.000000] CPU 0 irqstacks, hard=(ptrval) soft=(ptrval)
+[    0.000000] Console: colour VGA+ 80x25
+[    0.000000] console [tty0] enabled
+[    0.000000] Lock dependency validator: Copyright (c) 2006 Red Hat, Inc., Ingo Molnar
+[    0.000000] ... MAX_LOCKDEP_SUBCLASSES:  8
+[    0.000000] ... MAX_LOCK_DEPTH:          48
+[    0.000000] ... MAX_LOCKDEP_KEYS:        8191
+[    0.000000] ... CLASSHASH_SIZE:          4096
+[    0.000000] ... MAX_LOCKDEP_ENTRIES:     32768
+[    0.000000] ... MAX_LOCKDEP_CHAINS:      65536
+[    0.000000] ... CHAINHASH_SIZE:          32768
+[    0.000000]  memory used by lock dependency info: 4383 kB
+[    0.000000]  per task-struct memory footprint: 1344 bytes
+[    0.000000] ACPI: Core revision 20180531
+[    0.000000] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 133484882848 ns
+[    0.000000] hpet clockevent registered
+[    0.000000] APIC: Switch to symmetric I/O mode setup
+[    0.000000] Enabling APIC mode:  Flat.  Using 1 I/O APICs
+[    0.000000] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.020000] tsc: Fast TSC calibration using PIT
+[    0.024000] tsc: Detected 1828.790 MHz processor
+[    0.024000] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x1a5c66913f2, max_idle_ns: 440795273136 ns
+[    0.024000] Calibrating delay loop (skipped), value calculated using timer frequency.. 3657.58 BogoMIPS (lpj=7315160)
+[    0.024000] pid_max: default: 32768 minimum: 301
+[    0.024000] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.024000] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.024000] Disabled fast string operations
+[    0.024000] CPU: Physical Processor ID: 0
+[    0.024000] CPU: Processor Core ID: 0
+[    0.024000] process: using mwait in idle threads
+[    0.024000] Last level iTLB entries: 4KB 128, 2MB 0, 4MB 2
+[    0.024000] Last level dTLB entries: 4KB 128, 2MB 0, 4MB 8, 1GB 0
+[    0.024000] Spectre V2 : Mitigation: Full generic retpoline
+[    0.024000] Spectre V2 : Spectre v2 mitigation: Filling RSB on context switch
+[    0.024000] Freeing SMP alternatives memory: 44K
+[    0.032000] smpboot: CPU0: Genuine Intel(R) CPU           T2400  @ 1.83GHz (family: 0x6, model: 0xe, stepping: 0x8)
+[    0.032000] Performance Events: Core events, core PMU driver.
+[    0.032000] ... version:                1
+[    0.032000] ... bit width:              40
+[    0.032000] ... generic registers:      2
+[    0.032000] ... value mask:             000000ffffffffff
+[    0.032000] ... max period:             000000007fffffff
+[    0.032000] ... fixed-purpose events:   0
+[    0.032000] ... event mask:             0000000000000003
+[    0.032000] rcu: Hierarchical SRCU implementation.
+[    0.032000] NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+[    0.032162] smp: Bringing up secondary CPUs ...
+[    0.033119] CPU 1 irqstacks, hard=(ptrval) soft=(ptrval)
+[    0.033123] x86: Booting SMP configuration:
+[    0.033205] .... node  #0, CPUs:      #1
+[    0.004000] Initializing CPU#1
+[    0.004000] Disabled fast string operations
+[    0.035661] TSC synchronization [CPU#0 -> CPU#1]:
+[    0.035974] Measured 580261 cycles TSC warp between CPUs, turning off TSC clock.
+[    0.036000] tsc: Marking TSC unstable due to check_tsc_sync_source failed
+[    0.036173] smp: Brought up 1 node, 2 CPUs
+[    0.036173] smpboot: Max logical packages: 1
+[    0.036173] smpboot: Total of 2 processors activated (7315.16 BogoMIPS)
+[    0.037870] devtmpfs: initialized
+[    0.037870] PM: Registering ACPI NVS region [mem 0xbf6df000-0xbf6fffff] (135168 bytes)
+[    0.040212] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.040342] futex hash table entries: 512 (order: 3, 32768 bytes)
+[    0.041182] NET: Registered protocol family 16
+[    0.042667] cpuidle: using governor ladder
+[    0.042829] cpuidle: using governor menu
+[    0.043053] Simple Boot Flag at 0x35 set to 0x1
+[    0.043170] ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+[    0.043271] ACPI: bus type PCI registered
+[    0.043584] PCI: MMCONFIG for domain 0000 [bus 00-3f] at [mem 0xf0000000-0xf3ffffff] (base 0xf0000000)
+[    0.043704] PCI: MMCONFIG at [mem 0xf0000000-0xf3ffffff] reserved in E820
+[    0.043792] PCI: Using MMCONFIG for extended config space
+[    0.044025] PCI: Using configuration type 1 for base access
+[    0.044500] mtrr: your CPUs had inconsistent variable MTRR settings
+[    0.044587] mtrr: probably your BIOS does not setup all CPUs.
+[    0.044671] mtrr: corrected configuration.
+[    0.109564] ACPI: Added _OSI(Module Device)
+[    0.109649] ACPI: Added _OSI(Processor Device)
+[    0.109726] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.109805] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.109888] ACPI: Added _OSI(Linux-Dell-Video)
+[    0.109986] ACPI: EC: EC started
+[    0.110060] ACPI: EC: interrupt blocked
+[    0.110189] ACPI: \: Used as first EC
+[    0.110266] ACPI: \: GPE=0x1c, EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    0.110352] ACPI: \: Used as boot ECDT EC to handle transactions
+[    0.176539] ACPI: 6 ACPI AML tables successfully acquired and loaded
+[    0.211671] ACPI: Dynamic OEM Table Load:
+[    0.211768] ACPI: SSDT 0x00000000F51D9800 000240 (v01 PmRef  Cpu0Ist  00000100 INTL 20050513)
+[    0.213407] ACPI: Dynamic OEM Table Load:
+[    0.213501] ACPI: SSDT 0x00000000F51D4800 00065A (v01 PmRef  Cpu0Cst  00000100 INTL 20050513)
+[    0.217403] ACPI: Dynamic OEM Table Load:
+[    0.217500] ACPI: SSDT 0x00000000F51D5A00 0000C8 (v01 PmRef  Cpu1Ist  00000100 INTL 20050513)
+[    0.218478] ACPI: Dynamic OEM Table Load:
+[    0.218571] ACPI: SSDT 0x00000000F586D900 000085 (v01 PmRef  Cpu1Cst  00000100 INTL 20050513)
+[    0.220376] ACPI: Interpreter enabled
+[    0.220544] ACPI: (supports S0 S3 S4 S5)
+[    0.220625] ACPI: Using IOAPIC for interrupt routing
+[    0.220843] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.221917] ACPI: Enabled 4 GPEs in block 00 to 1F
+[    0.245628] ACPI: Power Resource [PUBS] (on)
+[    0.246791] acpi PNP0C0A:01: ACPI dock station (docks/bays count: 1)
+[    0.254707] acpi LNXIOBAY:00: ACPI dock station (docks/bays count: 2)
+[    0.269618] acpi IBM0079:00: ACPI dock station (docks/bays count: 3)
+[    0.272064] ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 7 9 10 *11)
+[    0.272929] ACPI: PCI Interrupt Link [LNKB] (IRQs 3 4 5 6 7 9 10 *11)
+[    0.273792] ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 7 9 10 *11)
+[    0.274654] ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 5 6 7 9 10 *11)
+[    0.275516] ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 5 6 7 9 10 *11)
+[    0.276389] ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 7 9 10 *11)
+[    0.277251] ACPI: PCI Interrupt Link [LNKG] (IRQs 3 4 5 6 7 9 10 *11)
+[    0.278114] ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 5 6 7 9 10 *11)
+[    0.278680] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.278780] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments]
+[    0.279818] acpi PNP0A08:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+[    0.279953] acpi PNP0A08:00: [Firmware Info]: MMCONFIG for domain 0000 [bus 00-3f] only partially covers this bridge
+[    0.280253] PCI host bridge to bus 0000:00
+[    0.280335] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.280428] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.280521] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.280618] pci_bus 0000:00: root bus resource [mem 0x000d0000-0x000d3fff window]
+[    0.280714] pci_bus 0000:00: root bus resource [mem 0x000d4000-0x000d7fff window]
+[    0.280810] pci_bus 0000:00: root bus resource [mem 0x000d8000-0x000dbfff window]
+[    0.280907] pci_bus 0000:00: root bus resource [mem 0xc0000000-0xfebfffff window]
+[    0.281004] pci_bus 0000:00: root bus resource [mem 0xfed40000-0xfed40fff window]
+[    0.281101] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.281222] pci 0000:00:00.0: [8086:27a0] type 00 class 0x060000
+[    0.281682] pci 0000:00:02.0: [8086:27a2] type 00 class 0x030000
+[    0.281705] pci 0000:00:02.0: reg 0x10: [mem 0xee100000-0xee17ffff]
+[    0.281716] pci 0000:00:02.0: reg 0x14: [io  0x1800-0x1807]
+[    0.281727] pci 0000:00:02.0: reg 0x18: [mem 0xd0000000-0xdfffffff pref]
+[    0.281738] pci 0000:00:02.0: reg 0x1c: [mem 0xee200000-0xee23ffff]
+[    0.282211] pci 0000:00:02.1: [8086:27a6] type 00 class 0x038000
+[    0.282231] pci 0000:00:02.1: reg 0x10: [mem 0xee180000-0xee1fffff]
+[    0.282722] pci 0000:00:1b.0: [8086:27d8] type 00 class 0x040300
+[    0.282768] pci 0000:00:1b.0: reg 0x10: [mem 0xee240000-0xee243fff 64bit]
+[    0.282930] pci 0000:00:1b.0: PME# supported from D0 D3hot D3cold
+[    0.283391] pci 0000:00:1c.0: [8086:27d0] type 01 class 0x060400
+[    0.283568] pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+[    0.284115] pci 0000:00:1c.1: [8086:27d2] type 01 class 0x060400
+[    0.284293] pci 0000:00:1c.1: PME# supported from D0 D3hot D3cold
+[    0.284744] pci 0000:00:1c.2: [8086:27d4] type 01 class 0x060400
+[    0.284921] pci 0000:00:1c.2: PME# supported from D0 D3hot D3cold
+[    0.285370] pci 0000:00:1c.3: [8086:27d6] type 01 class 0x060400
+[    0.285547] pci 0000:00:1c.3: PME# supported from D0 D3hot D3cold
+[    0.285996] pci 0000:00:1d.0: [8086:27c8] type 00 class 0x0c0300
+[    0.286076] pci 0000:00:1d.0: reg 0x20: [io  0x1820-0x183f]
+[    0.286530] pci 0000:00:1d.1: [8086:27c9] type 00 class 0x0c0300
+[    0.286609] pci 0000:00:1d.1: reg 0x20: [io  0x1840-0x185f]
+[    0.287067] pci 0000:00:1d.2: [8086:27ca] type 00 class 0x0c0300
+[    0.287146] pci 0000:00:1d.2: reg 0x20: [io  0x1860-0x187f]
+[    0.287601] pci 0000:00:1d.3: [8086:27cb] type 00 class 0x0c0300
+[    0.287680] pci 0000:00:1d.3: reg 0x20: [io  0x1880-0x189f]
+[    0.288138] pci 0000:00:1d.7: [8086:27cc] type 00 class 0x0c0320
+[    0.288174] pci 0000:00:1d.7: reg 0x10: [mem 0xee444000-0xee4443ff]
+[    0.288316] pci 0000:00:1d.7: PME# supported from D0 D3hot D3cold
+[    0.288734] pci 0000:00:1e.0: [8086:2448] type 01 class 0x060401
+[    0.289263] pci 0000:00:1f.0: [8086:27b9] type 00 class 0x060100
+[    0.289423] pci 0000:00:1f.0: quirk: [io  0x1000-0x107f] claimed by ICH6 ACPI/GPIO/TCO
+[    0.289528] pci 0000:00:1f.0: quirk: [io  0x1180-0x11bf] claimed by ICH6 GPIO
+[    0.289625] pci 0000:00:1f.0: ICH7 LPC Generic IO decode 1 PIO at 1600 (mask 007f)
+[    0.289723] pci 0000:00:1f.0: ICH7 LPC Generic IO decode 2 PIO at 15e0 (mask 000f)
+[    0.289822] pci 0000:00:1f.0: ICH7 LPC Generic IO decode 3 PIO at 1680 (mask 001f)
+[    0.290352] pci 0000:00:1f.1: [8086:27df] type 00 class 0x01018a
+[    0.290382] pci 0000:00:1f.1: reg 0x10: [io  0x0000-0x0007]
+[    0.290398] pci 0000:00:1f.1: reg 0x14: [io  0x0000-0x0003]
+[    0.290415] pci 0000:00:1f.1: reg 0x18: [io  0x0000-0x0007]
+[    0.290431] pci 0000:00:1f.1: reg 0x1c: [io  0x0000-0x0003]
+[    0.290448] pci 0000:00:1f.1: reg 0x20: [io  0x1810-0x181f]
+[    0.290482] pci 0000:00:1f.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[    0.290576] pci 0000:00:1f.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[    0.290667] pci 0000:00:1f.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[    0.290761] pci 0000:00:1f.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[    0.291260] pci 0000:00:1f.2: [8086:27c5] type 00 class 0x010601
+[    0.291295] pci 0000:00:1f.2: reg 0x10: [io  0x18d0-0x18d7]
+[    0.291312] pci 0000:00:1f.2: reg 0x14: [io  0x18c4-0x18c7]
+[    0.291328] pci 0000:00:1f.2: reg 0x18: [io  0x18c8-0x18cf]
+[    0.291345] pci 0000:00:1f.2: reg 0x1c: [io  0x18c0-0x18c3]
+[    0.291361] pci 0000:00:1f.2: reg 0x20: [io  0x18b0-0x18bf]
+[    0.291378] pci 0000:00:1f.2: reg 0x24: [mem 0xee444400-0xee4447ff]
+[    0.291463] pci 0000:00:1f.2: PME# supported from D3hot
+[    0.292023] pci 0000:00:1f.3: [8086:27da] type 00 class 0x0c0500
+[    0.292023] pci 0000:00:1f.3: reg 0x20: [io  0x18e0-0x18ff]
+[    0.292669] pci 0000:02:00.0: [8086:109a] type 00 class 0x020000
+[    0.292734] pci 0000:02:00.0: reg 0x10: [mem 0xee000000-0xee01ffff]
+[    0.292783] pci 0000:02:00.0: reg 0x18: [io  0x2000-0x201f]
+[    0.293037] pci 0000:02:00.0: PME# supported from D0 D3hot D3cold
+[    0.293424] pci 0000:00:1c.0: PCI bridge to [bus 02]
+[    0.293511] pci 0000:00:1c.0:   bridge window [io  0x2000-0x2fff]
+[    0.293520] pci 0000:00:1c.0:   bridge window [mem 0xee000000-0xee0fffff]
+[    0.293784] pci 0000:03:00.0: [8086:4227] type 00 class 0x028000
+[    0.293893] pci 0000:03:00.0: reg 0x10: [mem 0xedf00000-0xedf00fff]
+[    0.294399] pci 0000:03:00.0: PME# supported from D0 D3hot D3cold
+[    0.294830] pci 0000:00:1c.1: PCI bridge to [bus 03]
+[    0.294918] pci 0000:00:1c.1:   bridge window [io  0x3000-0x4fff]
+[    0.294926] pci 0000:00:1c.1:   bridge window [mem 0xec000000-0xedffffff]
+[    0.294937] pci 0000:00:1c.1:   bridge window [mem 0xe4000000-0xe40fffff 64bit pref]
+[    0.295085] pci 0000:00:1c.2: PCI bridge to [bus 04-0b]
+[    0.295174] pci 0000:00:1c.2:   bridge window [io  0x5000-0x6fff]
+[    0.295182] pci 0000:00:1c.2:   bridge window [mem 0xe8000000-0xe9ffffff]
+[    0.295193] pci 0000:00:1c.2:   bridge window [mem 0xe4100000-0xe41fffff 64bit pref]
+[    0.295343] pci 0000:00:1c.3: PCI bridge to [bus 0c-13]
+[    0.295433] pci 0000:00:1c.3:   bridge window [io  0x7000-0x8fff]
+[    0.295441] pci 0000:00:1c.3:   bridge window [mem 0xea000000-0xebffffff]
+[    0.295452] pci 0000:00:1c.3:   bridge window [mem 0xe4200000-0xe42fffff 64bit pref]
+[    0.295493] pci_bus 0000:15: extended config space not accessible
+[    0.295700] pci 0000:15:00.0: [1180:0476] type 02 class 0x060700
+[    0.295732] pci 0000:15:00.0: reg 0x10: [mem 0xe4300000-0xe4300fff]
+[    0.295806] pci 0000:15:00.0: supports D1 D2
+[    0.295810] pci 0000:15:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.296071] pci 0000:15:00.1: [1180:0552] type 00 class 0x0c0010
+[    0.296100] pci 0000:15:00.1: reg 0x10: [mem 0xe4301000-0xe43017ff]
+[    0.296248] pci 0000:15:00.1: PME# supported from D0 D3hot D3cold
+[    0.296460] pci 0000:15:00.2: [1180:0822] type 00 class 0x080500
+[    0.296490] pci 0000:15:00.2: reg 0x10: [mem 0xe4301800-0xe43018ff]
+[    0.296639] pci 0000:15:00.2: supports D1 D2
+[    0.296643] pci 0000:15:00.2: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.296919] pci 0000:00:1e.0: PCI bridge to [bus 15-18] (subtractive decode)
+[    0.297017] pci 0000:00:1e.0:   bridge window [io  0x9000-0xcfff]
+[    0.297025] pci 0000:00:1e.0:   bridge window [mem 0xe4300000-0xe7ffffff]
+[    0.297036] pci 0000:00:1e.0:   bridge window [mem 0xe0000000-0xe3ffffff 64bit pref]
+[    0.297042] pci 0000:00:1e.0:   bridge window [io  0x0000-0x0cf7 window] (subtractive decode)
+[    0.297047] pci 0000:00:1e.0:   bridge window [io  0x0d00-0xffff window] (subtractive decode)
+[    0.297052] pci 0000:00:1e.0:   bridge window [mem 0x000a0000-0x000bffff window] (subtractive decode)
+[    0.297056] pci 0000:00:1e.0:   bridge window [mem 0x000d0000-0x000d3fff window] (subtractive decode)
+[    0.297061] pci 0000:00:1e.0:   bridge window [mem 0x000d4000-0x000d7fff window] (subtractive decode)
+[    0.297077] pci 0000:00:1e.0:   bridge window [mem 0x000d8000-0x000dbfff window] (subtractive decode)
+[    0.297082] pci 0000:00:1e.0:   bridge window [mem 0xc0000000-0xfebfffff window] (subtractive decode)
+[    0.297087] pci 0000:00:1e.0:   bridge window [mem 0xfed40000-0xfed40fff window] (subtractive decode)
+[    0.297136] pci_bus 0000:16: extended config space not accessible
+[    0.297323] pci_bus 0000:16: busn_res: [bus 16-18] end is updated to 17
+[    0.297379] pci_bus 0000:00: on NUMA node 0
+[    0.303525] ACPI: EC: interrupt unblocked
+[    0.303704] ACPI: EC: event unblocked
+[    0.303791] ACPI: \_SB_.PCI0.LPC_.EC__: GPE=0x1c, EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    0.304005] ACPI: \_SB_.PCI0.LPC_.EC__: Used as boot DSDT EC to handle transactions and events
+[    0.304569] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    0.304662] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    0.304800] pci 0000:00:02.0: vgaarb: bridge control possible
+[    0.304884] vgaarb: loaded
+[    0.305513] SCSI subsystem initialized
+[    0.305885] libata version 3.00 loaded.
+[    0.306087] ACPI: bus type USB registered
+[    0.306290] usbcore: registered new interface driver usbfs
+[    0.306440] usbcore: registered new interface driver hub
+[    0.306591] usbcore: registered new device driver usb
+[    0.306803] media: Linux media interface: v0.10
+[    0.306930] videodev: Linux video capture interface: v2.00
+[    0.307087] pps_core: LinuxPPS API ver. 1 registered
+[    0.307167] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.307320] PTP clock support registered
+[    0.308048] EDAC MC: Ver: 3.0.0
+[    0.308939] Advanced Linux Sound Architecture Driver Initialized.
+[    0.309173] PCI: Using ACPI for IRQ routing
+[    0.312395] PCI: pci_cache_line_size set to 64 bytes
+[    0.312728] e820: reserve RAM buffer [mem 0x0009f000-0x0009ffff]
+[    0.312735] e820: reserve RAM buffer [mem 0xbf6d0000-0xbfffffff]
+[    0.313415] Bluetooth: Core ver 2.22
+[    0.313560] NET: Registered protocol family 31
+[    0.313638] Bluetooth: HCI device and connection manager initialized
+[    0.313737] Bluetooth: HCI socket layer initialized
+[    0.313820] Bluetooth: L2CAP socket layer initialized
+[    0.313942] Bluetooth: SCO socket layer initialized
+[    0.314193] clocksource: Switched to clocksource hpet
+[    0.314193] pnp: PnP ACPI init
+[    0.315818] system 00:00: [mem 0x00000000-0x0009ffff] could not be reserved
+[    0.315926] system 00:00: [mem 0x000c0000-0x000c3fff] could not be reserved
+[    0.316041] system 00:00: [mem 0x000c4000-0x000c7fff] could not be reserved
+[    0.316137] system 00:00: [mem 0x000c8000-0x000cbfff] has been reserved
+[    0.316230] system 00:00: [mem 0x000cc000-0x000cffff] has been reserved
+[    0.316326] system 00:00: [mem 0x000dc000-0x000dffff] could not be reserved
+[    0.316422] system 00:00: [mem 0x000e0000-0x000e3fff] could not be reserved
+[    0.316519] system 00:00: [mem 0x000e4000-0x000e7fff] could not be reserved
+[    0.316616] system 00:00: [mem 0x000e8000-0x000ebfff] could not be reserved
+[    0.316713] system 00:00: [mem 0x000ec000-0x000effff] could not be reserved
+[    0.316810] system 00:00: [mem 0x000f0000-0x000fffff] could not be reserved
+[    0.316906] system 00:00: [mem 0x00100000-0xbfffffff] could not be reserved
+[    0.317003] system 00:00: [mem 0xfec00000-0xfed3ffff] could not be reserved
+[    0.317100] system 00:00: [mem 0xfed41000-0xffffffff] could not be reserved
+[    0.317260] system 00:00: Plug and Play ACPI device, IDs PNP0c01 (active)
+[    0.317777] system 00:01: [io  0x164e-0x164f] has been reserved
+[    0.317870] system 00:01: [io  0x1000-0x107f] has been reserved
+[    0.317960] system 00:01: [io  0x1180-0x11bf] has been reserved
+[    0.318051] system 00:01: [io  0x0800-0x080f] has been reserved
+[    0.318142] system 00:01: [io  0x15e0-0x15ef] has been reserved
+[    0.318233] system 00:01: [io  0x1600-0x165f] could not be reserved
+[    0.318326] system 00:01: [mem 0xf0000000-0xf3ffffff] has been reserved
+[    0.318420] system 00:01: [mem 0xfed1c000-0xfed1ffff] has been reserved
+[    0.318514] system 00:01: [mem 0xfed14000-0xfed17fff] has been reserved
+[    0.318609] system 00:01: [mem 0xfed18000-0xfed18fff] has been reserved
+[    0.318703] system 00:01: [mem 0xfed19000-0xfed19fff] has been reserved
+[    0.318831] system 00:01: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.319147] pnp 00:02: Plug and Play ACPI device, IDs PNP0b00 (active)
+[    0.319285] pnp 00:03: Plug and Play ACPI device, IDs PNP0303 (active)
+[    0.319425] pnp 00:04: Plug and Play ACPI device, IDs IBM3780 PNP0f13 (active)
+[    0.320215] pnp 00:05: [dma 3]
+[    0.320424] pnp 00:05: Plug and Play ACPI device, IDs IBM0071 PNP0511 (active)
+[    0.320667] pnp 00:06: Plug and Play ACPI device, IDs ATM1200 PNP0c31 (active)
+[    0.323132] pnp: PnP ACPI: found 7 devices
+[    0.371030] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.371178] pci 0000:00:1c.0: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 02] add_size 200000 add_align 100000
+[    0.371264] pci 0000:00:1c.0: BAR 9: assigned [mem 0xc0000000-0xc01fffff 64bit pref]
+[    0.371363] pci 0000:00:1c.0: PCI bridge to [bus 02]
+[    0.371446] pci 0000:00:1c.0:   bridge window [io  0x2000-0x2fff]
+[    0.371537] pci 0000:00:1c.0:   bridge window [mem 0xee000000-0xee0fffff]
+[    0.371631] pci 0000:00:1c.0:   bridge window [mem 0xc0000000-0xc01fffff 64bit pref]
+[    0.371732] pci 0000:00:1c.1: PCI bridge to [bus 03]
+[    0.371815] pci 0000:00:1c.1:   bridge window [io  0x3000-0x4fff]
+[    0.371906] pci 0000:00:1c.1:   bridge window [mem 0xec000000-0xedffffff]
+[    0.371999] pci 0000:00:1c.1:   bridge window [mem 0xe4000000-0xe40fffff 64bit pref]
+[    0.372114] pci 0000:00:1c.2: PCI bridge to [bus 04-0b]
+[    0.372198] pci 0000:00:1c.2:   bridge window [io  0x5000-0x6fff]
+[    0.372289] pci 0000:00:1c.2:   bridge window [mem 0xe8000000-0xe9ffffff]
+[    0.372382] pci 0000:00:1c.2:   bridge window [mem 0xe4100000-0xe41fffff 64bit pref]
+[    0.372483] pci 0000:00:1c.3: PCI bridge to [bus 0c-13]
+[    0.372566] pci 0000:00:1c.3:   bridge window [io  0x7000-0x8fff]
+[    0.372657] pci 0000:00:1c.3:   bridge window [mem 0xea000000-0xebffffff]
+[    0.372750] pci 0000:00:1c.3:   bridge window [mem 0xe4200000-0xe42fffff 64bit pref]
+[    0.372861] pci 0000:15:00.0: BAR 9: assigned [mem 0xe0000000-0xe3ffffff pref]
+[    0.372958] pci 0000:15:00.0: BAR 10: assigned [mem 0xc4000000-0xc7ffffff]
+[    0.373049] pci 0000:15:00.0: BAR 7: assigned [io  0x9000-0x90ff]
+[    0.373135] pci 0000:15:00.0: BAR 8: assigned [io  0x9400-0x94ff]
+[    0.373230] pci 0000:15:00.0: CardBus bridge to [bus 16-17]
+[    0.373313] pci 0000:15:00.0:   bridge window [io  0x9000-0x90ff]
+[    0.373402] pci 0000:15:00.0:   bridge window [io  0x9400-0x94ff]
+[    0.373492] pci 0000:15:00.0:   bridge window [mem 0xe0000000-0xe3ffffff pref]
+[    0.373587] pci 0000:15:00.0:   bridge window [mem 0xc4000000-0xc7ffffff]
+[    0.373680] pci 0000:00:1e.0: PCI bridge to [bus 15-18]
+[    0.373763] pci 0000:00:1e.0:   bridge window [io  0x9000-0xcfff]
+[    0.373854] pci 0000:00:1e.0:   bridge window [mem 0xe4300000-0xe7ffffff]
+[    0.373947] pci 0000:00:1e.0:   bridge window [mem 0xe0000000-0xe3ffffff 64bit pref]
+[    0.374048] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.374053] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.374057] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.374061] pci_bus 0000:00: resource 7 [mem 0x000d0000-0x000d3fff window]
+[    0.374065] pci_bus 0000:00: resource 8 [mem 0x000d4000-0x000d7fff window]
+[    0.374069] pci_bus 0000:00: resource 9 [mem 0x000d8000-0x000dbfff window]
+[    0.374074] pci_bus 0000:00: resource 10 [mem 0xc0000000-0xfebfffff window]
+[    0.374078] pci_bus 0000:00: resource 11 [mem 0xfed40000-0xfed40fff window]
+[    0.374082] pci_bus 0000:02: resource 0 [io  0x2000-0x2fff]
+[    0.374087] pci_bus 0000:02: resource 1 [mem 0xee000000-0xee0fffff]
+[    0.374091] pci_bus 0000:02: resource 2 [mem 0xc0000000-0xc01fffff 64bit pref]
+[    0.374095] pci_bus 0000:03: resource 0 [io  0x3000-0x4fff]
+[    0.374099] pci_bus 0000:03: resource 1 [mem 0xec000000-0xedffffff]
+[    0.374103] pci_bus 0000:03: resource 2 [mem 0xe4000000-0xe40fffff 64bit pref]
+[    0.374108] pci_bus 0000:04: resource 0 [io  0x5000-0x6fff]
+[    0.374112] pci_bus 0000:04: resource 1 [mem 0xe8000000-0xe9ffffff]
+[    0.374116] pci_bus 0000:04: resource 2 [mem 0xe4100000-0xe41fffff 64bit pref]
+[    0.374120] pci_bus 0000:0c: resource 0 [io  0x7000-0x8fff]
+[    0.374124] pci_bus 0000:0c: resource 1 [mem 0xea000000-0xebffffff]
+[    0.374128] pci_bus 0000:0c: resource 2 [mem 0xe4200000-0xe42fffff 64bit pref]
+[    0.374133] pci_bus 0000:15: resource 0 [io  0x9000-0xcfff]
+[    0.374137] pci_bus 0000:15: resource 1 [mem 0xe4300000-0xe7ffffff]
+[    0.374141] pci_bus 0000:15: resource 2 [mem 0xe0000000-0xe3ffffff 64bit pref]
+[    0.374145] pci_bus 0000:15: resource 4 [io  0x0000-0x0cf7 window]
+[    0.374149] pci_bus 0000:15: resource 5 [io  0x0d00-0xffff window]
+[    0.374153] pci_bus 0000:15: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.374157] pci_bus 0000:15: resource 7 [mem 0x000d0000-0x000d3fff window]
+[    0.374161] pci_bus 0000:15: resource 8 [mem 0x000d4000-0x000d7fff window]
+[    0.374165] pci_bus 0000:15: resource 9 [mem 0x000d8000-0x000dbfff window]
+[    0.374169] pci_bus 0000:15: resource 10 [mem 0xc0000000-0xfebfffff window]
+[    0.374174] pci_bus 0000:15: resource 11 [mem 0xfed40000-0xfed40fff window]
+[    0.374178] pci_bus 0000:16: resource 0 [io  0x9000-0x90ff]
+[    0.374182] pci_bus 0000:16: resource 1 [io  0x9400-0x94ff]
+[    0.374186] pci_bus 0000:16: resource 2 [mem 0xe0000000-0xe3ffffff pref]
+[    0.374190] pci_bus 0000:16: resource 3 [mem 0xc4000000-0xc7ffffff]
+[    0.374670] NET: Registered protocol family 2
+[    0.375526] tcp_listen_portaddr_hash hash table entries: 512 (order: 2, 20480 bytes)
+[    0.375673] TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.375830] TCP bind hash table entries: 8192 (order: 6, 294912 bytes)
+[    0.376660] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.377106] UDP hash table entries: 512 (order: 3, 40960 bytes)
+[    0.377265] UDP-Lite hash table entries: 512 (order: 3, 40960 bytes)
+[    0.377578] NET: Registered protocol family 1
+[    0.378356] RPC: Registered named UNIX socket transport module.
+[    0.378444] RPC: Registered udp transport module.
+[    0.378524] RPC: Registered tcp transport module.
+[    0.378604] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.379239] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.384622] PCI: CLS mismatch (64 != 32), using 64 bytes
+[    0.387356] Initialise system trusted keyrings
+[    0.388236] workingset: timestamp_bits=31 max_order=20 bucket_order=0
+[    0.390276] Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+[    0.390790] ntfs: driver 2.1.32 [Flags: R/W].
+[    0.391098] fuse init (API version 7.27)
+[    0.391803] pstore: using deflate compression
+[    0.395320] Key type asymmetric registered
+[    0.395407] Asymmetric key parser 'x509' registered
+[    0.395624] bounce: pool size: 64 pages
+[    0.395805] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    0.395912] io scheduler noop registered
+[    0.395987] io scheduler deadline registered
+[    0.396128] io scheduler cfq registered (default)
+[    0.396207] io scheduler mq-deadline registered
+[    0.396318] io scheduler bfq registered
+[    0.398892] intel_idle: does not run on family 6 model 14
+[    0.399350] ACPI: Deprecated procfs I/F for AC is loaded, please retry with CONFIG_ACPI_PROCFS_POWER cleared
+[    0.399633] ACPI: AC Adapter [AC] (on-line)
+[    0.400061] input: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0
+[    0.400332] ACPI: Lid Switch [LID]
+[    0.400619] input: Sleep Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input1
+[    0.400791] ACPI: Sleep Button [SLPB]
+[    0.401114] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input2
+[    0.401264] ACPI: Power Button [PWRF]
+[    0.401788] ACPI: Video Device [VID] (multi-head: yes  rom: no  post: no)
+[    0.409499] acpi device:01: registered as cooling_device0
+[    0.409984] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input3
+[    0.426889] thermal LNXTHERM:00: registered as thermal_zone0
+[    0.426979] ACPI: Thermal Zone [THM0] (80 C)
+[    0.430823] thermal LNXTHERM:01: registered as thermal_zone1
+[    0.430911] ACPI: Thermal Zone [THM1] (79 C)
+[    0.431581] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    0.432584] serial8250: ttyS1 at I/O 0x2f8 (irq = 3, base_baud = 921600) is a NS16550A
+[    0.435092] lp: driver loaded but no devices found
+[    0.435619] Non-volatile memory driver v1.3
+[    0.436370] intel_rng: FWH not detected
+[    0.436542] Linux agpgart interface v0.103
+[    0.437371] [drm] radeon kernel modesetting enabled.
+[    0.438601] pci 0000:00:00.0: Intel 945GM Chipset
+[    0.438710] pci 0000:00:00.0: detected gtt size: 262144K total, 262144K mappable
+[    0.439377] pci 0000:00:00.0: detected 8192K stolen memory
+[    0.439668] [drm] Replacing VGA console driver
+[    0.440737] Console: switching to colour dummy device 80x25
+[    0.442550] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    0.442589] [drm] Driver supports precise vblank timestamp query.
+[    0.442636] resource sanity check: requesting [mem 0x000c0000-0x000dffff], which spans more than pnp 00:00 [mem 0x000c8000-0x000cbfff]
+[    0.442707] caller pci_map_rom+0x67/0x1d0 mapping multiple BARs
+[    0.444436] i915 0000:00:02.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=io+mem
+[    0.461521] ACPI: Deprecated procfs I/F for battery is loaded, please retry with CONFIG_ACPI_PROCFS_POWER cleared
+[    0.461609] ACPI: Battery Slot [BAT0] (battery present)
+[    0.504077] random: fast init done
+[    0.523023] [drm] RC6 disabled, disabling runtime PM support
+[    0.523306] [drm] initialized overlay support
+[    0.524868] [drm] Initialized i915 1.6.0 20180709 for 0000:00:02.0 on minor 0
+[    0.525973] usbcore: registered new interface driver udl
+[    0.540178] loop: module loaded
+[    0.550371] fbcon: inteldrmfb (fb0) is primary device
+[    0.563902] ahci 0000:00:1f.2: version 3.0
+[    0.564730] ahci 0000:00:1f.2: AHCI 0001.0100 32 slots 4 ports 1.5 Gbps 0x1 impl SATA mode
+[    0.564736] ahci 0000:00:1f.2: flags: 64bit ncq pm led clo pio slum part 
+[    0.567193] scsi host0: ahci
+[    0.567774] scsi host1: ahci
+[    0.568305] scsi host2: ahci
+[    0.568822] scsi host3: ahci
+[    0.569061] ata1: SATA max UDMA/133 abar m1024@0xee444400 port 0xee444500 irq 16
+[    0.569064] ata2: DUMMY
+[    0.569066] ata3: DUMMY
+[    0.569068] ata4: DUMMY
+[    0.569243] ata_piix 0000:00:1f.1: version 2.13
+[    0.572398] scsi host4: ata_piix
+[    0.573488] scsi host5: ata_piix
+[    0.573694] ata5: PATA max UDMA/100 cmd 0x1f0 ctl 0x3f6 bmdma 0x1810 irq 14
+[    0.573697] ata6: PATA max UDMA/100 cmd 0x170 ctl 0x376 bmdma 0x1818 irq 15
+[    0.574711] tun: Universal TUN/TAP device driver, 1.6
+[    0.575310] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+[    0.575312] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    0.575389] e1000e: Intel(R) PRO/1000 Network Driver - 3.2.6-k
+[    0.575391] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    0.575509] e1000e 0000:02:00.0: Disabling ASPM  L1
+[    0.575513] e1000e 0000:02:00.0: can't disable ASPM; OS doesn't have ASPM control
+[    0.575957] e1000e 0000:02:00.0: Interrupt Throttling Rate (ints/sec) set to dynamic conservative mode
+[    0.576270] ata6: port disabled--ignoring
+[    0.708933] e1000e 0000:02:00.0 eth0: (PCI Express:2.5GT/s:Width x1) 00:16:d3:25:19:04
+[    0.708937] e1000e 0000:02:00.0 eth0: Intel(R) PRO/1000 Network Connection
+[    0.709015] e1000e 0000:02:00.0 eth0: MAC: 2, PHY: 2, PBA No: 005302-003
+[    0.709281] PPP generic driver version 2.4.2
+[    0.709532] PPP BSD Compression module registered
+[    0.709535] PPP Deflate Compression module registered
+[    0.709538] SLIP: version 0.8.4-NET3.019-NEWTTY (dynamic channels, max=256).
+[    0.709539] CSLIP: code copyright 1989 Regents of the University of California.
+[    0.709631] iwl3945: Intel(R) PRO/Wireless 3945ABG/BG Network Connection driver for Linux, in-tree:ds
+[    0.709633] iwl3945: Copyright(c) 2003-2011 Intel Corporation
+[    0.709634] iwl3945: hw_scan is disabled
+[    0.709849] iwl3945 0000:03:00.0: can't disable ASPM; OS doesn't have ASPM control
+[    0.764699] iwl3945 0000:03:00.0: Tunable channels: 11 802.11bg, 13 802.11a channels
+[    0.764702] iwl3945 0000:03:00.0: Detected Intel Wireless WiFi Link 3945ABG
+[    0.765604] ieee80211 phy0: Selected rate control algorithm 'iwl-3945-rs'
+[    0.766548] Intel(R) Wireless WiFi driver for Linux
+[    0.766549] Copyright(c) 2003- 2015 Intel Corporation
+[    0.766791] usbcore: registered new interface driver ax88179_178a
+[    0.766834] usbcore: registered new interface driver cdc_ether
+[    0.766881] usbcore: registered new interface driver net1080
+[    0.766925] usbcore: registered new interface driver cdc_subset
+[    0.766968] usbcore: registered new interface driver zaurus
+[    0.767025] usbcore: registered new interface driver cdc_ncm
+[    0.767110] pci 0000:00:1e.0: enabling device (0005 -> 0007)
+[    0.767347] yenta_cardbus 0000:15:00.0: CardBus bridge found [17aa:201c]
+[    0.884120] ata1: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+[    0.944336] ata1.00: ACPI cmd ef/02:00:00:00:00:a0 (SET FEATURES) succeeded
+[    0.944341] ata1.00: ACPI cmd f5/00:00:00:00:00:a0 (SECURITY FREEZE LOCK) filtered out
+[    0.944345] ata1.00: ACPI cmd ef/10:03:00:00:00:a0 (SET FEATURES) filtered out
+[    0.988380] ata1.00: ATA-9: ST1000LM014-1EJ164, SM11, max UDMA/133
+[    0.988384] ata1.00: 1953525168 sectors, multi 16: LBA48 NCQ (depth 32), AA
+[    1.033020] ata1.00: ACPI cmd ef/02:00:00:00:00:a0 (SET FEATURES) succeeded
+[    1.033025] ata1.00: ACPI cmd f5/00:00:00:00:00:a0 (SECURITY FREEZE LOCK) filtered out
+[    1.033029] ata1.00: ACPI cmd ef/10:03:00:00:00:a0 (SET FEATURES) filtered out
+[    1.077149] ata1.00: configured for UDMA/133
+[    1.267259] Console: switching to colour frame buffer device 102x42
+[    1.394187] i915 0000:00:02.0: fb0: inteldrmfb frame buffer device
+[    1.397433] scsi 0:0:0:0: Direct-Access     ATA      ST1000LM014-1EJ1 SM11 PQ: 0 ANSI: 5
+[    1.401261] sd 0:0:0:0: [sda] 1953525168 512-byte logical blocks: (1.00 TB/932 GiB)
+[    1.401281] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    1.403833] sd 0:0:0:0: [sda] 4096-byte physical blocks
+[    1.409035] sd 0:0:0:0: [sda] Write Protect is off
+[    1.411518] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    1.411671] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    1.421588]  sda: sda1 sda2 sda3 sda4
+[    1.426332] sd 0:0:0:0: [sda] Attached SCSI disk
+[    1.565193] yenta_cardbus 0000:15:00.0: ISA IRQ mask 0x0cb8, PCI irq 16
+[    1.567787] yenta_cardbus 0000:15:00.0: Socket status: 30000006
+[    1.570370] yenta_cardbus 0000:15:00.0: pcmcia: parent PCI bridge window: [io  0x9000-0xcfff]
+[    1.572941] yenta_cardbus 0000:15:00.0: pcmcia: parent PCI bridge window: [mem 0xe4300000-0xe7ffffff]
+[    1.575427] pcmcia_socket pcmcia_socket0: cs: memory probe 0xe4300000-0xe7ffffff:
+[    1.578816]  excluding 0xe4300000-0xe46cffff
+[    1.581354] yenta_cardbus 0000:15:00.0: pcmcia: parent PCI bridge window: [mem 0xe0000000-0xe3ffffff 64bit pref]
+[    1.583985] pcmcia_socket pcmcia_socket0: cs: memory probe 0xe0000000-0xe3ffffff:
+[    1.587608]  excluding 0xe0000000-0xe3ffffff
+[    1.591268] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.593960] ehci-pci: EHCI PCI platform driver
+[    1.597120] ehci-pci 0000:00:1d.7: EHCI Host Controller
+[    1.600101] ehci-pci 0000:00:1d.7: new USB bus registered, assigned bus number 1
+[    1.602918] ehci-pci 0000:00:1d.7: debug port 1
+[    1.609666] ehci-pci 0000:00:1d.7: cache line size of 64 is not supported
+[    1.609716] ehci-pci 0000:00:1d.7: irq 19, io mem 0xee444000
+[    1.628126] ehci-pci 0000:00:1d.7: USB 2.0 started, EHCI 1.00
+[    1.631496] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 4.18
+[    1.634463] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.637394] usb usb1: Product: EHCI Host Controller
+[    1.640266] usb usb1: Manufacturer: Linux 4.18.0-rc4-next-20180710 ehci_hcd
+[    1.643133] usb usb1: SerialNumber: 0000:00:1d.7
+[    1.646706] hub 1-0:1.0: USB hub found
+[    1.649649] hub 1-0:1.0: 8 ports detected
+[    1.654415] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.657199] ohci-pci: OHCI PCI platform driver
+[    1.659984] uhci_hcd: USB Universal Host Controller Interface driver
+[    1.663285] uhci_hcd 0000:00:1d.0: UHCI Host Controller
+[    1.666313] uhci_hcd 0000:00:1d.0: new USB bus registered, assigned bus number 2
+[    1.669135] uhci_hcd 0000:00:1d.0: detected 2 ports
+[    1.671853] uhci_hcd 0000:00:1d.0: irq 16, io base 0x00001820
+[    1.675318] usb usb2: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 4.18
+[    1.678088] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.680859] usb usb2: Product: UHCI Host Controller
+[    1.683586] usb usb2: Manufacturer: Linux 4.18.0-rc4-next-20180710 uhci_hcd
+[    1.686347] usb usb2: SerialNumber: 0000:00:1d.0
+[    1.689607] hub 2-0:1.0: USB hub found
+[    1.692363] hub 2-0:1.0: 2 ports detected
+[    1.696075] uhci_hcd 0000:00:1d.1: UHCI Host Controller
+[    1.698926] uhci_hcd 0000:00:1d.1: new USB bus registered, assigned bus number 3
+[    1.701627] uhci_hcd 0000:00:1d.1: detected 2 ports
+[    1.704281] uhci_hcd 0000:00:1d.1: irq 17, io base 0x00001840
+[    1.707273] usb usb3: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 4.18
+[    1.709944] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.712494] usb usb3: Product: UHCI Host Controller
+[    1.714919] usb usb3: Manufacturer: Linux 4.18.0-rc4-next-20180710 uhci_hcd
+[    1.717378] usb usb3: SerialNumber: 0000:00:1d.1
+[    1.720410] hub 3-0:1.0: USB hub found
+[    1.722865] hub 3-0:1.0: 2 ports detected
+[    1.726420] uhci_hcd 0000:00:1d.2: UHCI Host Controller
+[    1.729041] uhci_hcd 0000:00:1d.2: new USB bus registered, assigned bus number 4
+[    1.731441] uhci_hcd 0000:00:1d.2: detected 2 ports
+[    1.733882] uhci_hcd 0000:00:1d.2: irq 18, io base 0x00001860
+[    1.736723] usb usb4: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 4.18
+[    1.739157] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.741593] usb usb4: Product: UHCI Host Controller
+[    1.744290] usb usb4: Manufacturer: Linux 4.18.0-rc4-next-20180710 uhci_hcd
+[    1.746689] usb usb4: SerialNumber: 0000:00:1d.2
+[    1.749694] hub 4-0:1.0: USB hub found
+[    1.752176] hub 4-0:1.0: 2 ports detected
+[    1.755671] uhci_hcd 0000:00:1d.3: UHCI Host Controller
+[    1.758331] uhci_hcd 0000:00:1d.3: new USB bus registered, assigned bus number 5
+[    1.760755] uhci_hcd 0000:00:1d.3: detected 2 ports
+[    1.763131] uhci_hcd 0000:00:1d.3: irq 19, io base 0x00001880
+[    1.765909] usb usb5: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 4.18
+[    1.768354] usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.770747] usb usb5: Product: UHCI Host Controller
+[    1.773170] usb usb5: Manufacturer: Linux 4.18.0-rc4-next-20180710 uhci_hcd
+[    1.775559] usb usb5: SerialNumber: 0000:00:1d.3
+[    1.778522] hub 5-0:1.0: USB hub found
+[    1.780973] hub 5-0:1.0: 2 ports detected
+[    1.784203] usbcore: registered new interface driver cdc_acm
+[    1.786467] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    1.788901] usbcore: registered new interface driver usblp
+[    1.791361] usbcore: registered new interface driver usb-storage
+[    1.793761] usbcore: registered new interface driver ums-sddr09
+[    1.796232] usbcore: registered new interface driver usbserial_generic
+[    1.798566] usbserial: USB Serial support registered for generic
+[    1.800945] usbcore: registered new interface driver ch341
+[    1.803236] usbserial: USB Serial support registered for ch341-uart
+[    1.805575] usbcore: registered new interface driver ftdi_sio
+[    1.807863] usbserial: USB Serial support registered for FTDI USB Serial Device
+[    1.810296] usbcore: registered new interface driver option
+[    1.812639] usbserial: USB Serial support registered for GSM modem (1-port)
+[    1.815120] usbcore: registered new interface driver pl2303
+[    1.817551] usbserial: USB Serial support registered for pl2303
+[    1.820018] usbcore: registered new interface driver ti_usb_3410_5052
+[    1.822467] usbserial: USB Serial support registered for TI USB 3410 1 port adapter
+[    1.825070] usbserial: USB Serial support registered for TI USB 5052 2 port adapter
+[    1.827507] ftdi_elan: driver ftdi-elan
+[    1.829944] usbcore: registered new interface driver ftdi-elan
+[    1.832532] i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+[    1.845709] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    1.848187] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    1.851403] mousedev: PS/2 mouse device common for all mice
+[    1.854967] input: PC Speaker as /devices/platform/pcspkr/input/input4
+[    1.858113] rtc_cmos 00:02: RTC can wake from S4
+[    1.861073] rtc_cmos 00:02: registered as rtc0
+[    1.863634] rtc_cmos 00:02: alarms up to one month, y3k, 114 bytes nvram, hpet irqs
+[    1.866335] usbcore: registered new interface driver uvcvideo
+[    1.868849] USB Video Class driver (1.1.1)
+[    1.871274] gspca_main: v2.14.0 registered
+[    1.873744] usbcore: registered new interface driver sq930x
+[    1.877308] device-mapper: ioctl: 4.39.0-ioctl (2018-04-03) initialised: dm-devel@redhat.com
+[    1.879833] Bluetooth: HCI UART driver ver 2.3
+[    1.882347] Bluetooth: HCI UART protocol H4 registered
+[    1.884824] Bluetooth: HCI UART protocol BCSP registered
+[    1.887404] usbcore: registered new interface driver btusb
+[    1.890010] sdhci: Secure Digital Host Controller Interface driver
+[    1.892479] sdhci: Copyright(c) Pierre Ossman
+[    1.894934] sdhci-pci 0000:15:00.2: SDHCI controller found [1180:0822] (rev 18)
+[    1.897807] sdhci-pci 0000:15:00.2: Will use DMA mode even though HW doesn't fully claim to support it.
+[    1.900933] mmc0 bounce up to 128 segments into one, max segment size 65536 bytes
+[    1.903640] sdhci-pci 0000:15:00.2: Will use DMA mode even though HW doesn't fully claim to support it.
+[    1.906994] mmc0: SDHCI controller on PCI [0000:15:00.2] using DMA
+[    1.909868] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input5
+[    1.909995] hidraw: raw HID events driver (C) Jiri Kosina
+[    1.917013] usbcore: registered new interface driver usbhid
+[    1.919847] usbhid: USB HID core driver
+[    1.922872] sdhci-pci 0000:15:00.2: Will use DMA mode even though HW doesn't fully claim to support it.
+[    1.925073] thinkpad_acpi: ThinkPad ACPI Extras v0.26
+[    1.928721] thinkpad_acpi: http://ibm-acpi.sf.net/
+[    1.931541] thinkpad_acpi: ThinkPad BIOS 7BETD8WW (2.19 ), EC 7BHT40WW-1.13
+[    1.934411] thinkpad_acpi: Lenovo ThinkPad X60, model 17097HU
+[    1.942905] thinkpad_acpi: ACPI backlight control delay disabled
+[    1.946201] thinkpad_acpi: radio switch found; radios are enabled
+[    1.949099] thinkpad_acpi: This ThinkPad has standard ACPI backlight brightness control, supported by the ACPI video driver
+[    1.954903] thinkpad_acpi: Disabling thinkpad-acpi brightness events by default...
+[    1.969500] thinkpad_acpi: rfkill switch tpacpi_bluetooth_sw: radio is blocked
+[    1.975285] thinkpad_acpi: warning: userspace override of important firmware LEDs is enabled
+[    1.983687] thinkpad_acpi: Standard ACPI backlight interface available, not loading native one
+[    1.986905] thinkpad_acpi: volume: disabled as there is no ALSA support in this kernel
+[    1.990533] thinkpad_acpi: battery 1 registered (start 0, stop 0)
+[    1.990543] battery: new extension: ThinkPad Battery Extension
+[    1.996925] input: ThinkPad Extra Buttons as /devices/platform/thinkpad_acpi/input/input8
+[    2.000614] gnss: GNSS driver registered with major 245
+[    2.008263] snd_hda_intel 0000:00:1b.0: probe_mask set to 0x1 for device 17aa:2010
+[    2.012209] usbcore: registered new interface driver snd-usb-audio
+[    2.017196] NET: Registered protocol family 17
+[    2.020850] Bluetooth: RFCOMM TTY layer initialized
+[    2.023939] Bluetooth: RFCOMM socket layer initialized
+[    2.027071] Bluetooth: RFCOMM ver 1.11
+[    2.030169] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    2.033263] Bluetooth: BNEP filters: protocol multicast
+[    2.036325] Bluetooth: BNEP socket layer initialized
+[    2.039336] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    2.042362] Bluetooth: HIDP socket layer initialized
+[    2.045695] microcode: sig=0x6e8, pf=0x20, revision=0x39
+[    2.048961] microcode: Microcode Update Driver: v2.2.
+[    2.048969] Using IPI No-Shortcut mode
+[    2.055469] Loading compiled-in X.509 certificates
+[    2.059411] Key type encrypted registered
+[    2.067494] snd_hda_codec_analog hdaudioC0D0: autoconfig for AD1981: line_outs=1 (0x5/0x0/0x0/0x0/0x0) type:speaker
+[    2.073152] snd_hda_codec_analog hdaudioC0D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[    2.076029] snd_hda_codec_analog hdaudioC0D0:    hp_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[    2.078795] snd_hda_codec_analog hdaudioC0D0:    mono: mono_out=0x0
+[    2.081567] snd_hda_codec_analog hdaudioC0D0:    inputs:
+[    2.084278] snd_hda_codec_analog hdaudioC0D0:      Mic=0x8
+[    2.086931] snd_hda_codec_analog hdaudioC0D0:      CD=0x19
+[    2.099663] rtc_cmos 00:02: setting system clock to 2018-07-16 07:46:52 UTC (1531727212)
+[    2.106123] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    2.111572] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    2.114640] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    2.117344] cfg80211: failed to load regulatory.db
+[    2.151397] PM: Image not found (code -22)
+[    2.151436] ALSA device list:
+[    2.155874]   #0: HDA Intel at 0xee240000 irq 17
+[    2.272083] usb 5-2: new full-speed USB device number 2 using uhci_hcd
+[    2.473146] usb 5-2: New USB device found, idVendor=0483, idProduct=2016, bcdDevice= 0.01
+[    2.477733] usb 5-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    2.482258] usb 5-2: Product: Biometric Coprocessor
+[    2.486642] usb 5-2: Manufacturer: STMicroelectronics
+[    2.591253] psmouse serio1: trackpoint: IBM TrackPoint firmware: 0x0e, buttons: 3/3
+[    2.613809] input: TPPS/2 IBM TrackPoint as /devices/platform/i8042/serio1/input/input7
+[    2.623029] md: Waiting for all devices to be available before autodetect
+[    2.626355] md: If you don't use raid, use raid=noautodetect
+[    2.630632] md: Autodetecting RAID arrays.
+[    2.633990] md: autorun ...
+[    2.637322] md: ... autorun DONE.
+[    2.655888] EXT4-fs (sda4): mounted filesystem with ordered data mode. Opts: (null)
+[    2.659441] VFS: Mounted root (ext4 filesystem) readonly on device 8:4.
+[    2.663470] devtmpfs: mounted
+[    2.666673] Freeing unused kernel memory: 600K
+[    2.684441] Write protecting the kernel text: 12192k
+[    2.687990] Write protecting the kernel read-only data: 4792k
+[    2.691439] NX-protecting the kernel data: 6240k
+[    2.695545] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    2.699064] rodata_test: all tests were successful
+[    2.988190] random: systemd: uninitialized urandom read (16 bytes read)
+[    2.994623] systemd[1]: systemd 215 running in system mode. (+PAM +AUDIT +SELINUX +IMA +SYSVINIT +LIBCRYPTSETUP +GCRYPT +ACL +XZ -SECCOMP -APPARMOR)
+[    3.020375] systemd[1]: Detected architecture 'x86'.
+[    3.199735] systemd[1]: Failed to insert module 'ipv6'
+[    3.209530] systemd[1]: Set hostname to <amd>.
+[    3.265352] random: systemd-sysv-ge: uninitialized urandom read (16 bytes read)
+[    3.424082] usb 5-1: new full-speed USB device number 3 using uhci_hcd
+[    3.561717] random: systemd-sysv-ge: uninitialized urandom read (16 bytes read)
+[    3.617133] usb 5-1: New USB device found, idVendor=0a5c, idProduct=2110, bcdDevice= 1.00
+[    3.622019] usb 5-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    3.626882] usb 5-1: Product: BCM2045B
+[    3.631692] usb 5-1: Manufacturer: Broadcom Corp
+[    3.781665] systemd[1]: Binding to IPv6 address not available since kernel does not support IPv6.
+[    3.785504] systemd[1]: [/lib/systemd/system/gpsd.socket:6] Failed to parse address value, ignoring: [::1]:2947
+[    3.795048] systemd[1]: Starting Forward Password Requests to Wall Directory Watch.
+[    3.798481] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    3.801396] systemd[1]: Starting Remote File Systems (Pre).
+[    3.810320] systemd[1]: Reached target Remote File Systems (Pre).
+[    4.455339] systemd-udevd[2314]: starting version 215
+[    5.420847] random: crng init done
+[    5.424614] random: 7 urandom warning(s) missed due to ratelimiting
+[    5.691490] EXT4-fs (sda4): re-mounted. Opts: errors=remount-ro
+[    6.155683] e1000e 0000:02:00.0 eth1: renamed from eth0
+[    6.176234] systemd-udevd[2375]: renamed network interface eth0 to eth1
+[    6.608565] usb 5-1: USB disconnect, device number 3
+[    7.813162] Adding 2097148k swap on /dev/sda1.  Priority:-2 extents:1 across:2097148k 
+[    7.946083] EXT4-fs (sda2): mounted filesystem with ordered data mode. Opts: errors=remount-ro
+[    8.053952] systemd-journald[1835]: Received request to flush runtime journal from PID 1
+[   12.488430] NFSD: Using /var/lib/nfs/v4recovery as the NFSv4 state recovery directory
+[   12.490867] NFSD: starting 45-second grace period (net f0000098)
+[   17.082563] iwl3945 0000:03:00.0: loaded firmware version 15.32.2.9
+[   20.378984] wlan0: authenticate with 00:00:00:00:00:01
+[   20.382211] wlan0: send auth to 00:00:00:00:00:01 (try 1/3)
+[   20.384291] wlan0: authenticated
+[   20.388292] wlan0: associate with 00:00:00:00:00:01 (try 1/3)
+[   20.391194] wlan0: RX AssocResp from 00:00:00:00:00:01 (capab=0x401 status=0 aid=1)
+[   20.395426] wlan0: associated

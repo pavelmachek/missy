@@ -1,0 +1,287 @@
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+[    0.000000] Linux version 4.18.11-00427-g35cf56cbf9cb-dirty (purism@pureos) (gcc version 8.3.0 (Debian 8.3.0-6)) #42 SMP PREEMPT Tue Aug 27 21:46:25 CEST 2019
+[    0.000000] Machine model: Purism Librem 5 devkit
+[    0.000000] cma: early_cma(256M)
+[    0.000000] efi: Getting EFI parameters from FDT:
+[    0.000000] efi: UEFI not found.
+[    0.000000] cma: dma_contiguous_reserve(limit 100000000)
+[    0.000000] cma: dma_contiguous_reserve: reserving 256 MiB for global area
+[    0.000000] cma: cma_declare_contiguous(size 0x0000000010000000, base 0x0000000000000000, limit 0x0000000100000000 alignment 0x0000000000000000)
+[    0.000000] cma: Reserved 256 MiB at 0x00000000eec00000
+[    0.000000] On node 0 totalpages: 786432
+[    0.000000]   DMA32 zone: 12288 pages used for memmap
+[    0.000000]   DMA32 zone: 0 pages reserved
+[    0.000000]   DMA32 zone: 786432 pages, LIFO batch:31
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.1
+[    0.000000] random: get_random_bytes called from start_kernel+0xa0/0x478 with crng_init=0
+[    0.000000] percpu: Embedded 26 pages/cpu @(____ptrval____) s69016 r8192 d29288 u106496
+[    0.000000] pcpu-alloc: s69016 r8192 d29288 u106496 alloc=26*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: enabling workaround for ARM erratum 845719
+[    0.000000] Speculative Store Bypass Disable mitigation not required
+[    0.000000] CPU features: detected: Kernel page table isolation (KPTI)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 774144
+[    0.000000] Kernel command line:  console=ttymxc0,115200 root=/dev/mmcblk0p2 cma=256M
+[    0.000000] log_buf_len individual max cpu contribution: 4096 bytes
+[    0.000000] log_buf_len total cpu_extra contributions: 12288 bytes
+[    0.000000] log_buf_len min size: 16384 bytes
+[    0.000000] log_buf_len: 32768 bytes
+[    0.000000] early log buf free: 14176(86%)
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
+[    0.000000] Memory: 2801452K/3145728K available (9852K kernel code, 1096K rwdata, 5556K rodata, 1280K init, 535K bss, 82132K reserved, 262144K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] ftrace: allocating 35604 entries in 140 pages
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=4.
+[    0.000000] 	Tasks RCU enabled.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.000000] kmemleak: Kernel memory leak detector disabled
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GICv3: GIC: Using split EOI/Deactivate mode
+[    0.000000] GICv3: Distributor has no Range Selector support
+[    0.000000] GICv3: no VLPI support, no direct LPI support
+[    0.000000] ITS: No ITS available, not enabling LPIs
+[    0.000000] GICv3: CPU0: found redistributor 0 region 0:0x0000000038880000
+[    0.000000] i.MX8MQ clock driver init done
+[    0.000000] arch_timer: cp15 timer(s) running at 8.33MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x1ec0311ec, max_idle_ns: 440795202152 ns
+[    0.000003] sched_clock: 56 bits at 8MHz, resolution 120ns, wraps every 2199023255541ns
+[    0.000465] Console: colour dummy device 80x25
+[    0.000492] kmemleak: Early log buffer exceeded (3631), please increase DEBUG_KMEMLEAK_EARLY_LOG_SIZE
+[    0.000918] Calibrating delay loop (skipped), value calculated using timer frequency.. 16.66 BogoMIPS (lpj=33333)
+[    0.000929] pid_max: default: 32768 minimum: 301
+[    0.001005] Security Framework initialized
+[    0.001066] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.001083] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.023998] ASID allocator initialised with 32768 entries
+[    0.031995] Hierarchical SRCU implementation.
+[    0.040304] Cannot find MU entry in device tree
+[    0.040386] CPU identified as i.MX8MQ, silicon rev 2.0
+[    0.040478] EFI services will not be available.
+[    0.048029] smp: Bringing up secondary CPUs ...
+[    0.080195] Detected VIPT I-cache on CPU1
+[    0.080225] GICv3: CPU1: found redistributor 1 region 0:0x00000000388a0000
+[    0.080259] CPU1: Booted secondary processor 0x0000000001 [0x410fd034]
+[    0.112247] Detected VIPT I-cache on CPU2
+[    0.112270] GICv3: CPU2: found redistributor 2 region 0:0x00000000388c0000
+[    0.112296] CPU2: Booted secondary processor 0x0000000002 [0x410fd034]
+[    0.144317] Detected VIPT I-cache on CPU3
+[    0.144340] GICv3: CPU3: found redistributor 3 region 0:0x00000000388e0000
+[    0.144367] CPU3: Booted secondary processor 0x0000000003 [0x410fd034]
+[    0.144575] smp: Brought up 1 node, 4 CPUs
+[    0.144602] SMP: Total of 4 processors activated.
+[    0.144609] CPU features: detected: GIC system register CPU interface
+[    0.144616] CPU features: detected: 32-bit EL0 Support
+[    0.164515] CPU: All CPU(s) started at EL2
+[    0.164684] alternatives: patching kernel code
+[    0.166358] devtmpfs: initialized
+[    0.173583] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.173597] futex hash table entries: 1024 (order: 4, 65536 bytes)
+[    0.180856] pinctrl core: initialized pinctrl subsystem
+[    0.182218] DMI not present or invalid.
+[    0.182487] NET: Registered protocol family 16
+[    0.183057] audit: initializing netlink subsys (disabled)
+[    0.183389] audit: type=2000 audit(0.180:1): state=initialized audit_enabled=0 res=1
+[    0.185747] cpuidle: using governor menu
+[    0.185926] vdso: 2 pages (1 code @ (____ptrval____), 1 data @ (____ptrval____))
+[    0.185940] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.186371] cma: cma_alloc(cma (____ptrval____), count 64, align 6)
+[    0.193237] cma: cma_alloc(): returned (____ptrval____)
+[    0.193308] DMA: preallocated 256 KiB pool for atomic allocations
+[    0.193566] Serial: AMBA PL011 UART driver
+[    0.201910] imx8mq-pinctrl 30330000.iomuxc: initialized IMX pinctrl driver
+[    0.228239] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.229334] cryptd: max_cpu_qlen set to 1000
+[    0.236931] ACPI: Interpreter disabled.
+[    0.238053] mxs-dma 33000000.dma-apbh: initialized
+[    0.239484] vgaarb: loaded
+[    0.239917] SCSI subsystem initialized
+[    0.240130] libata version 3.00 loaded.
+[    0.245623] bd71837 0-004b: Device ID=0xA2
+[    0.245632] bd71837 0-004b: gpio_intr = 483 
+[    0.245641] bd71837 0-004b: chip_irq=56 
+[    0.265212] bd71837-pmic bd71837-pmic: regulator register name 'buck1'
+[    0.277120] bd71837-pmic bd71837-pmic: Buck[1] Set Ramp = 1250
+[    0.293415] bd71837-pmic bd71837-pmic: regulator register name 'buck2'
+[    0.305174] bd71837-pmic bd71837-pmic: Buck[2] Set Ramp = 1250
+[    0.321445] bd71837-pmic bd71837-pmic: regulator register name 'buck3'
+[    0.341485] bd71837-pmic bd71837-pmic: regulator register name 'buck4'
+[    0.361527] bd71837-pmic bd71837-pmic: regulator register name 'buck5'
+[    0.381567] bd71837-pmic bd71837-pmic: regulator register name 'buck6'
+[    0.401604] bd71837-pmic bd71837-pmic: regulator register name 'buck7'
+[    0.421660] bd71837-pmic bd71837-pmic: regulator register name 'buck8'
+[    0.441687] bd71837-pmic bd71837-pmic: regulator register name 'ldo1'
+[    0.461725] bd71837-pmic bd71837-pmic: regulator register name 'ldo2'
+[    0.469646] bd71837-pmic bd71837-pmic: regulator register name 'ldo3'
+[    0.489782] bd71837-pmic bd71837-pmic: regulator register name 'ldo4'
+[    0.509819] bd71837-pmic bd71837-pmic: regulator register name 'ldo5'
+[    0.513589] random: fast init done
+[    0.525851] bd71837-pmic bd71837-pmic: regulator register name 'ldo6'
+[    0.541900] bd71837-pmic bd71837-pmic: regulator register name 'ldo7'
+[    0.557932] bd71837-pmic bd71837-pmic: Buck1: DVS Run-Idle-Susp[900000 - 850000 - 800000].
+[    0.569700] bd71837-pmic bd71837-pmic: Buck2: DVS Run-Idle-Susp[1000000 - 900000 - 0].
+[    0.577715] bd71837-pmic bd71837-pmic: Buck3: DVS Run-Idle-Susp[1000000 - 0 - 0].
+[    0.581723] bd71837-pmic bd71837-pmic: Buck4: DVS Run-Idle-Susp[1000000 - 0 - 0].
+[    0.598318] i2c i2c-0: IMX I2C adapter registered
+[    0.598329] i2c i2c-0: can't use DMA, using PIO instead.
+[    0.599577] i2c i2c-2: IMX I2C adapter registered
+[    0.599588] i2c i2c-2: can't use DMA, using PIO instead.
+[    0.599814] media: Linux media interface: v0.10
+[    0.599904] videodev: Linux video capture interface: v2.00
+[    0.600142] pps_core: LinuxPPS API ver. 1 registered
+[    0.600148] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.600220] PTP clock support registered
+[    0.602399] clocksource: Switched to clocksource arch_sys_counter
+[    0.661985] pnp: PnP ACPI: disabled
+[    0.679608] NET: Registered protocol family 2
+[    0.680015] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes)
+[    0.680074] TCP established hash table entries: 32768 (order: 6, 262144 bytes)
+[    0.680318] TCP bind hash table entries: 32768 (order: 7, 524288 bytes)
+[    0.680766] TCP: Hash tables configured (established 32768 bind 32768)
+[    0.680841] UDP hash table entries: 2048 (order: 4, 65536 bytes)
+[    0.680931] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes)
+[    0.681105] NET: Registered protocol family 1
+[    0.682063] RPC: Registered named UNIX socket transport module.
+[    0.682070] RPC: Registered udp transport module.
+[    0.682075] RPC: Registered tcp transport module.
+[    0.682080] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.682732] PCI: CLS 0 bytes, default 64
+[    0.682866] Unpacking initramfs...
+[    1.042550] Freeing initrd memory: 7592K
+[    1.048144] Initialise system trusted keyrings
+[    1.048385] workingset: timestamp_bits=46 max_order=20 bucket_order=0
+[    1.059634] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.076210] Key type asymmetric registered
+[    1.076221] Asymmetric key parser 'x509' registered
+[    1.076467] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+[    1.076476] io scheduler noop registered
+[    1.076763] io scheduler cfq registered (default)
+[    1.083116] Bus freq driver module loaded
+[    1.092327] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    1.095567] 30860000.serial: ttymxc0 at MMIO 0x30860000 (irq = 38, base_baud = 1562500) is a IMX
+[    1.971949] console [ttymxc0] enabled
+[    1.976335] 30880000.serial: ttymxc2 at MMIO 0x30880000 (irq = 39, base_baud = 1562500) is a IMX
+[    1.985910] 30a60000.serial: ttymxc3 at MMIO 0x30a60000 (irq = 44, base_baud = 1562500) is a IMX
+[    1.999858] etnaviv etnaviv: bound 38000000.gpu (ops gpu_ops)
+[    2.005630] etnaviv-gpu 38000000.gpu: model: GC7000, revision: 6214
+[    2.012018] cma: cma_alloc(cma (____ptrval____), count 1, align 0)
+[    2.012587] cma: cma_alloc(): returned (____ptrval____)
+[    2.012599] cma: cma_alloc(cma (____ptrval____), count 1, align 0)
+[    2.012632] cma: cma_alloc(): returned (____ptrval____)
+[    2.012640] cma: cma_alloc(cma (____ptrval____), count 1, align 0)
+[    2.012672] cma: cma_alloc(): returned (____ptrval____)
+[    2.012691] cma: cma_alloc(cma (____ptrval____), count 64, align 6)
+[    2.012802] cma: cma_alloc(): returned (____ptrval____)
+[    2.012881] cma: cma_alloc(cma (____ptrval____), count 1, align 0)
+[    2.012949] cma: cma_alloc(): returned (____ptrval____)
+[    2.013582] [drm] Initialized etnaviv 1.2.0 20151214 for etnaviv on minor 0
+[    2.021194] cma: cma_alloc(cma (____ptrval____), count 2, align 1)
+[    2.021267] cma: cma_alloc(): returned (____ptrval____)
+[    2.021279] cma: cma_alloc(cma (____ptrval____), count 60, align 6)
+[    2.021328] cma: cma_alloc(): returned (____ptrval____)
+[    2.021393] cma: cma_alloc(cma (____ptrval____), count 2, align 1)
+[    2.021441] cma: cma_alloc(): returned (____ptrval____)
+[    2.021451] cma: cma_alloc(cma (____ptrval____), count 60, align 6)
+[    2.021641] cma: cma_alloc(): returned (____ptrval____)
+[    2.021861] dcss-core 32e00000.dcss: Direct firmware load for dcss.fw failed with error -2
+[    2.030254] dcss-core 32e00000.dcss: Falling back to syfs fallback for: dcss.fw
+[    2.044295] loop: module loaded
+[    2.050175] spi_imx 30820000.ecspi: can't get the TX DMA channel, error -19!
+[    2.050181] spi_imx 30820000.ecspi: dma setup error -19, use pio
+[    2.056475] spi_imx 30820000.ecspi: registered master spi0
+[    2.056703] spi spi0.0: spi_imx_setup: mode 0, 8 bpw, 20000000 hz
+[    2.056716] spi spi0.0: setup mode 0, 8 bits/w, 20000000 Hz max --> 0
+[    2.056880] spi_imx 30820000.ecspi: registered child spi0.0
+[    2.056889] spi_imx 30820000.ecspi: probed
+[    2.061870] libphy: Fixed MDIO Bus: probed
+[    2.068509] Atheros(R) L2 Ethernet Driver - version 2.2.3
+[    2.073926] Copyright (c) 2007 Atheros Corporation.
+[    2.080449] pps pps0: new PPS source ptp0
+[    2.084491] cma: cma_alloc(cma (____ptrval____), count 16, align 4)
+[    2.085040] cma: cma_alloc(): returned (____ptrval____)
+[    2.085077] cma: cma_alloc(cma (____ptrval____), count 16, align 4)
+[    2.085149] cma: cma_alloc(): returned (____ptrval____)
+[    2.085176] cma: cma_alloc(cma (____ptrval____), count 16, align 4)
+[    2.085236] cma: cma_alloc(): returned (____ptrval____)
+[    2.085266] cma: cma_alloc(cma (____ptrval____), count 24, align 5)
+[    2.085358] cma: cma_alloc(): returned (____ptrval____)
+[    2.086621] libphy: fec_enet_mii_bus: probed
+[    2.099903] fec 30be0000.ethernet eth0: registered PHC device 0
+[    2.108017] mousedev: PS/2 mouse device common for all mice
+[    2.115386] snvs_rtc 30370000.snvs:snvs-rtc-lp: rtc core: registered 30370000.snvs:snvs-rtc-lp as rtc0
+[    2.124948] i2c /dev entries driver
+[    2.129725] mx6s-csi 30a90000.csi1_bridge: initialising
+[    2.129771] mx6s-csi 30a90000.csi1_bridge: no csi-mux-mipi property found
+[    2.131648] mxc-mipi-csi2_yav 30a70000.mipi_csi1: mipi_csi2_probe
+[    2.137844] mxc-mipi-csi2_yav: probe of 30a70000.mipi_csi1 failed with error -22
+[    2.147483] imx2-wdt 30280000.wdog: timeout 60 sec (nowayout=0)
+[    2.155475] sdhci: Secure Digital Host Controller Interface driver
+[    2.161670] sdhci: Copyright(c) Pierre Ossman
+[    2.166356] sdhci-pltfm: SDHCI platform and OF driver helper
+[    2.172979] cma: cma_alloc(cma (____ptrval____), count 1, align 0)
+[    2.173331] cma: cma_alloc(): returned (____ptrval____)
+[    2.206461] mmc0: SDHCI controller on 30b40000.usdhc [30b40000.usdhc] using ADMA
+[    2.215932] cma: cma_alloc(cma (____ptrval____), count 1, align 0)
+[    2.216093] cma: cma_alloc(): returned (____ptrval____)
+[    2.249016] mmc1: SDHCI controller on 30b50000.usdhc [30b50000.usdhc] using ADMA
+[    2.262150] ledtrig-cpu: registered to indicate activity on CPUs
+[    2.268778] caam 30900000.caam: can't identify CAAM ipg clk: -2
+[    2.274847] caam: probe of 30900000.caam failed with error -2
+[    2.282934] NET: Registered protocol family 26
+[    2.285005] mmc0: new HS400 MMC card at address 0001
+[    2.287498] NET: Registered protocol family 17
+[    2.292817] mmcblk0: mmc0:0001 M52532 28.5 GiB 
+[    2.297069] 9pnet: Installing 9P2000 support
+[    2.299264] mmc1: new high speed SDIO card at address fffd
+[    2.301608] mmcblk0boot0: mmc0:0001 M52532 partition 1 4.00 MiB
+[    2.305806] Key type dns_resolver registered
+[    2.311381] mmcblk0boot1: mmc0:0001 M52532 partition 2 4.00 MiB
+[    2.318257] registered taskstats version 1
+[    2.321820] mmcblk0rpmb: mmc0:0001 M52532 partition 3 4.00 MiB, chardev (243:0)
+[    2.327405] Loading compiled-in X.509 certificates
+[    2.347924] cpu cpu0: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 1500000000, volt: 1000000, enabled: 1. New: freq: 1500000000, volt: 1000000, enabled: 1
+[    2.352604]  mmcblk0: p1 p2
+[    2.363074] cpu cpu0: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 1000000000, volt: 900000, enabled: 1. New: freq: 1000000000, volt: 900000, enabled: 1
+[    2.363204] failed to disable 800MHz OPP!
+[    2.385180] failed to disable 1.3GHz OPP!
+[    2.389254] Configuring consumer grade
+[    2.394507] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    2.401901] snvs_rtc 30370000.snvs:snvs-rtc-lp: setting system clock to 1970-01-01 00:00:00 UTC (0)
+[    2.411186] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    2.434079] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    2.440842] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    2.449633] platform regulatory.0: Falling back to syfs fallback for: regulatory.db
+[    2.460038] Freeing unused kernel memory: 1280K
+[    2.725415] dcss-core 32e00000.dcss: hdr10: DCSS FW load failed.
+[    2.775669] cfg80211: failed to load regulatory.db
+[    2.962067] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+[    3.292388] systemd[1]: System time before build time, advancing clock.
+[    3.317923] systemd[1]: systemd 241 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+[    3.339862] systemd[1]: Detected architecture arm64.
+[    3.370836] systemd[1]: Set hostname to <pureos>.
+[    3.521592] random: lvmconfig: uninitialized urandom read (4 bytes read)
+[    3.559492] systemd[1]: File /lib/systemd/system/systemd-journald.service:12 configures an IP firewall (IPAddressDeny=any), but the local system does not support BPF/cgroup based firewalling.
+[    3.576691] systemd[1]: Proceeding WITHOUT firewalling in effect! (This warning is only shown for the first loaded unit using IP firewalling.)
+[    3.785356] systemd[1]: Binding to IPv6 address not available since kernel does not support IPv6.
+[    3.799029] random: systemd: uninitialized urandom read (16 bytes read)
+[    3.810262] random: systemd: uninitialized urandom read (16 bytes read)
+[    3.821057] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[    3.842884] systemd[1]: Listening on udev Control Socket.
+[    3.862975] systemd[1]: Listening on Network Service Netlink Socket.
+[    3.882761] systemd[1]: Listening on Journal Socket (/dev/log).
+[    4.600099] EXT4-fs (mmcblk0p2): re-mounted. Opts: errors=remount-ro
+[    4.875421] systemd-journald[1275]: Received request to flush runtime journal from PID 1
+[    4.886190] systemd-journald[1275]: File /var/log/journal/a10eb4ab9eba403abb076bbd4f865a4b/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[    5.403146] Atheros 8031 ethernet 30be0000.ethernet-1:01: attached PHY driver [Atheros 8031 ethernet] (mii_bus:phy_addr=30be0000.ethernet-1:01, irq=POLL)
+[    5.448263] mx6s-csi 30a90000.csi1_bridge: csi v4l2 busfreq high request.
+[    5.448298] querycap
+[    5.451593] mx6s-csi 30a90000.csi1_bridge: csi v4l2 busfreq high release.
+[    6.572437] random: crng init done
+[    6.575869] random: 7 urandom warning(s) missed due to ratelimiting
+[    7.460058] fec 30be0000.ethernet eth0: Link is Up - 100Mbps/Full - flow control rx/tx

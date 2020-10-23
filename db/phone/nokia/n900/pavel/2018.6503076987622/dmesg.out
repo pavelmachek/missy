@@ -1,0 +1,1021 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.19.0-rc1-103161-g78e5530-dirty (pavel@half) (gcc version 4.7.2 (GCC)) #789 SMP Mon Aug 27 09:45:31 CEST 2018
+[    0.000000] CPU: ARMv7 Processor [411fc083] revision 3 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+[    0.000000] OF: fdt: Machine model: Nokia N900
+[    0.000000] Memory policy: Data cache writeback
+[    0.000000] cma: Reserved 16 MiB at 0x8e800000
+[    0.000000] On node 0 totalpages: 65024
+[    0.000000]   Normal zone: 508 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 65024 pages, LIFO batch:15
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] OMAP3430/3530 ES3.1 (l2cache iva sgx neon isp)
+[    0.000000] random: get_random_bytes called from start_kernel+0x74/0x38c with crng_init=0
+[    0.000000] percpu: Embedded 16 pages/cpu @(ptrval) s36032 r8192 d21312 u65536
+[    0.000000] pcpu-alloc: s36032 r8192 d21312 u65536 alloc=16*4096
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 64516
+[    0.000000] Kernel command line: root=/dev/mmcblk0p4 console=ttyO2,115200 console=tty1 rootwait no-omap-wd no-ext-wd
+[    0.000000] Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Memory: 227016K/260096K available (8192K kernel code, 401K rwdata, 2888K rodata, 1024K init, 329K bss, 16696K reserved, 16384K cma-reserved, 0K highmem)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xd0000000 - 0xff800000   ( 760 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xcfe00000   ( 254 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0x(ptrval) - 0x(ptrval)   (9184 kB)
+[    0.000000]       .init : 0x(ptrval) - 0x(ptrval)   (1024 kB)
+[    0.000000]       .data : 0x(ptrval) - 0x(ptrval)   ( 402 kB)
+[    0.000000]        .bss : 0x(ptrval) - 0x(ptrval)   ( 330 kB)
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=2 to nr_cpu_ids=1.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] IRQ: Found an INTC at 0x(ptrval) (revision 4.0) with 96 interrupts
+[    0.000000] Clocking rate (Crystal/Core/MPU): 19.2/332/500 MHz
+[    0.000000] OMAP clockevent source: timer1 at 32768 Hz
+[    0.000000] clocksource: 32k_counter: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 58327039986419 ns
+[    0.000030] sched_clock: 32 bits at 32kHz, resolution 30517ns, wraps every 65535999984741ns
+[    0.000030] OMAP clocksource: 32k_counter at 32768 Hz
+[    0.001281] Console: colour dummy device 80x30
+[    0.002105] console [tty1] enabled
+[    0.002166] WARNING: Your 'console=ttyO2' has been replaced by 'ttyS2'
+[    0.002197] This ensures that you still see kernel messages. Please
+[    0.002227] update your kernel commandline.
+[    0.002288] Calibrating delay loop... 496.43 BogoMIPS (lpj=2482176)
+[    0.047882] pid_max: default: 32768 minimum: 301
+[    0.048126] Security Framework initialized
+[    0.048309] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.048370] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.049804] CPU: Testing write buffer coherency: ok
+[    0.049957] CPU0: Spectre v2: firmware did not set auxiliary control register IBE bit, system vulnerable
+[    0.050689] CPU0: thread -1, cpu 0, socket -1, mpidr 0
+[    0.052276] Setting up static identity map for 0x80100000 - 0x80100078
+[    0.052673] rcu: Hierarchical SRCU implementation.
+[    0.053985] smp: Bringing up secondary CPUs ...
+[    0.054046] smp: Brought up 1 node, 1 CPU
+[    0.054077] SMP: Total of 1 processors activated (496.43 BogoMIPS).
+[    0.054107] CPU: All CPU(s) started in SVC mode.
+[    0.057952] devtmpfs: initialized
+[    0.099151] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 1
+[    0.099761] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.099853] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.101501] pinctrl core: initialized pinctrl subsystem
+[    0.103912] NET: Registered protocol family 16
+[    0.110473] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.152526] omap_hwmod: mcbsp2_sidetone using broken dt data from mcbsp
+[    0.153839] omap_hwmod: mcbsp3_sidetone using broken dt data from mcbsp
+[    0.225769] cpuidle: using governor menu
+[    0.226531] Reprogramming SDRC clock to 332000000 Hz
+[    0.234252] gpio gpiochip0: (gpio-0-31): added GPIO chardev (254:0)
+[    0.234436] gpiochip_setup_dev: registered GPIOs 0 to 31 on device: gpiochip0 (gpio-0-31)
+[    0.234497] OMAP GPIO hardware version 2.5
+[    0.235900] gpio gpiochip1: (gpio-32-63): added GPIO chardev (254:1)
+[    0.236083] gpiochip_setup_dev: registered GPIOs 32 to 63 on device: gpiochip1 (gpio-32-63)
+[    0.237518] gpio gpiochip2: (gpio-64-95): added GPIO chardev (254:2)
+[    0.237701] gpiochip_setup_dev: registered GPIOs 64 to 95 on device: gpiochip2 (gpio-64-95)
+[    0.239044] gpio gpiochip3: (gpio-96-127): added GPIO chardev (254:3)
+[    0.239227] gpiochip_setup_dev: registered GPIOs 96 to 127 on device: gpiochip3 (gpio-96-127)
+[    0.240539] gpio gpiochip4: (gpio-128-159): added GPIO chardev (254:4)
+[    0.240722] gpiochip_setup_dev: registered GPIOs 128 to 159 on device: gpiochip4 (gpio-128-159)
+[    0.242004] gpio gpiochip5: (gpio-160-191): added GPIO chardev (254:5)
+[    0.242187] gpiochip_setup_dev: registered GPIOs 160 to 191 on device: gpiochip5 (gpio-160-191)
+[    0.262481] RX-51: Enabling ARM errata 430973 workaround
+[    0.264343] RX-51: Registering OMAP3 HWRNG device
+[    0.266876] omap4_sram_init:Unable to allocate sram needed to handle errata I688
+[    0.266967] omap4_sram_init:Unable to get sram pool needed to handle errata I688
+[    0.268157] Reserving DMA channels 0 and 1 for HS ROM code
+[    0.268218] OMAP DMA hardware revision 4.0
+[    0.309112] omap-dma-engine 48056000.dma-controller: OMAP DMA engine driver
+[    0.315185] omap-iommu 480bd400.mmu: 480bd400.mmu registered
+[    0.315917] iommu: Adding device 480bc000.isp to group 0
+[    0.319213] SCSI subsystem initialized
+[    0.319763] usbcore: registered new interface driver usbfs
+[    0.319915] usbcore: registered new interface driver hub
+[    0.320098] usbcore: registered new device driver usb
+[    0.321563] media: Linux media interface: v0.10
+[    0.321685] videodev: Linux video capture interface: v2.00
+[    0.321960] pps_core: LinuxPPS API ver. 1 registered
+[    0.321990] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.322113] PTP clock support registered
+[    0.322998] omap-mailbox 48094000.mailbox: omap mailbox rev 0x40
+[    0.323791] Advanced Linux Sound Architecture Driver Initialized.
+[    0.324829] Bluetooth: Core ver 2.22
+[    0.324981] NET: Registered protocol family 31
+[    0.325012] Bluetooth: HCI device and connection manager initialized
+[    0.325073] Bluetooth: HCI socket layer initialized
+[    0.325103] Bluetooth: L2CAP socket layer initialized
+[    0.325225] Bluetooth: SCO socket layer initialized
+[    0.326873] clocksource: Switched to clocksource 32k_counter
+[    0.349914] NET: Registered protocol family 2
+[    0.351287] tcp_listen_portaddr_hash hash table entries: 256 (order: 0, 6144 bytes)
+[    0.351379] TCP established hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.351470] TCP bind hash table entries: 2048 (order: 3, 40960 bytes)
+[    0.351623] TCP: Hash tables configured (established 2048 bind 2048)
+[    0.351867] UDP hash table entries: 256 (order: 1, 12288 bytes)
+[    0.351959] UDP-Lite hash table entries: 256 (order: 1, 12288 bytes)
+[    0.352325] NET: Registered protocol family 1
+[    0.353668] RPC: Registered named UNIX socket transport module.
+[    0.353729] RPC: Registered udp transport module.
+[    0.353759] RPC: Registered tcp transport module.
+[    0.353790] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.362365] Initialise system trusted keyrings
+[    0.363220] workingset: timestamp_bits=30 max_order=16 bucket_order=0
+[    0.364959] NFS: Registering the id_resolver key type
+[    0.365051] Key type id_resolver registered
+[    0.365081] Key type id_legacy registered
+[    0.373321] jitterentropy: Initialization failed with host not compliant with requirements: 2
+[    0.373992] Key type asymmetric registered
+[    0.374023] Asymmetric key parser 'x509' registered
+[    0.374114] io scheduler noop registered
+[    0.374145] io scheduler deadline registered
+[    0.374298] io scheduler cfq registered (default)
+[    0.374359] io scheduler mq-deadline registered
+[    0.376159] ti-sysc 480cb024.target-module: sysc_flags 00000100 != 00000110
+[    0.377777] ti-sysc 480c9024.target-module: sysc_flags 00000100 != 00000110
+[    0.382141] pinctrl-single 48002030.pinmux: 284 pins, size 568
+[    0.382934] pinctrl-single 48002a00.pinmux: 46 pins, size 92
+[    0.383789] pinctrl-single 480025d8.pinmux: 18 pins, size 36
+[    0.384613] dmtimer_probe
+[    0.384643] dmtimer_probe: have timer
+[    0.384735] omap-dmtimer-pwm dmtimer-pwm: dmtimer pdata structure NULL, deferring probe
+[    0.390075] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.394592] 4806c000.serial: ttyS1 at MMIO 0x4806c000 (irq = 89, base_baud = 3000000) is a 8250
+[    0.395019] serial serial0: tty port ttyS1 registered
+[    0.396209] 49020000.serial: ttyS2 at MMIO 0x49020000 (irq = 90, base_baud = 3000000) is a 8250
+[    1.162261] console [ttyS2] enabled
+[    1.169799] omap3_rom_rng: initializing
+[    1.173858] omap3_rom_rng: unable to get RNG clock
+[    1.178833] omap3-rom-rng: probe of omap3-rom-rng failed with error -2
+[    1.186431] omapdss_dss 48050000.dss: 48050000.dss supply vdda_video not found, using dummy regulator
+[    1.196044] omapdss_dss 48050000.dss: Linked as a consumer to regulator.0
+[    1.203094] DSS: OMAP DSS rev 2.0
+[    1.209228] omapdss_dss 48050000.dss: bound 48050400.dispc (ops dispc_component_ops)
+[    1.217529] omapdss_dss 48050000.dss: bound 48050c00.encoder (ops venc_component_ops)
+[    1.229858] Error: Driver 'tfp410' is already registered, aborting...
+[    1.264160] brd: module loaded
+[    1.287231] loop: module loaded
+[    1.292724] mtdoops: mtd device (mtddev=name/number) must be supplied
+[    1.303314] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/ocp@68000000/spi@48098000/acx565akm@2[0]' - status (0)
+[    1.313903] acx565akm spi0.2: omapfb: acx565akm rev ab LCD detected
+[    1.326873] omap_ssi 48058000.ssi-controller: ssi controller 0 initialized (1 ports)!
+[    1.335876] omap_ssi_port 4805a000.ssi-port: GPIO lookup for consumer ti,ssi-cawake
+[    1.335876] omap_ssi_port 4805a000.ssi-port: using device tree for GPIO lookup
+[    1.335937] of_get_named_gpiod_flags: can't parse 'ti,ssi-cawake-gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000[0]'
+[    1.335998] of_get_named_gpiod_flags: parsed 'ti,ssi-cawake-gpio' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000[0]' - status (0)
+[    1.336090] gpio gpiochip4: Persistence not supported for GPIO 23
+[    1.337860] omap_ssi_port 4805a000.ssi-port: ssi port 0 successfully initialized
+[    1.346008] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    1.346038] nokia-modem n900-modem: using device tree for GPIO lookup
+[    1.346099] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[0]' - status (0)
+[    1.346130] gpio gpiochip2: Persistence not supported for GPIO 6
+[    1.346466] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    1.346496] nokia-modem n900-modem: using device tree for GPIO lookup
+[    1.346557] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[1]' - status (0)
+[    1.346588] gpio gpiochip2: Persistence not supported for GPIO 9
+[    1.346832] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    1.346862] nokia-modem n900-modem: using device tree for GPIO lookup
+[    1.347015] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[2]' - status (0)
+[    1.347045] gpio gpiochip2: Persistence not supported for GPIO 10
+[    1.347351] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    1.347351] nokia-modem n900-modem: using device tree for GPIO lookup
+[    1.347412] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[3]' - status (0)
+[    1.347442] gpio gpiochip2: Persistence not supported for GPIO 11
+[    1.347717] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    1.347717] nokia-modem n900-modem: using device tree for GPIO lookup
+[    1.347778] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[4]' - status (0)
+[    1.347808] gpio gpiochip4: Persistence not supported for GPIO 29
+[    1.349304] SSI protocol aka McSAAB added
+[    1.353454] CMT speech driver added
+[    1.357299] HSI/SSI char device loaded
+[    1.361602] mdio_bus fixed-0: GPIO lookup for consumer reset
+[    1.361602] mdio_bus fixed-0: using lookup tables for GPIO lookup
+[    1.361633] mdio_bus fixed-0: No GPIO consumer reset found
+[    1.361694] libphy: Fixed MDIO Bus: probed
+[    1.366821] of_get_named_gpiod_flags: parsed 'ti,power-gpio' property of node '/ocp@68000000/spi@480ba000/wl1251@0[0]' - status (0)
+[    1.367126] wl1251: ERROR vio regulator missing: -517
+[    1.372558] usbcore: registered new interface driver qmi_wwan
+[    1.378448] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.384765] ohci-platform: OHCI generic platform driver
+[    1.390899] ohci-platform 48064400.ohci: Generic Platform OHCI controller
+[    1.397918] ohci-platform 48064400.ohci: new USB bus registered, assigned bus number 1
+[    1.406616] ohci-platform 48064400.ohci: irq 92, io mem 0x48064400
+[    1.498931] hub 1-0:1.0: USB hub found
+[    1.502838] hub 1-0:1.0: 3 ports detected
+[    1.508575] usbcore: registered new interface driver cdc_wdm
+[    1.514526] usbcore: registered new interface driver qcserial
+[    1.520538] usbserial: USB Serial support registered for Qualcomm USB modem
+[    1.528930] musb-hdrc musb-hdrc.0.auto: HS USB OTG: no transceiver configured
+[    1.529815] udc-core: couldn't find an available UDC - added [g_ether] to list of pending drivers
+[    1.539550] mousedev: PS/2 mouse device common for all mice
+[    1.546752] tsc2005 spi0.0: GPIO lookup for consumer reset
+[    1.546783] tsc2005 spi0.0: using device tree for GPIO lookup
+[    1.546844] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/ocp@68000000/spi@48098000/tsc2005@0[0]' - status (0)
+[    1.546874] gpio gpiochip3: Persistence not supported for GPIO 8
+[    1.547058] tsc2005 spi0.0: error acquiring vio regulator: -517
+[    1.555297] i2c /dev entries driver
+[    1.564422] ti-soc-thermal 48002524.bandgap: This OMAP thermal sensor is unreliable. You've been warned
+[    1.574127] ti-soc-thermal 48002524.bandgap: Non-trimmed BGAP, Temp not accurate
+[    1.584014] omap_wdt: OMAP Watchdog Timer Rev 0x31: initial timeout 60 sec
+[    1.591857] Bluetooth: HCI UART driver ver 2.3
+[    1.596374] Bluetooth: HCI UART protocol H4 registered
+[    1.601745] Bluetooth: HCI UART protocol LL registered
+[    1.607269] Bluetooth: HCI UART protocol Broadcom registered
+[    1.615051] omap_hsmmc 4809c000.mmc: GPIO lookup for consumer cd
+[    1.615051] omap_hsmmc 4809c000.mmc: using device tree for GPIO lookup
+[    1.615112] of_get_named_gpiod_flags: can't parse 'cd-gpios' property of node '/ocp@68000000/mmc@4809c000[0]'
+[    1.615142] of_get_named_gpiod_flags: can't parse 'cd-gpio' property of node '/ocp@68000000/mmc@4809c000[0]'
+[    1.615142] omap_hsmmc 4809c000.mmc: using lookup tables for GPIO lookup
+[    1.615173] omap_hsmmc 4809c000.mmc: No GPIO consumer cd found
+[    1.615203] omap_hsmmc 4809c000.mmc: GPIO lookup for consumer wp
+[    1.615203] omap_hsmmc 4809c000.mmc: using device tree for GPIO lookup
+[    1.615234] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp@68000000/mmc@4809c000[0]'
+[    1.615264] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp@68000000/mmc@4809c000[0]'
+[    1.615264] omap_hsmmc 4809c000.mmc: using lookup tables for GPIO lookup
+[    1.615295] omap_hsmmc 4809c000.mmc: No GPIO consumer wp found
+[    1.617340] omap_hsmmc 480b4000.mmc: GPIO lookup for consumer wp
+[    1.617370] omap_hsmmc 480b4000.mmc: using device tree for GPIO lookup
+[    1.617401] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp@68000000/mmc@480b4000[0]'
+[    1.617431] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp@68000000/mmc@480b4000[0]'
+[    1.617462] omap_hsmmc 480b4000.mmc: using lookup tables for GPIO lookup
+[    1.617462] omap_hsmmc 480b4000.mmc: No GPIO consumer wp found
+[    1.620666] of_get_named_gpiod_flags: parsed 'gpios' property of node '/leds/heartbeat[0]' - status (0)
+[    1.620758] gpio gpiochip5: Persistence not supported for GPIO 2
+[    1.620758] no flags found for gpios
+[    1.621490] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.638916] rx51-audio n900-audio: GPIO lookup for consumer tvout-selection
+[    1.638946] rx51-audio n900-audio: using device tree for GPIO lookup
+[    1.639007] of_get_named_gpiod_flags: parsed 'tvout-selection-gpios' property of node '/n900-audio[0]' - status (0)
+[    1.639038] gpio gpiochip1: Persistence not supported for GPIO 8
+[    1.639068] rx51-audio n900-audio: GPIO lookup for consumer jack-detection
+[    1.639068] rx51-audio n900-audio: using device tree for GPIO lookup
+[    1.639129] of_get_named_gpiod_flags: parsed 'jack-detection-gpios' property of node '/n900-audio[0]' - status (0)
+[    1.639160] gpio gpiochip5: Persistence not supported for GPIO 17
+[    1.639160] no flags found for jack-detection
+[    1.639190] rx51-audio n900-audio: GPIO lookup for consumer eci-switch
+[    1.639190] rx51-audio n900-audio: using device tree for GPIO lookup
+[    1.639251] of_get_named_gpiod_flags: parsed 'eci-switch-gpios' property of node '/n900-audio[0]' - status (0)
+[    1.639251] gpio gpiochip5: Persistence not supported for GPIO 22
+[    1.639282] rx51-audio n900-audio: GPIO lookup for consumer speaker-amplifier
+[    1.639312] rx51-audio n900-audio: using device tree for GPIO lookup
+[    1.639343] rx51-audio n900-audio: No GPIO consumer speaker-amplifier found
+[    1.639343] rx51-audio n900-audio: could not get speaker enable gpio
+[    1.648925] Initializing XFRM netlink socket
+[    1.653350] NET: Registered protocol family 17
+[    1.657989] NET: Registered protocol family 15
+[    1.662933] Bluetooth: RFCOMM TTY layer initialized
+[    1.667999] Bluetooth: RFCOMM socket layer initialized
+[    1.673278] Bluetooth: RFCOMM ver 1.11
+[    1.677185] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    1.682556] Bluetooth: BNEP filters: protocol multicast
+[    1.687896] Bluetooth: BNEP socket layer initialized
+[    1.692932] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    1.698974] Bluetooth: HIDP socket layer initialized
+[    1.704162] NET: Registered protocol family 35
+[    1.708862] Key type dns_resolver registered
+[    1.713500] ThumbEE CPU extension supported.
+[    1.717895] Registering SWP/SWPB emulation handler
+[    1.722839] omap2_set_init_voltage: unable to find boot up OPP for vdd_mpu_iva
+[    1.730194] omap2_set_init_voltage: unable to set vdd_mpu_iva
+[    1.736022] omap2_set_init_voltage: unable to find boot up OPP for vdd_core
+[    1.743133] omap2_set_init_voltage: unable to set vdd_core
+[    1.752136] SmartReflex Class3 initialized
+[    1.758056] Loading compiled-in X.509 certificates
+[    1.810089] omap-gpmc 6e000000.gpmc: GPMC revision 5.0
+[    1.815338] gpmc_mem_init: disabling cs 0 mapped at 0x0-0x1000000
+[    1.821716] gpiochip_find_base: found new base at 508
+[    1.822265] gpio gpiochip6: (omap-gpmc): added GPIO chardev (254:6)
+[    1.822479] gpiochip_setup_dev: registered GPIOs 508 to 511 on device: gpiochip6 (omap-gpmc)
+[    1.823913] omap2-onenand 1000000.onenand: GPIO lookup for consumer int
+[    1.823913] omap2-onenand 1000000.onenand: using device tree for GPIO lookup
+[    1.823974] of_get_named_gpiod_flags: can't parse 'int-gpios' property of node '/ocp@68000000/gpmc@6e000000/onenand@0,0[0]'
+[    1.824005] of_get_named_gpiod_flags: can't parse 'int-gpio' property of node '/ocp@68000000/gpmc@6e000000/onenand@0,0[0]'
+[    1.824005] omap2-onenand 1000000.onenand: using lookup tables for GPIO lookup
+[    1.824035] omap2-onenand 1000000.onenand: No GPIO consumer int found
+[    1.824096] omap2-onenand 1000000.onenand: initializing on CS0 (0x01000000), va (ptrval), DMA mode
+[    1.833343] OneNAND Manufacturer: Unknown (0xa0)
+[    1.839965] Skipping twl internal clock init and using bootloader value (unknown osc rate)
+[    1.853576] twl 1-0048: PIH (irq 23) chaining IRQs 155..163
+[    1.859497] twl 1-0048: power (irq 160) chaining IRQs 163..170
+[    1.868255] twl_rtc 48070000.i2c:twl@48:rtc: Enabling TWL-RTC
+[    1.874481] random: fast init done
+[    1.880828] twl_rtc 48070000.i2c:twl@48:rtc: rtc core: registered 48070000.i2c:twl@48:rtc as rtc0
+[    1.938385] twl4030_gpio twl4030-gpio: gpio (irq 155) chaining IRQs 171..188
+[    1.945983] gpiochip_find_base: found new base at 490
+[    1.946411] gpio gpiochip7: (twl4030): added GPIO chardev (254:7)
+[    1.946594] gpiochip_setup_dev: registered GPIOs 490 to 507 on device: gpiochip7 (twl4030)
+[    1.948394] twl4030_usb 48070000.i2c:twl@48:twl4030-usb: Linked as a consumer to regulator.16
+[    1.957611] twl4030_usb 48070000.i2c:twl@48:twl4030-usb: Linked as a consumer to regulator.14
+[    1.966674] twl4030_usb 48070000.i2c:twl@48:twl4030-usb: Linked as a consumer to regulator.15
+[    2.048034] twl4030_usb 48070000.i2c:twl@48:twl4030-usb: Initialized TWL4030 USB module
+[    2.060546] input: twl4030_pwrbutton as /devices/platform/68000000.ocp/48070000.i2c/i2c-1/1-0048/48070000.i2c:twl@48:pwrbutton/input/input1
+[    2.075286] input: TWL4030 Keypad as /devices/platform/68000000.ocp/48070000.i2c/i2c-1/1-0048/48070000.i2c:twl@48:keypad/input/input2
+[    2.093658] twl4030_madc 48070000.i2c:twl@48:madc: 48070000.i2c:twl@48:madc supply vusb3v1 not found, using dummy regulator
+[    2.105255] twl4030_madc 48070000.i2c:twl@48:madc: Linked as a consumer to regulator.0
+[    2.116760] input: twl4030:vibrator as /devices/platform/68000000.ocp/48070000.i2c/i2c-1/1-0048/48070000.i2c:twl@48:audio/twl4030-vibra/input/input3
+[    2.173522] omap_i2c 48070000.i2c: bus 1 rev3.3 at 2200 kHz
+[    2.182250] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/ocp@68000000/i2c@48072000/tlv320aic3x@18[0]' - status (0)
+[    2.182464] tlv320aic3x-codec 2-0018: Linked as a consumer to regulator.8
+[    2.190124] tlv320aic3x-codec 2-0018: Linked as a consumer to regulator.13
+[    2.198974] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/ocp@68000000/i2c@48072000/tlv320aic3x@19[0]' - status (0)
+[    2.199188] tlv320aic3x-codec 2-0019: Linked as a consumer to regulator.8
+[    2.206634] tlv320aic3x-codec 2-0019: Linked as a consumer to regulator.13
+[    2.217559] tsl2563 2-0029: model 7, rev. 0
+[    2.225677] flash: probe
+[    2.228363] flash: parse node
+[    2.231384] adp1653 2-0030: GPIO lookup for consumer enable
+[    2.231414] adp1653 2-0030: using device tree for GPIO lookup
+[    2.231475] of_get_named_gpiod_flags: parsed 'enable-gpios' property of node '/ocp@68000000/i2c@48072000/led-controller@30[0]' - status (0)
+[    2.231506] gpio gpiochip2: Persistence not supported for GPIO 24
+[    2.231597] flash: indicator_max_ua 17500, assist_max_ua 50000, flash_max_ua 320000
+[    2.239379] flash: detect
+[    2.242553] adp1653 2-0030: Write Addr:00 Val:00 ok
+[    2.242553] flash: testing
+[    2.245300] Using current 0 uA, indicator 0 uA, assist 0 uA
+[    2.251007] mode: assist
+[    2.254211] adp1653 2-0030: Write Addr:00 Val:00 ok
+[    2.254943] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    2.304840] Using current 0 uA, indicator 0 uA, assist 100 uA
+[    2.310699] mode: assist
+[    2.313903] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    2.314544] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    2.364440] Using current 0 uA, indicator 0 uA, assist 200 uA
+[    2.370300] mode: assist
+[    2.373504] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    2.373992] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    2.423858] Using current 0 uA, indicator 0 uA, assist 300 uA
+[    2.429718] mode: assist
+[    2.432769] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    2.433227] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    2.483123] Using current 0 uA, indicator 0 uA, assist 400 uA
+[    2.488952] mode: assist
+[    2.492004] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    2.492462] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    2.542358] Using current 0 uA, indicator 0 uA, assist 500 uA
+[    2.548217] mode: assist
+[    2.551239] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    2.551727] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    2.601593] Using current 0 uA, indicator 0 uA, assist 600 uA
+[    2.607452] mode: assist
+[    2.610473] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    2.610961] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    2.660827] Using current 0 uA, indicator 0 uA, assist 700 uA
+[    2.666656] mode: assist
+[    2.669738] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    2.670196] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    2.720092] Using current 0 uA, indicator 0 uA, assist 800 uA
+[    2.725891] mode: assist
+[    2.728973] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    2.729461] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    2.779327] Using current 0 uA, indicator 0 uA, assist 900 uA
+[    2.785156] mode: assist
+[    2.788238] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    2.788696] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    2.838592] Using current 0 uA, indicator 0 uA, assist 1000 uA
+[    2.844482] mode: assist
+[    2.847564] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    2.848022] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    2.897918] Using current 0 uA, indicator 0 uA, assist 1100 uA
+[    2.903808] mode: assist
+[    2.906860] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    2.907318] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    2.957214] Using current 0 uA, indicator 0 uA, assist 1200 uA
+[    2.963104] mode: assist
+[    2.966125] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    2.966613] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    3.016479] Using current 0 uA, indicator 0 uA, assist 1300 uA
+[    3.022430] mode: assist
+[    3.025451] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    3.025939] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    3.075836] Using current 0 uA, indicator 0 uA, assist 1400 uA
+[    3.081756] mode: assist
+[    3.084808] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    3.085266] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    3.135162] Using current 0 uA, indicator 0 uA, assist 1500 uA
+[    3.141113] mode: assist
+[    3.144165] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    3.144622] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    3.194519] Using current 0 uA, indicator 0 uA, assist 1600 uA
+[    3.200439] mode: assist
+[    3.203491] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    3.203948] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    3.253845] Using current 0 uA, indicator 0 uA, assist 1700 uA
+[    3.259796] mode: assist
+[    3.262817] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    3.263305] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    3.313201] Using current 0 uA, indicator 0 uA, assist 1800 uA
+[    3.319122] mode: assist
+[    3.322174] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    3.322631] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    3.372528] Using current 0 uA, indicator 0 uA, assist 1900 uA
+[    3.378479] mode: assist
+[    3.381500] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    3.381988] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    3.431884] Using current 0 uA, indicator 0 uA, assist 2000 uA
+[    3.437805] mode: assist
+[    3.440856] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    3.441314] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    3.491210] Using current 0 uA, indicator 0 uA, assist 2100 uA
+[    3.497131] mode: assist
+[    3.500183] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    3.500640] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    3.550537] Using current 0 uA, indicator 0 uA, assist 2200 uA
+[    3.556427] mode: assist
+[    3.559509] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    3.559967] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    3.609863] Using current 0 uA, indicator 0 uA, assist 2300 uA
+[    3.615753] mode: assist
+[    3.618835] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    3.619323] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    3.669189] Using current 0 uA, indicator 0 uA, assist 2400 uA
+[    3.675079] mode: assist
+[    3.678161] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    3.678649] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    3.728546] Using current 0 uA, indicator 0 uA, assist 2500 uA
+[    3.734436] mode: assist
+[    3.737487] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    3.737976] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    3.787872] Using current 0 uA, indicator 0 uA, assist 2600 uA
+[    3.793762] mode: assist
+[    3.796783] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    3.797271] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    3.847167] Using current 0 uA, indicator 0 uA, assist 2700 uA
+[    3.853057] mode: assist
+[    3.856079] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    3.856567] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    3.906463] Using current 0 uA, indicator 0 uA, assist 2800 uA
+[    3.912384] mode: assist
+[    3.915435] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    3.915893] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    3.965789] Using current 0 uA, indicator 0 uA, assist 2900 uA
+[    3.971710] mode: assist
+[    3.974761] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    3.975219] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    4.025115] Using current 0 uA, indicator 0 uA, assist 3000 uA
+[    4.031066] mode: assist
+[    4.034088] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    4.034545] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    4.084442] Using current 0 uA, indicator 0 uA, assist 3100 uA
+[    4.090423] mode: assist
+[    4.093933] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    4.095031] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    4.144927] Using current 0 uA, indicator 0 uA, assist 3200 uA
+[    4.150878] mode: assist
+[    4.153991] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    4.154479] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    4.204345] Using current 0 uA, indicator 0 uA, assist 3300 uA
+[    4.210327] mode: assist
+[    4.213348] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    4.213836] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    4.263702] Using current 0 uA, indicator 0 uA, assist 3400 uA
+[    4.269653] mode: assist
+[    4.272674] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    4.273162] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    4.323059] Using current 0 uA, indicator 0 uA, assist 3500 uA
+[    4.329010] mode: assist
+[    4.332031] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    4.332519] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    4.382415] Using current 0 uA, indicator 0 uA, assist 3600 uA
+[    4.388336] mode: assist
+[    4.391387] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    4.391845] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    4.441741] Using current 0 uA, indicator 0 uA, assist 3700 uA
+[    4.447692] mode: assist
+[    4.450714] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    4.451202] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    4.501068] Using current 0 uA, indicator 0 uA, assist 3800 uA
+[    4.507019] mode: assist
+[    4.510070] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    4.510528] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    4.560424] Using current 0 uA, indicator 0 uA, assist 3900 uA
+[    4.566314] mode: assist
+[    4.569396] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    4.569854] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    4.619750] Using current 0 uA, indicator 0 uA, assist 4000 uA
+[    4.625640] mode: assist
+[    4.628723] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    4.629180] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    4.679077] Using current 0 uA, indicator 0 uA, assist 4100 uA
+[    4.684967] mode: assist
+[    4.688049] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    4.688537] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    4.738403] Using current 0 uA, indicator 0 uA, assist 4200 uA
+[    4.744293] mode: assist
+[    4.747344] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    4.747802] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    4.797698] Using current 0 uA, indicator 0 uA, assist 4300 uA
+[    4.803588] mode: assist
+[    4.806610] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    4.807098] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    4.856994] Using current 0 uA, indicator 0 uA, assist 4400 uA
+[    4.862884] mode: assist
+[    4.865905] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    4.866363] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    4.916259] Using current 0 uA, indicator 0 uA, assist 4500 uA
+[    4.922210] mode: assist
+[    4.925231] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    4.925720] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    4.975585] Using current 0 uA, indicator 0 uA, assist 4600 uA
+[    4.981536] mode: assist
+[    4.984558] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    4.985046] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    5.034942] Using current 0 uA, indicator 0 uA, assist 4700 uA
+[    5.040863] mode: assist
+[    5.043914] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    5.044372] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    5.094268] Using current 0 uA, indicator 0 uA, assist 4800 uA
+[    5.100189] mode: assist
+[    5.103240] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    5.103698] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    5.153625] Using current 0 uA, indicator 0 uA, assist 4900 uA
+[    5.159545] mode: assist
+[    5.162597] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    5.163055] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    5.212951] Using current 0 uA, indicator 0 uA, assist 5000 uA
+[    5.218902] mode: assist
+[    5.221923] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    5.222412] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    5.272308] Using current 0 uA, indicator 0 uA, assist 5100 uA
+[    5.278228] mode: assist
+[    5.281280] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    5.281738] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    5.331634] Using current 0 uA, indicator 0 uA, assist 5200 uA
+[    5.337585] mode: assist
+[    5.340606] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    5.341094] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    5.390960] Using current 0 uA, indicator 0 uA, assist 5300 uA
+[    5.396850] mode: assist
+[    5.399932] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    5.400421] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    5.450317] Using current 0 uA, indicator 0 uA, assist 5400 uA
+[    5.456207] mode: assist
+[    5.459289] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    5.459747] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    5.509643] Using current 0 uA, indicator 0 uA, assist 5500 uA
+[    5.515533] mode: assist
+[    5.518615] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    5.519073] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    5.568969] Using current 0 uA, indicator 0 uA, assist 5600 uA
+[    5.574859] mode: assist
+[    5.577941] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    5.578399] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    5.628295] Using current 0 uA, indicator 0 uA, assist 5700 uA
+[    5.634185] mode: assist
+[    5.637207] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    5.637695] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    5.687561] Using current 0 uA, indicator 0 uA, assist 5800 uA
+[    5.693481] mode: assist
+[    5.696502] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    5.697021] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    5.746856] Using current 0 uA, indicator 0 uA, assist 5900 uA
+[    5.752807] mode: assist
+[    5.755828] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    5.756317] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    5.806182] Using current 0 uA, indicator 0 uA, assist 6000 uA
+[    5.812133] mode: assist
+[    5.815155] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    5.815643] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    5.865539] Using current 0 uA, indicator 0 uA, assist 6100 uA
+[    5.871459] mode: assist
+[    5.874511] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    5.874969] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    5.924865] Using current 0 uA, indicator 0 uA, assist 6200 uA
+[    5.930816] mode: assist
+[    5.933837] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    5.934326] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    5.984191] Using current 0 uA, indicator 0 uA, assist 6300 uA
+[    5.990142] mode: assist
+[    5.993164] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    5.993652] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    6.043518] Using current 0 uA, indicator 0 uA, assist 6400 uA
+[    6.049468] mode: assist
+[    6.052490] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    6.052978] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    6.102874] Using current 0 uA, indicator 0 uA, assist 6500 uA
+[    6.108795] mode: assist
+[    6.111846] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    6.112335] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    6.162231] Using current 0 uA, indicator 0 uA, assist 6600 uA
+[    6.168182] mode: assist
+[    6.171203] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    6.171691] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    6.221588] Using current 0 uA, indicator 0 uA, assist 6700 uA
+[    6.227508] mode: assist
+[    6.230560] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    6.231018] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    6.280914] Using current 0 uA, indicator 0 uA, assist 6800 uA
+[    6.286804] mode: assist
+[    6.289886] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    6.290344] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    6.340240] Using current 0 uA, indicator 0 uA, assist 6900 uA
+[    6.346130] mode: assist
+[    6.349212] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    6.349700] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    6.399566] Using current 0 uA, indicator 0 uA, assist 7000 uA
+[    6.405487] mode: assist
+[    6.408538] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    6.409027] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    6.458923] Using current 0 uA, indicator 0 uA, assist 7100 uA
+[    6.464813] mode: assist
+[    6.467895] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    6.468353] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    6.518249] Using current 0 uA, indicator 0 uA, assist 7200 uA
+[    6.524139] mode: assist
+[    6.527130] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    6.527587] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    6.577484] Using current 0 uA, indicator 0 uA, assist 7300 uA
+[    6.583374] mode: assist
+[    6.586395] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    6.586883] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    6.636749] Using current 0 uA, indicator 0 uA, assist 7400 uA
+[    6.642700] mode: assist
+[    6.645721] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    6.646209] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    6.696075] Using current 0 uA, indicator 0 uA, assist 7500 uA
+[    6.702026] mode: assist
+[    6.705078] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    6.705535] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    6.755432] Using current 0 uA, indicator 0 uA, assist 7600 uA
+[    6.761352] mode: assist
+[    6.764404] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    6.764862] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    6.814758] Using current 0 uA, indicator 0 uA, assist 7700 uA
+[    6.820709] mode: assist
+[    6.823730] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    6.824218] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    6.874084] Using current 0 uA, indicator 0 uA, assist 7800 uA
+[    6.880035] mode: assist
+[    6.883056] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    6.883544] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    6.933441] Using current 0 uA, indicator 0 uA, assist 7900 uA
+[    6.939361] mode: assist
+[    6.942413] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    6.942871] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    6.992767] Using current 0 uA, indicator 0 uA, assist 8000 uA
+[    6.998718] mode: assist
+[    7.001739] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    7.002227] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    7.052093] Using current 0 uA, indicator 0 uA, assist 8100 uA
+[    7.058044] mode: assist
+[    7.061065] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    7.061553] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    7.111419] Using current 0 uA, indicator 0 uA, assist 8200 uA
+[    7.117370] mode: assist
+[    7.120391] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    7.120880] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    7.170776] Using current 0 uA, indicator 0 uA, assist 8300 uA
+[    7.176666] mode: assist
+[    7.179748] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    7.180206] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    7.230102] Using current 0 uA, indicator 0 uA, assist 8400 uA
+[    7.235992] mode: assist
+[    7.239074] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    7.239532] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    7.289428] Using current 0 uA, indicator 0 uA, assist 8500 uA
+[    7.295318] mode: assist
+[    7.298431] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    7.299407] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    7.349304] Using current 0 uA, indicator 0 uA, assist 8600 uA
+[    7.355194] mode: assist
+[    7.358276] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    7.358764] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    7.408630] Using current 0 uA, indicator 0 uA, assist 8700 uA
+[    7.414520] mode: assist
+[    7.417602] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    7.418090] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    7.467956] Using current 0 uA, indicator 0 uA, assist 8800 uA
+[    7.473846] mode: assist
+[    7.476867] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    7.477355] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    7.527252] Using current 0 uA, indicator 0 uA, assist 8900 uA
+[    7.533142] mode: assist
+[    7.536163] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    7.536651] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    7.586517] Using current 0 uA, indicator 0 uA, assist 9000 uA
+[    7.592468] mode: assist
+[    7.595489] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    7.595977] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    7.645874] Using current 0 uA, indicator 0 uA, assist 9100 uA
+[    7.651794] mode: assist
+[    7.654846] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    7.655303] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    7.705200] Using current 0 uA, indicator 0 uA, assist 9200 uA
+[    7.711151] mode: assist
+[    7.714172] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    7.714660] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    7.764526] Using current 0 uA, indicator 0 uA, assist 9300 uA
+[    7.770477] mode: assist
+[    7.773498] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    7.773986] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    7.823852] Using current 0 uA, indicator 0 uA, assist 9400 uA
+[    7.829803] mode: assist
+[    7.832824] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    7.833312] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    7.883209] Using current 0 uA, indicator 0 uA, assist 9500 uA
+[    7.889160] mode: assist
+[    7.892181] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    7.892639] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    7.942535] Using current 0 uA, indicator 0 uA, assist 9600 uA
+[    7.948486] mode: assist
+[    7.951507] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    7.951995] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    8.001861] Using current 0 uA, indicator 0 uA, assist 9700 uA
+[    8.007812] mode: assist
+[    8.010833] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    8.011322] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    8.061218] Using current 0 uA, indicator 0 uA, assist 9800 uA
+[    8.067138] mode: assist
+[    8.070190] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    8.070648] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    8.120544] Using current 0 uA, indicator 0 uA, assist 9900 uA
+[    8.126434] mode: assist
+[    8.129455] adp1653 2-0030: Write Addr:00 Val:58 ok
+[    8.129943] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    8.179809] Using current 0 uA, indicator 0 uA, assist 11 uA
+[    8.186004] adp1653 2-0030: Write Addr:00 Val:00 ok
+[    8.186492] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    8.186492] flash: test done
+[    8.190155] adp1653 2-0030: Read Addr:03 Val:00 ok
+[    8.190185] flash: setup
+[    8.193450] adp1653 2-0030: Read Addr:03 Val:00 ok
+[    8.193450] adp1653 2-0030: Fault info: 00
+[    8.193481] Using current 0 uA, indicator 0 uA, assist 11 uA
+[    8.199707] adp1653 2-0030: Write Addr:00 Val:00 ok
+[    8.200195] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    8.200897] adp1653 2-0030: Read Addr:03 Val:00 ok
+[    8.200897] flash: led class setup
+[    8.204833] flash: v4l2 class setup
+[    8.208587] Using current 0 uA, indicator 0 uA, assist 0 uA
+[    8.214202] mode: assist
+[    8.217254] adp1653 2-0030: Write Addr:00 Val:00 ok
+[    8.217742] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    8.217742] Using current 0 uA, indicator 0 uA, assist 0 uA
+[    8.223388] mode: flash
+[    8.225860] mode: torch
+[    8.228393] mode: indicator
+[    8.231231] mode: assist
+[    8.234252] adp1653 2-0030: Write Addr:00 Val:00 ok
+[    8.234741] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    8.234771] set_flash_brightness: 320000 uA, 215
+[    8.239501] Using current 320000 uA, indicator 0 uA, assist 0 uA
+[    8.245544] mode: flash
+[    8.248077] mode: torch
+[    8.250549] mode: indicator
+[    8.253387] mode: assist
+[    8.256408] adp1653 2-0030: Write Addr:00 Val:00 ok
+[    8.256896] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    8.256896] Using current 100000 uA, indicator 0 uA, assist 0 uA
+[    8.263031] mode: flash
+[    8.265502] mode: torch
+[    8.268035] mode: indicator
+[    8.270874] mode: assist
+[    8.273895] adp1653 2-0030: Write Addr:00 Val:00 ok
+[    8.274383] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    8.274444] Using current 100000 uA, indicator 7 uA, assist 0 uA
+[    8.280548] mode: indicator
+[    8.283386] mode: assist
+[    8.286407] adp1653 2-0030: Write Addr:00 Val:07 ok
+[    8.286895] adp1653 2-0030: Write Addr:01 Val:00 ok
+[    8.286956] flash: all done
+[    8.290527] of_get_named_gpiod_flags: parsed 'enable-gpio' property of node '/ocp@68000000/i2c@48072000/lp5523@32[0]' - status (0)
+[    8.387512] lp5523x 2-0032: could not configure LED engine, status = 0x06
+[    8.397186] lp5523x 2-0032: post init device err: -1
+[    8.402282] lp5523x: probe of 2-0032 failed with error -1
+[    8.408386] power_supply bq27200-0: Not all required supplies found, defer probe
+[    8.415863] bq27xxx-battery 2-0055: failed to register battery
+[    8.422760] of_get_named_gpiod_flags: parsed 'power-gpio' property of node '/ocp@68000000/i2c@48072000/tpa6130a2@60[0]' - status (0)
+[    8.423400] tpa6130a2 2-0060: Linked as a consumer to regulator.13
+[    8.436798] Detecting chip: 2
+[    8.454711] bq2415x-charger 2-006b: automode supported, waiting for events
+[    8.461761] bq2415x: Timer reset
+[    8.466491] bq2415x-charger 2-006b: driver registered
+[    8.471862] omap_i2c 48072000.i2c: bus 2 rev3.3 at 100 kHz
+[    8.480621] lis3lv02d_i2c 3-001d: Linked as a consumer to regulator.2
+[    8.487487] lis3lv02d_i2c 3-001d: Linked as a consumer to regulator.8
+[    8.507507] lis3lv02d: 8 bits sensor found
+[    8.577728] input: ST LIS3LV02DL Accelerometer as /devices/platform/lis3lv02d/input/input4
+[    8.592315] et8ek8 3-003e: GPIO lookup for consumer reset
+[    8.592315] et8ek8 3-003e: using device tree for GPIO lookup
+[    8.592376] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]'
+[    8.592437] of_get_named_gpiod_flags: parsed 'reset-gpio' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]' - status (0)
+[    8.592468] gpio gpiochip3: Persistence not supported for GPIO 6
+[    8.592712] et8ek8 3-003e: Linked as a consumer to regulator.5
+[    8.598846] et8ek8 3-003e: could not get clock
+[    8.603515] et8ek8 3-003e: Dropping the link to regulator.5
+[    8.610076] ad5820 3-000c: Linked as a consumer to regulator.5
+[    8.616149] omap_i2c 48060000.i2c: bus 3 rev3.3 at 400 kHz
+[    8.622253] dmtimer_probe
+[    8.624938] dmtimer_probe: have timer
+[    8.628814] dmtimer: have timer-pwm
+[    8.632904] dmtimer: allocating
+[    8.636291] dmtimer: registering pwm
+[    8.640258] dmtimer: all good
+[    8.643707] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    8.643737] nokia-modem n900-modem: using device tree for GPIO lookup
+[    8.643798] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[0]' - status (0)
+[    8.643829] gpio gpiochip2: Persistence not supported for GPIO 6
+[    8.644073] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    8.644104] nokia-modem n900-modem: using device tree for GPIO lookup
+[    8.644165] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[1]' - status (0)
+[    8.644195] gpio gpiochip2: Persistence not supported for GPIO 9
+[    8.644378] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    8.644409] nokia-modem n900-modem: using device tree for GPIO lookup
+[    8.644470] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[2]' - status (0)
+[    8.644500] gpio gpiochip2: Persistence not supported for GPIO 10
+[    8.644683] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    8.644714] nokia-modem n900-modem: using device tree for GPIO lookup
+[    8.644775] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[3]' - status (0)
+[    8.644775] gpio gpiochip2: Persistence not supported for GPIO 11
+[    8.644989] nokia-modem n900-modem: GPIO lookup for consumer (null)
+[    8.644989] nokia-modem n900-modem: using device tree for GPIO lookup
+[    8.645050] of_get_named_gpiod_flags: parsed 'gpios' property of node '/ocp@68000000/ssi-controller@48058000/ssi-port@4805a000/hsi-client[4]' - status (0)
+[    8.645080] gpio gpiochip4: Persistence not supported for GPIO 29
+[    8.647460] nokia-modem n900-modem: Registered Nokia HSI modem
+[    8.653991] of_get_named_gpiod_flags: parsed 'ti,power-gpio' property of node '/ocp@68000000/spi@480ba000/wl1251@0[0]' - status (0)
+[    8.654327] wl1251 spi3.0: Linked as a consumer to regulator.8
+[    8.660705] wl1251 spi3.0: Direct firmware load for ti-connectivity/wl1251-nvs.bin failed with error -2
+[    8.670318] wl1251: ERROR could not get nvs file: -2
+[    8.675567] wl1251 spi3.0: Dropping the link to regulator.8
+[    8.681457] wl1251: probe of spi3.0 failed with error -2
+[    8.757293] musb-hdrc musb-hdrc.0.auto: HS USB OTG: revision 0x33, sysconfig 0x08, sysstatus 0x1, intrfsel 0x1, simenable  0x0
+[    8.757812]  musb-hdrc.0.auto: registering UDC driver [g_ether]
+[    8.757934] using random self ethernet address
+[    8.762451] using random host ethernet address
+[    8.767059] g_ether gadget: adding config #1 'CDC Ethernet (ECM)'/(ptrval)
+[    8.767089] g_ether gadget: adding 'cdc_ethernet'/(ptrval) to config 'CDC Ethernet (ECM)'/(ptrval)
+[    8.768157] usb0: HOST MAC aa:09:ca:2e:45:54
+[    8.772552] usb0: MAC ca:79:76:60:16:48
+[    8.776458] g_ether gadget: CDC Ethernet: dual speed IN/ep1in OUT/ep1out NOTIFY/ep2in
+[    8.776489] g_ether gadget: cfg 1/(ptrval) speeds: high full
+[    8.776489] g_ether gadget:   interface 0 = cdc_ethernet/(ptrval)
+[    8.776519] g_ether gadget:   interface 1 = cdc_ethernet/(ptrval)
+[    8.776550] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+[    8.783325] g_ether gadget: g_ether ready
+[    8.788146] tsc2005 spi0.0: GPIO lookup for consumer reset
+[    8.788177] tsc2005 spi0.0: using device tree for GPIO lookup
+[    8.788238] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/ocp@68000000/spi@48098000/tsc2005@0[0]' - status (0)
+[    8.788299] gpio gpiochip3: Persistence not supported for GPIO 8
+[    8.788482] tsc2005 spi0.0: Linked as a consumer to regulator.8
+[    8.796417] input: TSC2005 touchscreen as /devices/platform/68000000.ocp/48098000.spi/spi_master/spi0/spi0.0/input/input5
+[    8.812133] omap_hsmmc 4809c000.mmc: GPIO lookup for consumer cd
+[    8.812164] omap_hsmmc 4809c000.mmc: using device tree for GPIO lookup
+[    8.812225] of_get_named_gpiod_flags: can't parse 'cd-gpios' property of node '/ocp@68000000/mmc@4809c000[0]'
+[    8.812255] of_get_named_gpiod_flags: can't parse 'cd-gpio' property of node '/ocp@68000000/mmc@4809c000[0]'
+[    8.812255] omap_hsmmc 4809c000.mmc: using lookup tables for GPIO lookup
+[    8.812286] omap_hsmmc 4809c000.mmc: No GPIO consumer cd found
+[    8.812316] omap_hsmmc 4809c000.mmc: GPIO lookup for consumer wp
+[    8.812347] omap_hsmmc 4809c000.mmc: using device tree for GPIO lookup
+[    8.812377] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp@68000000/mmc@4809c000[0]'
+[    8.812408] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp@68000000/mmc@4809c000[0]'
+[    8.812408] omap_hsmmc 4809c000.mmc: using lookup tables for GPIO lookup
+[    8.812438] omap_hsmmc 4809c000.mmc: No GPIO consumer wp found
+[    8.813262] omap_hsmmc 4809c000.mmc: Linked as a consumer to regulator.12
+[    8.820556] omap_hsmmc 4809c000.mmc: Linked as a consumer to regulator.1
+[    8.858581] omap_hsmmc 480b4000.mmc: GPIO lookup for consumer wp
+[    8.858612] omap_hsmmc 480b4000.mmc: using device tree for GPIO lookup
+[    8.858642] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp@68000000/mmc@480b4000[0]'
+[    8.858673] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp@68000000/mmc@480b4000[0]'
+[    8.858703] omap_hsmmc 480b4000.mmc: using lookup tables for GPIO lookup
+[    8.858734] omap_hsmmc 480b4000.mmc: No GPIO consumer wp found
+[    8.859497] omap_hsmmc 480b4000.mmc: Linked as a consumer to regulator.4
+[    8.866516] omap_hsmmc 480b4000.mmc: Linked as a consumer to regulator.19
+[    8.904479] rx51-audio n900-audio: GPIO lookup for consumer tvout-selection
+[    8.904510] rx51-audio n900-audio: using device tree for GPIO lookup
+[    8.904571] of_get_named_gpiod_flags: parsed 'tvout-selection-gpios' property of node '/n900-audio[0]' - status (0)
+[    8.904602] gpio gpiochip1: Persistence not supported for GPIO 8
+[    8.904632] rx51-audio n900-audio: GPIO lookup for consumer jack-detection
+[    8.904663] rx51-audio n900-audio: using device tree for GPIO lookup
+[    8.904724] of_get_named_gpiod_flags: parsed 'jack-detection-gpios' property of node '/n900-audio[0]' - status (0)
+[    8.904754] gpio gpiochip5: Persistence not supported for GPIO 17
+[    8.904754] no flags found for jack-detection
+[    8.904785] rx51-audio n900-audio: GPIO lookup for consumer eci-switch
+[    8.904785] rx51-audio n900-audio: using device tree for GPIO lookup
+[    8.904846] of_get_named_gpiod_flags: parsed 'eci-switch-gpios' property of node '/n900-audio[0]' - status (0)
+[    8.904846] gpio gpiochip5: Persistence not supported for GPIO 22
+[    8.904876] rx51-audio n900-audio: GPIO lookup for consumer speaker-amplifier
+[    8.904907] rx51-audio n900-audio: using device tree for GPIO lookup
+[    8.904937] of_get_named_gpiod_flags: parsed 'speaker-amplifier-gpios' property of node '/n900-audio[0]' - status (0)
+[    8.913757] rx51-audio n900-audio: tlv320aic3x-hifi <-> 49022000.mcbsp mapping ok
+[    8.934082] input: RX-51 AV Jack as /devices/platform/n900-audio/sound/card0/input6
+[    8.951873] omapdss_dss 48050000.dss: Linked as a consumer to regulator.2
+[    8.959197] omapdss_venc 48050c00.encoder: Linked as a consumer to regulator.7
+[    8.967071] omapdrm omapdrm.0: DMM not available, disable DMM support
+[    8.974273] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    8.981079] [drm] No driver support for vblank timestamp query.
+[    9.032470] mmc0: host does not support reading read-only switch, assuming write-enable
+[    9.036773] mmc0: new high speed SDHC card at address e624
+[    9.039215] mmcblk0: mmc0:e624 SU16G 14.8 GiB 
+[    9.048217]  mmcblk0: p1 p2 p3 p4
+[    9.115509] Console: switching to colour frame buffer device 100x30
+[    9.183258] omapdrm omapdrm.0: fb0: omapdrm frame buffer device
+[    9.196289] [drm] Initialized omapdrm 1.0.0 20110917 for omapdrm.0 on minor 0
+[    9.218322] power_supply bq27200-0: bq27200-0: Found supply : bq24150a-0
+[    9.231323] bq27xxx-battery 2-0055: support enabled
+[    9.243774] mmc1: switch to bus width 8 failed
+[    9.254272] mmc1: switch to bus width 4 failed
+[    9.263488] mmc1: new high speed MMC card at address 0001
+[    9.276062] mmcblk1: mmc1:0001 MMC32G 29.8 GiB 
+[    9.286651] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[    9.298156] g_ether gadget: init ecm
+[    9.298156] g_ether gadget: notify connect false
+[    9.298706] g_ether gadget: activate ecm
+[    9.298767] usb0: qlen 10
+[    9.298767] g_ether gadget: ecm_close
+[    9.298980] g_ether gadget: packet filter 0c
+[    9.299011] g_ether gadget: ecm req21.43 v000c i0000 l0
+[    9.299835] mmcblk1boot0: mmc1:0001 MMC32G partition 1 512 KiB
+[    9.312561] mmcblk1boot1: mmc1:0001 MMC32G partition 2 512 KiB
+[    9.327453]  mmcblk1: p1 p2 p3 p4
+[    9.342254] twl4030_bci 48070000.i2c:twl@48:bci: battery temperature out of range
+[    9.361755] et8ek8 3-003e: GPIO lookup for consumer reset
+[    9.361785] et8ek8 3-003e: using device tree for GPIO lookup
+[    9.361846] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]'
+[    9.361907] of_get_named_gpiod_flags: parsed 'reset-gpio' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]' - status (0)
+[    9.361938] gpio gpiochip3: Persistence not supported for GPIO 6
+[    9.362182] et8ek8 3-003e: Linked as a consumer to regulator.5
+[    9.373229] et8ek8 3-003e: could not get clock
+[    9.383148] et8ek8 3-003e: Dropping the link to regulator.5
+[    9.395843] et8ek8 3-003e: GPIO lookup for consumer reset
+[    9.395874] et8ek8 3-003e: using device tree for GPIO lookup
+[    9.395904] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]'
+[    9.395965] of_get_named_gpiod_flags: parsed 'reset-gpio' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]' - status (0)
+[    9.395996] gpio gpiochip3: Persistence not supported for GPIO 6
+[    9.396270] et8ek8 3-003e: Linked as a consumer to regulator.5
+[    9.406951] et8ek8 3-003e: could not get clock
+[    9.416778] et8ek8 3-003e: Dropping the link to regulator.5
+[    9.428039] omap3isp 480bc000.isp: ignoring dependency for device, assuming no driver
+[    9.440856] omap3isp 480bc000.isp: parsing endpoint /ocp@68000000/isp@480bc000/ports/port@1/endpoint, interface 1
+[    9.440887] omap3isp 480bc000.isp: CSI-1/CCP-2 configuration
+[    9.440917] omap3isp 480bc000.isp: clock lane polarity 0, pos 1
+[    9.440917] omap3isp 480bc000.isp: data lane polarity 0, pos 0
+[    9.441009] omap3isp 480bc000.isp: 480bc000.isp supply vdd-csiphy1 not found, using dummy regulator
+[    9.458953] omap3isp 480bc000.isp: Linked as a consumer to regulator.0
+[    9.470153] omap3isp 480bc000.isp: 480bc000.isp supply vdd-csiphy2 not found, using dummy regulator
+[    9.488891] omap3isp 480bc000.isp: Revision 2.0 found
+[    9.499816] omap-iommu 480bd400.mmu: 480bd400.mmu: version 1.1
+[    9.510711] omap3isp 480bc000.isp: Linked as a consumer to regulator.3
+[    9.522186] omap3isp 480bc000.isp: hist: using DMA channel dma0chan12
+[    9.522247] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP CCP2 was not initialized!
+[    9.537078] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP CSI2a was not initialized!
+[    9.551483] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP CCDC was not initialized!
+[    9.567108] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP preview was not initialized!
+[    9.582214] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP resizer was not initialized!
+[    9.597503] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP AEWB was not initialized!
+[    9.610595] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP AF was not initialized!
+[    9.623535] omap3isp 480bc000.isp: Entity type for entity OMAP3 ISP histogram was not initialized!
+[    9.641632] et8ek8 3-003e: GPIO lookup for consumer reset
+[    9.641662] et8ek8 3-003e: using device tree for GPIO lookup
+[    9.641693] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]'
+[    9.641754] of_get_named_gpiod_flags: parsed 'reset-gpio' property of node '/ocp@68000000/i2c@48060000/camera@3e[0]' - status (0)
+[    9.641784] gpio gpiochip3: Persistence not supported for GPIO 6
+[    9.641998] et8ek8 3-003e: Linked as a consumer to regulator.5
+[    9.655120] omap3isp 480bc000.isp: isp_xclk_set_rate: cam_xclka set to 9600000 Hz (div 18)
+[    9.687652] et8ek8 3-003e: meta_reglist version V14 03-June-2008
+[    9.780242] omap3isp 480bc000.isp: Entity type for entity ad5820 focus was not initialized!
+[    9.798400] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio_keys/camera_lens_cover[0]' - status (0)
+[    9.798431] gpio gpiochip3: Persistence not supported for GPIO 14
+[    9.798797] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio_keys/lock_button[0]' - status (0)
+[    9.798828] gpio gpiochip3: Persistence not supported for GPIO 17
+[    9.799102] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio_keys/keypad_slide[0]' - status (0)
+[    9.799133] gpio gpiochip2: Persistence not supported for GPIO 7
+[    9.799377] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio_keys/proximity_sensor[0]' - status (0)
+[    9.799407] gpio gpiochip2: Persistence not supported for GPIO 25
+[    9.799926] input: gpio_keys as /devices/platform/gpio_keys/input/input7
+[    9.813720] twl_rtc 48070000.i2c:twl@48:rtc: setting system clock to 2000-01-01 01:43:48 UTC (946691028)
+[    9.833129] sr_init: No PMIC hook to init smartreflex
+[    9.844146] smartreflex 480cb000.smartreflex: omap_sr_probe: SmartReflex driver initialized
+[    9.858428] smartreflex 480c9000.smartreflex: omap_sr_probe: SmartReflex driver initialized
+[    9.873352] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    9.895629] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    9.908447] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    9.922180] cfg80211: failed to load regulatory.db
+[    9.932189] VCSI: disabling
+[    9.942169] VDAC: disabling
+[    9.950775] ALSA device list:
+[    9.958251]   #0: RX-51
+[    9.993103] EXT4-fs (mmcblk0p4): mounted filesystem with ordered data mode. Opts: (null)
+[   10.006408] VFS: Mounted root (ext4 filesystem) readonly on device 179:4.
+[   10.034729] devtmpfs: mounted
+[   10.046508] Freeing unused kernel memory: 1024K
+[   10.057006] Run /sbin/init as init process
+[   11.863281] udevd[194]: starting version 175
+[   18.991546] random: crng init done
+[   19.344390] (stc): gdata/new_proto/recv or reg_complete_cb not ready
+[   19.344421] fmdrv: Failed to get ST write func pointer
+[   19.366210] (stc):  chnl_id 8 not supported
+[   19.366241] fmdrv: st_unregister failed -93
+[   19.383941] fmdrv: Unable to prepare FM CORE
+[   22.429351] EXT4-fs (mmcblk0p4): re-mounted. Opts: (null)
+[   30.441040] EXT4-fs (mmcblk0p1): mounted filesystem with ordered data mode. Opts: errors=remount-ro
+[   30.519042] EXT4-fs (mmcblk1p4): mounted filesystem with ordered data mode. Opts: errors=remount-ro
+[   33.564605] usb0: eth_open
+[   33.564636] usb0: eth_start
+[   33.564758] g_ether gadget: ecm_open
+[   53.428009] omapdrm omapdrm.0: no framedone handler?
+[  102.157897] omapdrm omapdrm.0: no framedone handler?
+[  121.914672] ssi-protocol ssi-protocol: WAKELINES TEST OK
+[  889.478454] omapdrm omapdrm.0: no framedone handler?
