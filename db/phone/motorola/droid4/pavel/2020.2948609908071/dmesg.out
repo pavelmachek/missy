@@ -1,0 +1,988 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 5.7.0-rc1-next-20200417 (pavel@amd) (gcc version 4.7.2 (GCC), GNU ld (GNU Binutils) 2.23.1.20121113) #171 SMP PREEMPT Sat Apr 18 13:01:40 CEST 2020
+[    0.000000] CPU: ARMv7 Processor [411fc093] revision 3 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: Motorola Droid 4 XT894
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] cma: Reserved 16 MiB at 0xbe800000
+[    0.000000] OMAP4: Map 0xafe00000 to (ptrval) for dram barrier
+[    0.000000] On node 0 totalpages: 260864
+[    0.000000]   Normal zone: 1532 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 196096 pages, LIFO batch:63
+[    0.000000]   HighMem zone: 64768 pages, LIFO batch:15
+[    0.000000] OMAP4430 ES2.3
+[    0.000000] percpu: Embedded 15 pages/cpu s32384 r8192 d20864 u61440
+[    0.000000] pcpu-alloc: s32384 r8192 d20864 u61440 alloc=15*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 259332
+[    0.000000] Kernel command line: root=/dev/mmcblk0p2 rootwait console=ttyO2,115200
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Memory: 1002608K/1043456K available (9216K kernel code, 346K rwdata, 3476K rodata, 1024K init, 338K bss, 24464K reserved, 16384K cma-reserved, 242688K highmem)
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] L2C: platform modifies aux control register: 0x5e470000 -> 0x7e470000
+[    0.000000] L2C: DT/platform modifies aux control register: 0x5e470000 -> 0x7e470000
+[    0.000000] L2C-310 errata 727915 769419 enabled
+[    0.000000] L2C-310 enabling early BRESP for Cortex-A9
+[    0.000000] L2C-310 ID prefetch enabled, offset 8 lines
+[    0.000000] L2C-310 cache controller enabled, 16 ways, 1024 kB
+[    0.000000] L2C-310: CACHE_ID 0x410000c4, AUX_CTRL 0x7e470000
+[    0.000000] random: get_random_bytes called from start_kernel+0x360/0x4e4 with crng_init=0
+[    0.000000] OMAP clockevent source: timer1 at 32768 Hz
+[    0.000000] clocksource: 32k_counter: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 58327039986419 ns
+[    0.000000] sched_clock: 32 bits at 32kHz, resolution 30517ns, wraps every 65535999984741ns
+[    0.000000] OMAP clocksource: 32k_counter at 32768 Hz
+[    0.001251] Console: colour dummy device 80x30
+[    0.001251] WARNING: Your 'console=ttyO2' has been replaced by 'ttyS2'
+[    0.001281] This ensures that you still see kernel messages. Please
+[    0.001281] update your kernel commandline.
+[    0.001281] Calibrating delay loop... 2393.70 BogoMIPS (lpj=11968512)
+[    0.059997] pid_max: default: 32768 minimum: 301
+[    0.060119] LSM: Security Framework initializing
+[    0.060180] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes, linear)
+[    0.060180] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes, linear)
+[    0.060821] CPU: Testing write buffer coherency: ok
+[    0.060882] CPU0: Spectre v2: using BPIALL workaround
+[    0.061065] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.061096] smp: CPU1 parked within kernel, needs reset (0x80011ba8 0x80067478)
+[    0.061584] Setting up static identity map for 0x80100000 - 0x80100078
+[    0.061706] rcu: Hierarchical SRCU implementation.
+[    0.062011] smp: Bringing up secondary CPUs ...
+[    0.119964] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.119995] CPU1: Spectre v2: using BPIALL workaround
+[    0.120117] smp: Brought up 1 node, 2 CPUs
+[    0.120147] SMP: Total of 2 processors activated (4787.40 BogoMIPS).
+[    0.120147] CPU: All CPU(s) started in SVC mode.
+[    0.120574] devtmpfs: initialized
+[    0.133056] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+[    0.133453] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.133483] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.134277] pinctrl core: initialized pinctrl subsystem
+[    0.134796] thermal_sys: Registered thermal governor 'step_wise'
+[    0.135681] NET: Registered protocol family 16
+[    0.137695] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.139770] omap_hwmod: l3_main_3 using broken dt data from ocp
+[    0.140472] omap_hwmod: l3_main_2 using broken dt data from ocp
+[    0.151855] cpuidle: using governor menu
+[    0.170379] omap-gpmc 50000000.gpmc: GPMC revision 6.0
+[    0.170379] gpmc_mem_init: disabling cs 0 mapped at 0x0-0x1000000
+[    0.170410] gpiochip_find_base: found new base at 508
+[    0.170623] gpio gpiochip0: (omap-gpmc): added GPIO chardev (254:0)
+[    0.170684] gpiochip_setup_dev: registered GPIOs 508 to 511 on device: gpiochip0 (omap-gpmc)
+[    0.174194] No ATAGs?
+[    0.189270] reg-fixed-voltage regulator-hdmi: GPIO lookup for consumer (null)
+[    0.189300] reg-fixed-voltage regulator-hdmi: using device tree for GPIO lookup
+[    0.189300] of_get_named_gpiod_flags: can't parse 'gpios' property of node '/regulator-hdmi[0]'
+[    0.189453] reg-fixed-voltage regulator-hdmi: No GPIO consumer (null) found
+[    0.189514] reg-fixed-voltage regulator-lcd: GPIO lookup for consumer (null)
+[    0.189544] reg-fixed-voltage regulator-lcd: using device tree for GPIO lookup
+[    0.189544] of_get_named_gpiod_flags: can't parse 'gpios' property of node '/regulator-lcd[0]'
+[    0.189575] reg-fixed-voltage regulator-lcd: No GPIO consumer (null) found
+[    0.189636] reg-fixed-voltage regulator-wl12xx: GPIO lookup for consumer (null)
+[    0.189636] reg-fixed-voltage regulator-wl12xx: using device tree for GPIO lookup
+[    0.189636] of_get_named_gpiod_flags: can't parse 'gpios' property of node '/regulator-wl12xx[0]'
+[    0.189697] reg-fixed-voltage regulator-wl12xx: No GPIO consumer (null) found
+[    0.191925] iommu: Default domain type: Translated 
+[    0.194488] SCSI subsystem initialized
+[    0.194671] usbcore: registered new interface driver usbfs
+[    0.194702] usbcore: registered new interface driver hub
+[    0.194793] usbcore: registered new device driver usb
+[    0.195037] usb_phy_generic usb-phy@2: GPIO lookup for consumer reset
+[    0.195037] usb_phy_generic usb-phy@2: using device tree for GPIO lookup
+[    0.195068] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/usb-phy@2[0]'
+[    0.195068] of_get_named_gpiod_flags: can't parse 'reset-gpio' property of node '/usb-phy@2[0]'
+[    0.195098] usb_phy_generic usb-phy@2: using lookup tables for GPIO lookup
+[    0.195098] usb_phy_generic usb-phy@2: No GPIO consumer reset found
+[    0.195098] usb_phy_generic usb-phy@2: GPIO lookup for consumer vbus-detect
+[    0.195098] usb_phy_generic usb-phy@2: using device tree for GPIO lookup
+[    0.195129] of_get_named_gpiod_flags: can't parse 'vbus-detect-gpios' property of node '/usb-phy@2[0]'
+[    0.195129] of_get_named_gpiod_flags: can't parse 'vbus-detect-gpio' property of node '/usb-phy@2[0]'
+[    0.195129] usb_phy_generic usb-phy@2: using lookup tables for GPIO lookup
+[    0.195129] usb_phy_generic usb-phy@2: No GPIO consumer vbus-detect found
+[    0.195281] usb_phy_generic usb-phy@2: supply vcc not found, using dummy regulator
+[    0.195953] mc: Linux media interface: v0.10
+[    0.195983] videodev: Linux video capture interface: v2.00
+[    0.196075] pps_core: LinuxPPS API ver. 1 registered
+[    0.196075] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.196075] PTP clock support registered
+[    0.196594] Advanced Linux Sound Architecture Driver Initialized.
+[    0.197021] Bluetooth: Core ver 2.22
+[    0.197052] NET: Registered protocol family 31
+[    0.197052] Bluetooth: HCI device and connection manager initialized
+[    0.197082] Bluetooth: HCI socket layer initialized
+[    0.197082] Bluetooth: L2CAP socket layer initialized
+[    0.197113] Bluetooth: SCO socket layer initialized
+[    0.197662] clocksource: Switched to clocksource 32k_counter
+[    0.205261] NET: Registered protocol family 2
+[    0.205841] tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 12288 bytes, linear)
+[    0.205871] TCP established hash table entries: 8192 (order: 3, 32768 bytes, linear)
+[    0.205932] TCP bind hash table entries: 8192 (order: 5, 163840 bytes, linear)
+[    0.206054] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.206176] UDP hash table entries: 512 (order: 2, 24576 bytes, linear)
+[    0.206207] UDP-Lite hash table entries: 512 (order: 2, 24576 bytes, linear)
+[    0.206359] NET: Registered protocol family 1
+[    0.206848] RPC: Registered named UNIX socket transport module.
+[    0.206878] RPC: Registered udp transport module.
+[    0.206878] RPC: Registered tcp transport module.
+[    0.206878] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.208343] Initialise system trusted keyrings
+[    0.208526] workingset: timestamp_bits=30 max_order=18 bucket_order=0
+[    0.209350] NFS: Registering the id_resolver key type
+[    0.209381] Key type id_resolver registered
+[    0.209381] Key type id_legacy registered
+[    0.209960] jitterentropy: Initialization failed with host not compliant with requirements: 2
+[    0.209991] Key type asymmetric registered
+[    0.209991] Asymmetric key parser 'x509' registered
+[    0.210021] bounce: pool size: 64 pages
+[    0.210052] io scheduler mq-deadline registered
+[    0.214416] gpio gpiochip1: (gpio-0-31): added GPIO chardev (254:1)
+[    0.214508] gpiochip_setup_dev: registered GPIOs 0 to 31 on device: gpiochip1 (gpio-0-31)
+[    0.214569] OMAP GPIO hardware version 0.1
+[    0.229522] omap-dma-engine 4a056000.dma-controller: OMAP DMA engine driver (LinkedList1/2/3 supported)
+[    0.236480] omap-mailbox 4a0f4000.mailbox: omap mailbox rev 0x400
+[    0.241546] gpio gpiochip2: (gpio-32-63): added GPIO chardev (254:2)
+[    0.241607] gpiochip_setup_dev: registered GPIOs 32 to 63 on device: gpiochip2 (gpio-32-63)
+[    0.242675] gpio gpiochip3: (gpio-64-95): added GPIO chardev (254:3)
+[    0.242736] gpiochip_setup_dev: registered GPIOs 64 to 95 on device: gpiochip3 (gpio-64-95)
+[    0.243774] gpio gpiochip4: (gpio-96-127): added GPIO chardev (254:4)
+[    0.243835] gpiochip_setup_dev: registered GPIOs 96 to 127 on device: gpiochip4 (gpio-96-127)
+[    0.244873] gpio gpiochip5: (gpio-128-159): added GPIO chardev (254:5)
+[    0.244934] gpiochip_setup_dev: registered GPIOs 128 to 159 on device: gpiochip5 (gpio-128-159)
+[    0.245849] gpio gpiochip6: (gpio-160-191): added GPIO chardev (254:6)
+[    0.245910] gpiochip_setup_dev: registered GPIOs 160 to 191 on device: gpiochip6 (gpio-160-191)
+[    0.246887] omap_i2c 48060000.i2c: bus 2 rev0.10 at 100 kHz
+[    0.252502] l4_per_cm:clk:0120:0: failed to disable
+[    0.254516] omap_i2c 48070000.i2c: bus 0 rev0.10 at 100 kHz
+[    0.255554] omap_i2c 48072000.i2c: bus 1 rev0.10 at 100 kHz
+[    0.263580] omap_i2c 48350000.i2c: bus 3 rev0.10 at 100 kHz
+[    0.275421] pinctrl-single 4a31e040.pinmux: 28 pins, size 56
+[    0.276092] pinctrl-single 4a100040.pinmux: 203 pins, size 406
+[    0.282226] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.284515] 48020000.serial: ttyS2 at MMIO 0x48020000 (irq = 106, base_baud = 3000000) is a 8250
+[    0.999359] printk: console [ttyS2] enabled
+[    1.004364] 4806a000.serial: ttyS0 at MMIO 0x4806a000 (irq = 117, base_baud = 3000000) is a 8250
+[    1.013824] 4806c000.serial: ttyS1 at MMIO 0x4806c000 (irq = 118, base_baud = 3000000) is a 8250
+[    1.023406] 4806e000.serial: ttyS3 at MMIO 0x4806e000 (irq = 119, base_baud = 3000000) is a 8250
+[    1.032379] serial serial0: tty port ttyS3 registered
+[    1.040527] omapdss_dss 58000000.dss: supply vdda_video not found, using dummy regulator
+[    1.048767] DSS: OMAP DSS rev 4.0
+[    1.067504] display-connector connector: GPIO lookup for consumer hpd
+[    1.067504] display-connector connector: using device tree for GPIO lookup
+[    1.067535] of_get_named_gpiod_flags: parsed 'hpd-gpios' property of node '/connector[0]' - status (0)
+[    1.067596] gpio gpiochip2: Persistence not supported for GPIO 31
+[    1.075195] brd: module loaded
+[    1.085540] loop: module loaded
+[    1.090637] mtdoops: mtd device (mtddev=name/number) must be supplied
+[    1.099700] cpcap-core spi0.0: CPCAP vendor: ST rev: 2.10 (1a)
+[    1.110382] cpcap-regulator cpcap-regulator.0: DMA mask not set
+[    1.116516] SW5: Bringing 0uV into 5050000-5050000uV
+[    1.193847] VRF2: Bringing 0uV into 2775000-2775000uV
+[    1.481597] cpcap-usb-phy cpcap-usb-phy.0: DMA mask not set
+[    1.488922] cpcap-usb-phy cpcap-usb-phy.0: GPIO lookup for consumer mode
+[    1.488952] cpcap-usb-phy cpcap-usb-phy.0: using device tree for GPIO lookup
+[    1.488983] of_get_named_gpiod_flags: parsed 'mode-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@98000/spi@0/pmic@0/phy[0]' - status (0)
+[    1.488983] gpio gpiochip2: Persistence not supported for GPIO 28
+[    1.489013] cpcap-usb-phy cpcap-usb-phy.0: GPIO lookup for consumer mode
+[    1.489013] cpcap-usb-phy cpcap-usb-phy.0: using device tree for GPIO lookup
+[    1.489044] of_get_named_gpiod_flags: parsed 'mode-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@98000/spi@0/pmic@0/phy[1]' - status (0)
+[    1.489044] gpio gpiochip1: Persistence not supported for GPIO 0
+[    1.489105] cpcap-usb-phy cpcap-usb-phy.0: could not initialize VBUS or ID IIO: -517
+[    1.496978] ------------[ cut here ]------------
+[    1.501678] WARNING: CPU: 0 PID: 1 at drivers/regulator/core.c:2048 _regulator_put+0xf0/0xf8
+[    1.510162] Modules linked in:
+[    1.513214] CPU: 0 PID: 1 Comm: swapper/0 Not tainted 5.7.0-rc1-next-20200417 #171
+[    1.520812] Hardware name: Generic OMAP4 (Flattened Device Tree)
+[    1.526885] [<c010e35c>] (unwind_backtrace) from [<c010a604>] (show_stack+0x10/0x14)
+[    1.534667] [<c010a604>] (show_stack) from [<c03ddc0c>] (dump_stack+0xb4/0xd4)
+[    1.541931] [<c03ddc0c>] (dump_stack) from [<c012c368>] (__warn+0xc8/0xf0)
+[    1.548828] [<c012c368>] (__warn) from [<c012c41c>] (warn_slowpath_fmt+0x8c/0x94)
+[    1.556365] [<c012c41c>] (warn_slowpath_fmt) from [<c044c1c4>] (_regulator_put+0xf0/0xf8)
+[    1.564575] [<c044c1c4>] (_regulator_put) from [<c044c1e8>] (regulator_put+0x1c/0x2c)
+[    1.572448] [<c044c1e8>] (regulator_put) from [<c0509228>] (release_nodes+0x1b4/0x244)
+[    1.580383] [<c0509228>] (release_nodes) from [<c05053cc>] (really_probe+0x10c/0x32c)
+[    1.588256] [<c05053cc>] (really_probe) from [<c05057bc>] (driver_probe_device+0x5c/0x168)
+[    1.596557] [<c05057bc>] (driver_probe_device) from [<c0503adc>] (bus_for_each_drv+0x44/0x8c)
+[    1.605133] [<c0503adc>] (bus_for_each_drv) from [<c05056d4>] (__device_attach+0x9c/0x104)
+[    1.613433] [<c05056d4>] (__device_attach) from [<c0504800>] (bus_probe_device+0x84/0x8c)
+[    1.621643] [<c0504800>] (bus_probe_device) from [<c05029ac>] (device_add+0x5dc/0x744)
+[    1.629577] [<c05029ac>] (device_add) from [<c05070b8>] (platform_device_add+0xf0/0x208)
+[    1.637725] [<c05070b8>] (platform_device_add) from [<c052f4c0>] (mfd_add_devices+0x304/0x3bc)
+[    1.646362] [<c052f4c0>] (mfd_add_devices) from [<c052f5d8>] (devm_mfd_add_devices+0x60/0x9c)
+[    1.654937] [<c052f5d8>] (devm_mfd_add_devices) from [<c052f9cc>] (cpcap_probe+0x1cc/0x26c)
+[    1.663330] [<c052f9cc>] (cpcap_probe) from [<c057735c>] (spi_drv_probe+0x80/0xa0)
+[    1.670928] [<c057735c>] (spi_drv_probe) from [<c050549c>] (really_probe+0x1dc/0x32c)
+[    1.678802] [<c050549c>] (really_probe) from [<c05057bc>] (driver_probe_device+0x5c/0x168)
+[    1.687103] [<c05057bc>] (driver_probe_device) from [<c0503adc>] (bus_for_each_drv+0x44/0x8c)
+[    1.695648] [<c0503adc>] (bus_for_each_drv) from [<c05056d4>] (__device_attach+0x9c/0x104)
+[    1.703948] [<c05056d4>] (__device_attach) from [<c0504800>] (bus_probe_device+0x84/0x8c)
+[    1.712158] [<c0504800>] (bus_probe_device) from [<c05029ac>] (device_add+0x5dc/0x744)
+[    1.720123] [<c05029ac>] (device_add) from [<c0577ed8>] (spi_add_device+0x8c/0x150)
+[    1.727813] [<c0577ed8>] (spi_add_device) from [<c0578a10>] (spi_register_controller+0x888/0xb00)
+[    1.736724] [<c0578a10>] (spi_register_controller) from [<c0578cb8>] (devm_spi_register_controller+0x30/0x6c)
+[    1.746673] [<c0578cb8>] (devm_spi_register_controller) from [<c057c8f0>] (omap2_mcspi_probe+0x3bc/0x4f4)
+[    1.756286] [<c057c8f0>] (omap2_mcspi_probe) from [<c0506ee0>] (platform_drv_probe+0x48/0x98)
+[    1.764862] [<c0506ee0>] (platform_drv_probe) from [<c050549c>] (really_probe+0x1dc/0x32c)
+[    1.773162] [<c050549c>] (really_probe) from [<c05057bc>] (driver_probe_device+0x5c/0x168)
+[    1.781463] [<c05057bc>] (driver_probe_device) from [<c0505a70>] (device_driver_attach+0x58/0x60)
+[    1.790374] [<c0505a70>] (device_driver_attach) from [<c0505af8>] (__driver_attach+0x80/0xbc)
+[    1.798919] [<c0505af8>] (__driver_attach) from [<c0503b7c>] (bus_for_each_dev+0x58/0x7c)
+[    1.807128] [<c0503b7c>] (bus_for_each_dev) from [<c05049bc>] (bus_add_driver+0xcc/0x1c8)
+[    1.815338] [<c05049bc>] (bus_add_driver) from [<c05062d4>] (driver_register+0x7c/0x110)
+[    1.823486] [<c05062d4>] (driver_register) from [<c0101948>] (do_one_initcall+0x70/0x1b8)
+[    1.831695] [<c0101948>] (do_one_initcall) from [<c0e00f60>] (kernel_init_freeable+0x130/0x1e0)
+[    1.840454] [<c0e00f60>] (kernel_init_freeable) from [<c092ffbc>] (kernel_init+0x8/0x110)
+[    1.848663] [<c092ffbc>] (kernel_init) from [<c0100168>] (ret_from_fork+0x14/0x2c)
+[    1.856262] Exception stack(0xee88ffb0 to 0xee88fff8)
+[    1.861328] ffa0:                                     00000000 00000000 00000000 00000000
+[    1.869537] ffc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[    1.877746] ffe0: 00000000 00000000 00000000 00000000 00000013 00000000
+[    1.884429] ---[ end trace 1b4ff3fa017a4af3 ]---
+[    1.893432] SSI protocol aka McSAAB added
+[    1.897460] CMT speech driver added
+[    1.901062] HSI/SSI char device loaded
+[    1.905273] mdio_bus fixed-0: GPIO lookup for consumer reset
+[    1.905303] mdio_bus fixed-0: using lookup tables for GPIO lookup
+[    1.905303] mdio_bus fixed-0: No GPIO consumer reset found
+[    1.905334] libphy: Fixed MDIO Bus: probed
+[    1.909790] usbcore: registered new interface driver qmi_wwan
+[    1.915588] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.921813] ohci-platform: OHCI generic platform driver
+[    1.928131] usbcore: registered new interface driver cdc_wdm
+[    1.933898] usbcore: registered new interface driver option
+[    1.939514] usbserial: USB Serial support registered for GSM modem (1-port)
+[    1.946533] usbcore: registered new interface driver qcaux
+[    1.952087] usbserial: USB Serial support registered for qcaux
+[    1.957977] usbcore: registered new interface driver qcserial
+[    1.963745] usbserial: USB Serial support registered for Qualcomm USB modem
+[    1.972351] udc musb-hdrc.0.auto: registering UDC driver [g_ether]
+[    1.972381] using random self ethernet address
+[    1.976837] using random host ethernet address
+[    1.981353] g_ether gadget: adding config #1 'CDC Ethernet (ECM)'/(ptrval)
+[    1.981353] g_ether gadget: adding 'cdc_ethernet'/(ptrval) to config 'CDC Ethernet (ECM)'/(ptrval)
+[    1.981781] usb0: HOST MAC 92:8f:ea:93:e4:9a
+[    1.986145] usb0: MAC 02:c1:0a:55:64:91
+[    1.990020] g_ether gadget: CDC Ethernet: dual speed IN/ep1in OUT/ep1out NOTIFY/ep2in
+[    1.990051] g_ether gadget: cfg 1/(ptrval) speeds: high full
+[    1.990051] g_ether gadget:   interface 0 = cdc_ethernet/(ptrval)
+[    1.990051] g_ether gadget:   interface 1 = cdc_ethernet/(ptrval)
+[    1.990051] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+[    1.996704] g_ether gadget: g_ether ready
+[    2.000762] musb-hdrc musb-hdrc.0.auto: musb_set_peripheral: already in peripheral mode: 98
+[    2.009490] mousedev: PS/2 mouse device common for all mice
+[    2.015991] input: 4a31c000.keypad as /devices/platform/44000000.ocp/4a300000.interconnect/4a300000.interconnect:segment@10000/4a31c000.target-module/4a31c000.keypad/input/input0
+[    2.033508] atmel_mxt_ts 1-004a: GPIO lookup for consumer reset
+[    2.033508] atmel_mxt_ts 1-004a: using device tree for GPIO lookup
+[    2.033538] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@72000/i2c@0/touchscreen@4a[0]' - status (0)
+[    2.033599] gpio gpiochip6: Persistence not supported for GPIO 13
+[    2.230590] atmel_mxt_ts 1-004a: Family: 129 Variant: 1 Firmware V0.4.31 Objects: 18
+[    2.258697] atmel_mxt_ts 1-004a: Direct firmware load for maxtouch.cfg failed with error -2
+[    2.259887] cpcap-pwrbutton cpcap-pwrbutton.0: DMA mask not set
+[    2.273895] input: cpcap-pwrbutton as /devices/platform/44000000.ocp/48000000.interconnect/48000000.interconnect:segment@0/48098000.target-module/48098000.spi/spi_master/spi0/spi0.0/cpcap-pwrbutton.0/input/input1
+[    2.293579] pwm-vibrator vibrator: supply vcc not found, using dummy regulator
+[    2.302307] cpcap-rtc cpcap-rtc.0: DMA mask not set
+[    2.307220] atmel_mxt_ts 1-004a: Touchscreen size X1023Y1023
+[    2.313323] input: Atmel maXTouch Touchscreen as /devices/platform/44000000.ocp/48000000.interconnect/48000000.interconnect:segment@0/48072000.target-module/48072000.i2c/i2c-1/1-004a/input/input3
+[    2.313781] cpcap-rtc cpcap-rtc.0: registered as rtc0
+[    2.336303] cpcap-rtc cpcap-rtc.0: setting system clock to 2020-04-18T12:07:33 UTC (1587211653)
+[    2.345581] i2c /dev entries driver
+[    2.350952] poweroff-gpio gpio-poweroff: GPIO lookup for consumer (null)
+[    2.350952] poweroff-gpio gpio-poweroff: using device tree for GPIO lookup
+[    2.350982] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio-poweroff[0]' - status (0)
+[    2.351013] gpio gpiochip2: Persistence not supported for GPIO 18
+[    2.351501] cpcap_battery cpcap_battery.0: DMA mask not set
+[    2.367431] cpcap-charger cpcap-charger.0: DMA mask not set
+[    2.398925] lm75 0-0048: hwmon0: sensor 'tmp105'
+[    2.406005] omap_wdt: OMAP Watchdog Timer Rev 0x00: initial timeout 60 sec
+[    2.413787] omap_wdt: OMAP Watchdog Timer Rev 0x00: initial timeout 60 sec
+[    2.421325] Bluetooth: HCI UART driver ver 2.3
+[    2.425781] Bluetooth: HCI UART protocol H4 registered
+[    2.431030] Bluetooth: HCI UART protocol LL registered
+[    2.436309] hci-ti serial0-0: GPIO lookup for consumer enable
+[    2.436309] hci-ti serial0-0: using device tree for GPIO lookup
+[    2.436340] of_get_named_gpiod_flags: parsed 'enable-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@6e000/serial@0/bluetooth[0]' - status (0)
+[    2.436370] gpio gpiochip6: Persistence not supported for GPIO 14
+[    2.437042] Bluetooth: HCI UART protocol Broadcom registered
+[    2.444549] omap_hsmmc 4809c000.mmc: GPIO lookup for consumer cd
+[    2.444549] omap_hsmmc 4809c000.mmc: using device tree for GPIO lookup
+[    2.444580] of_get_named_gpiod_flags: parsed 'cd-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@9c000/mmc@0[0]' - status (0)
+[    2.444610] gpio gpiochip6: Persistence not supported for GPIO 16
+[    2.444610] omap_gpio 4805d000.gpio: Could not set line 16 debounce to 200000 microseconds (-22)
+[    2.453460] omap_hsmmc 4809c000.mmc: Got CD GPIO
+[    2.458129] omap_hsmmc 4809c000.mmc: GPIO lookup for consumer wp
+[    2.458129] omap_hsmmc 4809c000.mmc: using device tree for GPIO lookup
+[    2.458160] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@9c000/mmc@0[0]'
+[    2.458160] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp/interconnect@48000000/segment@0/target-module@9c000/mmc@0[0]'
+[    2.458190] omap_hsmmc 4809c000.mmc: using lookup tables for GPIO lookup
+[    2.458190] omap_hsmmc 4809c000.mmc: No GPIO consumer wp found
+[    2.486419] omap_hsmmc 480ad000.mmc: GPIO lookup for consumer wp
+[    2.486450] omap_hsmmc 480ad000.mmc: using device tree for GPIO lookup
+[    2.486450] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@ad000/mmc@0[0]'
+[    2.486480] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp/interconnect@48000000/segment@0/target-module@ad000/mmc@0[0]'
+[    2.486480] omap_hsmmc 480ad000.mmc: using lookup tables for GPIO lookup
+[    2.486511] omap_hsmmc 480ad000.mmc: No GPIO consumer wp found
+[    2.487976] omap_hsmmc 480b4000.mmc: GPIO lookup for consumer cd
+[    2.487976] omap_hsmmc 480b4000.mmc: using device tree for GPIO lookup
+[    2.488006] of_get_named_gpiod_flags: can't parse 'cd-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@b4000/mmc@0[0]'
+[    2.488006] of_get_named_gpiod_flags: can't parse 'cd-gpio' property of node '/ocp/interconnect@48000000/segment@0/target-module@b4000/mmc@0[0]'
+[    2.488037] omap_hsmmc 480b4000.mmc: using lookup tables for GPIO lookup
+[    2.488037] omap_hsmmc 480b4000.mmc: No GPIO consumer cd found
+[    2.488037] omap_hsmmc 480b4000.mmc: GPIO lookup for consumer wp
+[    2.488037] omap_hsmmc 480b4000.mmc: using device tree for GPIO lookup
+[    2.488067] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@b4000/mmc@0[0]'
+[    2.488067] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp/interconnect@48000000/segment@0/target-module@b4000/mmc@0[0]'
+[    2.488098] omap_hsmmc 480b4000.mmc: using lookup tables for GPIO lookup
+[    2.488098] omap_hsmmc 480b4000.mmc: No GPIO consumer wp found
+[    2.513122] omap_hsmmc 480d1000.mmc: GPIO lookup for consumer cd
+[    2.513122] omap_hsmmc 480d1000.mmc: using device tree for GPIO lookup
+[    2.513153] of_get_named_gpiod_flags: can't parse 'cd-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@d1000/mmc@0[0]'
+[    2.513183] of_get_named_gpiod_flags: can't parse 'cd-gpio' property of node '/ocp/interconnect@48000000/segment@0/target-module@d1000/mmc@0[0]'
+[    2.513183] omap_hsmmc 480d1000.mmc: using lookup tables for GPIO lookup
+[    2.513183] omap_hsmmc 480d1000.mmc: No GPIO consumer cd found
+[    2.513183] omap_hsmmc 480d1000.mmc: GPIO lookup for consumer wp
+[    2.513214] omap_hsmmc 480d1000.mmc: using device tree for GPIO lookup
+[    2.513214] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@d1000/mmc@0[0]'
+[    2.513244] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp/interconnect@48000000/segment@0/target-module@d1000/mmc@0[0]'
+[    2.513244] omap_hsmmc 480d1000.mmc: using lookup tables for GPIO lookup
+[    2.513244] omap_hsmmc 480d1000.mmc: No GPIO consumer wp found
+[    2.538055] omap_hsmmc 480d5000.mmc: GPIO lookup for consumer cd
+[    2.538055] omap_hsmmc 480d5000.mmc: using device tree for GPIO lookup
+[    2.538085] of_get_named_gpiod_flags: can't parse 'cd-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@d5000/mmc@0[0]'
+[    2.538085] of_get_named_gpiod_flags: can't parse 'cd-gpio' property of node '/ocp/interconnect@48000000/segment@0/target-module@d5000/mmc@0[0]'
+[    2.538116] omap_hsmmc 480d5000.mmc: using lookup tables for GPIO lookup
+[    2.538116] omap_hsmmc 480d5000.mmc: No GPIO consumer cd found
+[    2.538116] omap_hsmmc 480d5000.mmc: GPIO lookup for consumer wp
+[    2.538116] omap_hsmmc 480d5000.mmc: using device tree for GPIO lookup
+[    2.538146] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@d5000/mmc@0[0]'
+[    2.538146] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp/interconnect@48000000/segment@0/target-module@d5000/mmc@0[0]'
+[    2.538177] omap_hsmmc 480d5000.mmc: using lookup tables for GPIO lookup
+[    2.538177] omap_hsmmc 480d5000.mmc: No GPIO consumer wp found
+[    2.547058] mmc0: host does not support reading read-only switch, assuming write-enable
+[    2.559997] mmc0: new high speed SDHC card at address e624
+[    2.562744] cpcap-led cpcap-led.0: DMA mask not set
+[    2.566040] mmcblk0: mmc0:e624 SU16G 14.8 GiB 
+[    2.571044] cpcap-led cpcap-led.1: DMA mask not set
+[    2.580230]  mmcblk0: p1 p2 p3
+[    2.580474] cpcap-led cpcap-led.2: DMA mask not set
+[    2.588745] cpcap-led cpcap-led.3: DMA mask not set
+[    2.594177] cpcap-led cpcap-led.4: DMA mask not set
+[    2.600555] lm3532-led 0-0038: GPIO lookup for consumer enable
+[    2.600555] lm3532-led 0-0038: using device tree for GPIO lookup
+[    2.600677] of_get_named_gpiod_flags: parsed 'enable-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@70000/i2c@0/led-controller@38[0]' - status (0)
+[    2.600677] gpio gpiochip6: Persistence not supported for GPIO 12
+[    2.600738] lm3532-led 0-0038: supply vin not found, using dummy regulator
+[    2.609832] ledtrig-cpu: registered to indicate activity on CPUs
+[    2.617980] mmc1: new high speed MMC card at address 0001
+[    2.624023] mmcblk1: mmc1:0001 016G92 14.7 GiB 
+[    2.629302] clk: failed to reparent abe_cm:clk:0060:24 to sys_clkin_ck: -22
+[    2.637908] mmcblk1boot0: mmc1:0001 016G92 partition 1 4.00 MiB
+[    2.644134] mmcblk1boot1: mmc1:0001 016G92 partition 2 4.00 MiB
+[    2.650268] cpcap_adc cpcap_adc.0: DMA mask not set
+[    2.655303] mmcblk1rpmb: mmc1:0001 016G92 partition 3 512 KiB, chardev (244:0)
+[    2.666198]  mmcblk1: p1 p2 p3 p4 < p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25 p26 >
+[    2.677185] random: fast init done
+[    2.684020] mmcblk1: p25 size 16803584 extends beyond EOD, truncated
+[    2.691284] mmcblk1: p26 start 31104768 is beyond EOD, truncated
+[    2.728027] cpcap_adc cpcap_adc.0: CPCAP ADC device probed
+[    2.735046] isl29028 1-0044: No cache defaults, reading back from HW
+[    2.744903] ak8975 3-000c: GPIO lookup for consumer (null)
+[    2.744903] ak8975 3-000c: using device tree for GPIO lookup
+[    2.744934] of_get_named_gpiod_flags: can't parse 'gpios' property of node '/ocp/interconnect@48000000/segment@200000/target-module@150000/i2c@0/magnetometer@c[0]'
+[    2.744934] of_get_named_gpiod_flags: can't parse 'gpio' property of node '/ocp/interconnect@48000000/segment@200000/target-module@150000/i2c@0/magnetometer@c[0]'
+[    2.744964] ak8975 3-000c: using lookup tables for GPIO lookup
+[    2.744964] ak8975 3-000c: No GPIO consumer (null) found
+[    2.744995] ak8975 3-000c: mounting matrix not found: using identity...
+[    2.752105] ak8975 3-000c: supply vid not found, using dummy regulator
+[    2.792144] gnss: GNSS driver registered with major 242
+[    2.799591] asoc-audio-graph-card soundcard: GPIO lookup for consumer pa
+[    2.799591] asoc-audio-graph-card soundcard: using device tree for GPIO lookup
+[    2.799591] of_get_named_gpiod_flags: can't parse 'pa-gpios' property of node '/soundcard[0]'
+[    2.799621] of_get_named_gpiod_flags: can't parse 'pa-gpio' property of node '/soundcard[0]'
+[    2.799621] asoc-audio-graph-card soundcard: using lookup tables for GPIO lookup
+[    2.799621] asoc-audio-graph-card soundcard: No GPIO consumer pa found
+[    2.803527] Initializing XFRM netlink socket
+[    2.807891] NET: Registered protocol family 17
+[    2.812377] NET: Registered protocol family 15
+[    2.817016] Bluetooth: RFCOMM TTY layer initialized
+[    2.821960] Bluetooth: RFCOMM socket layer initialized
+[    2.827270] Bluetooth: RFCOMM ver 1.11
+[    2.831085] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    2.836425] Bluetooth: BNEP filters: protocol multicast
+[    2.841705] Bluetooth: BNEP socket layer initialized
+[    2.846679] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    2.852691] Bluetooth: HIDP socket layer initialized
+[    2.857788] NET: Registered protocol family 35
+[    2.862335] Key type dns_resolver registered
+[    2.866699] ThumbEE CPU extension supported.
+[    2.871032] Registering SWP/SWPB emulation handler
+[    2.876373] omap4_vc_i2c_timing_init: using bootloader low-speed timings
+[    2.883209] Power Management for TI OMAP4+ devices.
+[    2.888122] OMAP4 PM: u-boot >= v2012.07 is required for full PM support
+[    2.895019] SmartReflex Class3 initialized
+[    2.895019] Loading compiled-in X.509 certificates
+[    2.929718] dmm 4e000000.dmm: initialized all PAT entries
+[    2.936035] reg-fixed-voltage regulator-hdmi: GPIO lookup for consumer (null)
+[    2.936035] reg-fixed-voltage regulator-hdmi: using device tree for GPIO lookup
+[    2.936248] of_get_named_gpiod_flags: can't parse 'gpios' property of node '/regulator-hdmi[0]'
+[    2.936248] of_get_named_gpiod_flags: parsed 'gpio' property of node '/regulator-hdmi[0]' - status (0)
+[    2.936248] gpio gpiochip2: Persistence not supported for GPIO 27
+[    2.936614] reg-fixed-voltage regulator-lcd: GPIO lookup for consumer (null)
+[    2.936614] reg-fixed-voltage regulator-lcd: using device tree for GPIO lookup
+[    2.936614] of_get_named_gpiod_flags: can't parse 'gpios' property of node '/regulator-lcd[0]'
+[    2.936645] of_get_named_gpiod_flags: parsed 'gpio' property of node '/regulator-lcd[0]' - status (0)
+[    2.936706] gpio gpiochip4: Persistence not supported for GPIO 0
+[    2.936706] lcd: supplied by SW5
+[    2.940124] reg-fixed-voltage regulator-wl12xx: GPIO lookup for consumer (null)
+[    2.940124] reg-fixed-voltage regulator-wl12xx: using device tree for GPIO lookup
+[    2.940368] of_get_named_gpiod_flags: can't parse 'gpios' property of node '/regulator-wl12xx[0]'
+[    2.940368] of_get_named_gpiod_flags: parsed 'gpio' property of node '/regulator-wl12xx[0]' - status (0)
+[    2.940429] gpio gpiochip3: Persistence not supported for GPIO 30
+[    2.941925] omap-iommu 4a066000.mmu: 4a066000.mmu registered
+[    2.948516] omap-iommu 55082000.mmu: 55082000.mmu registered
+[    2.948516] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer enable
+[    2.948516] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    2.954589] of_get_named_gpiod_flags: parsed 'enable-gpios' property of node '/usb-phy@1[0]' - status (0)
+[    2.954620] gpio gpiochip3: Persistence not supported for GPIO 31
+[    2.954620] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer power
+[    2.954620] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    2.954650] of_get_named_gpiod_flags: parsed 'power-gpios' property of node '/usb-phy@1[0]' - status (0)
+[    2.954681] gpio gpiochip2: Persistence not supported for GPIO 22
+[    2.954681] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer reset
+[    2.954681] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    2.954711] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/usb-phy@1[0]' - status (0)
+[    2.954711] gpio gpiochip2: Persistence not supported for GPIO 17
+[    2.954772] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer motorola,mode
+[    2.954772] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    2.954803] of_get_named_gpiod_flags: parsed 'motorola,mode-gpios' property of node '/usb-phy@1[0]' - status (0)
+[    2.954833] gpio gpiochip5: Persistence not supported for GPIO 20
+[    2.954864] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer motorola,mode
+[    2.954864] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    2.954895] of_get_named_gpiod_flags: parsed 'motorola,mode-gpios' property of node '/usb-phy@1[1]' - status (0)
+[    2.954895] gpio gpiochip5: Persistence not supported for GPIO 21
+[    2.954895] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer motorola,status
+[    2.954925] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    2.954925] of_get_named_gpiod_flags: parsed 'motorola,status-gpios' property of node '/usb-phy@1[0]' - status (0)
+[    2.954956] gpio gpiochip2: Persistence not supported for GPIO 20
+[    2.954956] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer motorola,status
+[    2.954956] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    2.954986] of_get_named_gpiod_flags: parsed 'motorola,status-gpios' property of node '/usb-phy@1[1]' - status (0)
+[    2.954986] gpio gpiochip2: Persistence not supported for GPIO 21
+[    2.954986] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer motorola,status
+[    2.954986] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    2.955017] of_get_named_gpiod_flags: parsed 'motorola,status-gpios' property of node '/usb-phy@1[2]' - status (0)
+[    2.955017] gpio gpiochip2: Persistence not supported for GPIO 23
+[    2.955047] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer motorola,cmd
+[    2.955047] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    2.955078] of_get_named_gpiod_flags: parsed 'motorola,cmd-gpios' property of node '/usb-phy@1[0]' - status (0)
+[    2.955078] gpio gpiochip4: Persistence not supported for GPIO 7
+[    2.955078] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer motorola,cmd
+[    2.955108] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    2.955108] of_get_named_gpiod_flags: parsed 'motorola,cmd-gpios' property of node '/usb-phy@1[1]' - status (0)
+[    2.955139] gpio gpiochip4: Persistence not supported for GPIO 8
+[    2.955139] phy-mapphone-mdm6600 usb-phy@1: GPIO lookup for consumer motorola,cmd
+[    2.955139] phy-mapphone-mdm6600 usb-phy@1: using device tree for GPIO lookup
+[    2.955169] of_get_named_gpiod_flags: parsed 'motorola,cmd-gpios' property of node '/usb-phy@1[2]' - status (0)
+[    2.955169] gpio gpiochip5: Persistence not supported for GPIO 14
+[    7.278289] phy-mapphone-mdm6600 usb-phy@1: Waiting for power up request to complete..
+[    7.741210] panel-dsi-cm 58004000.encoder:display: GPIO lookup for consumer reset
+[    7.741210] panel-dsi-cm 58004000.encoder:display: using device tree for GPIO lookup
+[    7.741210] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/ocp/target-module@58000000/dss@0/target-module@4000/encoder@0/display[0]' - status (0)
+[    7.741271] gpio gpiochip4: Persistence not supported for GPIO 5
+[    7.741271] panel-dsi-cm 58004000.encoder:display: GPIO lookup for consumer te
+[    7.741302] panel-dsi-cm 58004000.encoder:display: using device tree for GPIO lookup
+[    7.741302] of_get_named_gpiod_flags: can't parse 'te-gpios' property of node '/ocp/target-module@58000000/dss@0/target-module@4000/encoder@0/display[0]'
+[    7.741333] of_get_named_gpiod_flags: can't parse 'te-gpio' property of node '/ocp/target-module@58000000/dss@0/target-module@4000/encoder@0/display[0]'
+[    7.741333] panel-dsi-cm 58004000.encoder:display: using lookup tables for GPIO lookup
+[    7.741363] panel-dsi-cm 58004000.encoder:display: No GPIO consumer te found
+[    7.753417] omapdss_dss 58000000.dss: bound 58001000.dispc (ops dispc_component_ops)
+[    7.761260] omapdss_dss 58000000.dss: bound 58004000.encoder (ops dsi_component_ops)
+[    7.770324] omap-hdmi-audio omap-hdmi-audio.2.auto: snd-soc-dummy-dai <-> 58006000.encoder mapping ok
+[    7.780548] omapdss_dss 58000000.dss: bound 58006000.encoder (ops hdmi4_component_ops)
+[    7.789123] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    7.808044] [drm] Enabling DMM ywrap scrolling
+[    8.109649] panel-dsi-cm 58004000.encoder:display: panel revision 70.01.02
+[    8.141021] Console: switching to colour frame buffer device 67x60
+[    8.170776] omapdrm omapdrm.0: fb0: omapdrmdrmfb frame buffer device
+[    8.178039] [drm] Initialized omapdrm 1.0.0 20110917 for omapdrm.0 on minor 0
+[    8.178039] cpcap-usb-phy cpcap-usb-phy.0: GPIO lookup for consumer mode
+[    8.178039] cpcap-usb-phy cpcap-usb-phy.0: using device tree for GPIO lookup
+[    8.186004] of_get_named_gpiod_flags: parsed 'mode-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@98000/spi@0/pmic@0/phy[0]' - status (0)
+[    8.186004] gpio gpiochip2: Persistence not supported for GPIO 28
+[    8.186065] cpcap-usb-phy cpcap-usb-phy.0: GPIO lookup for consumer mode
+[    8.186065] cpcap-usb-phy cpcap-usb-phy.0: using device tree for GPIO lookup
+[    8.186065] of_get_named_gpiod_flags: parsed 'mode-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@98000/spi@0/pmic@0/phy[1]' - status (0)
+[    8.186126] gpio gpiochip1: Persistence not supported for GPIO 0
+[    8.193176] ohci-platform 4a064800.ohci: Generic Platform OHCI controller
+[    8.200042] ohci-platform 4a064800.ohci: new USB bus registered, assigned bus number 1
+[    8.208068] ohci-platform 4a064800.ohci: irq 98, io mem 0x4a064800
+[    8.328308] hub 1-0:1.0: USB hub found
+[    8.332214] hub 1-0:1.0: 3 ports detected
+[    8.337158] pwm-vibrator vibrator: supply vcc not found, using dummy regulator
+[    8.349517] input: pwm-vibrator as /devices/platform/vibrator/input/input4
+[    8.360748] power_supply battery: Not all required supplies found, defer probe
+[    8.368072] cpcap_battery cpcap_battery.0: failed to register power supply
+[    8.392120] cpcap-charger cpcap-charger.0: GPIO lookup for consumer mode
+[    8.392150] cpcap-charger cpcap-charger.0: using device tree for GPIO lookup
+[    8.392181] of_get_named_gpiod_flags: parsed 'mode-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@98000/spi@0/pmic@0/charger[0]' - status (0)
+[    8.392791] gpio gpiochip3: Persistence not supported for GPIO 29
+[    8.392822] cpcap-charger cpcap-charger.0: GPIO lookup for consumer mode
+[    8.392822] cpcap-charger cpcap-charger.0: using device tree for GPIO lookup
+[    8.392822] of_get_named_gpiod_flags: parsed 'mode-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@98000/spi@0/pmic@0/charger[1]' - status (0)
+[    8.392883] gpio gpiochip3: Persistence not supported for GPIO 23
+[    8.392883] omap_hsmmc 480ad000.mmc: GPIO lookup for consumer wp
+[    8.393341] omap_hsmmc 480ad000.mmc: using device tree for GPIO lookup
+[    8.393341] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@ad000/mmc@0[0]'
+[    8.393371] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp/interconnect@48000000/segment@0/target-module@ad000/mmc@0[0]'
+[    8.393371] omap_hsmmc 480ad000.mmc: using lookup tables for GPIO lookup
+[    8.393402] omap_hsmmc 480ad000.mmc: No GPIO consumer wp found
+[    8.498840] asoc-audio-graph-card soundcard: GPIO lookup for consumer pa
+[    8.498840] asoc-audio-graph-card soundcard: using device tree for GPIO lookup
+[    8.499023] of_get_named_gpiod_flags: can't parse 'pa-gpios' property of node '/soundcard[0]'
+[    8.499023] of_get_named_gpiod_flags: can't parse 'pa-gpio' property of node '/soundcard[0]'
+[    8.499053] asoc-audio-graph-card soundcard: using lookup tables for GPIO lookup
+[    8.499053] asoc-audio-graph-card soundcard: No GPIO consumer pa found
+[    8.499053] of_get_named_gpiod_flags: can't parse 'hp-det-gpio' property of node '/soundcard[0]'
+[    8.499450] of_get_named_gpiod_flags: can't parse 'mic-det-gpio' property of node '/soundcard[0]'
+[    8.504699] omap_hsmmc 480ad000.mmc: card claims to support voltages below defined range
+[    8.529754] asoc-audio-graph-card soundcard: cpcap-hifi <-> 40124000.mcbsp mapping ok
+[    8.541351] mmc4: new high speed SDIO card at address 0001
+[    8.549743] asoc-audio-graph-card soundcard: cpcap-voice <-> 40126000.mcbsp mapping ok
+[    8.582153] power_supply battery: battery: Found supply : usb
+[    8.767700] usb 1-1: new full-speed USB device number 2 using ohci-platform
+[    8.962646] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[    8.963623] g_ether gadget: init ecm
+[    8.963623] g_ether gadget: notify connect false
+[    8.964538] g_ether gadget: activate ecm
+[    8.964569] usb0: qlen 10
+[    8.964569] g_ether gadget: ecm_close
+[    8.968139] g_ether gadget: packet filter 0c
+[    8.968139] g_ether gadget: ecm req21.43 v000c i0000 l0
+[    9.084747] option 1-1:1.0: GSM modem (1-port) converter detected
+[    9.091247] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB0
+[    9.098388] option 1-1:1.1: GSM modem (1-port) converter detected
+[    9.104736] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB1
+[    9.111785] option 1-1:1.2: GSM modem (1-port) converter detected
+[    9.118713] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB2
+[    9.125823] option 1-1:1.3: GSM modem (1-port) converter detected
+[    9.132171] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB3
+[    9.140075] wlcore: WARNING Detected unconfigured mac address in nvs, derive from fuse instead.
+[    9.140075] wlcore: WARNING Your device performance is not optimized.
+[    9.140075] wlcore: WARNING Please use the calibrator tool to configure your device.
+[    9.163208] option 1-1:1.4: GSM modem (1-port) converter detected
+[    9.169525] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB4
+[    9.178039] qmi_wwan 1-1:1.5: cdc-wdm0: USB WDM device
+[    9.183227] qmi_wwan 1-1:1.5 wwan0: register 'qmi_wwan' at usb-4a064800.ohci-1, WWAN/QMI device, be:09:37:c4:7a:65
+[    9.194000] wlcore: loaded
+[    9.205749] qmi_wwan 1-1:1.6: cdc-wdm1: USB WDM device
+[    9.211303] qmi_wwan 1-1:1.6 wwan1: register 'qmi_wwan' at usb-4a064800.ohci-1, WWAN/QMI device, be:09:37:c4:7a:65
+[    9.223968] qmi_wwan 1-1:1.7: cdc-wdm2: USB WDM device
+[    9.229461] qmi_wwan 1-1:1.7 wwan2: register 'qmi_wwan' at usb-4a064800.ohci-1, WWAN/QMI device, be:09:37:c4:7a:65
+[    9.241973] qmi_wwan 1-1:1.8: cdc-wdm3: USB WDM device
+[    9.247161] qmi_wwan 1-1:1.8 wwan3: register 'qmi_wwan' at usb-4a064800.ohci-1, WWAN/QMI device, be:09:37:c4:7a:65
+[    9.610809] phy-mapphone-mdm6600 usb-phy@1: modem status: 4 awake
+[    9.616973] phy-mapphone-mdm6600 usb-phy@1: Powered up OK
+[   10.839721] cpcap_battery cpcap_battery.0: Coulomb counter calibration done
+[   10.867858] cpcap_battery cpcap_battery.0: calibration done: 0x03ff
+[   10.875091] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio_keys/volume_down[0]' - status (0)
+[   10.875122] gpio gpiochip5: Persistence not supported for GPIO 26
+[   10.875122] omap_gpio 4805b000.gpio: Could not set line 26 debounce to 10000 microseconds (-22)
+[   10.883880] of_get_named_gpiod_flags: parsed 'gpios' property of node '/gpio_keys/slider[0]' - status (0)
+[   10.883880] gpio gpiochip4: Persistence not supported for GPIO 26
+[   10.884033] omap_gpio 48059000.gpio: Could not set line 26 debounce to 10000 microseconds (-22)
+[   10.893157] input: gpio_keys as /devices/platform/gpio_keys/input/input5
+[   10.901794] smartreflex 4a0d9000.smartreflex: omap_sr_probe: SmartReflex driver initialized
+[   10.910278] smartreflex 4a0d9000.smartreflex: omap_sr_probe: (null): No Voltage table for the corresponding vdd. Cannot create debugfs entries for n-values
+[   10.924346] smartreflex: probe of 4a0d9000.smartreflex failed with error -61
+[   10.931579] smartreflex 4a0db000.smartreflex: omap_sr_probe: SmartReflex driver initialized
+[   10.940032] smartreflex 4a0db000.smartreflex: omap_sr_probe: (null): No Voltage table for the corresponding vdd. Cannot create debugfs entries for n-values
+[   10.954101] smartreflex: probe of 4a0db000.smartreflex failed with error -61
+[   10.961273] smartreflex 4a0dd000.smartreflex: omap_sr_probe: SmartReflex driver initialized
+[   10.969696] smartreflex 4a0dd000.smartreflex: omap_sr_probe: (null): No Voltage table for the corresponding vdd. Cannot create debugfs entries for n-values
+[   10.983764] smartreflex: probe of 4a0dd000.smartreflex failed with error -61
+[   10.991516] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   11.002014] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   11.008758] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[   11.013610] ALSA device list:
+[   11.013610] cfg80211: failed to load regulatory.db
+[   11.020385]   #0: HDMI 58006000.encoder
+[   11.020385]   #1: Droid 4 Audio
+[   11.035400] EXT4-fs (mmcblk0p2): INFO: recovery required on readonly filesystem
+[   11.043029] EXT4-fs (mmcblk0p2): write access will be enabled during recovery
+[   11.393188] EXT4-fs (mmcblk0p2): recovery complete
+[   11.401977] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+[   11.401977] VFS: Mounted root (ext4 filesystem) readonly on device 179:2.
+[   11.427734] devtmpfs: mounted
+[   11.430908] Freeing unused kernel memory: 1024K
+[   11.436340] Run /sbin/init as init process
+[   11.440490]   with arguments:
+[   11.440490]     /sbin/init
+[   11.440490]   with environment:
+[   11.440490]     HOME=/
+[   11.440521]     TERM=linux
+[   13.333984] g_ether gadget: reset config
+[   13.333984] g_ether gadget: ecm deactivated
+[   13.333984] usb0: gether_disconnect
+[   13.474029] udevd[474]: starting version 3.2.2
+[   13.490356] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   13.490386] g_ether gadget: init ecm
+[   13.490386] g_ether gadget: notify connect false
+[   13.491546] random: udevd: uninitialized urandom read (16 bytes read)
+[   13.499023] g_ether gadget: activate ecm
+[   13.499053] usb0: qlen 10
+[   13.499053] g_ether gadget: ecm_close
+[   13.499450] g_ether gadget: packet filter 0c
+[   13.499450] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   13.500549] random: udevd: uninitialized urandom read (16 bytes read)
+[   13.503784] random: udevd: uninitialized urandom read (16 bytes read)
+[   13.581542] udevd[475]: starting eudev-3.2.2
+[   14.161834] g_ether gadget: reset config
+[   14.162017] g_ether gadget: ecm deactivated
+[   14.162017] usb0: gether_disconnect
+[   14.318511] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   14.318511] g_ether gadget: init ecm
+[   14.318511] g_ether gadget: notify connect false
+[   14.321838] g_ether gadget: activate ecm
+[   14.321838] usb0: qlen 10
+[   14.321838] g_ether gadget: ecm_close
+[   14.322326] g_ether gadget: packet filter 0c
+[   14.322357] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   14.924835] udevd[505]: could not open moddep file '/lib/modules/5.7.0-rc1-next-20200417/modules.dep.bin'
+[   14.942199] g_ether gadget: reset config
+[   14.942199] g_ether gadget: ecm deactivated
+[   14.942199] usb0: gether_disconnect
+[   14.957397] udevd[505]: could not open moddep file '/lib/modules/5.7.0-rc1-next-20200417/modules.dep.bin'
+[   15.574676] urandom_read: 6 callbacks suppressed
+[   15.574859] random: alsactl: uninitialized urandom read (4 bytes read)
+[   15.858764] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   15.858795] g_ether gadget: init ecm
+[   15.858795] g_ether gadget: notify connect false
+[   15.866271] g_ether gadget: activate ecm
+[   15.866302] usb0: qlen 10
+[   15.866302] g_ether gadget: ecm_close
+[   15.866333] g_ether gadget: packet filter 0c
+[   15.866668] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   16.537322] g_ether gadget: reset config
+[   16.537322] g_ether gadget: ecm deactivated
+[   16.537384] usb0: gether_disconnect
+[   16.691009] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   16.691070] g_ether gadget: init ecm
+[   16.691070] g_ether gadget: notify connect false
+[   16.696807] g_ether gadget: activate ecm
+[   16.696807] usb0: qlen 10
+[   16.696807] g_ether gadget: ecm_close
+[   16.697296] g_ether gadget: packet filter 0c
+[   16.697296] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   16.747344] EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+[   17.047973] g_ether gadget: reset config
+[   17.047973] g_ether gadget: ecm deactivated
+[   17.047973] usb0: gether_disconnect
+[   17.969818] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   17.969879] g_ether gadget: init ecm
+[   17.969879] g_ether gadget: notify connect false
+[   17.970794] g_ether gadget: activate ecm
+[   17.970794] usb0: qlen 10
+[   17.970794] g_ether gadget: ecm_close
+[   17.970886] g_ether gadget: packet filter 0c
+[   17.971069] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   18.528381] random: crng init done
+[   18.943572] g_ether gadget: reset config
+[   18.946228] g_ether gadget: ecm deactivated
+[   18.946228] usb0: gether_disconnect
+[   19.102600] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   19.102600] g_ether gadget: init ecm
+[   19.102661] g_ether gadget: notify connect false
+[   19.102905] g_ether gadget: activate ecm
+[   19.103698] usb0: qlen 10
+[   19.103698] g_ether gadget: ecm_close
+[   19.103698] g_ether gadget: packet filter 0c
+[   19.104034] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   19.472290] g_ether gadget: reset config
+[   19.472351] g_ether gadget: ecm deactivated
+[   19.472351] usb0: gether_disconnect
+[   20.387756] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   20.387756] g_ether gadget: init ecm
+[   20.387756] g_ether gadget: notify connect false
+[   20.389739] g_ether gadget: activate ecm
+[   20.389739] usb0: qlen 10
+[   20.389739] g_ether gadget: ecm_close
+[   20.390441] g_ether gadget: packet filter 0c
+[   20.390441] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   21.310028] g_ether gadget: reset config
+[   21.310028] g_ether gadget: ecm deactivated
+[   21.310028] usb0: gether_disconnect
+[   21.466491] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   21.466522] g_ether gadget: init ecm
+[   21.466522] g_ether gadget: notify connect false
+[   21.467315] g_ether gadget: activate ecm
+[   21.467346] usb0: qlen 10
+[   21.467346] g_ether gadget: ecm_close
+[   21.467498] g_ether gadget: packet filter 0c
+[   21.467529] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   22.466156] g_ether gadget: reset config
+[   22.466156] g_ether gadget: ecm deactivated
+[   22.466156] usb0: gether_disconnect
+[   22.622528] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   22.622558] g_ether gadget: init ecm
+[   22.622558] g_ether gadget: notify connect false
+[   22.623352] g_ether gadget: activate ecm
+[   22.623352] usb0: qlen 10
+[   22.623382] g_ether gadget: ecm_close
+[   22.623382] g_ether gadget: packet filter 0c
+[   22.623382] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   23.038208] g_ether gadget: reset config
+[   23.038208] g_ether gadget: ecm deactivated
+[   23.038208] usb0: gether_disconnect
+[   23.195922] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   23.195953] g_ether gadget: init ecm
+[   23.195953] g_ether gadget: notify connect false
+[   23.200439] g_ether gadget: activate ecm
+[   23.200531] usb0: qlen 10
+[   23.200561] g_ether gadget: ecm_close
+[   23.200897] g_ether gadget: packet filter 0c
+[   23.200897] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   23.551879] g_ether gadget: reset config
+[   23.551879] g_ether gadget: ecm deactivated
+[   23.551910] usb0: gether_disconnect
+[   24.330535] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   24.330566] g_ether gadget: init ecm
+[   24.330596] g_ether gadget: notify connect false
+[   24.331665] g_ether gadget: activate ecm
+[   24.331665] usb0: qlen 10
+[   24.331695] g_ether gadget: ecm_close
+[   24.332061] g_ether gadget: packet filter 0c
+[   24.332061] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   24.578155] g_ether gadget: reset config
+[   24.578186] g_ether gadget: ecm deactivated
+[   24.578186] usb0: gether_disconnect
+[   25.495605] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   25.495758] g_ether gadget: init ecm
+[   25.495758] g_ether gadget: notify connect false
+[   25.497955] g_ether gadget: activate ecm
+[   25.497955] usb0: qlen 10
+[   25.497955] g_ether gadget: ecm_close
+[   25.498199] g_ether gadget: packet filter 0c
+[   25.498229] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   26.910003] g_ether gadget: reset config
+[   26.910278] g_ether gadget: ecm deactivated
+[   26.910278] usb0: gether_disconnect
+[   27.067657] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   27.067871] g_ether gadget: init ecm
+[   27.067871] g_ether gadget: notify connect false
+[   27.069152] g_ether gadget: activate ecm
+[   27.069152] usb0: qlen 10
+[   27.069152] g_ether gadget: ecm_close
+[   27.069915] g_ether gadget: packet filter 0c
+[   27.069915] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   35.458374] g_ether gadget: reset config
+[   35.458374] g_ether gadget: ecm deactivated
+[   35.458404] usb0: gether_disconnect
+[   35.518707] using random self ethernet address
+[   35.518707] using random host ethernet address
+[   35.537384] udc-core: couldn't find an available UDC or it's busy
+[   35.614196] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   35.614227] g_ether gadget: init ecm
+[   35.614257] g_ether gadget: notify connect false
+[   35.615814] g_ether gadget: activate ecm
+[   35.615844] usb0: qlen 10
+[   35.615875] g_ether gadget: ecm_close
+[   35.616058] g_ether gadget: packet filter 0c
+[   35.616058] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   35.876159] using random self ethernet address
+[   35.881347] using random host ethernet address
+[   35.889556] udc-core: couldn't find an available UDC or it's busy
+[   35.914367] usb0: eth_open
+[   35.914398] usb0: eth_start
+[   35.914642] g_ether gadget: ecm_open
+[   36.110412] g_ether gadget: reset config
+[   36.110412] g_ether gadget: ecm deactivated
+[   36.110412] usb0: gether_disconnect
+[   36.894622] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   36.894683] g_ether gadget: init ecm
+[   36.894683] g_ether gadget: notify connect true
+[   36.895751] g_ether gadget: activate ecm
+[   36.895751] usb0: qlen 10
+[   36.895751] g_ether gadget: ecm_open
+[   36.895843] usb0: eth_start
+[   36.901397] g_ether gadget: packet filter 0c
+[   36.901580] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   39.190429] g_ether gadget: reset config
+[   39.190490] g_ether gadget: ecm deactivated
+[   39.190490] usb0: gether_disconnect
+[   39.346832] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   39.346862] g_ether gadget: init ecm
+[   39.346862] g_ether gadget: notify connect true
+[   39.353393] g_ether gadget: activate ecm
+[   39.353424] usb0: qlen 10
+[   39.353424] g_ether gadget: ecm_open
+[   39.353454] usb0: eth_start
+[   39.353790] g_ether gadget: packet filter 0c
+[   39.353942] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   41.438934] VAUDIO: disabling
+[   41.442077] vwl1271: disabling
+[   43.737854] g_ether gadget: reset config
+[   43.737854] g_ether gadget: ecm deactivated
+[   43.737854] usb0: gether_disconnect
+[   43.890350] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   43.890411] g_ether gadget: init ecm
+[   43.890411] g_ether gadget: notify connect true
+[   43.891113] g_ether gadget: activate ecm
+[   43.891143] usb0: qlen 10
+[   43.891143] g_ether gadget: ecm_open
+[   43.891143] usb0: eth_start
+[   43.891326] g_ether gadget: packet filter 0c
+[   43.891357] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   44.133178] g_ether gadget: reset config
+[   44.134674] g_ether gadget: ecm deactivated
+[   44.134674] usb0: gether_disconnect
+[   45.050933] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   45.050964] g_ether gadget: init ecm
+[   45.050964] g_ether gadget: notify connect true
+[   45.051757] g_ether gadget: activate ecm
+[   45.051757] usb0: qlen 10
+[   45.052062] g_ether gadget: ecm_open
+[   45.052093] usb0: eth_start
+[   45.052154] g_ether gadget: packet filter 0c
+[   45.052368] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   45.119628] omap-mcbsp 40124000.mcbsp: CLKS: could not clk_get() prcm_fck
+[   45.129730] omap-mcbsp 40124000.mcbsp: CLKS: could not clk_get() prcm_fck
+[   45.138916] omap-mcbsp 40124000.mcbsp: CLKS: could not clk_get() prcm_fck
+[   45.151550] omap-mcbsp 40124000.mcbsp: CLKS: could not clk_get() prcm_fck
+[   45.230316] omap-mcbsp 40124000.mcbsp: CLKS: could not clk_get() prcm_fck
+[   45.430572] g_ether gadget: reset config
+[   45.430572] g_ether gadget: ecm deactivated
+[   45.430572] usb0: gether_disconnect
+[   45.586791] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   45.586853] g_ether gadget: init ecm
+[   45.586853] g_ether gadget: notify connect true
+[   45.591491] g_ether gadget: activate ecm
+[   45.591491] usb0: qlen 10
+[   45.591491] g_ether gadget: ecm_open
+[   45.591613] usb0: eth_start
+[   45.591918] g_ether gadget: packet filter 0c
+[   45.591918] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   45.858520] g_ether gadget: reset config
+[   45.858520] g_ether gadget: ecm deactivated
+[   45.858520] usb0: gether_disconnect
+[   46.014923] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   46.014953] g_ether gadget: init ecm
+[   46.014953] g_ether gadget: notify connect true
+[   46.016021] g_ether gadget: activate ecm
+[   46.016052] usb0: qlen 10
+[   46.016052] g_ether gadget: ecm_open
+[   46.016052] usb0: eth_start
+[   46.016357] g_ether gadget: packet filter 0c
+[   46.016357] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   46.298645] g_ether gadget: reset config
+[   46.298645] g_ether gadget: ecm deactivated
+[   46.298645] usb0: gether_disconnect
+[   46.454925] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   46.454956] g_ether gadget: init ecm
+[   46.454956] g_ether gadget: notify connect true
+[   46.455871] g_ether gadget: activate ecm
+[   46.455902] usb0: qlen 10
+[   46.455902] g_ether gadget: ecm_open
+[   46.455932] usb0: eth_start
+[   46.456207] g_ether gadget: packet filter 0c
+[   46.456237] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   46.710449] g_ether gadget: reset config
+[   46.710632] g_ether gadget: ecm deactivated
+[   46.710632] usb0: gether_disconnect
+[   46.866943] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   46.867034] g_ether gadget: init ecm
+[   46.867034] g_ether gadget: notify connect true
+[   46.867828] g_ether gadget: activate ecm
+[   46.867828] usb0: qlen 10
+[   46.867980] g_ether gadget: ecm_open
+[   46.868011] usb0: eth_start
+[   46.869812] g_ether gadget: packet filter 0c
+[   46.869812] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   47.518432] g_ether gadget: reset config
+[   47.518585] g_ether gadget: ecm deactivated
+[   47.518585] usb0: gether_disconnect
+[   47.674957] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   47.675018] g_ether gadget: init ecm
+[   47.675018] g_ether gadget: notify connect true
+[   47.675842] g_ether gadget: activate ecm
+[   47.675842] usb0: qlen 10
+[   47.675872] g_ether gadget: ecm_open
+[   47.675872] usb0: eth_start
+[   47.675994] g_ether gadget: packet filter 0c
+[   47.675994] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   50.505371] omap-mcbsp 40124000.mcbsp: CLKS: could not clk_get() prcm_fck
+[   50.513732] ------------[ cut here ]------------
+[   50.513732] WARNING: CPU: 1 PID: 2681 at drivers/gpu/drm/omapdrm/dss/hdmi4.c:570 hdmi_audio_stop+0x64/0x70
+[   50.528106] Modules linked in:
+[   50.528106] CPU: 1 PID: 2681 Comm: alsa-sink-HDMI  Tainted: G        W         5.7.0-rc1-next-20200417 #171
+[   50.540954] Hardware name: Generic OMAP4 (Flattened Device Tree)
+[   50.540954] [<c010e35c>] (unwind_backtrace) from [<c010a604>] (show_stack+0x10/0x14)
+[   50.540954] [<c010a604>] (show_stack) from [<c03ddc0c>] (dump_stack+0xb4/0xd4)
+[   50.557678] [<c03ddc0c>] (dump_stack) from [<c012c368>] (__warn+0xc8/0xf0)
+[   50.568969] [<c012c368>] (__warn) from [<c012c41c>] (warn_slowpath_fmt+0x8c/0x94)
+[   50.568969] [<c012c41c>] (warn_slowpath_fmt) from [<c04eab80>] (hdmi_audio_stop+0x64/0x70)
+[   50.584808] [<c04eab80>] (hdmi_audio_stop) from [<c0725134>] (hdmi_dai_trigger+0x6c/0x90)
+[   50.584808] [<c0725134>] (hdmi_dai_trigger) from [<c0711c4c>] (snd_soc_dai_trigger+0x2c/0x38)
+[   50.601593] [<c0711c4c>] (snd_soc_dai_trigger) from [<c0713090>] (soc_pcm_trigger+0xac/0x220)
+[   50.601593] [<c0713090>] (soc_pcm_trigger) from [<c06f1fcc>] (snd_pcm_do_stop+0x54/0x58)
+[   50.601593] [<c06f1fcc>] (snd_pcm_do_stop) from [<c06f1e80>] (snd_pcm_action_single+0x38/0x78)
+[   50.601593] [<c06f1e80>] (snd_pcm_action_single) from [<c06f300c>] (snd_pcm_action+0x50/0x58)
+[   50.626953] [<c06f300c>] (snd_pcm_action) from [<c06f3188>] (snd_pcm_drop+0x48/0x9c)
+[   50.643280] [<c06f3188>] (snd_pcm_drop) from [<c06f643c>] (snd_pcm_ioctl+0x82c/0x1590)
+[   50.651245] [<c06f643c>] (snd_pcm_ioctl) from [<c022fce8>] (ksys_ioctl+0xf8/0xa78)
+[   50.651245] [<c022fce8>] (ksys_ioctl) from [<c0100080>] (ret_fast_syscall+0x0/0x54)
+[   50.666534] Exception stack(0xec5d9fa8 to 0xec5d9ff0)
+[   50.666534] 9fa0:                   004f8e28 b1984394 00000016 00004143 0046fc28 004f9968
+[   50.666534] 9fc0: 004f8e28 b1984394 00000001 00000036 00000002 00000000 00000000 0046f7a0
+[   50.666534] 9fe0: b19847c4 b6383adc b1914be7 b6c87916
+[   50.693115] ---[ end trace 1b4ff3fa017a4af5 ]---
+[   52.586669] g_ether gadget: reset config
+[   52.586730] g_ether gadget: ecm deactivated
+[   52.586730] usb0: gether_disconnect
+[   52.742919] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   52.742980] g_ether gadget: init ecm
+[   52.742980] g_ether gadget: notify connect true
+[   52.749450] g_ether gadget: activate ecm
+[   52.749450] usb0: qlen 10
+[   52.749450] g_ether gadget: ecm_open
+[   52.749511] usb0: eth_start
+[   52.749816] g_ether gadget: packet filter 0c
+[   52.749877] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   53.649688] g_ether gadget: reset config
+[   53.649688] g_ether gadget: ecm deactivated
+[   53.654998] usb0: gether_disconnect
+[   54.571166] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   54.571228] g_ether gadget: init ecm
+[   54.571228] g_ether gadget: notify connect true
+[   54.572174] g_ether gadget: activate ecm
+[   54.572204] usb0: qlen 10
+[   54.572204] g_ether gadget: ecm_open
+[   54.572235] usb0: eth_start
+[   54.572540] g_ether gadget: packet filter 0c
+[   54.572540] g_ether gadget: ecm req21.43 v000c i0000 l0
+[   54.959075] g_ether gadget: reset config
+[   54.959075] g_ether gadget: ecm deactivated
+[   54.959075] usb0: gether_disconnect
+[   57.079132] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[   57.079162] g_ether gadget: init ecm
+[   57.079162] g_ether gadget: notify connect true
+[   57.080200] g_ether gadget: activate ecm
+[   57.080200] usb0: qlen 10
+[   57.080200] g_ether gadget: ecm_open
+[   57.080261] usb0: eth_start
+[   57.080688] g_ether gadget: packet filter 0c
+[   57.080688] g_ether gadget: ecm req21.43 v000c i0000 l0
+[ 1080.332702] g_ether gadget: reset config
+[ 1080.332702] g_ether gadget: ecm deactivated
+[ 1080.332916] usb0: gether_disconnect
+[ 1080.505187] g_ether gadget: high-speed config #1: CDC Ethernet (ECM)
+[ 1080.505218] g_ether gadget: init ecm
+[ 1080.505218] g_ether gadget: notify connect true
+[ 1080.506317] g_ether gadget: activate ecm
+[ 1080.506317] usb0: qlen 10
+[ 1080.506347] g_ether gadget: ecm_open
+[ 1080.506378] usb0: eth_start
+[ 1080.508666] g_ether gadget: packet filter 0c
+[ 1080.508666] g_ether gadget: ecm req21.43 v000c i0000 l0
